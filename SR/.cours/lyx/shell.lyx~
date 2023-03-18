@@ -2571,6 +2571,10 @@ Cette commande affiche les 4 dernières lignes de fichier
 Stockage
 \end_layout
 
+\begin_layout Paragraph
+du
+\end_layout
+
 \begin_layout Standard
 Pour connaître l'espace utilisé par un repertoire, on utilise la commande
  

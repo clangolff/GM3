@@ -366,12 +366,12 @@ Quelques fonctions de base
 
 \begin_layout Standard
 Avant de parler de fonctions essentielles pour discuter avec votre ordinateur,
- il faut faire une diffèrence entre les commande interne et externe.
+ il faut faire une diffèrence entre les commandes internes et externes.
 \end_layout
 
 \begin_layout Standard
 Les commandes internes sont les commandes propres à votre shell, elles ont
- directement étaient integrés lors de la progrommation de votre terminal.
+ directement été integré lors de la progrommation de votre terminal.
 \end_layout
 
 \begin_layout Standard
@@ -4356,7 +4356,7 @@ status open
 
 \begin_layout Plain Layout
 
-$ reand -p 
+$ read -p 
 \begin_inset Quotes eld
 \end_inset
 

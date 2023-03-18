@@ -1,0 +1,8 @@
+En 1962 IBM introduit le modèle 1301 proposant une capacité de 28 Mo avec un taux de transfert et une densité surfacique 10 fois supérieurs à ceux du RAMAC 305 et une distance entre les têtes et la surface du disque passant de 20.32 µm à 6.35 µm.
+Ainsi à partir de 1962 plusieurs fabricants commencèrent à commercialiser de tels disques durs.
+En 1965 IBM commercialisa le modèle 2310 dont la particularité était de posséder une partie amovible.
+Le modèle 2314 commercialisé en 1966 était équipé de têtes de lecture en ferrite (oxyde de fer).
+En 1973, IBM lança le Winchester 3340, un disque dur dont la tête de lecture était soulevée par un film d'air d'une épaisseur de seulement 0.43 µm. Sa capacité accrue par rapport au RAMAC ainsi que sa taille et son poids réduits firent de ce disque le nouveau standard de périphérique de stockage à accès direct. C'est sa capacité de 30 Mo qui lui valut le surnom de 30-30 et donc de « Winchester » (le nom de la fameuse carabine 30-30).
+Le premier lecteur de disques durs 5 pouces un quart verra le jour en 1980, développée par la firme Seagate.
+La naissance de l'interface SCSI
+A partir de 1979, la compagnie Shugart Associates, fondée par Alan F. Shugart (un ancien chef de produit de la firme IBM), met au point une connexion parallèle permettant de connecter des disques durs à des ordinateurs de type PC et nomme cette technologie SASI (Shugart Associates Standard Interface). Cette interface deviendra le SCSI en 1982 et sera standardisée par l'ANSI (American National Standards Institute) en 1986.                                           

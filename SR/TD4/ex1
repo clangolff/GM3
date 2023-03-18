@@ -1,0 +1,16 @@
+#!/bin/bash
+
+
+let nombre=1
+
+for i in {1..5}
+do
+	for j in {1..20}
+	do
+		echo -n $nombre
+		echo -n " " 
+		let nombre+=1	
+
+	done
+echo ""
+done

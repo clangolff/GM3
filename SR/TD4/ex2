@@ -1,0 +1,18 @@
+#!/bin/ksh
+
+set -A t 
+let nombre=1
+for i in {0..4}
+do
+	for j in {0..19}
+	do
+		t[i][j]=$nombre
+		let nombre+=1	
+	done
+done
+
+for i in {0..4}
+do
+	echo -n ${t[i][*]}
+	echo 
+done

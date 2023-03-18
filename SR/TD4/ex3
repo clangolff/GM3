@@ -1,0 +1,38 @@
+#!/bin/ksh 
+
+set -A t 
+cat Une_petite_histoire.txt | while read -r ligne
+do
+	t+=($ligne) 
+done
+
+let n=${#t[*]}
+let carNum=0
+let autre=0
+let mot=0
+
+for i in {0..$((n-1))}
+do
+	case ${t[i]} in
+		[0-9]*) if [[ ${t[i]} = +([0-9]) ]];then
+				((carNum+=1))
+			else
+				((autre+=1))
+			fi;;
+		[a-zA-Z]*) if [[ ${t[i]} = +([a-zA-Z]) ]];then
+				((mot+=1))
+			else
+				((autre+=1))
+			fi;;
+		*) ((autre+=1));;
+	esac
+done
+
+echo -n "nombre de mots " $mot
+echo
+echo -n "nombre de caracteres numeriques " $carNum
+echo
+echo -n "nombre de mots autres "  $autre 
+echo
+
+

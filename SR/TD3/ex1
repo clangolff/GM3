@@ -1,0 +1,15 @@
+#!/bin/bash
+
+if test -d "Rep1"; then
+        echo "le repertoire existe"
+else
+        mkdir Rep1
+fi
+fichier=(un deux troix quatre cinq six sept huit neuf dix);
+index=(premier deuxieme troisieme quatrieme cinquieme sixieme septieme huitieme neuvieme dixieme)
+cd Rep1
+for (( i=0; i<=9; i++ ))
+do
+        echo "le ${index[i]} fichier" >> "${fichier[i]}"
+done
+

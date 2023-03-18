@@ -1,0 +1,11 @@
+#!/bin/bash
+
+read a
+user=$(grep $a /etc/passwd |cut -d: -f1)  
+if [ "$user" = "$a" ]; 
+then
+	echo "l'utilisateur $a existe"
+else
+	echo "l'utilisateur $a n'existe pas"	
+fi	
+

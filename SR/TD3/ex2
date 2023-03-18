@@ -1,0 +1,17 @@
+#!/bin/bash
+
+#read -p "entrer un nombre  :" N
+
+produit(){
+	for ((j=0 ; j<=10 ; j++))
+	do
+		echo $(($1 * $j))
+	done
+}
+
+#produit N
+
+for ((i=1 ; i<=9 ; i++))
+do	
+	produit $i
+done

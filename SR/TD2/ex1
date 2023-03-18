@@ -1,0 +1,13 @@
+Exercice 1
+
+1) On affecte la valeur contenu dans la variable a et b à C et D.
+
+2) On redirige la sortie de echo a b à read via le pipe. Sauf que read ne fonctionne pas de cette façon. En faisant echo $a $b on obtient les valeur donné à a e b initialement. Alors que si on fait echo a b | read z y, les variable z et y sont vides. Cette commande ne permet pas de changer les valeurs de a et b.
+	Syntaxe : read <option> <var1> <var2>
+3) Même problème que le 2.
+
+4) la commande ressort d et f, les accolades agissent comme une barrière au pipe qui n'agit plus comme une redirection.
+ 
+5) Cette commande met la valeur entrée dans la variable T. Si on rentre une suite de nombre, on fait ${T[*]} pour afficher tout les elements du tableau. L'option -p permet d'ajouter un message avant de lire la variable. L 'option -a indique qu'on rentre les valeur dans un "tableau"
+
+

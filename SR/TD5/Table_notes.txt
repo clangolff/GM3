@@ -1,0 +1,8 @@
+Nom		Prénom       IS_S&R    DS_S&R    IS_lang_C  DS_lang_C  IS_JAVA   DS_JAVA
+AMIOT		Jean	      	7	  12	9	11,5	  13   	  11           14
+ANTONI  	Emma	      	13	  18	17	19	  16	  18           17
+BARROIS 	Eliane	      	15	  19	12	17	  19	  20           12
+BONO    	Sophie	      	14	  15	16	19	  17	  18           19
+CHEVALLIER 	Philippe        9	  14	14	11	  13	  12           10
+CLAPISSON	Amandine        3	  7	2	5	  1	  3            6
+COMMARE		Thomas          13	  17	15	17	  14	  11           12

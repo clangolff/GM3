@@ -1,0 +1,110 @@
+#!/bin/ksh
+
+nbLigne=$(wc -l Table_notes.txt | cut -d" " -f1)
+let nbLigne-=1
+
+#data=$(tail -$(($nbLigne-1)) Table_notes.txt) 
+
+set -A NOM
+set -A PRENOM
+set -A ISSR
+set -A DSSR
+set -A ISC
+set -A DSC
+set -A ISJAVA
+set -A DSJAVA
+
+
+tail -$nbLigne Table_notes.txt| expand | while read Nom Prenom IS_SR DS_SR IS_lang_C DS_lang_C IS_JAVA DS_JAVA
+do 
+	NOM+=($Nom)
+	PRENOM+=($Prenom)
+	ISSR+=($IS_SR)
+	DSSR+=($DS_SR)
+	ISC+=($IS_lang_C)
+	DSC+=($DS_lang_C)
+	ISJAVA+=($IS_JAVA)
+	DSJAVA+=($DS_JAVA)
+done
+
+
+N=${#NOM[*]}
+
+
+set -A TmoySR 
+set -A TmoyC
+set -A TmoyJAVA
+set -A TmoyG
+
+for j in {0..$(($N-1))}
+do
+	moySR=$(( (${ISSR[j]} + 2 * ${DSSR[j]}) / 3 ))
+	TmoySR+=($moySR)
+
+#	echo "moyenne SR de ${PRENOM[j]} ${NOM[j]}  = $moySR"
+	
+	moyC=$(( (${ISC[j]} + 2 * ${DSC[j]}) / 3 ))
+	TmoyC+=($moyC)
+	
+#	echo "moyenne C de ${PRENOM[j]} ${NOM[j]}  = $moyC"
+	
+	moyJAVA=$(( (${ISJAVA[j]} + 2 * ${DSJAVA[j]}) / 3 ))
+	TmoyJAVA+=($moyJAVA)
+	
+#	echo "moyenne JAVA de ${PRENOM[j]} ${NOM[j]}  = $moyJAVA"
+	
+	moyG=$(( ($moySR + $moyC + $moyJAVA) /3 ))
+	TmoyG+=($moyG)
+
+#	echo "moyenne générale de ${PRENOM[j]} ${NOM[j]} = $moyG"
+
+
+#	if [ "$moyG" -ge 16 ];then 				echo "tres bien"
+#	elif [ "$moyG" -ge 14 ] && [ "$moyG" -lt 16 ];then 	echo bien
+#	elif [ "$moyG" -ge 12 ] && [ "$moyG" -lt 14 ];then	echo "assez bien"
+#	elif [ "$moyG" -ge 10 ] && [ "$moyG" -lt 12 ];then 	echo moyen
+#	elif [ "$moyG" -lt 10 ];then 				echo insuffisant
+#	fi
+
+#	echo 
+done
+
+
+moyEtudiantSR=0
+moyEtudiantC=0
+moyEtudiantJAVA=0
+
+for j in {0..$(($N-1))}
+do
+	let moyEtudiantSR+=${TmoySR[j]}
+	let moyEtudiantC+=${TmoyC[j]}
+	let moyEtudiantJAVA+=${TmoyJAVA[j]}
+done
+let moyEtudiantSR/=${#TmoySR[*]}
+let moyEtudiantC/=${#TmoyC[*]}
+let moyEtudiantJAVA/=${#TmoyJAVA[*]}
+
+moyEtudiantG=$(( ($moyEtudiantSR + $moyEtudiantC + $moyEtudiantJAVA) / 3 )) 
+
+
+#echo "moyenne des etudiant en SR $moyEtudiantSR, en C $moyEtudiantC, en JAVA $moyEtudiantJAVA "
+
+
+if ! test -d "etudiant";then	
+	mkdir etudiant
+fi
+
+cd etudiant
+
+for j in {0..$(($N-1))}
+do 
+	touch ${NOM[j]}
+	echo "matiere			moyenne etudiant	moyenne classe"	>	${NOM[j]}
+	echo "=======			===============		==============" >>	${NOM[j]}
+	echo "SR			${TmoySR[j]}			$moyEtudiantSR"	>>	${NOM[j]}
+	echo "C 			${TmoyC[j]}			$moyEtudiantC"	>>	${NOM[j]}
+	echo "JAVA			${TmoyJAVA[j]}			$moyEtudiantJAVA" >>	${NOM[j]}
+	echo "moyenne G		${TmoyG[j]}			$moyEtudiantG" 	>>	${NOM[j]}
+done
+
+

@@ -1,0 +1,16 @@
+#!/bin/bash
+CHEMIN="$HOME/Documents/cours/S2/SR"   #ou `pwd`
+PS3="votre choix : "
+
+select reponse in "non modifié depuis 30j" "jpeg ou pdf" "fichier caché" "fichier vide" "fichier objet ou a.out ou core" "archiver les fichier .c" "exit"
+do
+	case $reponse in 
+		"non modifié depuis 30j") find $CHEMIN -type f -mtime +30 -print ;;
+		"jpeg ou pdf") find $CHEMIN -type f \( -name "*\.pdf" -o -name "*\.jpeg" \) -print;;
+		"fichier caché") find $CHEMIN -name "\.*" -ok rm {} \; ;;
+		"fichier vide") find $CHEMIN -size 0 -print;;
+		"fichier objet ou a.out ou core") find \( -name "*\.o" -o -name "a\.out" -o -name "core" \)  ;;
+		"archiver les fichier .c") find -name "*\.c" -ok zip {} \; ;;
+		"exit") break ;;
+	esac
+done

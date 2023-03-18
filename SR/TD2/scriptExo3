@@ -1,0 +1,11 @@
+#!/bin/bash
+
+read Ch1 Ch2 Ch3
+
+if $Ch1 = $Ch2 -a $ch2 = $ch3; then 
+	echo "chaines identiques"
+elif $Ch1 = $Ch2 -o $Ch2 = $Ch3 -o $Ch1 = $Ch3; then
+	echo "2 chaine identique"
+else
+	echo "chaine differente"
+fi

@@ -1,0 +1,29 @@
+#!/bin/bash
+
+if test -d "R1"; then
+        echo "le repertoire existe"
+else
+        mkdir R1
+fi
+
+cd R1
+
+touch un deux trois quatre Sept Dix dix Treize quatorze Dixsept Dixhuit Trente_sept
+cd ..
+
+
+echo "fichier contenant la chaine \"ua\" "
+find R1 -name *ua* -type f -print
+echo 
+
+echo "fichier finissant par \"ze\" "
+find R1 -name *ze -type f -print
+echo 
+
+echo "fichier s'appelant dix ou Dix"
+find R1 -name [dD]ix -type f -print
+
+echo 
+echo "fichier contenant Sept ou sept" 
+find R1 -name *[Ss]ept* -type f -print
+echo

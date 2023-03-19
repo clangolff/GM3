@@ -533,7 +533,7 @@ echo [paramètre] [argument]
 
 \begin_layout Standard
 echo permet d'afficher du texte.
- il possède diffèrent paramètre : 
+ il possède diffèrents paramètres : 
 \end_layout
 
 \begin_layout Itemize
@@ -567,7 +567,7 @@ Les caractères de substitutions
 \end_layout
 
 \begin_layout Standard
-ILs permettent de faire référence à des fichiers ou des objets qu'on ne
+Ils permettent de faire référence à des fichiers ou des objets qu'on ne
  sait pas entièrement nommer.
 \end_layout
 
@@ -608,7 +608,7 @@ center
 
 \begin_layout Plain Layout
 \begin_inset Tabular
-<lyxtabular version="3" rows="13" columns="2">
+<lyxtabular version="3" rows="12" columns="2">
 <features tabularvalignment="middle">
 <column alignment="center" valignment="top">
 <column alignment="center" valignment="top">
@@ -776,26 +776,6 @@ inversion de la recherche
 
 \begin_layout Plain Layout
 désigne un caractère quelconque
-\end_layout
-
-\end_inset
-</cell>
-</row>
-<row>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-*
-\end_layout
-
-\end_inset
-</cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
-\begin_inset Text
-
-\begin_layout Plain Layout
-désigne une repetition quelconque de caractère qui précède
 \end_layout
 
 \end_inset
@@ -1096,7 +1076,7 @@ LINUX C'EST BIEN
 
 \begin_layout Plain Layout
 
-$ echo ${chaine^}
+$ echo ${chaine,,}
 \end_layout
 
 \begin_layout Plain Layout
@@ -2197,7 +2177,7 @@ cut [-c pos1, pos2 ..] fichier
 \end_layout
 
 \begin_layout Itemize
--c2 coupe suelement la colonne 2
+-c2 coupe seulement la colonne 2
 \end_layout
 
 \begin_layout Itemize

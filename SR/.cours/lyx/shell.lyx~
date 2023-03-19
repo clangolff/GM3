@@ -567,7 +567,7 @@ Les caractères de substitutions
 \end_layout
 
 \begin_layout Standard
-ILs permettent de faire référence à des fichiers ou des objets qu'on ne
+Ils permettent de faire référence à des fichiers ou des objets qu'on ne
  sait pas entièrement nommer.
 \end_layout
 
@@ -2177,7 +2177,7 @@ cut [-c pos1, pos2 ..] fichier
 \end_layout
 
 \begin_layout Itemize
--c2 coupe suelement la colonne 2
+-c2 coupe seulement la colonne 2
 \end_layout
 
 \begin_layout Itemize
@@ -2717,6 +2717,103 @@ unset
  
 \end_layout
 
+\begin_layout Standard
+On peut affecter le résultat d'une commande à une variable, par exemple
+ si on prend la cmomande date quiressort la date et qu'on le stocke dans
+ une variable nommée D, on utilise les ` ` (altgr + 7).
+ On peut aussi utiliser $(..).
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+$ D=`date`   #ou D=$(date)
+\end_layout
+
+\begin_layout Plain Layout
+
+$ cat $D
+\end_layout
+
+\begin_layout Plain Layout
+
+	19 mars 2023 18h51 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+On peut éliminer ce qui se trouve avant un caractère dans une chaîne avec
+ 
+\begin_inset Quotes eld
+\end_inset
+
+#*
+\begin_inset Quotes erd
+\end_inset
+
+ et en utilisant les accolades !! Pour éliminer ce qui se trouve après un
+ motif, on utilise 
+\begin_inset Quotes eld
+\end_inset
+
+%
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+$ chaine=
+\begin_inset Quotes erd
+\end_inset
+
+j'aime linux
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+$ echo ${chaine#*' '} 
+\end_layout
+
+\begin_layout Plain Layout
+
+	linux
+\end_layout
+
+\begin_layout Plain Layout
+
+$ echo ${chaine%' '*}
+\end_layout
+
+\begin_layout Plain Layout
+
+	j'aime
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Paragraph*
 Accolades et remplacement conditionnel
 \end_layout
@@ -3091,7 +3188,8 @@ $ echo ${nom[index]}
 \end_layout
 
 \begin_layout Standard
-Pour ajouter un élément, on ajoute comme une simple variable avec +=
+Pour ajouter un élément, on ajoute comme une simple variable avec +=(..) ,
+ ne pas oublier les parenthèses.
 \end_layout
 
 \begin_layout Itemize

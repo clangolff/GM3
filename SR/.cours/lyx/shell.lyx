@@ -2717,6 +2717,218 @@ unset
  
 \end_layout
 
+\begin_layout Standard
+On peut affecter le résultat d'une commande à une variable, par exemple
+ si on prend la cmomande date quiressort la date et qu'on le stocke dans
+ une variable nommée D, on utilise les ` ` (altgr + 7).
+ On peut aussi utiliser $(..).
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+$ D=`date`   #ou D=$(date)
+\end_layout
+
+\begin_layout Plain Layout
+
+$ cat $D
+\end_layout
+
+\begin_layout Plain Layout
+
+	19 mars 2023 18h51 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+On peut éliminer ce qui se trouve
+\end_layout
+
+\begin_layout Itemize
+avant un premier motif dans une chaîne avec 
+\begin_inset Quotes eld
+\end_inset
+
+#*
+\begin_inset Quotes erd
+\end_inset
+
+ et en utilisant les accolades !! 
+\end_layout
+
+\begin_layout Itemize
+après le dernier motif, on utilise 
+\begin_inset Quotes eld
+\end_inset
+
+%
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+avant la dernière apparition d'un motif on utilise 
+\begin_inset Quotes eld
+\end_inset
+
+##
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+après la première apparition d'un motif, on utilise 
+\begin_inset Quotes eld
+\end_inset
+
+%%
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+$ chaine=
+\begin_inset Quotes erd
+\end_inset
+
+j'aime linux
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+$ echo ${chaine#*' '} 
+\end_layout
+
+\begin_layout Plain Layout
+
+	linux
+\end_layout
+
+\begin_layout Plain Layout
+
+$ echo ${chaine%i*}
+\end_layout
+
+\begin_layout Plain Layout
+
+	j'aime l
+\end_layout
+
+\begin_layout Plain Layout
+
+$ echo ${chaine##*i}
+\end_layout
+
+\begin_layout Plain Layout
+
+	nux
+\end_layout
+
+\begin_layout Plain Layout
+
+$ echo ${chaine%%i*}
+\end_layout
+
+\begin_layout Plain Layout
+
+	j'a
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Pour récupérer une certaine partie d'un éléments, on utilise les 
+\begin_inset Quotes eld
+\end_inset
+
+:
+\begin_inset Quotes erd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+$ chaine=
+\begin_inset Quotes erd
+\end_inset
+
+j'aime linux
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+$ echo ${chaine:2:10}
+\end_layout
+
+\begin_layout Plain Layout
+
+	aime linux
+\end_layout
+
+\begin_layout Plain Layout
+
+$ echo ${chaine:2}
+\end_layout
+
+\begin_layout Plain Layout
+
+	aime linux
+\end_layout
+
+\begin_layout Plain Layout
+
+$ echo ${chaine::2}
+\end_layout
+
+\begin_layout Plain Layout
+
+	j'
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Paragraph*
 Accolades et remplacement conditionnel
 \end_layout
@@ -3091,7 +3303,8 @@ $ echo ${nom[index]}
 \end_layout
 
 \begin_layout Standard
-Pour ajouter un élément, on ajoute comme une simple variable avec +=
+Pour ajouter un élément, on ajoute comme une simple variable avec +=(..) ,
+ ne pas oublier les parenthèses.
 \end_layout
 
 \begin_layout Itemize

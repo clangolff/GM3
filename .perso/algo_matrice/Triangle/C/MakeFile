@@ -1,0 +1,13 @@
+FC = gcc
+
+OPT = -g
+
+#executable
+
+
+#objet
+trisup.o : triangleinf.c matrice.h
+	$(FC) $(OPT) -c triangleinf.c
+
+matrice.o : lib/matrice.c lib/matrice.h
+	$(FC) $(OPT) -c lib/matrice.c

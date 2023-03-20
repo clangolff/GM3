@@ -2505,7 +2505,7 @@ head, tail
 \end_layout
 
 \begin_layout Standard
-Pour afficher le début d'un fichier on utilise la commande tail, pour voir
+Pour afficher le début d'un fichier on utilise la commande head, pour voir
  la fin, la commande tail.
 \end_layout
 

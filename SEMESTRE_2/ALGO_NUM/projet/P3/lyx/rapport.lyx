@@ -1,0 +1,2590 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language french
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style french
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "c"
+hor_pos "l"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "40text%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename image/INSA.png
+	lyxscale 20
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Box Frameless
+position "c"
+hor_pos "l"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "40text%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering{
+\end_layout
+
+\end_inset
+
+
+\series bold
+\size larger
+AlgoNum GM3
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+\size larger
+2022/2023
+\series default
+\size default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace 2.1cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "c"
+hor_pos "l"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "100text%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering{
+\end_layout
+
+\end_inset
+
+
+\series bold
+\shape slanted
+\size huge
+Arithmétique
+\size giant
+ 
+\size default
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+AlgoNum - TD3 - MMSN
+\series default
+\shape default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Graphics
+	filename image/dvlpmtbinairePG.jpeg
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "l"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100text%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+Etudiants : 
+\series default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace{0.5cm} 
+\end_layout
+
+\end_inset
+
+
+\series bold
+DANTAS Alexandre 
+\series default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace{1.0cm} 
+\end_layout
+
+\end_inset
+
+
+\series bold
+DELL'OVA Fabio
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace{3cm} 
+\end_layout
+
+\end_inset
+
+
+\series bold
+GUINES Antoine
+\series default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace{1.75cm} 
+\end_layout
+
+\end_inset
+
+
+\series bold
+LANGOLFF Clément
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace{3cm} 
+\end_layout
+
+\end_inset
+
+
+\series bold
+KESSLER Aymeric 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Encadrant : 
+\series default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace{0.5cm} 
+\end_layout
+
+\end_inset
+
+
+\series bold
+Gleyse.
+ B
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+Théorie
+\end_layout
+
+\begin_layout Section
+Rationnel non entier décimal
+\end_layout
+
+\begin_layout Standard
+Montrons qu'un rationnel non entier est décimal (représenté par une fraction
+ décimale (dont le dénominateur est une puissance de 10)) si et seulement
+ si son représentant irréductible a un dénominateur dont les seuls diviseurs
+ premiers possibles sont 2 ou 5.
+\end_layout
+
+\begin_layout Standard
+Soit 
+\begin_inset Formula $r=\frac{x}{10^{n}}$
+\end_inset
+
+ avec 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Posons 
+\begin_inset Formula $r=\frac{a}{b}$
+\end_inset
+
+ tel que 
+\begin_inset Formula $a$
+\end_inset
+
+ et 
+\begin_inset Formula $b$
+\end_inset
+
+ soient premier entre eux (ainsi la fraction 
+\begin_inset Formula $\frac{a}{b}$
+\end_inset
+
+ est irréductible).
+ Alors, 
+\begin_inset Formula 
+\[
+xb=a\times10^{n}
+\]
+
+\end_inset
+
+D'après le lemme de Gauss, si l'entier b divise 
+\begin_inset Formula $a\times10^{n}$
+\end_inset
+
+ et si 
+\begin_inset Formula $a$
+\end_inset
+
+ et 
+\begin_inset Formula $b$
+\end_inset
+
+ sont premiers entre eux, alors b divise 
+\begin_inset Formula $10^{n}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+On a donc 
+\begin_inset Formula $10^{n}=kb$
+\end_inset
+
+ avec 
+\begin_inset Formula $k\in\mathbb{\mathbb{\mathbb{N}}}$
+\end_inset
+
+ donc 
+\begin_inset Formula 
+\[
+b=\frac{10^{n}}{k}=\frac{2^{n}5^{n}}{k}
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Or 
+\begin_inset Formula $b\in\mathbb{N}$
+\end_inset
+
+ donc 
+\begin_inset Formula $k$
+\end_inset
+
+ ne peut être n'importe quel entier sinon 
+\begin_inset Formula $b$
+\end_inset
+
+ serait un nombre rationnel.
+ 
+\begin_inset Formula $k$
+\end_inset
+
+ de décompose alors en multiple de 2 et 5 mais ces multiple doivent être
+ obligatoiremnt inférieur au dénominateur, sinon on aurait encore une fois
+ une fraction à la place d'un entier.
+ Ainsi, on a 
+\begin_inset Formula $k=2^{i}5^{j}$
+\end_inset
+
+ où 
+\begin_inset Formula $i$
+\end_inset
+
+ et 
+\begin_inset Formula $j$
+\end_inset
+
+ doivent être inférieur à 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+On a alors 
+\begin_inset Formula $b=2^{n-i}5^{n-j}$
+\end_inset
+
+ d'où 
+\begin_inset Formula 
+\[
+\frac{x}{10^{n}}=\frac{a}{2^{n-i}5^{n-j}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Réciproquement, si le représentant irréductible de 
+\begin_inset Formula $\frac{x}{y}$
+\end_inset
+
+ est de la forme 
+\begin_inset Formula $\frac{a}{2^{n-i}5^{n-j}}$
+\end_inset
+
+ avec 
+\begin_inset Formula $a\in\mathbb{N}$
+\end_inset
+
+ alors
+\end_layout
+
+\begin_layout Itemize
+si 
+\begin_inset Formula $j\leq i$
+\end_inset
+
+ , on 
+\begin_inset Quotes eld
+\end_inset
+
+factorise
+\begin_inset Quotes erd
+\end_inset
+
+ par 
+\begin_inset Formula $2^{n-j}$
+\end_inset
+
+et 
+\begin_inset Formula $5^{n-j}$
+\end_inset
+
+ pour obtenir 
+\begin_inset Formula $\frac{a}{2^{n-i}5^{n-j}}=\frac{a}{2^{j-i}\times10^{n-j}}$
+\end_inset
+
+.
+ On a alors 
+\begin_inset Formula $\frac{x}{y}=\frac{a\times2^{i-j}}{10^{n-j}}$
+\end_inset
+
+ c'est donc bien décimale.
+\end_layout
+
+\begin_layout Itemize
+si 
+\begin_inset Formula $i\le j$
+\end_inset
+
+ , alors on procède de même en factorisant par 
+\begin_inset Formula $n-i$
+\end_inset
+
+ pour obtenir 
+\begin_inset Formula $\frac{x}{y}=\frac{a\times2^{j-i}}{10^{n-i}}$
+\end_inset
+
+ et on en tire la même conclusion.
+\end_layout
+
+\begin_layout Standard
+En reprenant la même demonstration avec 2, possèdant comme seul diviseur
+ premier 2, on peut élargir à un rationnel non entier binaire, c'est à dire
+ de la forme 
+\begin_inset Formula $\frac{a}{2^{n}}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Section
+Rationnel non entier et non décimal
+\end_layout
+
+\begin_layout Standard
+Soit un rationnel non entier et non décimal 
+\begin_inset Formula $\frac{p}{q}$
+\end_inset
+
+ avec 
+\begin_inset Formula $p$
+\end_inset
+
+ et 
+\begin_inset Formula $q$
+\end_inset
+
+ premier entre eux et tel que 
+\begin_inset Formula $0<p<q$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+x=\frac{p}{q}=0,x_{1}x_{2}...x_{r}MM...
+\]
+
+\end_inset
+
+ avec 
+\begin_inset Formula $M$
+\end_inset
+
+ le motif de la période composé des 
+\begin_inset Formula $m$
+\end_inset
+
+ chiffres.
+ On note 
+\begin_inset Formula $r$
+\end_inset
+
+ le premier indice avant que la période apparaisse.
+\end_layout
+
+\begin_layout Standard
+Alors 
+\begin_inset Formula 
+\[
+10^{r}x=x_{1}x_{2}...x_{r},MM...
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Posons 
+\begin_inset Formula $E_{r}(x)=x_{1}x_{2}...x_{r}$
+\end_inset
+
+la partie entière de 
+\begin_inset Formula $x$
+\end_inset
+
+ et 
+\begin_inset Formula $y=10^{r}x-E_{r}(x)=0,MM...$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+On a 
+\begin_inset Formula $10^{m}y=M,MM..$
+\end_inset
+
+ où 
+\begin_inset Formula $m$
+\end_inset
+
+ est la longueur du motif en terme de chiffre.
+ 
+\begin_inset Formula 
+\[
+10^{m}y-y=M,
+\]
+
+\end_inset
+
+d'où 
+\begin_inset Formula $y(10^{m}-1)=M$
+\end_inset
+
+ ainsi 
+\begin_inset Formula $y=\frac{M}{10^{m}-1}=\frac{a}{b}$
+\end_inset
+
+ avec 
+\begin_inset Formula $0<a<b$
+\end_inset
+
+ , 
+\begin_inset Formula $a$
+\end_inset
+
+ et 
+\begin_inset Formula $b$
+\end_inset
+
+ premier entre eux ainsi que b et 10 premier entre eux (sinon y serait un
+ rationnel décimal).
+\end_layout
+
+\begin_layout Standard
+En réarrangeant les termes, on obtient 
+\begin_inset Formula $bM=a(10^{m}-1)$
+\end_inset
+
+ , on applique le lemme de Gauss, si 
+\begin_inset Formula $a$
+\end_inset
+
+ et 
+\begin_inset Formula $b$
+\end_inset
+
+ sont premiers entre eux alors 
+\begin_inset Formula $b$
+\end_inset
+
+ divise 
+\begin_inset Formula $10^{m}-1$
+\end_inset
+
+.
+ Autrement dit 
+\begin_inset Formula $10^{m}-1\equiv0[b]$
+\end_inset
+
+ et en utilisant la propriété des congruences on a finalement 
+\begin_inset Formula $10^{m}\equiv1[b]$
+\end_inset
+
+ .
+ Pour trouver la longueur de la période, il faut trouver le plus petit 
+\begin_inset Formula $m$
+\end_inset
+
+ qui vérifie 
+\begin_inset Formula $10^{m}\equiv1[b]$
+\end_inset
+
+ .
+ On choisit le plus petit car si on prenait 
+\begin_inset Formula $m_{1}$
+\end_inset
+
+ avec 
+\begin_inset Formula $m_{1}>m$
+\end_inset
+
+ qui vérifie 
+\begin_inset Formula $10^{m_{1}}\equiv1[b]$
+\end_inset
+
+ , alors on aurait la longueur de plusieurs périodes qui se suivent.
+\end_layout
+
+\begin_layout Standard
+Cherchons maintenant à trouver le rang à partir duquel le motif commence.
+\end_layout
+
+\begin_layout Standard
+On a vu que 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+y & =10^{r}x-E_{r}(x)=10^{r}x-k=\frac{a}{b},\,\,\,k\in\mathbb{N}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+et donc 
+\begin_inset Formula 
+\begin{align*}
+10^{r}x & =k+\frac{a}{b}\\
+10^{r}\frac{p}{q} & =k+\frac{a}{b}\\
+\frac{p}{q} & =\frac{kb+a}{10^{r}b}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+On a 
+\begin_inset Formula $\frac{kb+a}{10^{r}}$
+\end_inset
+
+ qui est un rationnel décimal donc d'après la première partie, 
+\begin_inset Formula $q$
+\end_inset
+
+ peut s'écrire 
+\begin_inset Formula $q=b\times2^{\alpha}5^{\beta}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+En posant 
+\begin_inset Formula $r=max(\alpha,\beta)$
+\end_inset
+
+ , on obtiendra le rang du développement décimal à partir duquel la période
+ apparaît et on pourra ainsi avoir le motif 
+\begin_inset Formula $M$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Rationnel non entier et non binaire
+\end_layout
+
+\begin_layout Standard
+Calculons le rang du développement décimal à partir duquel la période apparaît
+ et la longueur de cette période pour un développement binaire infini périodique.
+\end_layout
+
+\begin_layout Standard
+Soit un rationnel non entier et non binaire (développement binaire infini
+ périodique) 
+\begin_inset Formula $\frac{p}{q}$
+\end_inset
+
+ avec 
+\begin_inset Formula $p,q$
+\end_inset
+
+ premiers ente eux et 
+\begin_inset Formula $0<p<q$
+\end_inset
+
+ (sinon faire une division euclidienne)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+x=\frac{p}{q}=0,x_{1}x_{2}...x_{r},MM...\;avec\;M\;le\;motif
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+2^{r}x=x_{1}x_{2}...x_{r},MM..
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+y=2^{r}x-E_{r}(x)=0,MM..
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+2^{m}y=M,MM...
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+2^{m}y-y=M
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+d'où : 
+\begin_inset Formula 
+\[
+y=\frac{M}{2^{m}-1}=\frac{a}{b}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+avec 
+\begin_inset Formula $a$
+\end_inset
+
+ et 
+\begin_inset Formula $b$
+\end_inset
+
+ premiers entre eux, 
+\begin_inset Formula $b$
+\end_inset
+
+ et 
+\begin_inset Formula $2$
+\end_inset
+
+ premiers entre eux, 
+\begin_inset Formula $0<a<b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+d'où : 
+\begin_inset Formula $bM=(2^{m}-1)a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+D'après le Lemme de Gauss, si l'entier b divise 
+\begin_inset Formula $(2^{m}-1)a$
+\end_inset
+
+ et a et b sont premiers entre eux alors b divise 
+\begin_inset Formula $(2^{m}-1)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+donc 
+\begin_inset Formula $2^{m}-1\equiv0[b]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+d'où 
+\begin_inset Formula $2^{m}\equiv1[b]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Pour trouver le rang 
+\begin_inset Formula $r$
+\end_inset
+
+ on procède comme la partie précédente
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+y & =2^{r}x-E_{r}(2^{r}x)=2^{r}x-k=\frac{a}{b}\\
+2^{r}x & =\frac{a}{b}+k\\
+\frac{p}{q} & =\frac{kb+a}{b2^{r}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+et grâce à la première partie, on a 
+\begin_inset Formula $q=2^{\alpha}b$
+\end_inset
+
+ et on pose alors 
+\begin_inset Formula $r=\alpha$
+\end_inset
+
+ pour avoir le rang et trouver le motif 
+\begin_inset Formula $M$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Développement décimale infini vers le développement binaire infini
+\end_layout
+
+\begin_layout Standard
+Procédons par contraposée : 
+\end_layout
+
+\begin_layout Standard
+Supposons que x soit un rationnel non entier à développement binaire fini
+ :
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+x=\frac{a}{2^{n}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x$
+\end_inset
+
+ possède donc un développement décimal fini.
+\end_layout
+
+\begin_layout Standard
+On en conclut qu'un nombre rationnel non entier à développement décimal
+ infini a un développement binaire infini.
+ 
+\end_layout
+
+\begin_layout Standard
+En revanche, la réciproque n'est pas correcte.
+ En effet, il suffit de prendre un contre exemple pour s'en convaincre.
+ Le nombre 
+\begin_inset Formula $0,1$
+\end_inset
+
+ possède un développement décimal fini mais un développement binaire infini.
+ 
+\end_layout
+
+\begin_layout Standard
+Cherchons d'abord à la main la représentation de 0,1 avec la norme IEEE754.
+\end_layout
+
+\begin_layout Standard
+On a 
+\begin_inset Formula $\frac{1}{10}=2^{-4}\times\frac{8}{5}=2^{-4}(1+\frac{3}{5})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+m
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2m
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+b
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{3}{5}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{6}{5}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{1}{5}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{2}{5}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{2}{5}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{4}{5}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{4}{5}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{8}{5}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{3}{5}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\frac{6}{5}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\vdots$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\vdots$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+On à la répétition du motif 
+\begin_inset Formula $1001$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+La représentation de 0,1 en double présicion est donné par 
+\end_layout
+
+\begin_layout Itemize
+bit de signe : 0
+\end_layout
+
+\begin_layout Itemize
+bits exposant (sur 11 bits) : 
+\begin_inset Formula $(2^{11}-1-4)_{10}$
+\end_inset
+
+
+\begin_inset Formula $=(011\;1111\;1011)_{2}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+mantisse : 
+\begin_inset Formula $\underbrace{\ensuremath{\underbrace{1001}_{motif}100110011001...1001}}_{52\;bits}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+À l'aide de gdb, nous affichons l'écriture de 
+\begin_inset Formula $0.1$
+\end_inset
+
+ en binaire : 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename image/01_binaire.png
+	scale 60
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+gdb nous affiche le résultat en double précision (gdb affiche à partir du
+ premier bit égale à 1).
+\end_layout
+
+\begin_layout Itemize
+bit de signe (caché) : 0
+\end_layout
+
+\begin_layout Itemize
+On retrouve l'exposant codé 
+\begin_inset Formula $011\;1111\;1011$
+\end_inset
+
+ (avec le premier 0 caché)
+\end_layout
+
+\begin_layout Itemize
+Puis nous avons une répétition du motif 
+\begin_inset Formula $1001$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Les deux derniers bits sont différents car l'ordinateur approxime le résultat
+ au bit supérieur, c'est à dire 
+\begin_inset Formula $...10011001|1001$
+\end_inset
+
+ sera approximé par 
+\begin_inset Formula $...10011010|0000...$
+\end_inset
+
+.
+ Le motif est alors interrompu mais le développement est théoriquement infini.
+\end_layout
+
+\begin_layout Standard
+Par le raisonnement ci-dessus, on peut conclure quant à la réciproque de
+ la propriété.
+ Un nombre rationnel non entier à développement binaire infini n'admet pas
+ nécessairement un développement décimal infini.
+\end_layout
+
+\begin_layout Section
+Développement binaire du rationnel 
+\begin_inset Formula $\frac{86}{40}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Pour se mettre dans les conditions de la partie 3, on effectue la division
+ euclidienne de 
+\begin_inset Formula $\frac{86}{40}$
+\end_inset
+
+ et ainsi avoir un rationnel non entier et non binaire tel que de la forme
+ 
+\begin_inset Formula $\frac{p}{q}<1$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+On a 
+\begin_inset Formula 
+\[
+\frac{86}{40}=2+\frac{3}{20}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+De plus, on a 
+\begin_inset Formula $\frac{3}{20}=\frac{3}{2^{2}\times5}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+On peut donc en déduire que le rang du nombre rationnel 
+\begin_inset Formula $\frac{86}{40}$
+\end_inset
+
+ est de 
+\begin_inset Formula $2$
+\end_inset
+
+ d'après la question 2.
+\end_layout
+
+\begin_layout Standard
+De plus, pour connaître la longueur de la période de développement binaire
+ du nombre rationnel 
+\begin_inset Formula $\frac{86}{40}$
+\end_inset
+
+, nous cherchons le plus petit 
+\begin_inset Formula $k\in\mathbb{N}$
+\end_inset
+
+ tq 
+\begin_inset Formula $2^{k}\equiv1[5]$
+\end_inset
+
+.
+ Nous obtenons donc que 
+\begin_inset Formula $k=4$
+\end_inset
+
+ puiques 
+\begin_inset Formula $2⁴=16=5\times3+1$
+\end_inset
+
+ ce qui permet d'avoir une longueur de période du motif dans le développement
+ binaire égale à 4.
+ 
+\end_layout
+
+\begin_layout Standard
+Le codage de 
+\begin_inset Formula $\frac{86}{40}$
+\end_inset
+
+ dans la norme IEEE754 est cependant diffèrent.
+ En effet, 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{86}{40}=2¹\times(1+\frac{3}{40})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="9" columns="4">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Mantisse
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2*Mantisse
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Bit résultant
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3/40
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6/40
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="center" valignment="middle" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\rbrace Rang$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6/40
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12/40
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12/40
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+24/40
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+24/40
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+48/40
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="3" alignment="center" valignment="middle" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\rbrace Motif$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8/40
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+16/40
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+16/40
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+32/40
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+32/40
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+64/40
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell multirow="4" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+24/40
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+...
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+...
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+bit de signe : 0
+\end_layout
+
+\begin_layout Itemize
+bit exposant : 
+\begin_inset Formula $(2^{11}-1+1)_{10}=(100\;0000\;0000)_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+L'affichage gdb nous conforte dans le résultat puisqu'après le bit de signe,
+ les 11 bits d'exposant, vient la mantisse trouvée avec le calcul ci-dessus.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename image/8640binaire.png
+	scale 60
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Concernant l'arrondissement, la mantisse est arrondi au bit supérieur.
+ Or, on a 
+\begin_inset Formula $...100110011|001100...$
+\end_inset
+
+ comme le bit situé après la troncature est 0, on a pas d'arrondissement
+ supérieur.
+ 
+\end_layout
+
+\begin_layout Part
+Développement binaire et application
+\end_layout
+
+\begin_layout Section
+développement binaire de 0,4
+\end_layout
+
+\begin_layout Standard
+On a 
+\begin_inset Formula $0,4=\frac{4}{10}=\frac{2}{5}$
+\end_inset
+
+.
+ Donc 
+\begin_inset Formula $0,4$
+\end_inset
+
+ ne peut s'écrire sous la forme 
+\begin_inset Formula $\frac{a}{2^{n}}$
+\end_inset
+
+, on déduit donc que son développement binaire est infini.
+ D'après la partie 1, on a 
+\begin_inset Formula $q=5=2^{0}\times5$
+\end_inset
+
+ .
+ Ainsi le rang 
+\begin_inset Formula $r$
+\end_inset
+
+ de 0,4 est 0.
+ De plus, on cherche le premier entier positif 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ tel que 
+\begin_inset Formula $2^{\alpha}\equiv1[5]$
+\end_inset
+
+, on trouve alors 4.
+ Donc le motif est formé par 4 bits et se trouve juste après la virgule.
+ 
+\end_layout
+
+\begin_layout Section
+Application
+\end_layout
+
+\begin_layout Standard
+On considère un nombre décimal quelconque sans partie entière, avec un développe
+ment binaire unique noté 
+\begin_inset Formula $\alpha=(a_{0},a_{1}....a_{n-1}a_{n}a_{n+1}...)_{2}$
+\end_inset
+
+ avec 
+\begin_inset Formula $a_{0}=0$
+\end_inset
+
+ et 
+\begin_inset Formula $a_{n}=1$
+\end_inset
+
+.
+ On note p le polynome 
+\begin_inset Formula $p(x)=\sum_{i=0}^{n}a_{i}x^{i}$
+\end_inset
+
+.
+ On a alors :
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\beta & =p(\frac{1}{2})=(\sum_{i=1}^{n-1}a_{i}2^{-i})+2^{-n}\\
+ & =0,a_{1}....a_{n-1}1
+\end{align*}
+
+\end_inset
+
+On remarque immédiatement que 
+\begin_inset Formula $\beta$
+\end_inset
+
+ est la représentation binaire de 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ jusqu'au rang n.
+ 
+\begin_inset Formula $\beta$
+\end_inset
+
+ correspond à l'évaluation de 
+\begin_inset Formula $p(x)$
+\end_inset
+
+ au point 
+\begin_inset Formula $\frac{1}{2}$
+\end_inset
+
+.
+ Pour évaluer ce polynôme avec une complexité linéaire en 
+\begin_inset Formula $O(n)$
+\end_inset
+
+ , on utilise l'algorithme de Hörner.
+\begin_inset Newline newline
+\end_inset
+
+De plus la différence 
+\begin_inset Formula $\alpha-\beta=(0,...0a_{n+1}a_{n+2}...)$
+\end_inset
+
+ représente l'erreur absolue de 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ au rang 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ Ainsi on a : 
+\begin_inset Formula 
+\[
+\alpha-\beta=\sum_{i=n+1}^{\infty}a_{i}2^{-i}=\frac{a_{n+1}}{2^{n+1}}+\frac{a_{n+2}}{2^{n+2}}+...=\frac{1}{2^{n+1}}(a_{n+1}+\frac{a_{n+2}}{2}+\frac{a_{n+3}}{2^{2}}...)=\frac{1}{2^{n+1}}\sum_{i=0}^{\infty}\frac{a_{n+1+i}}{2^{i}}
+\]
+
+\end_inset
+
+Or les 
+\begin_inset Formula $a_{i}$
+\end_inset
+
+ne peuvent prendre que 2 valeurs, soit 0, soit 1 car on est en base 2.
+ D'ou la majoration suivante : 
+\begin_inset Formula 
+\[
+|\alpha-\beta|\leq\frac{1}{2^{n+1}}\sum_{i=0}^{\infty}\frac{1}{2^{i}}=\frac{1}{2^{n+1}}\frac{1}{1-\frac{1}{2}}=\frac{1}{2^{n}}
+\]
+
+\end_inset
+
+Ainsi, plus le dévelopement binaire de 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ est grand, c'est à dire plus 
+\begin_inset Formula $n$
+\end_inset
+
+ est grand, meilleure sera la précision.
+ 
+\begin_inset Newline newline
+\end_inset
+
+Faisons maintenant l'application numérique.
+ On prend 
+\begin_inset Formula $\alpha=0,4$
+\end_inset
+
+ et 
+\begin_inset Formula $n=3$
+\end_inset
+
+.
+ On a cette fois 
+\begin_inset Formula $p(x)=\sum_{i=0}^{3}a_{i}x^{i}$
+\end_inset
+
+, donc :
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\beta=\sum_{i=0}^{3}a_{i}2^{-i}
+\]
+
+\end_inset
+
+Le développement binaire de 
+\begin_inset Formula $0,4$
+\end_inset
+
+ étant :
+\begin_inset Formula 
+\[
+0,4=(0,011001100110...)_{2}
+\]
+
+\end_inset
+
+Calculons 
+\begin_inset Formula $\beta$
+\end_inset
+
+ grâce à l'algorithme de Hörner.
+ On peut écrire 
+\begin_inset Formula $p(x)$
+\end_inset
+
+ en le factorisant :
+\begin_inset Formula 
+\[
+p(x)=\sum_{i=0}^{3}a_{i}x^{i}=a_{0}+x(a_{1}+x(a_{2}+a_{3}x))
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+avec 
+\begin_inset Formula $0,4=a_{0},a_{1}a_{2}a_{3}...=0,011...$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+On veut ici évaluer 
+\begin_inset Formula $p(x)$
+\end_inset
+
+ en 
+\begin_inset Formula $\frac{1}{2}$
+\end_inset
+
+ donc on prend 
+\begin_inset Formula $x=\frac{1}{2}$
+\end_inset
+
+, et on applique l'algorithme d'Hörner qui nous donne :
+\begin_inset Formula 
+\[
+\beta=p(\frac{1}{2})=0+0,5\times(0+0,5\times(1+1\times0,5))
+\]
+
+\end_inset
+
+Ce qui nous donne les calculs suivants : 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+b_{3} & =a_{3}=1\\
+b_{2} & =a_{2}+\frac{1}{2}b_{3}=1+\frac{1}{2}=\frac{3}{2}\\
+b_{1} & =a_{1}+\frac{1}{2}b_{2}=0+\frac{1}{2}\times\frac{3}{2}=\frac{3}{4}\\
+b_{0} & =a_{0}+\frac{1}{2}b_{1}=0+\frac{1}{2}\times\frac{3}{4}=\frac{3}{8}
+\end{align*}
+
+\end_inset
+
+Ainsi on obtient la valeur de 
+\begin_inset Formula $p(\frac{1}{2})=\beta=b_{0}=\frac{3}{8}$
+\end_inset
+
+.
+ Et on a aussi 
+\begin_inset Formula $\beta=(0,011){}_{2}=\frac{3}{8}$
+\end_inset
+
+.
+ On peut par ailleurs écrire la différence telle que :
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\alpha-\beta & =(0,000001100110...)_{2}\\
+\alpha-\beta & =0,4-\frac{3}{8}=\frac{1}{40}=0,025
+\end{align*}
+
+\end_inset
+
+De plus on a la majoration suivante :
+\begin_inset Formula 
+\[
+|\alpha-\beta|\leq\frac{1}{2^{3}}=\frac{1}{8}=0,125
+\]
+
+\end_inset
+
+On pourrait dans ce cas majorer plus finement la différence puisque les
+ coefficients suivant de 
+\begin_inset Formula $\alpha$
+\end_inset
+
+, 
+\begin_inset Formula $a_{4}$
+\end_inset
+
+ et 
+\begin_inset Formula $a_{5}$
+\end_inset
+
+ sont nuls donc ici on a en fait :
+\begin_inset Formula 
+\[
+|\alpha-\beta|\leq\frac{1}{2^{5}}=\frac{1}{32}=0,03125
+\]
+
+\end_inset
+
+En fait, la majoration que l'on va pouvoir faire dépend de la valeur du
+ reste, noté 
+\begin_inset Formula $r$
+\end_inset
+
+, de la division euclidienne de 
+\begin_inset Formula $n$
+\end_inset
+
+ par 4 (la longueur du motif).
+ Si 
+\begin_inset Formula $r$
+\end_inset
+
+ vaut 1 ou 2 on peut seulement majorer par 
+\begin_inset Formula $\frac{1}{2^{n}}$
+\end_inset
+
+, car 
+\begin_inset Formula $a_{n+1}$
+\end_inset
+
+ à une valeur de 1.
+ Si 
+\begin_inset Formula $r$
+\end_inset
+
+ vaut 0 alors on peut majorer par 
+\begin_inset Formula $\frac{1}{2^{n+1}}$
+\end_inset
+
+ car 
+\begin_inset Formula $a_{n+1}$
+\end_inset
+
+ vaut 0, et si 
+\begin_inset Formula $r$
+\end_inset
+
+ vaut 3, alors on peut majorer par 
+\begin_inset Formula $\frac{1}{2^{n+2}}$
+\end_inset
+
+ car 
+\begin_inset Formula $a_{n+1}$
+\end_inset
+
+ et 
+\begin_inset Formula $a_{n+2}$
+\end_inset
+
+ valent tous les deux 0.
+ 
+\begin_inset Newline newline
+\end_inset
+
+En prenant 
+\begin_inset Formula $n=6$
+\end_inset
+
+, on pourrait diminuer la différence entre 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ et 
+\begin_inset Formula $\beta$
+\end_inset
+
+, car 
+\begin_inset Formula $a_{6}$
+\end_inset
+
+ et non nul.
+ On a cette fois : 
+\begin_inset Formula 
+\[
+p(x)=a_{0}+x(a_{1}+x(a_{2}+x(a_{3}+x(a_{4}+x(a_{5}+xa_{6})))))
+\]
+
+\end_inset
+
+
+\begin_inset Formula $a_{4}$
+\end_inset
+
+ et 
+\begin_inset Formula $a_{5}$
+\end_inset
+
+ sont nuls donc en évaluant 
+\begin_inset Formula $p(x)$
+\end_inset
+
+ en 
+\begin_inset Formula $0,5$
+\end_inset
+
+ comme précédemment on obtient 
+\begin_inset Formula $\beta=\frac{3}{8}+0,5^{6}=\frac{25}{64}$
+\end_inset
+
+.
+ La majoration de la différence entre 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ et 
+\begin_inset Formula $\beta$
+\end_inset
+
+ donne :
+\begin_inset Formula 
+\[
+|\alpha-\beta|\leq\frac{1}{2^{6}}=\frac{1}{64}=0,015625
+\]
+
+\end_inset
+
+Cette fois on ne peut guère majorer beaucoup plus finement, puisque 
+\begin_inset Formula $a_{7}=1$
+\end_inset
+
+.
+ 
+\end_layout
+
+\end_body
+\end_document

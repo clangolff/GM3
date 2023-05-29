@@ -1,0 +1,11 @@
+1. effet de i
+tracer u_n en fonction de n pour
+i = 1 % , 5% et 10%
+
+d1 d5 d10   r1 r5 r10
+r1510.g
+p'r1' w l,'r5' w l, 'r10' w l
+
+2.  effet de duree 
+i= 1
+10 ans, 20 ans et 30 ans

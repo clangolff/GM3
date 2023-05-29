@@ -1,0 +1,16 @@
+TODO
+
+
+0. Makefile
+
+1. tester precision machine 
+matlab zero.m
+python3 aprec.py   python
+python3 zero.py
+pascalzero.pas  pascal
+zero.f fortran
+zero2.f fortran (a faire)
+
+2. Equation du second degre
+eq.f  4 octets
+eq2.f  8 octets (a faire)

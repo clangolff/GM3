@@ -1,0 +1,3 @@
+#source /applis/scripts/cshrc.common
+source ~/.aliases
+

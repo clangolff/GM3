@@ -1,0 +1,34 @@
+# aliases 
+# last change 2 septembre 2019
+set filec
+set history=64
+set notify
+set path = ($path .)
+#
+unalias rm
+alias c       clear
+alias cd     'cd \!*;set prompt="`hostname`/$cwd> "'
+alias dif    'diff \!* | more'
+alias d       date
+alias ff     'find / -name \!* -print'
+alias g      'gnuplot'
+alias h      'history |more'
+alias ht     'history|tail -25'
+alias j      'jobs'
+alias l      'ls -CF'
+unalias ll  
+alias ll     'ls -alt \!* |more'
+alias p      'ps -ef| grep -v root | more'
+alias psu    'ps -ef | grep caputo '
+alias m       more
+alias .      'set dot=$cwd;set prompt="%"'
+alias ,      'cd $dot;pwd ; set prompt="%"'
+alias up     'cd ..'
+alias upp    'cd ../..'
+alias x      'chmod a+x'
+alias xx     'xterm -bg black -fg yellow -e tcsh &'
+alias XX     'xterm -bg black -fg yellow -fn 12x24 -e tcsh &'
+#
+#directories courants
+alias ens    'cd ~/ens; pwd ; set prompt="%" '
+

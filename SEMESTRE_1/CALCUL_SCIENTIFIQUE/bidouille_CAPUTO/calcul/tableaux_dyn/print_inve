@@ -1,0 +1,77 @@
+c tests matmul on large matrices
+      program mdown
+      implicit none
+      integer n,i
+      double precision, dimension(:,:), allocatable :: l,il,r
+      double precision, dimension(:), allocatable :: c,y
+
+      n=5
+      allocate(l(n,n))
+      allocate(il(n,n))
+      allocate(r(n,n))
+      allocate(y(n))
+      allocate(c(n))
+
+      l(:,1) =( /1.,0.,0.,0.,0./)
+      l(:,2) =( /0.5,0.3333,0.,0.,0./)
+      l(:,3) =( /0.3333,0.25,0.2,0.,0./)
+      l(:,4) =( / 0.25,0.2,0.1667,0.1429,0./) 
+      l(:,5) =( / 0.25,0.2,0.1667,0.1429,0.125/)
+      l = transpose(l)
+
+      do i=1,n
+        write(*,*) real(l(i,:))
+      enddo
+      write(*,*) 
+
+      call inve(n,l,il,c,y)
+      do i=1,n
+        write(*,*) real(il(i,:))
+      enddo
+      write(*,*) 
+       
+      r = matmul(l,il)
+      do i=1,n
+        write(*,*) real(r(i,:))
+      enddo
+      
+      deallocate(l)
+      deallocate(c)
+      deallocate(y)
+      deallocate(r)
+      end
+c--------------------------------------------
+c inversion matrice triang <
+c entrees n ,l, 
+c sortie il
+
+      subroutine  inve(n,l,il,c,y)
+      implicit none
+      integer n,i,j
+      double precision, dimension(n,n) :: l,il
+      double precision, dimension(n) :: y,c
+
+      do j=1,n
+        c=0.
+        c(j)=1.
+        do i=1,n
+         y(i)=(c(i)-sum(l(i,1:i-1)*y(1:i-1)))/l(i,i)
+        enddo
+        il(:,j)=y
+      enddo
+      end
+------------------------------------------------
+clear;
+n=5;
+a= hilb(n);
+l= tril(a)
+[il]=inve(l,n)
+il*l
+
+------------------------------------------------
+function [x] = inve(l,n)
+b=eye(n);x=zeros(n);
+for i=1:n
+ x(i,:)=(b(i,:)-l(i,1:i-1)*x(1:i-1,:) )/l(i,i);
+end
+

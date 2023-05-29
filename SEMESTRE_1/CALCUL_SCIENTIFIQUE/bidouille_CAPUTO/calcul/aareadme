@@ -1,0 +1,39 @@
+lmi2.insa-rouen.fr/~jgcaputo/calcul.tar.gz
+
+
+calcul contient tout ce qui est necessaire pour calculer
+sous unix, linux
+fichiers de config shell .aliases .tcshrc a copier dans ~
+Placez vous dans calcul/
+Tapez 
+"cp .aliases ~ "
+"cp .tcshrc ~ "
+Je discuterai les alias en cours
+
+
+
+Visualisation des pdf en mode commande avec evince
+exemple 
+taper dans un terminal
+"evince fortran.pdf & "
+toujours avec & pour mettre en tache de fond et ne pas
+bloquer l'ecran
+ou alors doublecliquer sur le fichier avec la souris
+
+
+
+Contenu calcul/
+aareadme     gdb.pdf   latex/          python/        unix.pdf    vi.pdf
+fortran.pdf  gnuplot/  octave_matlab/  tableaux_dyn/  util_unix/  zero_prec/
+
+----------------------------
+docs (terminal)
+man octave
+man gfortran
+man python3
+
+(en ligne)
+mathworks.com/
+http://fortranwiki.org/fortran/show/Fortran+2008
+http://fortranwiki.org/fortran/show/Module
+

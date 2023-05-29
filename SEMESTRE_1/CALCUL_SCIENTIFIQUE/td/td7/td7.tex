@@ -1,0 +1,32 @@
+\documentclass{article}\parskip5pt
+\usepackage{amsmath}
+
+\newcommand{\be}{\begin{equation}}
+\newcommand{\ee}{\end{equation}}
+
+\textheight25cm
+\textwidth15cm
+\parskip .2cm
+
+
+\begin{document}
+
+\begin{center}
+{\bf TD 7 gdb} \\
+\end{center}
+
+On utilisera gdb pour comprendre les problemes des 2 programmes
+suivants {\bf exe} et {\bf gauss}.
+
+\begin{itemize}
+\item  Effectuer une session gdb sur exe avec plusieurs valeurs de
+$n$. Decrire ce qui se passe.
+\item Comment reparer simplement {\bf exe.f }?
+\item Le programme {\bf gauss} resout le systeme lineaire
+$AX=b$ par une methode de Gauss avec pivotage partiel avec
+$A$ matrice de Hilbert et $b=sum(A,dim=2)$.
+Examiner les cas $n=2,3,4 $ et 5. Que se passe il?
+\item Utiliser gdb pour comprendre comment le pivot est presque nul
+et vient polluer les resultats.
+\end{itemize}
+\end{document}

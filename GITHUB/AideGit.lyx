@@ -1,0 +1,505 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language french
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize 12
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 2cm
+\rightmargin 1cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style french
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section
+Création d'une clé SSH
+\end_layout
+
+\begin_layout Standard
+La clé SSH permet d'accéder à GitHub via git.
+ Elle permet notament de ne pas avoir à s'identifier lorsque l'on envoie
+ des commits ( modification ) à gitHub.
+ Je liste les commandes mais toute la doc est disponible sur GitHub en suivant
+ le lien 
+\begin_inset CommandInset href
+LatexCommand href
+name "générer une clé SSH et ajouter à un agent"
+target "https://docs.github.com/fr/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent"
+literal "false"
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection*
+Génération d’une nouvelle clé GPG
+\end_layout
+
+\begin_layout Itemize
+Ouvrez Terminal.
+\end_layout
+
+\begin_layout Itemize
+Collez le texte ci-dessous (apres le $) en indiquant l'adresse e-mail GitHub.
+ (Rq : le ed25519 est important ne pas le changer, c'est un algorithme de
+ communication plus avancé que RSA)
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+$ 
+\series bold
+ssh-keygen -t ed25519 -C "your_email@example.com"
+\series default
+ 
+\end_layout
+
+\begin_layout Itemize
+Cette opération crée une clé SSH, qui utilise l’e-mail fourni comme étiquette
+ : > Generating public/private ALGORITHM key pair.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+vous êtes maintenant invité à entrez un fichier où enregistrer la clé.
+ On peut directement appuyer sur entré et ca va créer un fichier à l'emplacement
+ indiqué dans le terminal ((/home/YOU/.ssh/id_ed25519) mais je conseille
+ de créer la clée dans un dossier personnalisé au cas où vous voulez créer
+ d'autre clé SSH.
+ par exemeple tapez à la suite 
+\series bold
+/home/YOU/.ssh/maPremiereCle 
+\series default
+en mettant votre nom dans la racine à la place de 
+\begin_inset Quotes fld
+\end_inset
+
+YOU
+\begin_inset Quotes frd
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Une deuxième invitation vous est donné pour créer une phrase secrete de
+ clé ssh.
+ Vous pouvez directement appuyer sur entré si vous voulez pas en mettre,
+ celan ne posera pas de problème pour la suite .
+ Cette phrase secrete sera utilisé comme sécurité supplémentaire lorsque
+ vous vous autenthifierai sur git pour acceder à gitHub.
+ Encore une fois, je recommande de mettre une phrase secrète comme 
+\begin_inset Quotes fld
+\end_inset
+
+cle
+\begin_inset Quotes frd
+\end_inset
+
+ par exemple.
+ UNe fois la clé rentré il vous est demandé de rerentrer la phrase secrete.
+\end_layout
+
+\begin_layout Itemize
+Votre clé est maintenant créer vous pouvez vous en assurant en allant dans
+ le dossier 
+\series bold
+/home/YOU/.ssh/ 
+\series default
+où vous trouverez un fichier 
+\begin_inset Quotes fld
+\end_inset
+
+maPremiereCle
+\begin_inset Quotes frd
+\end_inset
+
+ qui contient votre clé et un fichier 
+\begin_inset Quotes fld
+\end_inset
+
+maPremiereCle.pub
+\begin_inset Quotes frd
+\end_inset
+
+ qui contient la clé necessaire à GitHub pour vous reconnaitre.
+\end_layout
+
+\begin_layout Subsection*
+Ajout de votre clé SSH à ssh-agent
+\end_layout
+
+\begin_layout Itemize
+Tapez la commande 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+$
+\series bold
+ eval "$(ssh-agent -s)"
+\end_layout
+
+\begin_layout Itemize
+cette commande démarrez l’agent SSH en arrière-plan à qui vous pourrez confié
+ votre clé.
+ 
+\end_layout
+
+\begin_layout Itemize
+Elle affichera en sorti l'identifiant de l'agent : Agent pid 59566 par exemple
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Ajoutez votre clé privée SSH à ssh-agent.
+ (le '~' est un tild tapez altgr + touche 2 accent aigue)
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+$
+\series bold
+ ssh-add ~/.ssh/id_ed25519 
+\end_layout
+
+\begin_layout Itemize
+Si vous avez créé votre clé avec un autre nom ou si vous ajoutez une clé
+ existante portant un autre nom, remplacez id_ed25519 dans la commande par
+ le nom de votre fichier de clé privée,( par exemple 
+\series bold
+~/.ssh/maPremiereCle
+\series default
+)
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+Ajout de la clé SSH à votre compte sur GitHub
+\end_layout
+
+\begin_layout Standard
+encore une fois tout est bien fait sur la doc github 
+\begin_inset CommandInset href
+LatexCommand href
+name "ajout clé ssh github"
+target "https://docs.github.com/fr/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account"
+literal "false"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+copier toute la sortie de la commande 
+\series bold
+cat ~/.ssh/id_ed25519.pub
+\series default
+ (ou bien ~/.ssh/maPremiereCle.pub)
+\end_layout
+
+\begin_layout Itemize
+Aller dans les paramètre de votre compte sur Github puis dans 
+\begin_inset Quotes fld
+\end_inset
+
+Clés SSH et GPG
+\begin_inset Quotes frd
+\end_inset
+
+ puis cliquer sur ajouter une nouvelle clé SSH
+\end_layout
+
+\begin_layout Itemize
+Dans le champ « Titre », ajoutez une étiquette descriptive pour la nouvelle
+ clé.
+ Par exemple, si vous utilisez un ordinateur portable personnel, vous pouvez
+ nommer cette clé « Ordinateur portable personnel ».
+\end_layout
+
+\begin_layout Itemize
+selectionnez le type de clé : pour nous ce sera authentification
+\end_layout
+
+\begin_layout Itemize
+Collez votre clé dans le champ « Clé » et ajoutez la clé en cliquant sur
+ le bouton vert ajouter clé, vous serz ensuite invité à rentrer votre mdp
+ gitHub.
+\end_layout
+
+\begin_layout Section
+Configuration de Git et ajout d'un premier repertoire GitHub sur votre ordi
+ perso en local 
+\end_layout
+
+\begin_layout Itemize
+Dans un terminal configurer le fichier config de git en tapant les commandes
+ :
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+$ 
+\series bold
+git config —global user.name yourname 
+\series default
+(double tiret devant global)
+\end_layout
+
+\begin_layout Itemize
+$ 
+\series bold
+git config —global user.email youremail 
+\series default
+(double tiret devant global) email de GitHub 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Vous pouvez maintenant cloner n'importe quelle repertoire public ou privé
+ via l'accée SSH : cliquer sur l'adresse SSH du repertoire dans <>Code puis
+ SSH puis coper le lien
+\end_layout
+
+\begin_layout Itemize
+Dans un terminal tapez git clone puis le lien copié
+\series bold
+ git clone git@github.com:bob/unnomderepertoire.git
+\end_layout
+
+\begin_layout Itemize
+Si vous avez mit une phrase secrete elle vous sera demandé à cette instant
+ précis.
+ Si toute les étape on était correctement executé vous devriez avoir le
+ nom du repertoire en tapant ls, vous y avez entierement accés en local.
+ 
+\end_layout
+
+\begin_layout Section
+Mettre à jour son dossier local par rapport au dépot GitHub
+\end_layout
+
+\begin_layout Standard
+Par défaut, git renome le répertoire que vous avez cloné en 
+\begin_inset Quotes fld
+\end_inset
+
+origin
+\begin_inset Quotes frd
+\end_inset
+
+.
+ C'est entre autre la racine du dossier '.git' (vous pouvez le voir dans
+ le repertoire en affichant les dossiers caché ou en tapant ls -a dans votre
+ terminal ( l'option -a est pour affiché tous ce qui se trouve dans le dossier
+ sans exception)).
+ Vous pouvez vérifier ce nom en tapant la commande 
+\end_layout
+
+\begin_layout Itemize
+$
+\series bold
+ git remote 
+\series default
+( affiches les nom des sources ) ou 
+\series bold
+git remote -v 
+\series default
+( affiche plus de détails sur les remotes notament le lien internet)
+\end_layout
+
+\begin_layout Itemize
+$ 
+\series bold
+git status 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+
+\series bold
+l'une des commandes les plus importantes
+\end_layout
+
+\begin_layout Itemize
+Permet de savoir sur quelle branche on se trouve
+\end_layout
+
+\begin_layout Itemize
+Si votre répertoire vient d'être crée ou bien si vous n'avez pas encore
+ crée de branche vous devriez vous trouver sur la branche 
+\begin_inset Quotes fld
+\end_inset
+
+main
+\begin_inset Quotes frd
+\end_inset
+
+ qui est par défaut la branche pincipale du dépot.
+ 
+\end_layout
+
+\begin_layout Itemize
+Permet de savoir si le dossier local est à jour, en avance par rapport à
+ la source ou en retard ( après avoir fait git fetch, voir suite)
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+Rechercher les mise à jour du dépot GitHub depuis Git
+\end_layout
+
+\begin_layout Standard
+Pour mettre à jour votre dossier github vous devez tout d'abord aller les
+ chercher dans Github
+\end_layout
+
+\begin_layout Itemize
+$ 
+\series bold
+git fetch origin 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+cette commande ira chercher toutes les mise à jour de la source origin.
+ 
+\end_layout
+
+\begin_layout Itemize
+Si vous voulez seulement chercher les mise à jour d'une certaine branche
+ par exemple de Branche1 tapez $
+\series bold
+ git fetch origin Branche1
+\end_layout
+
+\begin_layout Itemize
+Si vous disposez d'une autre source remote2 par exemple et que vous voulez
+ seulement mettre à jour le main de remote2 tapez $ 
+\series bold
+git fetch remote2 main
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Suite à cette manipulation, git aura possession de toutes les mises à jours
+ mais ne les affichera pas.
+ Pour avoir des informations sur les mises à jour, faites un coup de 
+\series bold
+git status.
+ 
+\series default
+Si des modifications on été fait sur la branche à la source, vous devriez
+ voir comme message 
+\begin_inset Quotes fld
+\end_inset
+
+branche en retard de x commit
+\begin_inset Quotes frd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Mettre à jour le dépot local
+\end_layout
+
+\begin_layout Itemize
+$ 
+\series bold
+git pull origin main
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Permet de mettre à jour la branche main depuis la source origin
+\end_layout
+
+\begin_layout Itemize
+vous pouvez simplement tapez 
+\series bold
+git pull 
+\series default
+pour effectuer toute les mises à jours détecter par git fetch
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Envoyer des modifications sur GitHub depuis le dossier local
+\end_layout
+
+\end_body
+\end_document

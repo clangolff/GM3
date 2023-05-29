@@ -1,0 +1,7 @@
+diff --report-identical-files M1/ M2/
+diff --report-identical-files M2/ M3/
+diff --report-identical-files M3/ M4/
+diff --report-identical-files M4/ M5/
+
+
+

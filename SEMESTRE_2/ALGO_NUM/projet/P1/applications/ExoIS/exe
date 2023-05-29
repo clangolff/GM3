@@ -1,0 +1,14 @@
+make IS
+
+echo "Calcul de (10 + x)/(101 + 20x) avec une précision de 10e-5" > resultat
+echo "" >> resultat
+
+for file in PntEvaluation/*
+do
+	echo "Evalué en :" >> resultat
+	cat "$file" >> resultat
+	./IS < "$file" >> resultat
+	echo "" >> resultat
+done
+
+make clean

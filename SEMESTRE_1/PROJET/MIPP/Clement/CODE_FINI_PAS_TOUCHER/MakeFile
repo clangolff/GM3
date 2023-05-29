@@ -1,0 +1,16 @@
+liste.o : liste.c liste.h
+	gcc -c liste.c liste.h
+	
+instruction.o : liste.h instruction.c instruction.h
+	gcc -c instruction.c instruction.h
+	
+mysdl.o : liste.h mysdl.h mysdl.c
+	gcc -c mysdl.c mysdl.h 'sdl2 --cflags --libs'
+	
+main.o : main.c liste.h mysdl.h instruction.h
+	gcc -c main.c $(sdl2-config --cflags --libs)
+	
+main : liste.o instruction.o mysdl.o main.o 
+	gcc liste.o instruction.o mysdl.o main.o -o main $(sdl2-config --cflags --libs)
+	
+clean : rm *.o

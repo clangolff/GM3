@@ -1,0 +1,11 @@
+TD  1. Calculer les 3 premieres racines positives de cch par bisection
+       pour w=0.1 et w=1 .  Mettez les resultats dans les fichiers de donnees 
+       1dbcch 01dbcch
+
+    2. Examiner le residu de Cauchy |a-b| ou |x_{n+1}-x_n| en fonction de n pour
+       la bisection et Newton. Tracer le en lin-log , (set logscale y) 
+       expliquez les resultats obtenus
+
+    3. Ecrire un programme qui calcule la racine 5eme d'un nombre c par Newton
+       mnf5.f (main) f5.f df5.f modf5.f  executable nf5
+       Calculer la racine cinquieme de -26 , -163, -0.156

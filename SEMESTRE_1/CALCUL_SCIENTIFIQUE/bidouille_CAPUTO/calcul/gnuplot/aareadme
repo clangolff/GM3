@@ -1,0 +1,22 @@
+aareadme pour gnuplot
+
+gnuplot est un logiciel graphique 2D 3D qui
+- est tres simple a utiliser
+  trace f(x) , des donnees dans un fichier en colonnes
+  en 3D trace z=f(x,y) ou fichier surface et contour
+- permet de faire des figures de bonne qualite
+- permet des calculs simples
+
+
+-On l'appelle en tapant gnuplot dans un terminal
+- sous gnuplot 
+  on envoie les commandes ou mieux on utilise un script , ex
+ham.g en tapant
+  load 'ham.g'
+
+
+----------scripts gnuplot --------------
+simple.g simple 
+d1.g trace fichier d1
+ham.g surface et contour
+avance.g commandes avancees

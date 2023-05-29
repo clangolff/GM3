@@ -1,0 +1,9 @@
+Ce dossier contient :
+
+        - un répertoire python avec un jupyter notebook nommé trajectoire ainsi que des images pour illustrer le notebook
+
+        Il se peut que la partie visualisation de la trajectoire en 3D ne fonctionne pas car certaines bibliothèques sont nécessaires : Pandas et plotly. Cette partie n'est cependant pas nécessaire, elle sert juste à avoir une vision interactive de la trajcectoire.
+
+        - un répertoire pdf qui contient une version pdf du notebook
+
+        - un répertoire source contenant la versoin pdf du livre d'Howard cutis qui nous a permis de valider nos résultats.

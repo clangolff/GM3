@@ -1,0 +1,26 @@
+make horner
+make hornerd
+
+echo "simple précision" > resultat
+echo "----------------" >> resultat
+echo "" >> resultat
+
+for file in polynome/*
+do 
+	echo "$file" >> resultat
+	./horner < "$file" >> resultat
+done
+
+echo "" >> resultat
+echo "double précision" >> resultat
+echo "----------------" >> resultat
+echo "" >> resultat
+
+for file in polynome/*
+do 
+	echo "$file" >> resultat
+	./hornerd < "$file" >> resultat
+done
+
+
+make clean

@@ -1,0 +1,2677 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language french
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize 12
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 2cm
+\rightmargin 1cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style french
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "c"
+hor_pos "l"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "40text%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename INSA.png
+	lyxscale 20
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Box Frameless
+position "c"
+hor_pos "l"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "40text%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering{
+\end_layout
+
+\end_inset
+
+
+\series bold
+\size larger
+AlgoNum GM3
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+\size larger
+2022/2023
+\series default
+\size default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace 2.1cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "c"
+hor_pos "l"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "100text%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering{
+\end_layout
+
+\end_inset
+
+
+\series bold
+\shape slanted
+\size huge
+Approximation par moindres carrés discrets
+\size giant
+ 
+\size default
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+AlgoNum - TD2 - MMSN
+\series default
+\shape default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename Idee_methode_moindres_carres.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace 5cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "l"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100text%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+Etudiants : 
+\series default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace{0.5cm} 
+\end_layout
+
+\end_inset
+
+
+\series bold
+DANTAS Alexandre 
+\series default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace{1.0cm} 
+\end_layout
+
+\end_inset
+
+
+\series bold
+DELL'OVA Fabio
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace{3cm} 
+\end_layout
+
+\end_inset
+
+
+\series bold
+GUINES Antoine
+\series default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace{1.75cm} 
+\end_layout
+
+\end_inset
+
+
+\series bold
+LANGOLFF Clément 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace{3cm} 
+\end_layout
+
+\end_inset
+
+
+\series bold
+KESSLER Aymeric 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Encadrant : 
+\series default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace{0.5cm} 
+\end_layout
+
+\end_inset
+
+
+\series bold
+Gleyse.
+ B
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+Soit 
+\begin_inset Formula $A\in M_{Nn}(\mathbb{R})$
+\end_inset
+
+ la matrice définie par 
+\begin_inset Formula $a_{ij}=\varphi_{j}(x^{(i)})$
+\end_inset
+
+, et les vecteurs 
+\begin_inset Formula $y\in\mathbb{R}^{N}$
+\end_inset
+
+, 
+\begin_inset Formula $\lambda\in\mathbb{R}^{n}$
+\end_inset
+
+.
+ On définie alors l'application suivante : 
+\begin_inset Formula 
+\[
+\phi(\lambda)=\parallel y-A\lambda\parallel_{2}^{2}
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Section
+Factorisation de Cholesky
+\end_layout
+
+\begin_layout Standard
+On a :
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\phi(\lambda) & =(y-A\lambda)^{t}(y-A\lambda)\\
+ & =(y^{t}-\lambda^{t}A^{t})(y-A\lambda)\\
+ & =y^{t}y-y^{t}A\lambda-\lambda^{t}A^{t}y+\lambda^{t}A^{t}A\lambda\\
+ & =\parallel y\parallel_{2}^{2}-2y^{t}A\lambda+\lambda^{t}A^{t}A\lambda
+\end{align*}
+
+\end_inset
+
+Car 
+\begin_inset Formula $y^{t}A\lambda$
+\end_inset
+
+ et 
+\begin_inset Formula $\lambda^{t}A^{t}y$
+\end_inset
+
+ sont des scalaires.
+ 
+\begin_inset Newline newline
+\end_inset
+
+De plus 
+\begin_inset Formula $A^{t}A\in M_{n\times n}(\mathbb{R})$
+\end_inset
+
+ est une matrice carré, et 
+\begin_inset Formula $(A^{t}A)^{t}=A^{t}A$
+\end_inset
+
+ donc 
+\begin_inset Formula $A^{t}A$
+\end_inset
+
+ est symétrique.
+ Finalement on a 
+\begin_inset Formula 
+\[
+<A^{t}Ax,x>_{2}=x^{t}A^{t}Ax=(Ax)^{t}Ax=\parallel Ax\parallel_{2}^{2}\,>0\,\,\forall x\neq0
+\]
+
+\end_inset
+
+et on sait que les vecteurs (
+\begin_inset Formula $\phi_{j}(x^{(1)}),...,\phi_{j}(x^{(N)}))^{t}$
+\end_inset
+
+, j=1,...,n sont linéairement indépendants.
+\begin_inset Newline newline
+\end_inset
+
+Par conséquent, d'après le théorème du rang:
+\begin_inset Formula 
+\[
+dim(Ker(A))+dim(Im(A))=n\quad et\quad dim(Im(A))=rg(A)=n
+\]
+
+\end_inset
+
+donc:
+\begin_inset Formula 
+\[
+dim(Ker(A))=0
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Ainsi 
+\begin_inset Formula $A^{t}A$
+\end_inset
+
+ est une matrice de 
+\begin_inset Formula $M_{n}(\mathbb{R})$
+\end_inset
+
+ symétrique définie positive, donc elle admet une factorisation de Cholesky
+ de la forme :
+\begin_inset Formula 
+\[
+A^{t}A=RR^{t}
+\]
+
+\end_inset
+
+avec 
+\begin_inset Formula $R\in M_{n}(\mathbb{R})$
+\end_inset
+
+ une matrice triangulaire inférieure dont les termes diagonaux sont tous
+ strictement positifs.
+ Cela implique que 
+\begin_inset Formula $R$
+\end_inset
+
+ est inversible car son déterminant sera le produit des termes de la diagonale,
+ qui sera donc non nul.
+ On peut donc remplacer dans l'expression précédemment trouvée de 
+\begin_inset Formula $\phi(\lambda)$
+\end_inset
+
+, on a :
+\begin_inset Formula 
+\begin{align*}
+\phi(\lambda) & =\parallel y\parallel_{2}^{2}-2y^{t}A\lambda+\lambda^{t}A^{t}A\lambda\\
+ & =\parallel y\parallel_{2}^{2}-2y^{t}A\lambda+\lambda^{t}RR^{t}\lambda\\
+ & =\parallel y\parallel_{2}^{2}-2y^{t}A(R^{t})^{-1}R^{t}\lambda+\lambda^{t}RR^{t}\lambda\\
+ & =\parallel y\parallel_{2}^{2}-2b^{t}R^{t}\lambda+\lambda^{t}RR^{t}\lambda
+\end{align*}
+
+\end_inset
+
+avec 
+\begin_inset Formula $b^{t}=y^{t}A(R^{t})^{-1}$
+\end_inset
+
+, 
+\begin_inset Formula $b\in\mathbb{R}^{n}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+Calculons maintenant le produit 
+\begin_inset Formula $(\lambda^{t}R-b^{t})(R^{t}\lambda-b)$
+\end_inset
+
+.
+ On a : 
+\begin_inset Formula 
+\begin{align*}
+(\lambda^{t}R-b^{t})(R^{t}\lambda-b) & =\lambda^{t}RR^{t}\lambda-b^{t}R^{t}\lambda-\lambda^{t}Rb+b^{t}b\\
+ & =\lambda^{t}RR^{t}\lambda-2b^{t}R^{t}\lambda+\parallel b\parallel_{2}^{2}
+\end{align*}
+
+\end_inset
+
+Ainsi cela nous permet d'écrire 
+\begin_inset Formula $\phi(\lambda)$
+\end_inset
+
+ sous la forme suivante :
+\begin_inset Formula 
+\begin{align*}
+\phi(\lambda) & =(\lambda^{t}R-b^{t})(R^{t}\lambda-b)+\parallel y\parallel_{2}^{2}-\parallel b\parallel_{2}^{2}\\
+ & =\parallel R^{t}\lambda-b\parallel_{2}^{2}-\parallel b\parallel_{2}^{2}+\parallel y\parallel_{2}^{2}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Minimisation de 
+\begin_inset Formula $\phi(\lambda)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+On a montré dans la section précédente que l'on avait :
+\begin_inset Formula 
+\[
+\phi(\lambda)=\parallel R^{t}\lambda-b\parallel_{2}^{2}-\parallel b\parallel_{2}^{2}+\parallel y\parallel_{2}^{2}
+\]
+
+\end_inset
+
+Or dans cette expression seul le terme 
+\begin_inset Formula $\parallel R^{t}\lambda-b\parallel_{2}^{2}$
+\end_inset
+
+ dépend de 
+\begin_inset Formula $\lambda$
+\end_inset
+
+.
+ Le reste étant constant, cela implique que le vecteur 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ réalisant le minimum de 
+\begin_inset Formula $\phi$
+\end_inset
+
+ et de 
+\begin_inset Formula $\parallel R^{t}\lambda-b\parallel_{2}^{2}$
+\end_inset
+
+ est le même.
+ Donc minimiser 
+\begin_inset Formula $\phi(\lambda)$
+\end_inset
+
+ revient à minimiser 
+\begin_inset Formula $\parallel R^{t}\lambda-b\parallel_{2}^{2}$
+\end_inset
+
+.
+ Or le minimum de 
+\begin_inset Formula $\parallel R^{t}\lambda-b\parallel_{2}^{2}$
+\end_inset
+
+ est atteint lorsque 
+\begin_inset Formula $R^{t}\lambda=b$
+\end_inset
+
+.
+ Ce système linéaire possède bien une unique solution car 
+\begin_inset Formula $R^{t}$
+\end_inset
+
+ est inversible.
+ On a donc :
+\begin_inset Formula 
+\begin{align*}
+R^{t}\lambda & =b\Longleftrightarrow\lambda=(R^{t})^{-1}b
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Longleftrightarrow\lambda=(R^{t})^{-1}R^{-1}A^{t}y
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Longleftrightarrow\lambda=(RR^{t})⁻¹A^{t}y
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Longleftrightarrow\lambda=(A^{t}A)⁻¹A^{t}y
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Longleftrightarrow A^{t}A\lambda=A^{t}y
+\]
+
+\end_inset
+
+Ainsi le minimum 
+\begin_inset Formula $\lambda^{*}$
+\end_inset
+
+ de 
+\begin_inset Formula $\phi(\lambda)$
+\end_inset
+
+ peut être obtenu en résolvant l'équation ci-dessus, appelée Equation Normale.
+\end_layout
+
+\begin_layout Section
+Décomposition QR
+\end_layout
+
+\begin_layout Standard
+On sait qu'il existe une matrice orthogonale 
+\begin_inset Formula $Q\in M_{N}(\mathbb{R})$
+\end_inset
+
+ et une matrice 
+\begin_inset Formula $R\in M_{Nn}(\mathbb{R})$
+\end_inset
+
+ de la forme 
+\begin_inset Formula $\begin{pmatrix}R_{1}\\
+0
+\end{pmatrix}$
+\end_inset
+
+ avec 
+\begin_inset Formula $R_{1}\in M_{n}(\mathbb{R})$
+\end_inset
+
+ une matrice triangulaire supérieure, telles que 
+\begin_inset Formula $A=QR$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+\begin_inset Formula $R_{1}$
+\end_inset
+
+ est inversible
+\end_layout
+
+\begin_layout Standard
+On cherche à montrer que 
+\begin_inset Formula $R_{1}$
+\end_inset
+
+ est inversible, c'est à dire que 
+\begin_inset Formula $Ker(R_{1})=\{0_{\mathbb{R}^{n}}\}$
+\end_inset
+
+.
+ Soit 
+\begin_inset Formula $x\in\mathbb{R}^{n}$
+\end_inset
+
+, on a :
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+R_{1}x & =0\iff\begin{pmatrix}R_{1}\\
+0
+\end{pmatrix}x=\begin{pmatrix}0\\
+\vdots\\
+0
+\end{pmatrix}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\iff Rx=\begin{pmatrix}0\\
+\vdots\\
+0
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\iff QRx=\begin{pmatrix}0\\
+\vdots\\
+0
+\end{pmatrix}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\iff Ax=\begin{pmatrix}0\\
+\vdots\\
+0
+\end{pmatrix}
+\]
+
+\end_inset
+
+Or les vecteurs colonnes de A sont linéairement indépendants, donc 
+\begin_inset Formula $Ker(A)=\{0_{\mathbb{R}^{N}}\}$
+\end_inset
+
+.
+ Ainsi cela implique que 
+\begin_inset Formula $x=0_{\mathbb{R}^{n}}$
+\end_inset
+
+.
+ Ce qui prouve que 
+\begin_inset Formula $R_{1}$
+\end_inset
+
+est inversible.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Solution du problème 
+\begin_inset Formula $(P)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Le problème 
+\begin_inset Formula $(P)$
+\end_inset
+
+ revient à trouver 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ minimisant 
+\begin_inset Formula $\phi(\lambda)=\parallel y-A\lambda\parallel_{2}^{2}$
+\end_inset
+
+.
+ Or on a :
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+min_{\lambda\in\mathbb{R}^{n}} & \parallel y-A\lambda\parallel_{2}^{2}\iff min_{\lambda\in\mathbb{R}^{n}}\parallel y-QR\lambda\parallel_{2}^{2}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\iff min_{\lambda\in\mathbb{R}^{n}}\parallel Q^{t}y-R\lambda\parallel_{2}^{2}
+\]
+
+\end_inset
+
+ car 
+\begin_inset Formula $Q$
+\end_inset
+
+ est orthogonale.
+ On pose 
+\begin_inset Formula $Q^{t}y=\begin{pmatrix}c\\
+d
+\end{pmatrix}$
+\end_inset
+
+ avec 
+\begin_inset Formula $c\in\mathbb{R}^{n}$
+\end_inset
+
+.
+ On a donc :
+\begin_inset Formula 
+\[
+\iff min_{\lambda\in\mathbb{R}^{n}}\parallel\begin{pmatrix}c\\
+d
+\end{pmatrix}-\begin{pmatrix}R_{1}\\
+0
+\end{pmatrix}\lambda\parallel_{2}^{2}
+\]
+
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+\iff min_{\lambda\in\mathbb{R}^{n}}\parallel c-R_{1}\lambda\parallel_{2}^{2}+\parallel d\parallel_{2}^{2}
+\]
+
+\end_inset
+
+Or 
+\begin_inset Formula $d$
+\end_inset
+
+ ne dépend pas de 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ et comme on cherche à minimiser selon 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ alors :
+\begin_inset Formula 
+\[
+min_{\lambda\in\mathbb{R}^{n}}\parallel y-A\lambda\parallel_{2}^{2}\iff min_{\lambda\in\mathbb{R}^{n}}\parallel c-R_{1}\lambda\parallel_{2}^{2}
+\]
+
+\end_inset
+
+Le minimum de cette expression est atteint en 
+\begin_inset Formula $\lambda^{*}$
+\end_inset
+
+, c'est à dire lorsque 
+\begin_inset Formula $R_{1}\lambda^{*}=c$
+\end_inset
+
+.
+ Ce système possède bien une unique solution du fait que 
+\begin_inset Formula $R_{1}$
+\end_inset
+
+ soit inversible.
+ On calcul 
+\begin_inset Formula $\phi(\lambda^{*})$
+\end_inset
+
+, on a :
+\begin_inset Formula 
+\begin{align*}
+\phi(\lambda^{*}) & =\parallel y-A\lambda^{*}\parallel_{2}^{2}\\
+ & =\parallel\begin{pmatrix}c\\
+d
+\end{pmatrix}-\begin{pmatrix}R_{1}\\
+0
+\end{pmatrix}\lambda^{*}\parallel_{2}^{2}\\
+ & =\parallel c-R_{1}\lambda^{*}\parallel_{2}^{2}+\parallel d\parallel_{2}^{2}\\
+ & =\parallel d\parallel_{2}^{2}
+\end{align*}
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Section
+Interprétation géométrique du problème 
+\begin_inset Formula $(P)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+D'après le théorème de projection le 
+\begin_inset Formula $min_{\lambda\in\mathbb{R}^{n}}\Vert y-A\lambda\Vert_{2}^{2}$
+\end_inset
+
+ est atteint lorsque 
+\begin_inset Formula $A\lambda$
+\end_inset
+
+ correspond à la projection orthognale de 
+\begin_inset Formula $y$
+\end_inset
+
+ sur 
+\begin_inset Formula $Im(A)$
+\end_inset
+
+.
+ En effet le projeté orthogonale 
+\begin_inset Formula $x\in Im(A)$
+\end_inset
+
+ est le vecteur qui minimise la distance entre 
+\begin_inset Formula $y$
+\end_inset
+
+ et 
+\begin_inset Formula $Im(A)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+min_{\lambda\in\mathbb{R}^{n}}\Vert y-A\lambda\Vert_{2}^{2}=min_{v\in Im(A)}\Vert y-v\Vert_{2}^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Soit 
+\begin_inset Formula $x$
+\end_inset
+
+ le projeté orthogonale de 
+\begin_inset Formula $y$
+\end_inset
+
+ sur 
+\begin_inset Formula $Im(A)$
+\end_inset
+
+, alors 
+\begin_inset Formula $y-x\;\bot\;Im(A)$
+\end_inset
+
+ ou encore, 
+\begin_inset Formula $y-x$
+\end_inset
+
+ est orthogonale à chaque colonne de 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ On a ainsi 
+\begin_inset Formula $(y-x)^{T}A_{j}=0\;\forall j\in\{1,...,n\}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+Or 
+\begin_inset Formula 
+\[
+\sum_{i=1}^{N}(x_{i}-y_{i})a_{ij}=0\iff\sum_{i=1}^{N}x_{i}a_{ij}=\sum_{i=1}^{N}y_{i}a_{ij}\;\forall j\in\{1,..,n\}
+\]
+
+\end_inset
+
+Mais 
+\begin_inset Formula $x\in Im(A)$
+\end_inset
+
+ donc on peut récrire 
+\begin_inset Formula $x$
+\end_inset
+
+ sous la forme 
+\begin_inset Formula $x=\sum_{k=1}^{n}\lambda_{k}A_{k}$
+\end_inset
+
+ d'où 
+\begin_inset Formula $x_{i}=\sum_{k=1}^{n}\lambda_{k}a_{ik}$
+\end_inset
+
+.
+ On a : 
+\begin_inset Formula 
+\begin{align*}
+\sum_{i=1}^{N}a_{ij}\sum_{k=1}^{n}\lambda_{k}a_{ik} & =\sum_{k=1}^{n}\sum_{i=1}^{N}(a_{ij}a_{ik})\lambda_{k}\\
+ & =\sum_{k=1}^{n}\sum_{i=1}^{N}(a_{ji}^{T}a_{ik})\lambda_{k}\\
+ & =\sum_{k=1}^{n}(a^{T}a)_{jk}\lambda_{k}
+\end{align*}
+
+\end_inset
+
+Donc 
+\begin_inset Formula 
+\[
+\sum_{k=1}^{n}(a^{T}a)_{jk}\lambda_{k}=\sum_{i=1}^{N}a_{ji}^{T}y_{i}\;j\in\{1,...,n\}
+\]
+
+\end_inset
+
+On retrouve alors l'équation normale : 
+\begin_inset Formula $A^{T}A\lambda=A^{T}y$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Section
+Méthode de Résolution
+\end_layout
+
+\begin_layout Standard
+On présente dans cette partie la méthode de résolution des moindres carrées.
+\end_layout
+
+\begin_layout Standard
+On suppose que l'on dispose d'application 
+\begin_inset Formula $(\varphi_{j})_{j\in1..n}$
+\end_inset
+
+ linéairement indépendants ainsi que de N nuplets de points 
+\begin_inset Formula $(x^{(1)},...,x^{(N)})$
+\end_inset
+
+ où chaque 
+\begin_inset Formula $x^{(i)}\in\mathbb{R}^{n}$
+\end_inset
+
+.
+ On suppose les vecteurs 
+\begin_inset Formula $(\varphi_{j}(x^{(1)}),...,(\varphi_{j}(x^{(N)}))^{t}\;\forall j\in1,...,n$
+\end_inset
+
+ indépendants.
+ On cherche alors une combinaison linéaire des 
+\begin_inset Formula $\varphi_{j}$
+\end_inset
+
+ qui ajuste au mieux 
+\begin_inset Formula $y^{(i)}=f(x_{1}^{(i)},...,x_{n}^{(i)})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+La première étape consiste à linéariser le problème et ainsi mettre le système
+ sous forme matricielle 
+\begin_inset Formula $A\lambda=y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Il s'agit ensuite de trouver le minimum de 
+\begin_inset Formula $\Vert y-A\lambda\Vert_{2}^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Pour cela, nous utilisons la décomposition 
+\begin_inset Formula $QR$
+\end_inset
+
+ de 
+\begin_inset Formula $A$
+\end_inset
+
+ où 
+\begin_inset Formula $A\in M_{nN}(\mathbb{R})$
+\end_inset
+
+.
+ On dispose alors d'une matrice 
+\begin_inset Formula $Q$
+\end_inset
+
+ orthogonale 
+\begin_inset Formula $\in M_{N}(\mathbb{R})$
+\end_inset
+
+ et d'une matrice 
+\begin_inset Formula $R\in M_{Nn}(\mathbb{R})$
+\end_inset
+
+ triangulaire supérieure.
+\end_layout
+
+\begin_layout Standard
+On récupére dans la matrice 
+\begin_inset Formula $R$
+\end_inset
+
+, la matrice 
+\begin_inset Formula $R_{1}$
+\end_inset
+
+de dimension 
+\begin_inset Formula $n$
+\end_inset
+
+ ainsi que la le vecteur 
+\begin_inset Formula $c$
+\end_inset
+
+ de dimension 
+\begin_inset Formula $n$
+\end_inset
+
+ dans la matrice 
+\begin_inset Formula $Q^{T}y=\left(\begin{matrix}c\\
+d
+\end{matrix}\right)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Enfin, nous résolvons le système 
+\begin_inset Formula $R_{1}\lambda=c$
+\end_inset
+
+ par une simple méthode de remonté.
+ L'erreur de l'approximation est obtenu en faisant la norme du vecteur 
+\begin_inset Formula $d$
+\end_inset
+
+ de dimsension 
+\begin_inset Formula $N-n$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Section
+Applications
+\end_layout
+
+\begin_layout Subsection
+Droite des moindres carrées dans 
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+On considère le cas m=1.
+ On souhaite ajuster une fonction de la forme 
+\begin_inset Formula $y=\lambda_{2}x+\lambda_{1}$
+\end_inset
+
+ sur N couples de points notés 
+\begin_inset Formula $(x^{(i)},y^{(i)})$
+\end_inset
+
+.
+ La méthode des moindres carrés va nous permettre de trouver la droite qui
+ minimise toute les distances entre les points et la droite.
+ Le système s'écrit alors sous forme matricielle : 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\underbrace{\left[\begin{matrix}1 & x^{(1)}\\
+\vdots & \vdots\\
+1 & x^{(N)}
+\end{matrix}\right]}_{A}\left[\begin{matrix}\lambda_{1}\\
+\lambda_{2}
+\end{matrix}\right]=\left[\begin{matrix}y^{(1)}\\
+\vdots\\
+y^{(N)}
+\end{matrix}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+On note 
+\begin_inset Formula $\varphi_{1}(x^{(i)})=1$
+\end_inset
+
+ et 
+\begin_inset Formula $\varphi_{2}(x^{(i)})=x^{(i)}$
+\end_inset
+
+.
+ C'est fonction sont linéairement indépendantes car elle forment la base
+ canonique des polynômes de degré 1.
+ 
+\end_layout
+
+\begin_layout Standard
+On suppose les vecteurs 
+\begin_inset Formula $(\varphi_{j}(x^{(1)}),...,(\varphi_{j}(x^{(N)})^{t}\;\forall j\in1,2$
+\end_inset
+
+ indépendants.
+\end_layout
+
+\begin_layout Standard
+D'après la partie précédente le vecteur minimisant la différence entre les
+ 2 membres de cette équation peut s'obtenir en résolvant l'équation normale
+ : 
+\begin_inset Formula $A^{T}A\lambda=A^{T}y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+A^{T}A & =\left[\begin{matrix}1 & \cdots & 1\\
+x^{(1)} & \cdots & x^{(N)}
+\end{matrix}\right]\times\left[\begin{matrix}1 & x^{(1)}\\
+\vdots & \vdots\\
+1 & x^{(N)}
+\end{matrix}\right]\\
+ & =\left[\begin{matrix}\sum_{i=1}^{N}1 & \sum_{i=1}^{N}x^{(i)}\\
+\sum_{i=1}^{N}x^{(i)} & \sum_{i=1}^{N}\left[x^{(i)}\right]{}^{2}
+\end{matrix}\right]
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+et ainsi on obtient 
+\begin_inset Formula 
+\begin{align*}
+A^{T}A\lambda & =A^{T}y\\
+\left[\begin{matrix}N & \sum_{i=1}^{N}x^{(i)}\\
+\sum_{i=1}^{N}x^{(i)} & \sum_{i=1}^{N}\left[x^{(i)}\right]{}^{2}
+\end{matrix}\right]\left[\begin{matrix}\lambda_{1}\\
+\lambda_{2}
+\end{matrix}\right] & =\left[\begin{matrix}\sum_{i=1}^{N}y_{i}\\
+\sum_{i=1}^{N}x^{(i)}y_{i}
+\end{matrix}\right]
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\iff & \begin{cases}
+N\lambda_{1}+\lambda_{2}\sum_{i=1}^{N}x^{(i)} & =\sum_{i=1}^{N}y_{i}\\
+\lambda_{1}\sum_{i=1}^{N}x^{(i)}+\lambda_{2}\sum_{i=1}^{N}\left[x^{(i)}\right]{}^{2} & =\sum_{i=1}^{N}x^{(i)}y_{i}
+\end{cases}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\iff\begin{cases}
+\lambda_{1} & =\frac{1}{N}(\sum_{i=1}^{N}y_{i}-\lambda_{2}\sum_{i=1}^{N}x^{(i)})\\
+\lambda_{2}N\sum_{i=1}^{N}\left[x^{(i)}\right]{}^{2}-\lambda_{2}\left(\sum_{i=1}^{N}x^{(i)}\right)^{2} & =N\sum_{i=1}^{N}x^{(i)}y_{i}-\sum_{i=1}^{N}x^{(i)}\sum_{i=1}^{N}y_{i}
+\end{cases}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\iff\begin{cases}
+\lambda_{1} & =\overline{y}-\lambda_{2}\overline{x}\\
+\lambda_{2} & =\frac{N\sum_{i=1}^{N}x^{(i)}y_{i}-\sum_{i=1}^{N}x^{(i)}\sum_{i=1}^{N}y_{i}}{N\sum_{i=1}^{N}\left[x^{(i)}\right]{}^{2}-\left(\sum_{i=1}^{N}x^{(i)}\right)^{2}}
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\iff\begin{cases}
+\lambda_{1} & =\overline{y}-\lambda_{2}\overline{x}\\
+\lambda_{2} & =\frac{N^{2}\left[\frac{1}{N}\sum_{i=1}^{N}x^{(i)}y_{i}-\frac{1}{N}\sum_{i=1}^{N}x^{(i)}\times\frac{1}{N}\sum_{i=1}^{N}y_{i}\right]}{N^{2}\left[\frac{1}{N}\sum_{i=1}^{N}\left[x^{(i)}\right]{}^{2}-\left(\frac{1}{N}\sum_{i=1}^{N}x^{(i)}\right)^{2}\right]}
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\iff\begin{cases}
+\lambda_{1} & =\overline{y}-\lambda_{2}\overline{x}\\
+\lambda_{2} & =\frac{\sigma_{x,y}}{\sigma_{x}^{2}}
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\iff\begin{cases}
+\lambda_{1} & =\overline{y}-\frac{\sigma_{x,y}}{\sigma_{x}^{2}}\overline{x}\\
+\lambda_{2} & =\frac{\sigma_{x,y}}{\sigma_{x}^{2}}
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La droite des moindres carrés est ainsi définit par 
+\begin_inset Formula 
+\[
+y=\frac{\sigma_{x,y}}{\sigma_{x}^{2}}x+\overline{y}-\frac{\sigma_{x,y}}{\sigma_{x}^{2}}\overline{x}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Vérifions que le point de coordonnées 
+\begin_inset Formula $(\overline{x},\overline{y})$
+\end_inset
+
+ appartient à cette droite : 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{\sigma_{x,y}}{\sigma_{x}^{2}}\overline{x}+\overline{y}-\frac{\sigma_{x,y}}{\sigma_{x}^{2}}\overline{x}=\overline{y}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Approximation d'un phénomène physique
+\end_layout
+
+\begin_layout Standard
+1) On suppose qu'un phénomène physique suit approxivement la relation 
+\begin_inset Formula $g(x_{1}x_{2},...,x_{n})\simeq x_{1}^{\lambda_{1}}x_{2}^{\lambda_{2}}...x_{n}^{\lambda_{n}}$
+\end_inset
+
+.
+ On dispose de 
+\begin_inset Formula $N$
+\end_inset
+
+ nuplets 
+\begin_inset Formula $(x_{1},...,x_{n})$
+\end_inset
+
+ et 
+\begin_inset Formula $N$
+\end_inset
+
+ valeurs 
+\begin_inset Formula $g(x_{1}x_{2},...,x_{n})$
+\end_inset
+
+ associé à ces nuplets avec 
+\begin_inset Formula $n<N$
+\end_inset
+
+.
+ En passant au logarithme, nous pouvons linéariser le problème afin d'appliquer
+ la méthode des moindres carrées.
+ En effet, on a : 
+\begin_inset Formula 
+\[
+ln(g(x_{1}x_{2},...,x_{n}))\simeq ln(x_{1}^{\lambda_{1}}x_{2}^{\lambda_{2}}...x_{n}^{\lambda_{n}})=\lambda_{1}ln(x_{1})+\lambda_{2}ln(x_{2})+...+\lambda_{n}ln(x_{n})
+\]
+
+\end_inset
+
+Il suffit ensuite d'écrire le système sous forme matricielle :
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\underbrace{\left[\begin{matrix}ln(x_{1}^{(1)}) & \dots & ln(x_{n}^{(1)})\\
+\vdots & \ddots & \vdots\\
+ln(x_{1}^{(N)}) & \dots & ln(x_{n}^{(N)})
+\end{matrix}\right]}_{A}\times\left[\begin{matrix}\lambda_{1}\\
+\vdots\\
+\lambda_{n}
+\end{matrix}\right]\simeq\text{\ensuremath{\underbrace{\left[\begin{matrix}ln(g(x_{1}^{(1)},...,x_{n}^{(1)}))\\
+\vdots\\
+ln(g(x_{1}^{(N)},...,x_{n}^{(N)}))
+\end{matrix}\right]}_{y}}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+On pose alors les fonctions 
+\begin_inset Formula $\varphi_{j}(x)$
+\end_inset
+
+, définies par : 
+\begin_inset Formula $\varphi_{j}(x)=ln(x_{j})\;\forall j\in1,..,n$
+\end_inset
+
+.
+ On suppose les vecteurs 
+\begin_inset Formula $(\varphi_{j}(x^{(1)}),...,(\varphi_{j}(x^{(N)})^{t}\;\forall j\in1,...,n$
+\end_inset
+
+ indépendants.
+\end_layout
+
+\begin_layout Standard
+2) On dispose du jeu de données suivant
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="5">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x_{1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1,0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1,436
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2,52
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5,12
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x_{2}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1,39
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2,0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3,72
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5,12
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $g(x_{1},x_{2})$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1,9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5,6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+33,75
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+134,22
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Le système dépendant de 3 paramètres avec une fonction 
+\begin_inset Formula $g$
+\end_inset
+
+ dépendant de 2 paramètres, nous avons donc à approximer les données par
+ un plan dans 
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+On a alors comme matrice 
+\begin_inset Formula 
+\[
+A=\left[\begin{matrix}ln(1,0) & ln(1,39)\\
+ln(1,436) & ln(2,0)\\
+ln(2,52) & ln(3,72)\\
+ln(5,12) & ln(5,12)
+\end{matrix}\right]
+\]
+
+\end_inset
+
+Montrons que les vecteurs colonne de 
+\begin_inset Formula $A$
+\end_inset
+
+ sont indépendants.
+ Soient 
+\begin_inset Formula $(\alpha_{1},\alpha_{2})\in\mathbb{R}^{2}$
+\end_inset
+
+.
+ On a :
+\begin_inset Formula 
+\[
+\alpha_{1}\left[\begin{matrix}ln(1,0)\\
+ln(1,436)\\
+ln(2,52)\\
+ln(5,12)
+\end{matrix}\right]+\alpha_{2}\left[\begin{matrix}ln(1,39)\\
+ln(2,0)\\
+ln(3,72)\\
+ln(5,12)
+\end{matrix}\right]=\left[\begin{matrix}0\\
+0\\
+0\\
+0
+\end{matrix}\right]
+\]
+
+\end_inset
+
+La première ligne du système nous donne :
+\begin_inset Formula 
+\[
+\alpha_{1}ln(1,0)+\alpha_{2}ln(1,39)=0
+\]
+
+\end_inset
+
+Or 
+\begin_inset Formula $ln(1,0)=0$
+\end_inset
+
+ donc on obtient que 
+\begin_inset Formula $\alpha_{2}=0$
+\end_inset
+
+.
+ Ainsi en prenant la ligne 2, comme 
+\begin_inset Formula $\alpha_{2}=0$
+\end_inset
+
+, il vient que : 
+\begin_inset Formula $\alpha_{1}ln(1,436)=0\,\,\implies\alpha_{1}=0$
+\end_inset
+
+.
+ Ainsi on peut conclure que les vecteurs colonne de A sont linéairement
+ indépendants.
+\begin_inset Newline newline
+\end_inset
+
+On cherche 
+\begin_inset Formula $\lambda=(\lambda_{1},\lambda_{2})$
+\end_inset
+
+ qui minimise 
+\begin_inset Formula $\Vert y-A\lambda\Vert_{2}^{2}$
+\end_inset
+
+ avec : 
+\begin_inset Formula 
+\[
+y=\left[\begin{matrix}ln(1,9)\\
+ln(5,6)\\
+ln(33,75)\\
+ln(134,22)
+\end{matrix}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En résolvant l'équation normale, on trouve 
+\begin_inset Formula $\lambda_{1}=1.0684741810570004$
+\end_inset
+
+ et 
+\begin_inset Formula $\lambda_{2}=1.929940764255137$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+L'erreur au sens de la somme des écarts quadratiques est donnée par 
+\begin_inset Formula $\epsilon=\Vert g(x_{1},x_{2})-(\lambda_{1}x_{1}+\lambda_{2}x_{2})\Vert_{2}^{2}$
+\end_inset
+
+.
+\begin_inset Formula 
+\begin{align*}
+\epsilon & =\phi(\lambda^{*})=\parallel y-A\lambda^{*}\parallel_{2}^{2}\\
+\epsilon= & \Vert\left[\begin{matrix}ln(1,9)\\
+ln(5,6)\\
+ln(33,75)\\
+ln(134,22)
+\end{matrix}\right]-\left[\begin{matrix}ln(1,0) & ln(1,39)\\
+ln(1,436) & ln(2,0)\\
+ln(2,52) & ln(3,72)\\
+ln(5,12) & ln(5,12)
+\end{matrix}\right]\times\left[\begin{matrix}\lambda_{1}\\
+\lambda_{2}
+\end{matrix}\right]\Vert_{2}^{2}\\
+\epsilon & =0.008067044338762949
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename lambdaappli2.png
+	lyxscale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Résultat numérique
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename surface.pdf
+	lyxscale 40
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Représantation de la surface approximant le phénomène physique décrit par
+ les points 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Approximation d'un phénomène physique 2
+\end_layout
+
+\begin_layout Standard
+On suppose qu'un phénomène physique admet approximativement la relation
+ suivante 
+\begin_inset Formula $ln(v)\simeq a\frac{x}{z}+be^{x}$
+\end_inset
+
+.
+ On suppose que l'on dispose de N couples 
+\begin_inset Formula $(x,z)$
+\end_inset
+
+ de points.
+ et 
+\begin_inset Formula $N$
+\end_inset
+
+ valeurs 
+\begin_inset Formula $v(x,z)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Posons la matrice 
+\begin_inset Formula 
+\[
+A\lambda=\left[\begin{matrix}\frac{x^{(1)}}{z^{(1)}} & e^{x^{(1)}}\\
+\vdots & \vdots\\
+\frac{x^{(N)}}{z^{(N)}} & e^{x^{(N)}}
+\end{matrix}\right]\times\left[\begin{matrix}a\\
+b
+\end{matrix}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+On pose 
+\begin_inset Formula $\varphi_{1}(x,y)=\frac{x}{z}$
+\end_inset
+
+ et 
+\begin_inset Formula $\varphi_{2}(x,y)=e^{x}$
+\end_inset
+
+ , ces fonctions sont linéairement indépendantes.
+\end_layout
+
+\begin_layout Standard
+On suppose les vecteurs 
+\begin_inset Formula $(\varphi_{1}(x^{(1)}),...,(\varphi_{j}(x^{(N)})^{t}\;\forall j\in1,2$
+\end_inset
+
+ indépendants.
+\end_layout
+
+\begin_layout Standard
+On prend ensuite le vecteur 
+\begin_inset Formula 
+\[
+y=\left[\begin{matrix}ln(v^{(1)})\\
+\vdots\\
+ln(v^{(N)})
+\end{matrix}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+et on applique la méthode vu dans la partie théorique.
+ L'erreur commise au sens des moindres carrées est alors donné par 
+\begin_inset Formula $\epsilon=\Vert y-A\lambda^{*}\Vert_{2}^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Ajustement d'un cercle dans le plan
+\end_layout
+
+\begin_layout Subsubsection
+Cercle
+\end_layout
+
+\begin_layout Standard
+Pour ajuster des points dans le plan, nous reprenons l'équation d'un cercle
+ 
+\begin_inset Formula $(x-a)^{2}+(y-b)^{2}=r^{2}$
+\end_inset
+
+.
+ Que nous transformons ainsi : 
+\begin_inset Formula $-2ax-2by+a^{2}+b^{2}-r^{2}=-(x^{2}+y^{2})$
+\end_inset
+
+.
+ On peut réecrire cette expression pour l'adapté au problème des moindres
+ carré.
+ 
+\begin_inset Formula 
+\[
+\lambda_{1}x+\lambda_{2}y+\lambda_{3}=-(x^{2}+y^{2})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Avec 
+\begin_inset Formula $\lambda_{1}=-2a$
+\end_inset
+
+ ,
+\begin_inset Formula $\lambda_{2}=-2b$
+\end_inset
+
+ ,
+\begin_inset Formula $\lambda_{3}=a^{2}+b^{2}-r^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+le système peut s'écrire sous la forme matricielle suivante : 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\left[\begin{matrix}x_{1} & y_{1} & 1\\
+\vdots & \vdots & \vdots\\
+x_{N} & y_{N} & 1
+\end{matrix}\right]\times\left[\begin{matrix}\lambda_{1}\\
+\lambda_{2}\\
+\lambda_{3}
+\end{matrix}\right]=\left[\begin{matrix}-(x_{1}^{2}+y_{1}^{2})\\
+\vdots\\
+-(x_{N}^{2}+y_{N}^{2})
+\end{matrix}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+On pose 
+\begin_inset Formula $\varphi_{1}(x,y)=x$
+\end_inset
+
+, 
+\begin_inset Formula $\varphi_{2}(x,y)=y$
+\end_inset
+
+ et 
+\begin_inset Formula $\varphi_{3}(x,y)=1$
+\end_inset
+
+.
+ Ces fonctions sont linéairement indépendantes car forme la base canonique
+ des polynômes à deux indéterminées On suppose les vecteurs 
+\begin_inset Formula $(\varphi_{1}(x^{(1)}),...,(\varphi_{j}(x^{(N)})^{t}\;\forall j\in1,2,3$
+\end_inset
+
+ indépendants.
+\begin_inset Newline newline
+\end_inset
+
+On dispose dans notre cas de 4 points 
+\begin_inset Formula $(0,0),\,(4,0),\,(0,4),\,(5,6).$
+\end_inset
+
+ On a donc la matrice A suivante :
+\begin_inset Formula 
+\[
+A=\left[\begin{matrix}0 & 0 & 1\\
+0 & 4 & 1\\
+4 & 0 & 1\\
+5 & 6 & 1
+\end{matrix}\right]
+\]
+
+\end_inset
+
+Montrons que les vecteurs colonne de A sont linéairement indépendants.
+ Soient 
+\begin_inset Formula $(\alpha_{1},\alpha_{2},\alpha_{3})\in\mathbb{R}^{3}.$
+\end_inset
+
+ On a :
+\begin_inset Formula 
+\[
+\alpha_{1}\left[\begin{matrix}0\\
+0\\
+4\\
+5
+\end{matrix}\right]+\alpha_{2}\left[\begin{matrix}0\\
+4\\
+0\\
+6
+\end{matrix}\right]+\alpha_{3}\left[\begin{matrix}1\\
+1\\
+1\\
+1
+\end{matrix}\right]=\left[\begin{matrix}0\\
+0\\
+0\\
+0
+\end{matrix}\right]
+\]
+
+\end_inset
+
+La ligne 1 nous donne 
+\begin_inset Formula $\alpha_{3}=0$
+\end_inset
+
+, puis on déduit de la ligne 2 que 
+\begin_inset Formula $\alpha_{2}=0$
+\end_inset
+
+ et finalement la ligne 3 nous donne 
+\begin_inset Formula $\alpha_{1}=0$
+\end_inset
+
+.
+ Ainsi les vecteurs colonne de A sont linéairement indépendants.
+ 
+\begin_inset Newline newline
+\end_inset
+
+Après résolution du système, on trouve 
+\begin_inset Formula 
+\begin{align*}
+\lambda_{1} & =-5.619047619047616\\
+\lambda_{2} & =-5.7539682539682575\\
+\lambda_{3} & =3.777777777777786
+\end{align*}
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+On résout ensuite le système pour trouver l'origine et le rayon du cercle.
+\end_layout
+
+\begin_layout Standard
+Ainsi 
+\begin_inset Formula 
+\begin{align*}
+a & =2.809523809523808\\
+b & =2.8769841269841288\\
+r & =3.5203244062759347
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename lambdaappli4.png
+	lyxscale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Résultats numériques
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename cercle.pdf
+	lyxscale 40
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Approximation de quatre points par un cercle
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+L'erreur d'approximation étant donnée dans la matrice 
+\begin_inset Formula $Q^{T}y$
+\end_inset
+
+ , nous avons 
+\begin_inset Formula $\epsilon=6.057921483348293$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Ellipse
+\end_layout
+
+\begin_layout Standard
+On dispose de l'équation d'une ellipse 
+\begin_inset Formula $ax^{2}+2bxy+cy^{2}+dx+ey+h=0$
+\end_inset
+
+ .
+ 
+\end_layout
+
+\begin_layout Standard
+On peut réécrire cette équation sous la forme en supposant 
+\begin_inset Formula $c\neq0$
+\end_inset
+
+ :
+\begin_inset Formula 
+\[
+\frac{a}{c}x^{2}+2\frac{b}{c}xy+\frac{d}{c}x+\frac{e}{c}y+\frac{h}{c}=y^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+On pose alors 
+\begin_inset Formula $f(x,y)=y^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Le système s'écrite sous forme matricielle 
+\begin_inset Formula 
+\[
+\left[\begin{matrix}\varphi_{1}(x^{(1)},y^{(1)}) & \dots & \varphi_{5}(x^{(1)},y^{(1)})\\
+\vdots & \ddots & \vdots\\
+\varphi_{1}(x^{(10)},y^{(10)}) & \dots & \varphi_{5}(x^{(10)},y^{(10)})
+\end{matrix}\right]\times\left[\begin{matrix}\lambda_{1}\\
+\vdots\\
+\lambda_{5}
+\end{matrix}\right]=\left[\begin{matrix}y^{2(1)}\\
+\vdots\\
+y^{2(10)}
+\end{matrix}\right]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Où 
+\begin_inset Formula 
+\[
+\begin{cases}
+\varphi_{1}(x,y) & =x^{2}\\
+\varphi_{2}(x,y) & =xy\\
+\varphi_{3}(x,y) & =x\\
+\varphi_{4}(x,y) & =y\\
+\varphi_{5}(x,y) & =1
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+On suppose les vecteurs 
+\begin_inset Formula $(\varphi_{1}(x^{(1)}),...,(\varphi_{j}(x^{(N)})^{t}\;\forall j\in1,...,5$
+\end_inset
+
+ indépendants, et on dispose de dix couples de points 
+\begin_inset Formula $(x,y)$
+\end_inset
+
+, donc 
+\begin_inset Formula $N=10$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+On veut alors montrer que les 
+\begin_inset Formula $\varphi_{j}$
+\end_inset
+
+ sont indépendants pour pouvoir trouver une solution.
+\end_layout
+
+\begin_layout Standard
+Soit 
+\begin_inset Formula $(x,y)\neq(0,0)$
+\end_inset
+
+ et 
+\begin_inset Formula $\alpha=(\alpha_{1},\alpha_{2},\alpha_{3},\alpha_{4},\alpha_{5})\in\mathbb{R}^{5}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sum_{i=1}^{5}\alpha_{i}\varphi_{i}(x,y)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\iff & \left[\begin{matrix}x & y\end{matrix}\right]^{T}\left[\begin{matrix}\alpha_{1} & \frac{\alpha_{2}}{2}\\
+\frac{\alpha_{2}}{2} & 0
+\end{matrix}\right]\left[\begin{matrix}x\\
+y
+\end{matrix}\right]+\left[\begin{matrix}x & y\end{matrix}\right]\left[\begin{matrix}\alpha_{3}\\
+\alpha_{4}
+\end{matrix}\right]+\alpha_{5}=\left[\begin{matrix}0\\
+0
+\end{matrix}\right]\\
+\iff & \begin{cases}
+\alpha_{5} & =0\\
+\left[\begin{matrix}\alpha_{3}\\
+\alpha_{4}
+\end{matrix}\right] & =\left[\begin{matrix}0\\
+0
+\end{matrix}\right]\\
+\left[\begin{matrix}\alpha_{1} & \frac{\alpha_{2}}{2}\\
+\frac{\alpha_{2}}{2} & 0
+\end{matrix}\right] & =\left[\begin{matrix}0 & 0\\
+0 & 0
+\end{matrix}\right]
+\end{cases}\\
+\iff & \alpha=0
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Les 
+\begin_inset Formula $\varphi_{j}$
+\end_inset
+
+ sont bien indépendants, on peut donc appliquer la méthodes des moindres
+ carrées comme précédemment puis résoudre le système pour trouver a,b,c,d,e
+ et h.
+\end_layout
+
+\end_body
+\end_document

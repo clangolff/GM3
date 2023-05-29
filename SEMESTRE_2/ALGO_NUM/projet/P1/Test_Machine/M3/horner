@@ -1,0 +1,55 @@
+simple précision
+----------------
+
+polynome/poly1
+alpha : 3762.5400390625000000 P(alpha) = 63705.1796875000000000 
+polynome/poly12
+alpha : 1.0099999904632568 P(alpha) = 1.0200999975204468 
+polynome/poly2
+alpha : 2.0000000000000000 P(alpha) = 12.0000000000000000 
+polynome/poly3
+alpha : 1.5000000000000000 P(alpha) = 139.7467193603515625 
+polynome/poly4
+alpha : 1.0000000000000000 P(alpha) = 12.0000000000000000 
+polynome/poly5
+alpha : 2.1542859077453613 P(alpha) = 17.0771293640136719 
+polynome/poly6
+alpha : 1.0000000000000000 P(alpha) = 1.0000000000000000 
+polynome/poly6a
+alpha : 1.0000001192092896 P(alpha) = 1.0000002384185791 
+polynome/poly6b
+alpha : 1.0000009536743164 P(alpha) = 1.0000019073486328 
+polynome/poly6c
+alpha : 1.0000100135803223 P(alpha) = 1.0000200271606445 
+polynome/poly6d
+alpha : 1.0001000165939331 P(alpha) = 1.0002000331878662 
+polynome/poly6e
+alpha : 1.0010000467300415 P(alpha) = 1.0020010471343994 
+
+double précision
+----------------
+
+polynome/poly1
+alpha : 3762.5399999999999636 P(aplha) =  63705.1826321999978973 
+polynome/poly12
+alpha : 1.0100000000000000 P(aplha) =  1.0201000000000000 
+polynome/poly2
+alpha : 2.0000000000000000 P(aplha) =  12.0000000000000000 
+polynome/poly3
+alpha : 1.5000000000000000 P(aplha) =  139.7467187499999852 
+polynome/poly4
+alpha : 1.0000000000000000 P(aplha) =  12.0000000000099991 
+polynome/poly5
+alpha : 2.1542860248000002 P(aplha) =  17.0771308547457608 
+polynome/poly6
+alpha : 1.0000000000000000 P(aplha) =  1.0000000000000000 
+polynome/poly6a
+alpha : 1.0000001000000001 P(aplha) =  1.0000002000000101 
+polynome/poly6b
+alpha : 1.0000009999999999 P(aplha) =  1.0000020000009999 
+polynome/poly6c
+alpha : 1.0000100000000001 P(aplha) =  1.0000200001000001 
+polynome/poly6d
+alpha : 1.0001000000000000 P(aplha) =  1.0002000099999999 
+polynome/poly6e
+alpha : 1.0009999999999999 P(aplha) =  1.0020009999999997 

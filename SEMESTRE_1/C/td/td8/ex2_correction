@@ -1,0 +1,55 @@
+V1
+
+char M1[10],M2[10],M3[10]
+printf("entrez les mots")
+scanf("%s%s%s"M1,M2,M3);
+printf("%s %s %s",M3,M2,M1);
+
+V2
+
+Char M[3][10]
+int i;
+printf("entrez les mots")
+for(i=0;i<3;i++)
+	scanf("%s",M[i]);
+for(i=2;i>=0;i--)
+	printf("%S",M[i]);
+	
+	
+	
+V3
+
+#include <stdlib.h>
+
+char temp[20]
+char *mot[3]
+printf("saisir 3 mots");
+for(int i = 0;i<3;i++){
+	scanf("%s", temp)
+	mot[i] = (char *) malloc(sizeof(strlen(temp) + 1 )
+	if(mot[i] != NULL) strcpy(Mot[i],temp);
+	}
+for(i=2;i>=0;i--) printf("%s",Mot[i])
+}
+
+V4
+
+int nbmot;
+char temp[20]
+char **Mots   /* pareil que mot[][] */
+printf("combien de mot")
+scanf("%d",&nbmot)
+printf('saisir %d mot,nbmot)
+Mots = (char **) malloc (nbmot*sizeof(char *))
+if(Mots != NULL) {
+fo r(i = 0 ; i<nbmot;i++){
+	scanf("%s", temp)
+	Mot[i] = (char *) malloc(sizeof(strlen(temp) + 1 )
+	if(Mot[i] != NULL) strcpy(Mot[i],temp);
+	}
+	}
+}
+
+
+
+

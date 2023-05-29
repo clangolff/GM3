@@ -1,0 +1,8 @@
+login toto@insa-rouen.fr
+Mot de passe: le mot de passe INSA (utilisé pour CAS,
+Moodle, Intranet, ...)
+Webmail: ent.unr-runn.fr
+Serveur IMAP: imap.syrhano.net
+Méthode de connexion: SSL sur le port 993
+Serveur SMTP: smtp.syrhano.net
+Méthode de connexion: TLS sur le port 587 (STARTTLS)

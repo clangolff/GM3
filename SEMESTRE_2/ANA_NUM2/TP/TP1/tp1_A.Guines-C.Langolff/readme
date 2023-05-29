@@ -1,0 +1,6 @@
+
+- Les fichiers comparaison.py et comparaison_dessin.py sont 2 scripts python qui à l'execution créé un pdf avec les graphiques issus des différentes méthodes.
+
+- Nous avons rajouté 2 méthodes bonus (Hermite à l'ordre 2) qui sont seulement inclus dans le fonctionnement du main et non dans les scripts comparaison.py et comparaison_dessin.py.
+
+- Les fichiers résultats se situent dans le dossier /lyx/image

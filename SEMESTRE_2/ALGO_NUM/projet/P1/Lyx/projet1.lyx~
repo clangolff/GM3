@@ -1,0 +1,4059 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language french
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize 12
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 1cm
+\topmargin 2cm
+\rightmargin 1cm
+\bottommargin 2cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style french
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "c"
+hor_pos "l"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "40text%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename INSA.png
+	lyxscale 20
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Box Frameless
+position "c"
+hor_pos "l"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "40text%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering{
+\end_layout
+
+\end_inset
+
+
+\series bold
+\size larger
+AlgoNum GM3
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+\size larger
+2022/2023
+\series default
+\size default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace 2.1cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "c"
+hor_pos "l"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "100text%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering{
+\end_layout
+
+\end_inset
+
+
+\series bold
+\shape slanted
+\size huge
+Evaluation Polynomiale
+\size giant
+ 
+\size default
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+AlgoNum - TD1 - MMSN
+\series default
+\shape default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename tchebychev.png
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "l"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100text%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+Etudiants : 
+\series default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace{0.5cm} 
+\end_layout
+
+\end_inset
+
+
+\series bold
+DANTAS Alexandre 
+\series default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace{1.0cm} 
+\end_layout
+
+\end_inset
+
+
+\series bold
+DELL'OVA Fabio
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace{3cm} 
+\end_layout
+
+\end_inset
+
+
+\series bold
+GUINES Antoine
+\series default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace{1.75cm} 
+\end_layout
+
+\end_inset
+
+
+\series bold
+LANGOLFF Clément 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace{3cm} 
+\end_layout
+
+\end_inset
+
+
+\series bold
+KESSLER Aymeric 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Encadrant : 
+\series default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace{0.5cm} 
+\end_layout
+
+\end_inset
+
+
+\series bold
+Gleyse.
+ B
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+Soit un polynôme 
+\begin_inset Formula $P_{n}(x)=\sum_{j=0}^{n}a_{j}x^{j}$
+\end_inset
+
+ de degré 
+\begin_inset Formula $n$
+\end_inset
+
+ à coefficients réels.
+ On cherche à calculer sa valeur en un point 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ réel.
+ 
+\end_layout
+
+\begin_layout Section
+Méthode de Hörner
+\end_layout
+
+\begin_layout Subsection
+Algorithme de Hörner
+\end_layout
+
+\begin_layout Standard
+On sait que 
+\begin_inset Formula $P_{n}(x)=\sum_{j=0}^{n}a_{j}x^{j}$
+\end_inset
+
+.
+ Si l'on divise 
+\begin_inset Formula $P_{n}$
+\end_inset
+
+ par 
+\begin_inset Formula $(x-\alpha)$
+\end_inset
+
+ alors 
+\begin_inset Formula $P_{n}$
+\end_inset
+
+ peut s'écrire tel que :
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+P_{n}(x)=Q(x)(x-\alpha)+R_{n}
+\]
+
+\end_inset
+
+ avec 
+\begin_inset Formula $Q$
+\end_inset
+
+ un polynôme de degré 
+\begin_inset Formula $n-1$
+\end_inset
+
+.
+ On peut donc écrire 
+\begin_inset Formula $Q(x)=\sum_{j=1}^{n}b_{j}x^{j-1}$
+\end_inset
+
+ et on pose 
+\begin_inset Formula $R_{n}=b_{0}$
+\end_inset
+
+ .
+ Ainsi il vient que :
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\sum_{j=0}^{n}a_{j}x^{j}=\sum_{j=1}^{n}b_{j}x^{j-1}(x-\alpha)+b_{0}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\Leftrightarrow\sum_{j=0}^{n}a_{j}x^{j}=\sum_{j=1}^{n}b_{j}x^{j}-\sum_{j=1}^{n}b_{j}\alpha x^{j-1}+b_{0}
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\Leftrightarrow\sum_{j=0}^{n}a_{j}x^{j}=b_{n}x^{n}+(b_{n-1}-\alpha b_{n})x^{n-1}+...+(b_{1}-\alpha b_{2})x+b_{0}-\alpha b_{1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align left
+En identifiant terme à terme, on remarque que :
+\begin_inset Formula 
+\[
+\begin{cases}
+b_{n}=a_{n}\\
+a_{k-1}=b_{k-1}-\alpha b_{k}\,\,\forall k\in\{1,..,n-1\}
+\end{cases}\Longleftrightarrow\begin{cases}
+b_{n}=a_{n}\\
+b_{k-1}=a_{k-1}+\alpha b_{k}\,\,\forall k\in\{1,..,n-1\}
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Cette formule de réccurence nous permet finalement d'obtenir la valeur de
+ 
+\begin_inset Formula $b_{0}$
+\end_inset
+
+, ce qui correspond à la valeur de 
+\begin_inset Formula $P_{n}(\alpha)$
+\end_inset
+
+ car 
+\begin_inset Formula $P_{n}(\alpha)=R_{n}=b_{0}$
+\end_inset
+
+.
+ On en déduit ainsi l'algorithme suivant pour calculer 
+\begin_inset Formula $P_{n}(\alpha)$
+\end_inset
+
+ :
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float algorithm
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+DEBUT
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace{0.5cm} 
+\end_layout
+
+\end_inset
+
+lire(n)
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace{1.0cm} 
+\end_layout
+
+\end_inset
+
+/lecture degrès du polynôme/
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace{0.5cm} 
+\end_layout
+
+\end_inset
+
+
+\series bold
+POUR
+\series default
+ i de 0 à n 
+\series bold
+FAIRE
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace{1.0cm} 
+\end_layout
+
+\end_inset
+
+lire(a[i])
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace{1.0cm} 
+\end_layout
+
+\end_inset
+
+/lecture des coefficients/
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace{0.5cm} 
+\end_layout
+
+\end_inset
+
+
+\series bold
+FIN POUR
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace{0.5cm} 
+\end_layout
+
+\end_inset
+
+b[n] ← a[n]
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace{0.5cm} 
+\end_layout
+
+\end_inset
+
+
+\series bold
+POUR
+\series default
+ i de n-1 à 0 
+\series bold
+FAIRE
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace{1.0cm} 
+\end_layout
+
+\end_inset
+
+b[i] ← a[i] + 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+alpha$
+\end_layout
+
+\end_inset
+
+*b[i+1] 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace{1.0cm} 
+\end_layout
+
+\end_inset
+
+/calcul des bi/
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace{0.5cm} 
+\end_layout
+
+\end_inset
+
+
+\series bold
+FIN POUR
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace{0.5cm} 
+\end_layout
+
+\end_inset
+
+retourner b[0]
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+FIN
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Algorithme de Hörner
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+On remarque que lors du calculs des 
+\begin_inset Formula $b[i]$
+\end_inset
+
+, on a une multiplication et une somme.
+ L'algorithme à donc un coût de 
+\begin_inset Formula $n$
+\end_inset
+
+ multiplications et 
+\begin_inset Formula $n$
+\end_inset
+
+ additions.
+ Si l'on considère qu'une multiplication coûte 5 cycles d'horloge et une
+ somme 1 cycle, cela fait 6 cycles par tour de boucle, donc 6n cycles.
+\end_layout
+
+\begin_layout Standard
+Complexité : 
+\begin_inset Formula $O(n)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Stabilité numérique de l'algorithme de Hörner
+\end_layout
+
+\begin_layout Standard
+La représentation des nombres réels en machine étant effectuée grâce aux
+ flottants, certains nombres ne pourront pas être représenté de manière
+ exact en machine.
+ Examinons l'impact du type choisi sur le résultat de l'évaluation de 
+\begin_inset Formula $P_{n}$
+\end_inset
+
+ en 
+\begin_inset Formula $\alpha$
+\end_inset
+
+.
+ Pour représenter les réels en machine on a donc le choix entre le type
+ simple précision, codé sur 4 octets ou double précision représenté sur
+ 8 octets.
+ Grâce aux tests effectués sur différents polynômes on se rend compte que
+ les 2 types différents donnent des résultats très proches.
+ L'algorithme ne semble donc pas être trop instable quant à la propagation
+ d'erreur.
+ Cependant dans certains cas on peut tout de même observer que le resultat
+ diffère de près d'un centième entre les 2 types pour un même polynôme.
+ Les résultats sont donc légèrement moins précis en simple précision, mais
+ cela ne semble pas donner, dans la plupart des cas, de résultats abberants.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 0.5cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Exemple sur le polynôme 
+\begin_inset Formula $X^{2}+1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename hornersimple.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\begin_inset space \hspace{}
+\length 0.5cm
+\end_inset
+
+
+\begin_inset Graphics
+	filename hornerdouble.png
+	lyxscale 55
+	scale 52
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 0.5cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="7" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $X^{2}+1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+simple
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+double
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.0000000000000000
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.0000000000000000
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.0000001
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.0000002384185791
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.0000002000000101
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.000001
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.0000019073486328
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.0000020000009999
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.00001
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.0000200271606445
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.0000200001000001
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.0001
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.0002000331878662
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.0002000099999999
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.001
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.0020010471343994
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1.0020009999999997
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 0.5cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+On remarque que la version double précision est plus précise que la version
+ simple.
+ Cependant l'erreur vient principalement de la façons dont est codé le point
+ d'évaluation en entrée du programme.
+ Par exemple, le point d'évaluation 1.0001 sera codé en simple précision
+ par 1.0001000165939331 tandis que en version double précision, il sera codé
+ par 1.0001000000000000.
+ Cette erreur de codage à l'entrée du programme peut paraître minime pour
+ un polynôme de degrès 2, elle en sera d'autant plus important lorsque le
+ polynôme sera de beaucoup plus haut degrés.
+\end_layout
+
+\begin_layout Subsection
+Calcul des dérivées de 
+\begin_inset Formula $P_{n}(\alpha)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Deux méthodes nous permettent de parvenir au résultat.
+\end_layout
+
+\begin_layout Subsubsection
+
+\series bold
+Méthode 1
+\end_layout
+
+\begin_layout Standard
+\align block
+On sait que :
+\begin_inset Formula 
+\begin{align*}
+P_{n}(x) & =(x-\alpha)P_{n-1}(x)+R_{n}\\
+ & =(x-\alpha)((x-\alpha)P_{n-2}(x)+R_{n-1})+R_{n}\\
+ & =(x-\alpha)²P_{n-2}+(x-\alpha)R_{n-1}+R_{n}
+\end{align*}
+
+\end_inset
+
+Par descente infinie, il vient que :
+\begin_inset Formula 
+\[
+P_{n}(x)=\sum_{j=0}^{n}(x-\alpha)^{j}R_{n-j}=\sum_{k=0}^{n}(x-\alpha)^{n-k}R_{k}
+\]
+
+\end_inset
+
+On peut le vérifier par récurrence.
+ Supposons la propriété vraie pour un rang 
+\begin_inset Formula $n$
+\end_inset
+
+, et montrons qu'elle l'est aussi au rang 
+\begin_inset Formula $n+1$
+\end_inset
+
+.
+ On a alors : 
+\end_layout
+
+\begin_layout Standard
+\align block
+Hérédité : 
+\begin_inset Formula 
+\begin{align*}
+P_{n+1}(x) & =(x-\alpha)P_{n}+R_{n+1}\\
+ & =(x-\alpha)\sum_{k=0}^{n}(x-\alpha)^{n-k}R_{k}+R_{n+1}\\
+ & =\sum_{k=0}^{n+1}(x-\alpha)^{n+1-k}R_{k}
+\end{align*}
+
+\end_inset
+
+Ce qui prouve la propriété au rang 
+\begin_inset Formula $n+1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Si l'on dérive cette forme, on a : 
+\begin_inset Formula 
+\[
+P_{n}^{(n-j)}(x)=(n-j)!R_{j}+(n-j)!\sum_{k=n-j+1}^{n}(x-\alpha)^{k-(n-j)}R_{n-k}\prod_{i=k}^{k-(n-j)+1}i
+\]
+
+\end_inset
+
+En l'évaluant en 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ on obtient que :
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+P_{n}^{(n-j)}(\alpha) & =(n-j)!R_{j}+0\\
+ & =(n-j)!R_{j}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+
+\series bold
+Méthode 2 
+\end_layout
+
+\begin_layout Standard
+En faisant un développement de Taylor de 
+\begin_inset Formula $P_{n}$
+\end_inset
+
+ à l'ordre n, on a 
+\begin_inset Formula $P_{n}=\sum_{k=0}^{n}\frac{P_{n}^{(k)}(\alpha)}{k!}(x-\alpha)^{k}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+On a aussi 
+\begin_inset Formula $P_{n}(x)=\sum_{k=0}^{n}(x-\alpha)^{k}R_{n-k}$
+\end_inset
+
+ .
+ En faisant une identification terme à terme, on obtient que 
+\begin_inset Formula 
+\[
+R_{n-k}=\frac{P_{n}^{(k)}(\alpha)}{k!}
+\]
+
+\end_inset
+
+ D'où, par un changement de variable en posant 
+\begin_inset Formula $j=n-k$
+\end_inset
+
+, on obtient que 
+\begin_inset Formula $P_{n}^{(n-j)}(\alpha)=(n-j)!R_{j}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+
+\series bold
+Méthode de Calcul
+\end_layout
+
+\begin_layout Standard
+Pour calculer la dérivé à l'ordre 
+\begin_inset Formula $(n-j)$
+\end_inset
+
+ de 
+\begin_inset Formula $P_{n}$
+\end_inset
+
+ il nous suffit d'après le résultat précédent de connaitre 
+\begin_inset Formula $R_{j}$
+\end_inset
+
+.
+ Pour obtenir les différents 
+\begin_inset Formula $R_{j}\,\,\forall j\in\{1,..,n\},$
+\end_inset
+
+ nous allons utiliser l'algorithme de Hörner précédemment trouvé, et nous
+ allons l'appliquer successivement aux 
+\begin_inset Formula $P_{n-j},j\in\{1,..,n\}$
+\end_inset
+
+.
+ On a vu précédemment que 
+\begin_inset Formula $P_{n}(x)$
+\end_inset
+
+ pouvait s'écrire sous la forme 
+\begin_inset Formula $P_{n}(x)=P_{n-1}(x-\alpha)+R_{n}$
+\end_inset
+
+ avec 
+\begin_inset Formula $P_{n-1}=\sum_{j=1}^{n}b_{j}x^{j-1}$
+\end_inset
+
+ et 
+\begin_inset Formula $R_{n}=b_{0}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+De même, on peut écrire 
+\begin_inset Formula $P_{n-1}$
+\end_inset
+
+ tel que 
+\begin_inset Formula $P_{n-1}(x)=P_{n-2}(x-\alpha)+R_{n-1}$
+\end_inset
+
+.
+ Puisque l'on vient d'appliquer Hörner à 
+\begin_inset Formula $P_{n-1}$
+\end_inset
+
+, nous connaissons l'intégralité de ses coefficients 
+\begin_inset Formula $b_{j}$
+\end_inset
+
+.
+ Ainsi on procède de la même manière que dans la section 
+\series bold
+1.1
+\series default
+, en écrivant 
+\begin_inset Formula $P_{n-2}(x)=\sum_{j=2}^{n}c_{j}x^{j-2}$
+\end_inset
+
+, et 
+\begin_inset Formula $R_{n-1}=c_{1}$
+\end_inset
+
+.
+ On a cette fois :
+\begin_inset Formula 
+\[
+\begin{cases}
+c_{n}=b_{n}\\
+c_{k-1}=b_{k-1}+\alpha c_{k}\,\,\forall k\in\{2,..,n-1\}
+\end{cases}
+\]
+
+\end_inset
+
+Ce qui nous permet d'obtenir 
+\begin_inset Formula $c_{1}$
+\end_inset
+
+, qui correspond à 
+\begin_inset Formula $R_{n-1}$
+\end_inset
+
+.
+ On procède ainsi pour déterminer tous les 
+\begin_inset Formula $R_{j}$
+\end_inset
+
+, et on applique la formule trouvée dans la section précédente pour calculer
+ la dérivée voulue.
+\end_layout
+
+\begin_layout Section
+Base de Tchebychev
+\end_layout
+
+\begin_layout Subsection
+Algorithme de Calcul de 
+\begin_inset Formula $\boldsymbol{P_{n}(\alpha)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Méthode 1 :
+\end_layout
+
+\begin_layout Standard
+On considère la base des polynômes de Tchebychev 
+\begin_inset Formula $T_{j}$
+\end_inset
+
+ pour 
+\begin_inset Formula $0\leq j\leq n$
+\end_inset
+
+ définie par 
+\begin_inset Formula 
+\begin{align*}
+T_{0}(x) & =1\\
+T_{1}(x) & =x\\
+T_{m+1} & =2xT_{m}(x)-T_{m-1}(x)
+\end{align*}
+
+\end_inset
+
+ avec 
+\begin_inset Formula $1\leq m\leq n-1$
+\end_inset
+
+
+\begin_inset VSpace defskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align left
+L'expression de 
+\begin_inset Formula $P_{n}$
+\end_inset
+
+ dans cette base est donnée par 
+\begin_inset Formula $P_{n}(x)=\sum_{j=0}^{n}p_{j}T_{j}$
+\end_inset
+
+.
+ L'objectif est de trouver une expression itérative des coefficients de
+ chaque degrès de 
+\begin_inset Formula $P_{n}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\align left
+On a vu au paragraphe d'avant que 
+\begin_inset Formula $P_{n}=(x-\alpha)Q(x)+r$
+\end_inset
+
+ avec 
+\begin_inset Formula $Q(x)$
+\end_inset
+
+ un polynôme degrès inférieur à 
+\begin_inset Formula $n-1$
+\end_inset
+
+.
+ Ainsi 
+\begin_inset Formula $Q(x)=\sum_{j=0}^{n-1}q_{j}T_{j}$
+\end_inset
+
+ dans la base de Tchebychev.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+P_{n} & =(x-\alpha)\sum_{j=0}^{n-1}q_{j}T_{j}+rT_{0}(x)\\
+ & =\sum_{j=1}^{n-1}q_{j}xT_{j}-\sum_{j=1}^{n-1}\alpha q_{j}T_{j}+(x-\alpha)q_{0}+r\\
+ & =\sum_{j=1}^{n-1}\frac{q_{j}}{2}(T_{j+1}(x)+T_{j-1}(x))-\sum_{j=1}^{n-1}\alpha q_{j}T_{j}+(x-\alpha)q_{0}+r\\
+ & =\sum_{j=0}^{n-2}\frac{q_{j+1}}{2}T_{j}(x)+\sum_{j=2}^{n}\frac{q_{j-1}}{2}T_{j}(x)-\sum_{j=1}^{n-1}\alpha q_{j}T_{j}+(x-\alpha)q_{0}+r\\
+ & =\sum_{j=2}^{n-2}\frac{q_{j+1}}{2}T_{j}(x)+\frac{q_{1}}{2}T_{0}(x)+\frac{q_{2}}{2}T_{1}(x)+\sum_{j=2}^{n-2}\frac{q_{j-1}}{2}T_{j}(x)+\frac{q_{n-1}}{2}T_{n}(x)+\frac{q_{n-2}}{2}T_{n-1}(x)\\
+ & -\sum_{j=1}^{n-1}\alpha q_{j}T_{j}+(x-\alpha)q_{0}+r\\
+ & =\sum_{j=2}^{n-2}(\frac{q_{j+1}+q_{j-1}}{2}-\alpha q_{j})T_{j}(x)+(\frac{q_{2}}{2}+q_{0}-\alpha q_{1})T_{1}(x)+(\frac{q_{1}}{2}-\alpha q_{0}+r)T_{0}(x)\\
+ & +\frac{q_{n-1}}{2}T_{n}(x)+(\frac{q_{n-2}}{2}-\alpha q_{n-1})T_{n-1}(x)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align left
+On peut constater par identification des coefficients que 
+\begin_inset Formula 
+\begin{align*}
+p_{n} & =\frac{q_{n-1}}{2}\\
+p_{n-1} & =\frac{q_{n-2}}{2}-\alpha q_{n-1}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align left
+Puis pour 
+\begin_inset Formula $2\leq j\leq n-2$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+p_{j}=\frac{q_{j+1}+q_{j-1}}{2}-\alpha q_{j}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align left
+et enfin 
+\begin_inset Formula 
+\begin{align*}
+p_{1} & =\frac{q_{2}}{2}+q_{0}-\alpha q_{1}\\
+p_{0} & =\frac{q_{1}}{2}-\alpha q_{0}+r
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align left
+Nous pouvons ainsi définir une méthode de récurrence pour calculer les coefficie
+nts de 
+\begin_inset Formula $P_{n}$
+\end_inset
+
+ et trouver l'évaluation de 
+\begin_inset Formula $P_{n}(\alpha)$
+\end_inset
+
+ à la fin de l'itération.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float algorithm
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+VAR
+\series default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace{0.5cm} 
+\end_layout
+
+\end_inset
+
+ q0 , q1 , r , qtemp :
+\series bold
+ Réel; 
+\series default
+j
+\series bold
+ : Entier; 
+\series default
+p[0..n] tableau de Réel 
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+DEBUT
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace{0.5cm} 
+\end_layout
+
+\end_inset
+
+q1 ← 2 * p[n]
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace{0.5cm} 
+\end_layout
+
+\end_inset
+
+q0 ← 2 * p[n-1]+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+alpha$
+\end_layout
+
+\end_inset
+
+ * q1
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace{0.5cm} 
+\end_layout
+
+\end_inset
+
+
+\series bold
+POUR
+\series default
+ j de n-2 à 2 pas de -1 
+\series bold
+FAIRE
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace{1.0cm} 
+\end_layout
+
+\end_inset
+
+qtemp ← 2 * ( p[j] + 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+alpha$
+\end_layout
+
+\end_inset
+
+ * q0 ) - q1
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace{1.0cm} 
+\end_layout
+
+\end_inset
+
+q1 ← q0
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace{1.0cm} 
+\end_layout
+
+\end_inset
+
+q0 ← qtemp
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace{0.5cm} 
+\end_layout
+
+\end_inset
+
+
+\series bold
+FIN POUR
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace{0.5cm} 
+\end_layout
+
+\end_inset
+
+qtemp ← p[1] - q1 * 0.5 + 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+alpha$
+\end_layout
+
+\end_inset
+
+ * q0
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace{0.5cm} 
+\end_layout
+
+\end_inset
+
+q1 ← q0
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace{0.5cm} 
+\end_layout
+
+\end_inset
+
+q0 ← qtemp
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace{0.5cm} 
+\end_layout
+
+\end_inset
+
+r ← p[0] + 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+alpha$
+\end_layout
+
+\end_inset
+
+ * q1 - q0 * 0.5
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace{0.5cm} 
+\end_layout
+
+\end_inset
+
+écrire r
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+FIN
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Algorithme d'évaluation de P en 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+alpha$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\noindent
+\align left
+On remarque que cet algorithme effectue 2 multiplications et 2 additions
+ à chaque boucle.
+ Il effectue également 3 multiplications et une addition pour l'initialisation,
+ ainsi que 4 additions et multiplications après la fin de la boucle.
+ Ainsi :
+\end_layout
+
+\begin_layout Itemize
+\noindent
+\align left
+Coût en multiplication : 
+\begin_inset Formula $3+2*(n-1)+4=2n+5$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\noindent
+\align left
+Coût en addition : 
+\begin_inset Formula $1+2*(n-1)+4=2n+3$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+
+\lang english
+Méthode 2 :
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+On sait que l'on a les expressions suivantes :
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula $\begin{cases}
+P_{n}(x)=\sum_{j=0}^{n}\lambda_{j}T_{j}(x)\\
+T_{j}(x)-2xT_{j-1}(x)+T_{j-2}(x)=0
+\end{cases}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Ainsi on a :
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\[
+\sum_{j=2}^{n}C_{j}(T_{j}(x)-2xT_{j-1}(x)+T_{j-2}(x))=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\begin{align*}
+ & \iff C_{n}(T_{n}(x)-2xT_{n-1}(x)+T_{n-2}(x))+C_{n-1}(T_{n-1}(x)-2xT_{n-2}(x)+T_{n-3}(x))+...\\
+ & \,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,...+C_{3}(T_{3}(x)-2xT_{2}(x)+T_{1}(x))+C_{2}(T_{2}(x)-2xT_{1}(x)+T_{0}(x))=0
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\begin{align*}
+ & \iff C_{n}T_{n}(x)+(C_{n-1}-2xC_{n})T_{n-1}(x)+(C_{n-2}-2xC_{n-1}+C_{n})T_{n-2}(x)+...\\
+ & \,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,...+(C_{2}-2xC_{3}+C_{4})T_{2}(x)+(C_{3}-2xC_{2})T_{1}(x)+C_{2}T_{0}(x)=0
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+ & \iff\underbrace{C_{n}T_{n}(x)+(C_{n-1}-2xC_{n})T_{n-1}(x)+(\sum_{j=2}^{n-2}(C_{j}-2xC_{j+1}+C_{j+2})T_{j}(x))}_{P_{n}(x)-\lambda_{1}T_{1}-\lambda_{0}T_{0}} & (*)\\
+ & \,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,+(C_{3}-2xC_{2})T_{1}(x)+C_{2}T_{0}(x)=0
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Nous avons alors :
+\begin_inset Formula 
+\[
+P_{n}(x)-\lambda_{1}T_{1}-\lambda_{0}T_{0}+(C_{3}-2xC_{2})T_{1}(x)+C_{2}T_{0}(x)=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Ce qui revient à écrire : 
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\[
+P_{n}(x)=(\lambda_{1}-C_{3}+2xC_{2})T_{1}(x)+(\lambda_{0}-C_{2})T_{0}(x)
+\]
+
+\end_inset
+
+Ainsi 
+\begin_inset Formula $P_{n}(x)$
+\end_inset
+
+ peut s'écrire à l'aide des uniques polynômes 
+\begin_inset Formula $T_{0}$
+\end_inset
+
+ et 
+\begin_inset Formula $T_{1}$
+\end_inset
+
+ ( les seules polynômes de Tchebychev dont on connait l'expression direct
+ ).
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+De plus, 
+\begin_inset Formula $(*)$
+\end_inset
+
+ nous permet d'identifier les 
+\begin_inset Formula $n-2$
+\end_inset
+
+ derniers coefficients du polynôme.
+ Nous obtenons alors :
+\begin_inset Formula 
+\[
+\begin{cases}
+C_{n}=\lambda_{n}\\
+C_{n-1}-2xC_{n}=\lambda_{n-1}\\
+C_{j}-2xC_{j+1}+C_{j+2}=\lambda_{j} & \forall j\in\{2,...,n-2\}
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+On peut se poser la question si le système a toujours une solution.
+ Pour cela, écrivons le système sous forme matricielle.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $\text{\ensuremath{\underbrace{\left[\begin{matrix}1 & 0 & \dots &  & \dots & 0\\
+-2x & 1 & 0 & \dots & \dots & 0\\
+1 & -2x & 1 & 0 &  & \vdots\\
+0 & 1 & \ddots & \ddots & \ddots & \vdots\\
+\vdots & \ddots & \ddots & \ddots & \ddots & 0\\
+0 & \dots & 0 & 1 & -2x & 1
+\end{matrix}\right]}_{T}}}\left[\begin{matrix}C_{n}\\
+C_{n-1}\\
+\vdots\\
+\vdots\\
+\vdots\\
+C_{2}
+\end{matrix}\right]=\left[\begin{matrix}\lambda_{n}\\
+\lambda_{n-1}\\
+\vdots\\
+\vdots\\
+\vdots\\
+\lambda_{2}
+\end{matrix}\right]$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+On remarque que 
+\begin_inset Formula $T$
+\end_inset
+
+ est une matrice triangulaire inférieur à diagonale unité.
+ Son déterminant vaut 1, elle est donc inversible, ce qui signifie que le
+ sysème ci-dessus possède une unique solution, et nous permet donc d'affirmer
+ que les 
+\begin_inset Formula $C_{i}$
+\end_inset
+
+ existent bien pour 
+\begin_inset Formula $i\in\{2,\dots,n-2\}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+A l'aide de cette partie théorique nous en déduisons un algorithme pour
+ calculer 
+\begin_inset Formula $P_{n}(\alpha)$
+\end_inset
+
+ quelque soit 
+\begin_inset Formula $\alpha\in\mathbb{R}$
+\end_inset
+
+.
+ Cet algorithme se nomme l'algorithme de Clenshaw.
+ Il consiste à déterminer les 
+\begin_inset Formula $C_{i}$
+\end_inset
+
+
+\lang french
+ pour 
+\begin_inset Formula $i\in\{2,\dots,n-2\}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula 
+\[
+\begin{cases}
+C_{n}=\lambda_{n}\\
+C_{n-1}=\lambda_{n-1}+2xC_{n}\\
+C_{j}=\lambda_{j}+2xC_{j+1}-C_{j+2} & \forall j\in\{2,...,n-2\}
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Enfin, nous évaluons le polynôme en x avec 
+\begin_inset Formula 
+\[
+P_{n}(x)=(\lambda_{1}-C_{3}+2xC_{2})T_{1}(x)+(\lambda_{0}-C_{2})T_{0}(x)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float algorithm
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+VAR
+\series default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace{0.5cm} 
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$C_1$
+\end_layout
+
+\end_inset
+
+ , 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$C_2$
+\end_layout
+
+\end_inset
+
+ , 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$C_3$
+\end_layout
+
+\end_inset
+
+ , r ,x:
+\series bold
+ Réel; 
+\series default
+j
+\series bold
+ : Entier; 
+\series default
+p[0..n] tableau de Réel
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+DEBUT
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace{0.5cm} 
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$C_3$
+\end_layout
+
+\end_inset
+
+ ← p[n]
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace{0.5cm} 
+\end_layout
+
+\end_inset
+
+x = 2 * 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+alpha$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace{0.5cm} 
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$C_2$
+\end_layout
+
+\end_inset
+
+ ← p[n-1] + x * 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$C_3$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace{0.5cm} 
+\end_layout
+
+\end_inset
+
+
+\series bold
+POUR
+\series default
+ j allant de n-2 à 2 pas de -1 
+\series bold
+FAIRE
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace{1.0cm} 
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$C_1$
+\end_layout
+
+\end_inset
+
+ ← p[j] + x * 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$C_2$
+\end_layout
+
+\end_inset
+
+ - 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$C_3$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace{1.0cm} 
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$C_3$
+\end_layout
+
+\end_inset
+
+ ← 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$C_2$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace{1.0cm} 
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$C_2$
+\end_layout
+
+\end_inset
+
+ ← 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$C_1$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace{0.5cm} 
+\end_layout
+
+\end_inset
+
+
+\series bold
+FIN POUR
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace{0.5cm} 
+\end_layout
+
+\end_inset
+
+r ← (p[1] - 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$C_3$
+\end_layout
+
+\end_inset
+
+ + x * 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$C_2$
+\end_layout
+
+\end_inset
+
+ ) * 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+alpha$
+\end_layout
+
+\end_inset
+
+ + (p[0] - 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$C_2$
+\end_layout
+
+\end_inset
+
+ )
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace{0.5cm} 
+\end_layout
+
+\end_inset
+
+écrire r
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+FIN
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Algorithme d'évaluation de P en 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+$
+\backslash
+alpha$
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Coût de l'algorithme : 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $n$
+\end_inset
+
+ multiplications
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $2(n-4)+5=2n-3$
+\end_inset
+
+ additions
+\end_layout
+
+\begin_layout Standard
+Ce qui donne un algorithme en 
+\begin_inset Formula $O(3n)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Stabilité numérique
+\end_layout
+
+\begin_layout Standard
+En plus de l'exemple proposé sur la fiche de TD, nous avons testé l'évaluation
+ d'un polynôme de degré 100 pour vérifier la stabilité de l'algorithme de
+ Clenshaw.
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Exemple : évaluation de 
+\begin_inset Formula $X^{100}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename tchebychevdouble.png
+	lyxscale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Pour un point d'évaluation en entrée égale à 1.0, l'algorithme nous donne
+ effectivement le bon résultat que ça soit en simple précision ou en double
+ précision.
+ Cependant pour un légère variation aux environs de 1.0, nous avons remarqué
+ de grosses variations.
+ La version simple donne pour une évaluation en 1,01 le résultat 685033.500000000
+0000000 et la version double 685038.1218320913612843.
+ Alors que le résultat de 
+\begin_inset Formula $(1.01)^{100}$
+\end_inset
+
+est 2.70481382942.
+\end_layout
+
+\begin_layout Section
+Applications I
+\end_layout
+
+\begin_layout Standard
+On condidère dans cette partie le résultat suivant :
+\begin_inset Formula 
+\[
+\forall|a|<1\,\,ln(1-2acos(\theta)+a²)=-2\sum_{n=1}^{\infty}\frac{a^{n}}{n}cos(n\theta)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Calcul de ln(10)
+\end_layout
+
+\begin_layout Standard
+On cherche à calculer 
+\begin_inset Formula $ln(10)$
+\end_inset
+
+ avec une précision supérieure à 
+\begin_inset Formula $10⁻⁴$
+\end_inset
+
+.
+ On a :
+\begin_inset Formula 
+\begin{align*}
+ln(10) & =ln((1+\frac{1}{9})\times9)\\
+ & =ln(9)+ln((1+\frac{1}{9})\\
+ & =ln(9)+ln(1-2\times\frac{1}{3}\times cos(\frac{\pi}{2})+(\frac{1}{3})²)\\
+ & =ln(9)-2\times\sum_{n=1}^{\infty}\frac{1}{n}\times(\frac{1}{3})^{n}\times cos(n\times\frac{\pi}{2})\\
+ & =ln(9)-2\times\sum_{p=1}^{\infty}\frac{1}{2p}\times(\frac{1}{3})^{2p}\times cos(2p\times\frac{\pi}{2})\\
+ & =ln(9)-\sum_{p=1}^{\infty}\frac{1}{p}\times(\frac{1}{9})^{p}\times cos(p\pi)\\
+ln(10) & =ln(9)-\sum_{p=1}^{\infty}\frac{1}{9^{p}p}\times(-1)^{p}
+\end{align*}
+
+\end_inset
+
+Notre but étant d'approcher 
+\begin_inset Formula $ln(10)$
+\end_inset
+
+ à 
+\begin_inset Formula $10⁻⁴$
+\end_inset
+
+ près cela revient à chercher le plus petit 
+\begin_inset Formula $n$
+\end_inset
+
+ vérifiant 
+\begin_inset Formula 
+\begin{align*}
+|ln(10)-ln(9)+\sum_{p=1}^{n}\frac{1}{9^{p}p}\times(-1)^{p}| & <10⁻⁴
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\iff|ln(9)-\sum_{p=1}^{\infty}\frac{1}{9^{p}p}\times(-1)^{p}-ln(9)+\sum_{p=1}^{n}\frac{1}{9^{p}p}\times(-1)^{p}|<10⁻⁴
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\iff|\sum_{p=n+1}^{\infty}\frac{1}{9^{p}p}\times(-1)^{p}|<10⁻⁴
+\]
+
+\end_inset
+
+ On pose 
+\begin_inset Formula $\forall n\in\mathbb{N}^{*}\,\,a_{n}=\frac{1}{9^{n}n}$
+\end_inset
+
+, alors comme 
+\begin_inset Formula $(a_{n})_{n}$
+\end_inset
+
+ est décroissante positive on a par le critère des séries alternées que
+ :
+\begin_inset Formula 
+\[
+|R_{n}|<a_{n+1}
+\]
+
+\end_inset
+
+ avec 
+\begin_inset Formula $R_{n}=\sum_{p=n+1}^{\infty}\frac{1}{9^{p}p}\times(-1)^{p}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Ainsi, on obtient l'inégalitée suivante :
+\begin_inset Formula 
+\[
+|\sum_{p=n+1}^{\infty}\frac{1}{9^{p}p}\times(-1)^{p}|<\frac{1}{9^{n+1}(n+1)}
+\]
+
+\end_inset
+
+On cherche donc 
+\begin_inset Formula $n$
+\end_inset
+
+ tel que : 
+\begin_inset Formula $\frac{1}{9^{n+1}(n+1)}<10⁻⁴$
+\end_inset
+
+.
+ On remarque que 
+\begin_inset Formula $n=3$
+\end_inset
+
+ est le premier entier permettant d'approcher 
+\begin_inset Formula $ln(10)$
+\end_inset
+
+ avec une précision supérieure à 
+\begin_inset Formula $10⁻⁴$
+\end_inset
+
+.
+ En effet on obtient pour 
+\begin_inset Formula $n=3$
+\end_inset
+
+ :
+\begin_inset Formula 
+\[
+\frac{1}{9^{4}\times4}\thickapprox3,81\times10⁻⁵<10⁻⁴
+\]
+
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename n3.png
+	lyxscale 25
+	scale 40
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+graphe de la fonction 
+\begin_inset Formula $\frac{1}{(n+1)9^{n+1}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1.5cm
+\end_inset
+
+Ainsi en prenant 
+\begin_inset Formula $n=3$
+\end_inset
+
+, on s'assure d'avoir une précision supérieure à 
+\begin_inset Formula $10⁻⁴$
+\end_inset
+
+ pour le calcul de 
+\begin_inset Formula $ln(10)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Calcul à la main de ln(10)
+\end_layout
+
+\begin_layout Standard
+On calcule ln(10) avec la formule 
+\begin_inset Formula $ln(10)=ln(9)-\sum_{p=1}^{\infty}\frac{1}{9^{p}p}\times(-1)^{p}$
+\end_inset
+
+ en prenant p variant de 1 à 
+\begin_inset Formula $n=3$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+ln(10) & =ln(9)+\frac{1}{9}-\frac{1}{9^{2}\times2}+\frac{1}{9³\times3}\\
+ & =2,1972+\frac{1}{9}-\frac{1}{162}+\frac{1}{2187}\\
+ & =2,302595
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Calcul de ln(10) par l'ordinateur
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ln10.png
+	lyxscale 40
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Les deux calculs approchent bien la valeur de ln(10) à 
+\begin_inset Formula $10^{-4}$
+\end_inset
+
+ près; on peut remarquer une légère différence au niveau des chiffres significat
+ifs après 
+\begin_inset Formula $10^{-4}.$
+\end_inset
+
+ Cette différence s'explique par le codage des fractions par l'ordinateur
+ qui peut provoquer de légères variations.
+\end_layout
+
+\begin_layout Subsection
+Développement de 
+\begin_inset Formula $\boldsymbol{ln(10+6x)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+À partir de l'expression donnée on développe, on a :
+\begin_inset Formula 
+\begin{align*}
+ln(10+6x) & =ln(9+2\times3x+1)\\
+ & =ln(9-2\times3cos(\theta)+1),\,\,\theta\in[0;\pi]\implies cos(\theta)\in[1;-1]\\
+ & =ln(1+2\times(-\frac{1}{3})\times cos(\theta)+(-\frac{1}{3})²)+ln(9)\\
+ & =ln(9)-2\times\sum_{n=1}^{\infty}\frac{1}{(-3)^{n}n}cos(n\theta)
+\end{align*}
+
+\end_inset
+
+On veut pouvoir écrire que 
+\begin_inset Formula $ln(10+6x)=\sum_{n=0}^{\infty}b_{n}T_{n}$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+Montrons par récurrence la propriété 
+\begin_inset Formula $P_{n}$
+\end_inset
+
+ qui est la suivante : 
+\begin_inset Formula $\forall n\in\mathbb{N^{*}},$
+\end_inset
+
+ le couple 
+\begin_inset Formula $(T_{n},T_{n-1})$
+\end_inset
+
+ vérifie 
+\begin_inset Formula $T_{n}(x)=cos(n\theta)$
+\end_inset
+
+ et 
+\begin_inset Formula $T_{n-1}(x)=cos((n-1)\theta)$
+\end_inset
+
+ , avec 
+\begin_inset Formula $x=cos(\theta)$
+\end_inset
+
+.
+\series bold
+
+\begin_inset Newline newline
+\end_inset
+
+Initialisation :
+\end_layout
+
+\begin_layout Standard
+Pour 
+\begin_inset Formula $n=0$
+\end_inset
+
+, on a 
+\begin_inset Formula $T_{0}(x)=1=cos(0\times\theta)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Pour 
+\begin_inset Formula $n=1$
+\end_inset
+
+, on a 
+\begin_inset Formula $T_{1}(x)=cos(\theta)=cos(arccos(x))=x$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Donc le couple définit par 
+\begin_inset Formula $(T_{0},T_{1})$
+\end_inset
+
+ vérifie bien l'hypothèse de récurrence, ainsi 
+\begin_inset Formula $P_{1}$
+\end_inset
+
+ est vraie.
+\begin_inset Newline newline
+\end_inset
+
+
+\series bold
+Hérédité :
+\series default
+ On suppose maintenant la propriété 
+\begin_inset Formula $P_{n}$
+\end_inset
+
+ vraie au rang 
+\begin_inset Formula $n$
+\end_inset
+
+, c'est à dire que le couple 
+\begin_inset Formula $(T_{n},T_{n-1})$
+\end_inset
+
+ vérifie l'hypothèse de récurrence.
+ Montrons qu'alors 
+\begin_inset Formula $P_{n+1}$
+\end_inset
+
+ est aussi vraie, c'est à dire que le couple 
+\begin_inset Formula $(T_{n+1},T_{n})$
+\end_inset
+
+ vérifie :
+\begin_inset Formula 
+\[
+\begin{cases}
+T_{n}(x)=cos(n\theta),\,\,x=cos(\theta)\\
+T_{n+1}(x)=cos((n+1)\theta),\,\,x=cos(\theta)
+\end{cases}
+\]
+
+\end_inset
+
+Par hypothèse de récurrence il est évident que 
+\begin_inset Formula $T_{n}(x)=cos(n\theta)$
+\end_inset
+
+.
+ Montrons maintenant l'égalité pour 
+\begin_inset Formula $T_{n+1}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+On a :
+\begin_inset Formula 
+\begin{align*}
+T_{n+1}(x) & =2xT_{n}(x)-T_{n-1}(x)\\
+ & =2cos(\theta)T_{n}(x)-T_{n-1}(x)\\
+ & =2cos(\theta)cos(n\theta)-cos((n-1)\theta)\\
+ & =2cos(\theta)cos(n\theta)-cos(\theta)cos(n\theta)-sin(n\theta)sin(\theta)\\
+ & =cos(\theta)cos(n\theta)-sin(n\theta)sin(\theta)\\
+ & =cos(n\theta+\theta)\\
+ & =cos((n+1)\theta)
+\end{align*}
+
+\end_inset
+
+Finalement on obtient bien que 
+\begin_inset Formula $T_{n+1}(x)=cos((n+1)\theta)$
+\end_inset
+
+ donc 
+\begin_inset Formula $P_{n+1}$
+\end_inset
+
+ est bien vérifiée.
+\begin_inset Newline newline
+\end_inset
+
+Ainsi comme 
+\begin_inset Formula $ln(10+6x)=ln(9)-2\times\sum_{n=1}^{\infty}\frac{1}{(-3)^{n}n}cos(n\theta)$
+\end_inset
+
+, on peut identifier les 
+\begin_inset Formula $b_{n}$
+\end_inset
+
+.
+ On obtient :
+\begin_inset Formula 
+\[
+\begin{cases}
+b_{0}=ln(9)\\
+b_{n}=\frac{-2}{(-3)^{n}n},\,\,\forall n\in\mathbb{N^{*}}
+\end{cases}
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+On cherche mainenant le 
+\begin_inset Formula $k\in\mathbb{N}$
+\end_inset
+
+ tel que : 
+\begin_inset Formula 
+\[
+|ln(10+6x)-ln(9)+\sum_{n=1}^{k}\frac{2}{3^{n}n}\times(-1)^{n}\times cos(n\theta)|<10⁻⁴
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\iff|ln(9)-2\times\sum_{n=1}^{\infty}\frac{1}{(-3)^{n}n}cos(n\theta)-ln(9)+\sum_{n=1}^{k}\frac{2}{3^{n}n}\times(-1)^{n}\times cos(n\theta)|<10⁻⁴
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\iff|\sum_{n=k+1}^{\infty}\frac{2\times(-1)^{n}}{3^{n}n}cos(n\theta)|<10⁻⁴
+\]
+
+\end_inset
+
+Or on a :
+\begin_inset Formula 
+\begin{align*}
+|\sum_{n=k+1}^{\infty}\frac{2\times(-1)^{n}}{3^{n}n}cos(n\theta)| & \leq\sum_{n=k+1}^{\infty}|\frac{2\times(-1)^{n}}{3^{n}n}||cos(n\theta)|\\
+ & \leq\sum_{n=k+1}^{\infty}|\frac{2}{3^{n}n}|\\
+ & \leq2\times\frac{1}{k+1}\times\sum_{n=k+1}^{\infty}(\frac{1}{3})^{n}\\
+ & =\frac{2}{k+1}\times(\frac{1}{3})^{k+1}\times\frac{1}{1-\frac{1}{3}}\\
+ & =\frac{1}{(k+1)\times3^{k}}
+\end{align*}
+
+\end_inset
+
+On remarque ensuite que 
+\begin_inset Formula $k=7$
+\end_inset
+
+ est le premier entier tel que 
+\begin_inset Formula $\frac{1}{(k+1)\times3^{k}}<10⁻⁴$
+\end_inset
+
+.
+ En effet on obtient pour 
+\begin_inset Formula $k=7$
+\end_inset
+
+: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\frac{1}{8\times3^{7}}\thickapprox5,72\times10⁻⁵<10⁻⁴
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename k7.pdf
+	lyxscale 25
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+graphe de la fonction 
+\begin_inset Formula $\frac{1}{(k+1)3^{k}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1.5cm
+\end_inset
+
+Ainsi en prenant 
+\begin_inset Formula $k=7$
+\end_inset
+
+, on s'assure d'avoir une précision supérieure à 
+\begin_inset Formula $10⁻⁴$
+\end_inset
+
+ pour le calcul de 
+\begin_inset Formula $ln(10+6x)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection*
+Exemple 
+\end_layout
+
+\begin_layout Standard
+Pour tester le programme, nous avons choisit comme point d'évaluation 0,5
+ car celui-ci est codé sans erreur par l'ordinateur.
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+ln(10+6*\frac{1}{2}) & =ln(13)\\
+ & =ln(9)-2\times\sum_{n=1}^{7}\frac{1}{(-3)^{n}n}cos(n\theta)\\
+ & =ln(9)-2\times(\frac{-1}{3}\times0,5+\frac{1}{(-3)^{2}\times2}\times cos(2arccos(0.5))+...\\
+ & ...+\frac{1}{(-3)^{7}\times7}\times cos(7arccos(0.5)))\\
+ & =2,56491507
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Le programme obtient pour une évaluation de 
+\begin_inset Formula $ln(10+6x)$
+\end_inset
+
+ en 0,5 :
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename ln10+6xen05.png
+	lyxscale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Algorithme de calcul de 
+\begin_inset Formula $\boldsymbol{ln(10+6x)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+On a précédemment démontré que 
+\begin_inset Formula $\forall x\in[-1;1],\,\,\,ln(10+6x)\thickapprox\sum_{n=0}^{7}b_{n}T_{n}(x)$
+\end_inset
+
+, avec : 
+\begin_inset Formula 
+\[
+\begin{cases}
+b_{0}=ln(9)\\
+b_{n}=\frac{-2}{(-3)^{n}n},\,\,\forall n\in\mathbb{N^{*}}
+\end{cases}
+\]
+
+\end_inset
+
+On reprend donc exactement l'algorithme de Clenshaw pour le calcul de 
+\begin_inset Formula $P_{n}(\alpha)$
+\end_inset
+
+ développé en section 2.1.2.
+ Simplement on rajoute à chaque tour de boucle le calcul des 
+\begin_inset Formula $b_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Application II
+\end_layout
+
+\begin_layout Subsection
+Développement de 
+\begin_inset Formula $\frac{10+x}{101+20x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\frac{10+x}{101+20x} & =\frac{10\times(1+0,1x)}{10\times(10,1+2x)}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+On pose 
+\begin_inset Formula $x=cos(\theta)\in[-1,1]$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\frac{10+x}{101+20x} & =\frac{1+0,1cos(\theta)}{10,1+2cos(\theta)}\\
+ & =\frac{1-(-0,1cos(\theta))}{10\times(1,01-2(-0,1)cos(\theta))}\\
+ & =\frac{1}{10}\times\frac{1-(-0,1cos(\theta))}{1-2(-0,1)cos(\theta)+(-0,1)^{2}}\\
+ & =\frac{1}{10}\times\sum_{n=0}^{\infty}(-0,1)^{n}cos(n\theta)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Comme 
+\begin_inset Formula $cos(n\theta)=T_{n}(x)$
+\end_inset
+
+, on a 
+\begin_inset Formula $\frac{10+x}{101+20x}=\sum_{n=0}^{\infty}b_{n}T_{n}(x)$
+\end_inset
+
+ avec 
+\begin_inset Formula $b_{n}(x)=\frac{(-1)^{n}}{10^{n+1}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+On cherche ensuite à avoir une approximation de 
+\begin_inset Formula $\frac{10+x}{101+20x}$
+\end_inset
+
+ à 
+\begin_inset Formula $10^{-5}$
+\end_inset
+
+près.
+\end_layout
+
+\begin_layout Standard
+Pour cela, appliquons le critère de Cauchy à la série 
+\begin_inset Formula $S=\sum_{n=0}^{\infty}\frac{(-1)^{n}}{10^{n+1}}cos(n\theta)$
+\end_inset
+
+ :
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+|S_{k+1}-S_{k}| & =\frac{1}{10}|\sum_{n=0}^{k+1}(-0,1)^{n}cos(n\theta)-\sum_{n=0}^{k}(-0,1)^{n}cos(n\theta)|\\
+ & =\frac{1}{10}|(-0,1)^{k+1}cos((k+1)\theta)|<10^{-5}\\
+\iff & |(-0,1)^{k+1}cos((k+1)\theta)|<10^{-4}\\
+\iff & |(-1)^{k+1}\times(0,1)^{k+1}|<10^{-4}\\
+\iff & (0,1)^{k+1}<10^{-4}\\
+\iff & (10^{-1})^{k+1}<10^{-4}\\
+\iff & 10^{-k-1}<10^{-4}\\
+\iff & k>3
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ainsi en prenant 
+\begin_inset Formula $k=4$
+\end_inset
+
+, nous pourrons obtenir une approche de 
+\begin_inset Formula $\frac{10+x}{101+20x}$
+\end_inset
+
+ à 
+\begin_inset Formula $10^{-5}$
+\end_inset
+
+près.
+\end_layout
+
+\begin_layout Subsection
+Algorithme d'évaluation de 
+\begin_inset Formula $\frac{10+x}{101+20x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dans cette partie nous reporduisons le raisonnement précédent en écrivant
+ 
+\series bold
+
+\begin_inset Formula $\frac{10+x}{101+20x}$
+\end_inset
+
+
+\series default
+ comme 
+\begin_inset Formula $\sum_{n=0}^{4}b_{n}T_{n}(x)\,\,\,pour\,\,\,\forall x\in[-1;1]$
+\end_inset
+
+ et : 
+\begin_inset Formula 
+\[
+\begin{cases}
+b_{n}=\frac{(-1)^{n}}{10^{n+1}},\,\,\forall n\in\mathbb{\mathbb{N}}\end{cases}
+\]
+
+\end_inset
+
+Dans l'algorithme d'évalution en 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ il nous faut donc calculer les 
+\begin_inset Formula $b_{n}$
+\end_inset
+
+ adaptés au nouveau problème.
+ Ainsi à l'aide de l'algorithme de Clenshaw et par le calcul de seulement
+ 5 termes nous réussissons à obtenir le résultat avec une précision de 5
+ décimales.
+ 
+\end_layout
+
+\begin_layout Standard
+Si nous nous intéressons aux résultats informatiques, nous observons que
+ le résultat n'est pas exact avec une précision de 
+\begin_inset Formula $10⁻⁵$
+\end_inset
+
+ mais de 
+\begin_inset Formula $10⁻⁴$
+\end_inset
+
+.
+ En effet, dans cette partie, les 
+\begin_inset Formula $b_{n}$
+\end_inset
+
+sont égaux à 
+\begin_inset Formula $0,1\times(\frac{-1}{10})^{n}$
+\end_inset
+
+, cependant le chiffre 
+\begin_inset Formula $(\frac{-1}{10})$
+\end_inset
+
+ n'est pas représentable exactement en machine; il est impossible de l'écrire
+ comme 
+\begin_inset Formula $2^{e}(1+m)\,\,\,,\,où\,\,m\in[0;1[$
+\end_inset
+
+.
+ Par conséquent, à chaque 
+\begin_inset Formula $b_{n}$
+\end_inset
+
+calculé dans la somme et à la fin du calcul le produit par 
+\begin_inset Formula $\frac{1}{10}$
+\end_inset
+
+ génère au total beaucoup d'approximations et d'erreurs.
+ En allant un peu plus loin, si nous réalisons plus de boucles pour avoir
+ une supposée meilleure précision, nous observons que le résultat se dégrade.
+ Ceci s'explique encore une fois par le fait que le nombre 
+\begin_inset Formula $\frac{1}{10}$
+\end_inset
+
+ apporte à chaque itération plus d'erreurs et ne permet pas d'obtenir la
+ solution à ce niveau de précision.
+ On peut donc considérer le problème comme instable numériquement.
+ 
+\end_layout
+
+\begin_layout Subsection
+Exemple 
+\end_layout
+
+\begin_layout Standard
+Dans cette exemple, nous évaluons 
+\series bold
+
+\begin_inset Formula $\frac{10+x}{101+20x}$
+\end_inset
+
+
+\series default
+ en 1.0 Tout d'abord à la main puis avec le programme.
+ On prend 
+\begin_inset Formula $k=4$
+\end_inset
+
+ pour avoir une approximation à 
+\begin_inset Formula $10^{-5}$
+\end_inset
+
+ près.
+\begin_inset Formula 
+\begin{align*}
+\frac{10+x}{101+20x} & =\sum_{n=0}^{4}(-0,1)^{n}cos(n\theta)\\
+ & =1.0-0,1+(-1,0)^{2}\times cos(2arccos(1,0))+\\
+ & +(-1,0)^{3}\times cos(3arccos(1,0))+(-1,0)^{4}\times cos(4arccos(1,0))\\
+ & =0,9091
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Le programme donne quant à lui :
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename IS.png
+	lyxscale 45
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+Ce qui est bien fidèle au résultat obtenu à la main.
+\end_layout
+
+\end_body
+\end_document

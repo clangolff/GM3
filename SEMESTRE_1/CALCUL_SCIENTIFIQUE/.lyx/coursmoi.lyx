@@ -1,0 +1,3454 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass report
+\begin_preamble
+\renewcommand{\descriptionlabel}[1]{\hspace\labelsep\upshape\bfseries #1:}
+\renewenvironment{description}{\list{}{%
+  \setlength{\itemsep}{-2pt}
+  \advance\leftmargini6\p@ \itemindent-12\p@
+  \labelwidth\z@ \let\makelabel\descriptionlabel}%
+}{
+  \endlist
+}
+\end_preamble
+\use_default_options false
+\maintain_unincluded_children false
+\begin_local_layout
+Style Description
+LabelIndent           MM
+LeftMargin            MMMMMxx
+End
+\end_local_layout
+\language french
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 1
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2.5cm
+\topmargin 2cm
+\rightmargin 3cm
+\bottommargin 2.5cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style french
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part
+Représentation des nombres
+\end_layout
+
+\begin_layout Section*
+Nomre IEEE754
+\end_layout
+
+\begin_layout Standard
+1 byte = 1 octet = 8 bits
+\end_layout
+
+\begin_layout Standard
+un entier est représenté par 4 byte =32 bits.
+ La plage de représentation est de 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+-2^{-31}<N<2^{31}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+équiavament en puissance de 10 à 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+-10^{-9}<N<10⁹
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Representation des decimaux
+\end_layout
+
+\begin_layout Standard
+Un decimal s’ecrit sous la forme 
+\begin_inset Formula $m10^{e}$
+\end_inset
+
+ avec m la mantisse et e l'exposant.
+\end_layout
+
+\begin_layout Standard
+En machine, le décimal s'écrit 
+\begin_inset Formula $M2^{E}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+31
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+30...
+ 23
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+22...
+ 0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+signe
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+exposant biaisé
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+mantisse
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1 bit
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8 bits
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+23 bits
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $(-1)^{bitSigne}*(1+mantisse)*2^{exposantbiaisé-127}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+maximum = 
+\begin_inset Formula $2²^{7}=2^{128}\simeq2³^{40}\simeq10⁴⁰$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+minimum = 
+\begin_inset Formula $2^{-}²^{7}\simeq10^{-}⁴⁰$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Zero machine et precision machine
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Définition
+\series default
+ zéro machine : Le plus grand x tel que x soit represente par 0 en machine.
+ (dépend de l'exposant)
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Définition
+\series default
+ précision machine : Le plus grand x tel que 1+x soit represente par 1 en
+ machine.
+ (dépend de la mantisse)
+\end_layout
+
+\begin_layout Standard
+exemple
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $2^{23}\simeq10⁷$
+\end_inset
+
+ précision machine : 
+\begin_inset Formula $10^{-7}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $1+0.000$
+\end_inset
+
+ 
+\begin_inset Formula $001$
+\end_inset
+
+ = 
+\begin_inset Formula $1.000$
+\end_inset
+
+ 
+\begin_inset Formula $001$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+1 
+\begin_inset Formula $+0.000$
+\end_inset
+
+ 
+\begin_inset Formula $000$
+\end_inset
+
+ 
+\begin_inset Formula $01$
+\end_inset
+
+ = 
+\begin_inset Formula $1.000$
+\end_inset
+
+ 
+\begin_inset Formula $000$
+\end_inset
+
+ 
+\begin_inset Formula $0$
+\end_inset
+
+ = 1
+\end_layout
+
+\begin_layout Section*
+Flottants représentés sur 8 byte
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="3">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+63
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+62...
+ 52
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+51...
+ 0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+signe
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+exposant biaisé
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+mantisse
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1 bit
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11 bits
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+52 bits
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $(-1)^{bitSigne}*(1+mantisse)*2^{exposantbiaisé-1023}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+zéro machine = 
+\begin_inset Formula $10^{-308}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+précision machine = 
+\begin_inset Formula $10^{-14}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Arithmetique etendue Norme IEEE 754
+\end_layout
+
+\begin_layout Standard
+La norme introduit 
+\begin_inset Formula $\text{Inf}+∞$
+\end_inset
+
+Overflow -Inf −∞ Underflow NaN not a number, Invalid operation, operation
+ illegale (ex √−1 )
+\end_layout
+
+\begin_layout Standard
+Ces quantites obeissent a des regles d’operation bien precises 
+\end_layout
+
+\begin_layout Standard
+Inf ± x = Inf 
+\end_layout
+
+\begin_layout Standard
+Inf × x = Inf 
+\end_layout
+
+\begin_layout Standard
+Inf - Inf = NaN 
+\end_layout
+
+\begin_layout Standard
+Inf * 0 = NaN 
+\end_layout
+
+\begin_layout Standard
+N’importe quelle operation sur un NaN donne un NaN
+\end_layout
+
+\begin_layout Section*
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+L’Éditeur VI
+\end_layout
+
+\begin_layout Standard
+Cet éditeur peut fonctionner en 3 modes différents: un mode commande, un
+ mode insertion et un mode ligne.
+ 
+\end_layout
+
+\begin_layout Standard
+Pour l’appeler taper ’vi nom de fichier’.
+ Le pointeur se trouve alors en 1ere ligne 1ere colonne du fichier en mode
+ commande.
+ 
+\end_layout
+
+\begin_layout Standard
+Comme tout programme UNIX vi distingue les majuscules, si vous avez des
+ problèmes et que rien ne marche il est fort possible que vous soyez en
+ mode majuscule (Caps.
+ Lock).
+ Habituez vous à utiliser Esc de façon préventive.
+ 
+\end_layout
+
+\begin_layout Subsection*
+Le mode commande
+\end_layout
+
+\begin_layout Standard
+Ce mode permet de visualiser le fichier, de se déplacer, la recherche de
+ chaines de caractères...
+ Pour s’assurer que l’on est en mode commande taper Esc (escape) , si on
+ est en mode insertion on en sort.
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+Déplacements 
+\end_layout
+
+\begin_layout Itemize
+lents: utiliser les fleches, ou les touches ’h,j,k,l’ 
+\end_layout
+
+\begin_layout Itemize
+rapides: Ctrl f (forward) , Ctrl b (backward) , Ctrl u(up) , Ctrl d (down)
+ 
+\end_layout
+
+\begin_layout Itemize
+’0’ positionne le pointeur en début de ligne courante, ’$’ en fin.
+ 
+\end_layout
+
+\begin_layout Itemize
+’G’ positionne le pointeur en fin de fichier.
+ Pour aller en début de fichier il faut utiliser le mode ligne et taper
+ ’:1’ suivi de Return.
+ 
+\end_layout
+
+\begin_layout Itemize
+Pour voir ou on est dans le fichier: Ctrl g (affiche ou, dans quel fichier)
+ 
+\end_layout
+
+\begin_layout Itemize
+Au cas ou l’affichage a été brouille, Crtl l le restaure 
+\end_layout
+
+\begin_layout Itemize
+Recherche de chaines: ’/chaine/’ suivi de enter (return) met le pointeur
+ sur la première occurrence de chaine dans le texte, pour voir les suivantes
+ taper n (next), pour les précédentes taper N.
+ Attention aux caractères particuliers , ils doivent être précédés d’un
+ / ainsi /3
+\backslash
+.4
+\backslash
+$/ recherche la chaine 3.4$ dans le texte.
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+Modification de texte 
+\end_layout
+
+\begin_layout Itemize
+’x’ détruit la lettre sur laquelle est le pointeur 
+\end_layout
+
+\begin_layout Itemize
+’dw’ détruit le mot (un mot est un groupe de lettres définis par 2 blancs
+ ou deux caractères spéciaux .
+ *..)
+\end_layout
+
+\begin_layout Itemize
+’dd’ détruit la ligne courante
+\end_layout
+
+\begin_layout Itemize
+’D’ détruit la ligne a partir du pointeur 
+\end_layout
+
+\begin_layout Itemize
+’J’ joint la ligne courante a sa suivante (mise en page)
+\end_layout
+
+\begin_layout Subsubsection*
+Repetition et annulation de commande 
+\end_layout
+
+\begin_layout Itemize
+’.’ répète la dernière commande effectuée ( même en mode ligne!) Couplee
+ avec n ou N se revele très utile pour des substitutions.
+ 
+\end_layout
+
+\begin_layout Itemize
+’u’ annule la dernière opération effectuée.
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+Copie - coller 
+\end_layout
+
+\begin_layout Itemize
+Il existe 10 buffers temporaires sous vi reperes par les lettres a-j.
+ Ces buffers restent actifs meme si on change de fichier, lors d’une session
+ vi.
+ Pour copier les 6 lignes suivant le pointeur dans le buffer a ”a6yy Pour
+ coller après avoir positioné le pointeur ”ap 
+\end_layout
+
+\begin_layout Itemize
+'4yy' copie 4 lignes à partir du curseur
+\end_layout
+
+\begin_layout Itemize
+Se placer en mode visuel : Esc puis taper 'v'.
+ Se séplacer ensuite avec les lignes pour pour sélectionner les lignes à
+ copier.
+ Taper ensuite sur la touche y pour copier puis p pour coller.
+\end_layout
+
+\begin_layout Subsection*
+Le mode insertion
+\end_layout
+
+\begin_layout Standard
+Ce mode permet d’introduire du texte dans le fichier.
+ Les deux principales commandes sont ’i’ (insert) , ’a’ (append).
+ Lorsque l’on tape ’i’ , rien ne s’affiche, on peut alors taper son texte
+ avec les retours a la ligne.
+ Ce texte sera place juste avant le pointeur.
+ ’a’ fonctionnne de la meme facon sauf que le texte est place apres le pointeur.
+ On sort du mode insertion en tapant Esc (escape).
+ Pour placer du texte en debut de ligne utiliser ’I’, en fin ’A’ .
+ 
+\end_layout
+
+\begin_layout Itemize
+Pour changer un mot utiliser ’cw’, taper la correction, sortir avec Esc.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+manip pratique pour changer rapidement des instructions qui se ressemblent
+ dans un makefile par exemple.
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+/mot1
+\end_layout
+
+\begin_layout Plain Layout
+
+cw mot2 [esc]
+\end_layout
+
+\begin_layout Plain Layout
+
+n [enter]
+\end_layout
+
+\begin_layout Plain Layout
+
+.
+ [enter]
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Pour changer toute les occurences d'une chaine de caractères dans un fichier
+ : ':%s/anciennechaine/nouvellechaine/g'
+\end_layout
+
+\begin_layout Subsection*
+Le mode ligne
+\end_layout
+
+\begin_layout Standard
+Il est constitué par un éditeur ligne appele ’ex’.
+ Pour l’appeler il suffit de faire précéder la commande par ’:’.
+ Il permet la position du pointeur sur une ligne donnée, ce qui est très
+ utile pour une message d’erreur lors d’une compilation par exemple.
+ Il sert aussi pour substituer des chaines de caracteres, il sert à la sauvegard
+e du fichier et permet l’accès à unix.
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+position du pointeur
+\end_layout
+
+\begin_layout Itemize
+':10’ suivi de Return met le pointeur en ligne 10 ’:.=’ donne le numero de
+ la ligne courante 
+\end_layout
+
+\begin_layout Itemize
+’:set nu’ affiche les numeros de ligne 
+\end_layout
+
+\begin_layout Subsubsection*
+sauvegarde du fichier
+\end_layout
+
+\begin_layout Itemize
+’:w ’ ecrit le fichier courant sur disque 
+\end_layout
+
+\begin_layout Itemize
+’:wq’ sauve et sort 
+\end_layout
+
+\begin_layout Itemize
+’:q!’ sort sans sauver
+\end_layout
+
+\begin_layout Itemize
+’:w! file’ force l’ecriture dans file
+\end_layout
+
+\begin_layout Subsubsection*
+manipulation de blocs de lignes
+\end_layout
+
+\begin_layout Paragraph*
+detruction 
+\end_layout
+
+\begin_layout Itemize
+’23,45d’ detruit les lignes 23 a 45 
+\end_layout
+
+\begin_layout Itemize
+’.,$d’ detruit les lignes de la ligne courante a la fin du fichier.
+ 
+\end_layout
+
+\begin_layout Paragraph*
+ecriture dans un fichier
+\end_layout
+
+\begin_layout Itemize
+’:1,45w file’ ecrit les lignes 1 a 45 dans file.
+ 
+\end_layout
+
+\begin_layout Paragraph*
+inclusion d’un fichier 
+\end_layout
+
+\begin_layout Itemize
+’:r file’ importe file dans le fichier courant a la position du pointeur.
+ (cette commande couplee a la precedente permet facilement de faire du ’copie-
+ coller’) 
+\end_layout
+
+\begin_layout Subsubsection*
+changement de fichier courant
+\end_layout
+
+\begin_layout Itemize
+’:e file2’ edite file2
+\end_layout
+
+\begin_layout Subsection*
+Appel a UNIX
+\end_layout
+
+\begin_layout Itemize
+’: sh’ permet de lancer un shell apartir de vi, sans sortir.
+ On en sort avec Ctrl d 
+\end_layout
+
+\begin_layout Itemize
+’:! commande unix’ permet de lancer une commande unix quelconque.
+ Ainsi ’:!ls’ fait une liste des fichiers dans le repertoire courant.
+ 
+\end_layout
+
+\begin_layout Itemize
+’:r!ls’ inclue la liste des fichiers dans le repertoire courant dans le
+ fichier en cours d’edition.
+ 
+\end_layout
+
+\begin_layout Itemize
+’ !xterm &’ lance un xterm en tache de fond (pour ne pas bloquer la fenetre
+ ”lanceuse”).
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+Fortran
+\end_layout
+
+\begin_layout Section*
+Syntaxe et règles operatoires
+\end_layout
+
+\begin_layout Itemize
+langage utilise principalement pour le calcul scientifique standard 
+\end_layout
+
+\begin_layout Itemize
+Variables en minuscule, pas d’accents 
+\end_layout
+
+\begin_layout Itemize
+typer toutes les variables (implicit none) (a-h,o-z) real , (i-m) integer
+ 
+\end_layout
+
+\begin_layout Itemize
+Format fixe : instructions entre colonnes 7 et 72 colonne 6 prolongation
+ ligne precedente, colonne 1 commentaire (c) 
+\end_layout
+
+\begin_layout Itemize
+L’espace ne joue pas de role, utilisez le pour que votre code soit lisible:
+ indentez les boucles, ’aerez’ vos formules...
+ 
+\end_layout
+
+\begin_layout Itemize
+fortran passe des adresses, toutes les variables sont locales pour un tableau
+ fortran passe l’adresse du premier element C passe des valeurs 
+\end_layout
+
+\begin_layout Itemize
+pas de melanges de types de flottants, ou real ou double precision pas les
+ deux 
+\end_layout
+
+\begin_layout Subsection*
+Évaluation des expressions
+\end_layout
+
+\begin_layout Standard
+Le resultat d’operations depend du type de variables utilisées.
+ 
+\end_layout
+
+\begin_layout Standard
+Lorsque l’on ecrit n3 =n1/n2 ou n1,n2 et n3 sont des entiers, le resultat
+ est le quotient de la division euclidienne de n1 par n2.
+ 
+\end_layout
+
+\begin_layout Standard
+Une operation entre deux variables donne un resultat qui est represente
+ par la machine par le type le plus eleve des deux variables en respectant
+ la hierarchie double precision > real > integer
+\end_layout
+
+\begin_layout Standard
+exemples: 1./2 → 0.5 1/2 → 0.
+ 
+\end_layout
+
+\begin_layout Standard
+Les priorités des operateurs arithmetiques sont les suivantes ∗∗ > ∗/ >
+ +− 
+\end_layout
+
+\begin_layout Standard
+Les priorités des operateurs logiques sont les suivantes
+\end_layout
+
+\begin_layout Itemize
+comparateurs .gt.
+ .ge.
+ .eq.
+ .ne.
+ .le.
+ .lt.
+ 
+\end_layout
+
+\begin_layout Itemize
+.not.
+ 
+\end_layout
+
+\begin_layout Itemize
+.or.
+ 
+\end_layout
+
+\begin_layout Itemize
+.eqv.
+ .neqv.
+ 
+\end_layout
+
+\begin_layout Standard
+Les priorités des operateurs sont les suivantes 
+\end_layout
+
+\begin_layout Itemize
+operateurs arithmetiques
+\end_layout
+
+\begin_layout Itemize
+concatenation
+\end_layout
+
+\begin_layout Itemize
+comparaison 
+\end_layout
+
+\begin_layout Itemize
+operateurs logiques 
+\end_layout
+
+\begin_layout Standard
+Dans l’evaluation d’expressions complexes le compilateur suit l’ordre suivant
+ 
+\end_layout
+
+\begin_layout Itemize
+appels de fonctions 
+\end_layout
+
+\begin_layout Itemize
+expressions entre parentheses en commmencant par les plus internes 
+\end_layout
+
+\begin_layout Itemize
+le reste est evalué en suivant les priorités des opérateurs de gauche à
+ droite pour les opérateurs de priorités égales 
+\end_layout
+
+\begin_layout Subsection*
+Boucle a nombre fixe d’iterations
+\end_layout
+
+\begin_layout Standard
+Repetition d’un grand nombre d’operations en variant des données notation
+ recente (fortran 90 et 95) , plus claire
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+do i=n1,n2,n3
+\end_layout
+
+\begin_layout Plain Layout
+
+	.
+\end_layout
+
+\begin_layout Plain Layout
+
+	.
+\end_layout
+
+\begin_layout Plain Layout
+
+	.
+\end_layout
+
+\begin_layout Plain Layout
+
+enddo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+avec les regles suivantes:
+\end_layout
+
+\begin_layout Itemize
+n1 = n2 la boucle est effectuee une fois 
+\end_layout
+
+\begin_layout Itemize
+n1 > n2 et n3 >0 , la boucle n’est pas effectuee 
+\end_layout
+
+\begin_layout Itemize
+n1 < n2 et n3 >0 , la boucle est effectuee pour i=n1,n1+n3 n1+2*n3,...n1+k*n3
+ avec k tel que n1+(k+1)*n3 > n2 
+\end_layout
+
+\begin_layout Standard
+Dans l’exemple donne plus haut n3=1 (la valeur par defaut) 
+\end_layout
+
+\begin_layout Subsection*
+4 Boucle conditionnelle
+\end_layout
+
+\begin_layout Standard
+Repetition d’un grand nombre d’operations jusqu’a ce qu’un resultat de test
+ change.
+ 
+\end_layout
+
+\begin_layout Standard
+do while (tant que) obsolete remplace par boucle do avec l’instruction exit
+ de sortie de boucle permet un meilleur controle de flux.
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+do
+\end_layout
+
+\begin_layout Plain Layout
+
+	if(condition) then
+\end_layout
+
+\begin_layout Plain Layout
+
+		exit
+\end_layout
+
+\begin_layout Plain Layout
+
+	endif
+\end_layout
+
+\begin_layout Plain Layout
+
+enddo
+\end_layout
+
+\end_inset
+
+Exemple: iteration 
+\begin_inset Formula $x_{n+1}=f(x_{n})$
+\end_inset
+
+ avec comme criteres d’arret n < nmax ou |
+\begin_inset Formula $x_{n+1}−x_{n}$
+\end_inset
+
+| < tol 
+\end_layout
+
+\begin_layout Itemize
+Version avec exit
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+x = x0
+\end_layout
+
+\begin_layout Plain Layout
+
+n = 0
+\end_layout
+
+\begin_layout Plain Layout
+
+res = abs(x0 - f(x0))
+\end_layout
+
+\begin_layout Plain Layout
+
+icon = 1
+\end_layout
+
+\begin_layout Plain Layout
+
+do n=1,nmax
+\end_layout
+
+\begin_layout Plain Layout
+
+	x1 = f(x)
+\end_layout
+
+\begin_layout Plain Layout
+
+	res = abs(x1 - x)
+\end_layout
+
+\begin_layout Plain Layout
+
+	if (res < tol) then
+\end_layout
+
+\begin_layout Plain Layout
+
+		icon = 0
+\end_layout
+
+\begin_layout Plain Layout
+
+		exit
+\end_layout
+
+\begin_layout Plain Layout
+
+	endif
+\end_layout
+
+\begin_layout Plain Layout
+
+	write(*,*) n,x1,res
+\end_layout
+
+\begin_layout Plain Layout
+
+	x = x1
+\end_layout
+
+\begin_layout Plain Layout
+
+enddo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+L’indice icon indique quel est la raison pour l’arret icon = 0 convergence
+ , sinon nmax iterations sans converger
+\end_layout
+
+\begin_layout Itemize
+Version moins precise avec le do while (ne permet pas de preciser la raison
+ de l’arret)
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+x = x0
+\end_layout
+
+\begin_layout Plain Layout
+
+n = 0
+\end_layout
+
+\begin_layout Plain Layout
+
+res = abs(x0 - f(x0))
+\end_layout
+
+\begin_layout Plain Layout
+
+do while(n < nmax) .and.
+ (res > tol)
+\end_layout
+
+\begin_layout Plain Layout
+
+	n = n + 1 
+\end_layout
+
+\begin_layout Plain Layout
+
+	x1 = f(x)
+\end_layout
+
+\begin_layout Plain Layout
+
+	res = abs(x1 - x)
+\end_layout
+
+\begin_layout Plain Layout
+
+	write(*,*) n,x1,res
+\end_layout
+
+\begin_layout Plain Layout
+
+	x = x1
+\end_layout
+
+\begin_layout Plain Layout
+
+enddo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Remarques: Apres la sortie de boucle la valeur de l’indice de boucle est
+ perdue donc il ne faut jamais l’utiliser hors de la boucle.
+ Un indice de boucle ne doit jamais etre modifie dans la boucle.
+ 
+\end_layout
+
+\begin_layout Section*
+Manipulation des tableaux dynamique
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+allocate
+\series default
+ (array, stat=err) permet de faire l’allocation mémoire du tableau.
+ Si le mot clé stat= est spécifié, la variable err (de type integer) vaut
+ 0 si l’allocation s’est déroulée sans problème et 1 sinon.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+deallocate
+\series default
+ (array, stat=err) permet de libérer l’espace mémoire réservée à un tableau.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+allocated
+\series default
+(array) est une fonction intrinsèque renvoyant true ou false suivant que
+ le tableau spécifié en argument est alloué ou non.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+integer, dimension(:,:), allocatable :: a
+\end_layout
+
+\begin_layout Plain Layout
+
+integer :: n,m,err
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+read(*,*) n , m 
+\end_layout
+
+\begin_layout Plain Layout
+
+if (.not(allocated(a)) then
+\end_layout
+
+\begin_layout Plain Layout
+
+	allocate(a(n,m),stat=err)
+\end_layout
+
+\begin_layout Plain Layout
+
+	if (err /= 0) then
+\end_layout
+
+\begin_layout Plain Layout
+
+		write(*,*) 'erreur allocation dynamique du tableau a'
+\end_layout
+
+\begin_layout Plain Layout
+
+		stop
+\end_layout
+
+\begin_layout Plain Layout
+
+	endif
+\end_layout
+
+\begin_layout Plain Layout
+
+endif
+\end_layout
+
+\begin_layout Plain Layout
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+
+.
+\end_layout
+
+\begin_layout Plain Layout
+
+deallocate(a)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Fonctions information sur des tableaux 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+size
+\series default
+ (ARRAY, dim) is a function which returns the number of elements in an array
+ ARRAY , if DIM is not given, and the number of elements in the relevant
+ dimension if DIM is included.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+product
+\series default
+ (array [,dim][,mask]) et sum (array [,dim][,mask]) retournent le produit
+ / la somme des valeurs des éléments du tableau array (après un éventuel
+ filtrage par dim et / ou mask).
+ 
+\end_layout
+
+\begin_layout Standard
+Exemple : product(A) retourne 720 sum(A,dim=1,A > 2) vaut (/ 4, 5, 9 /)
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+lbound
+\series default
+ (array [,dim]) et 
+\series bold
+ubound
+\series default
+(array [,dim]) retournent les bornes inférieures / supérieures de chacune
+ des dimensions (ou seulement de la dimension dim) du tableau array.
+ 
+\end_layout
+
+\begin_layout Standard
+Exemple : integer, dimension( 21:2, 45:49) :: tab 
+\end_layout
+
+\begin_layout Standard
+lbound(tab) vaut (/ 21, 45 /) et ubound(tab) vaut (/ 2, 49 /) l
+\end_layout
+
+\begin_layout Standard
+bound(tab, dim=2) vaut 45 et ubound(tab, dim=1) vaut 2
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+all
+\series default
+ (mask [,dim]) applique un masque de type logique sur les éléments du tableau
+ et renvoit vrai si pour tous les éléments le résultat du masque est vrai.
+ Si dim est précisé, la fonction travaille sur cet indice pour chaque valeur
+ des autres dimensions.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+any
+\series default
+ (mask [,dim]) fonctionne de la même façon que la fonction ALL à l’exception
+ qu’elle renvoit vrai si l’un des résultats du masque est vrai.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+count
+\series default
+ (mask [,dim]) comptabilise le nombre d’éléments pour lesquels le résultat
+ du masque est vrai.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+program test
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+logical l
+\end_layout
+
+\begin_layout Plain Layout
+
+integer a(2,3),b(2,3)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+write(*,*) all((/.false.,.true.,.true./))
+\end_layout
+
+\begin_layout Plain Layout
+
+write(*,*) any((/.false.,.true.,.true./))
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+a = 1
+\end_layout
+
+\begin_layout Plain Layout
+
+b = 1
+\end_layout
+
+\begin_layout Plain Layout
+
+b(2,2) = 2
+\end_layout
+
+\begin_layout Plain Layout
+
+b(2,3) = 2
+\end_layout
+
+\begin_layout Plain Layout
+
+write(*,*) a
+\end_layout
+
+\begin_layout Plain Layout
+
+write(*,*) b
+\end_layout
+
+\begin_layout Plain Layout
+
+write(*,*) all(a == b, 1)
+\end_layout
+
+\begin_layout Plain Layout
+
+write(*,*) all(a .eq.
+ b,2)
+\end_layout
+
+\begin_layout Plain Layout
+
+write(*,*) any(a .eq.
+ b,1)
+\end_layout
+
+\begin_layout Plain Layout
+
+write(*,*) any(a .eq.
+ b,2)
+\end_layout
+
+\begin_layout Plain Layout
+
+count(a /= b)
+\end_layout
+
+\begin_layout Plain Layout
+
+end.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Retourne une fois exécuté 
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+F
+\end_layout
+
+\begin_layout Plain Layout
+
+T
+\end_layout
+
+\begin_layout Plain Layout
+
+1 1 1 1 1 1 
+\end_layout
+
+\begin_layout Plain Layout
+
+1 1 1 2 1 2
+\end_layout
+
+\begin_layout Plain Layout
+
+T F F
+\end_layout
+
+\begin_layout Plain Layout
+
+T F
+\end_layout
+
+\begin_layout Plain Layout
+
+T T T 
+\end_layout
+
+\begin_layout Plain Layout
+
+T T
+\end_layout
+
+\begin_layout Plain Layout
+
+2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+minval
+\series default
+ (array [,dim][,mask]) et 
+\series bold
+maxval
+\series default
+(array [,dim][,mask]) retournent la plus petite / plus grande valeur du
+ tableau array (après un éventuel filtrage par dim et / ou mask).
+ 
+\end_layout
+
+\begin_layout Standard
+exemple minval(A,dim=2,A > 2) vaut (/ 3, 4 /) norme du max maxval(abs(A))
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+minloc
+\series default
+ (array [,dim][,mask]) et 
+\series bold
+maxloc
+\series default
+ retournent l’indice de la plus grande ou dela plus petite valeur.
+ Attention : maxloc/minloc dans des sections de matrice, l’indice doit etre
+ corrige et il faut mettre dim.
+\end_layout
+
+\begin_layout Standard
+exemple recherche du pivot dans la colonne k sous diagonale de matrice D
+ ipiv = maxloc(D(k:n,k),1)+k-1 
+\end_layout
+
+\begin_layout Subsection*
+Initialisation de tableaux
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+integer,parameter :: n = 4
+\end_layout
+
+\begin_layout Plain Layout
+
+integer,dimension(n) :: t1,t2,t3
+\end_layout
+
+\begin_layout Plain Layout
+
+integer i
+\end_layout
+
+\begin_layout Plain Layout
+
+t1 = (/6.5,10,1/)
+\end_layout
+
+\begin_layout Plain Layout
+
+t2 = (/(i+1,i=1,n)/)
+\end_layout
+
+\begin_layout Plain Layout
+
+t3 = (/t2(1),t1(3),1,9/)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Programme pour remplir une matrice triangle inférieur à partir d'une matrice
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+integer,parameter :: n = 4
+\end_layout
+
+\begin_layout Plain Layout
+
+integer,dimension(n,n) :: a,t
+\end_layout
+
+\begin_layout Plain Layout
+
+integer i
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+call random_number(a)
+\end_layout
+
+\begin_layout Plain Layout
+
+t = 0.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+do i = 1,n
+\end_layout
+
+\begin_layout Plain Layout
+
+	t(i,1:i) = a(i,1:i)
+\end_layout
+
+\begin_layout Plain Layout
+
+enddo
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Initialisation à partir d'un fichier de donnée
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+integer n
+\end_layout
+
+\begin_layout Plain Layout
+
+integer,dimension(:,:),allocatable :: a
+\end_layout
+
+\begin_layout Plain Layout
+
+integer,dimension(:),allocatable :: b
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+read(*,*) n
+\end_layout
+
+\begin_layout Plain Layout
+
+allocate(a(n,n))
+\end_layout
+
+\begin_layout Plain Layout
+
+allocate(b(n))
+\end_layout
+
+\begin_layout Plain Layout
+
+read(*,*)
+\end_layout
+
+\begin_layout Plain Layout
+
+do i = 1,n
+\end_layout
+
+\begin_layout Plain Layout
+
+	read(*,*) a(i,1:n)
+\end_layout
+
+\begin_layout Plain Layout
+
+enddo
+\end_layout
+
+\begin_layout Plain Layout
+
+read(*,*)
+\end_layout
+
+\begin_layout Plain Layout
+
+read(*,*) b
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+avec le bon fichier de données :
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+4
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+1 2 3 10
+\end_layout
+
+\begin_layout Plain Layout
+
+5 4 1 2
+\end_layout
+
+\begin_layout Plain Layout
+
+4 8 7 9 
+\end_layout
+
+\begin_layout Plain Layout
+
+4 5 5 1
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+1 0 0 1
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection*
+Sections de tableaux 
+\end_layout
+
+\begin_layout Standard
+Section régulière : les éléments forment une progression géométrique 
+\end_layout
+
+\begin_layout Standard
+tab(ini : fin : pas ) 
+\end_layout
+
+\begin_layout Standard
+exemple 
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+integer,dimension(10) :: a=(/1,-2,3,-4,5,-6,7,-8,9,-10/)
+\end_layout
+
+\begin_layout Plain Layout
+
+integer :: i=3,j=7
+\end_layout
+
+\begin_layout Plain Layout
+
+a (:)         
+\end_layout
+
+\begin_layout Plain Layout
+
+a(i:j)  	(3, -4,5,-6,7) 
+\end_layout
+
+\begin_layout Plain Layout
+
+a(i:j:i)	(3, -6)
+\end_layout
+
+\begin_layout Plain Layout
+
+a(i:)   	(3,-4,5,-6,7,-8,9,-10)
+\end_layout
+
+\begin_layout Plain Layout
+
+a(:j)   	(1,-2,3,-4,5,-6,7)
+\end_layout
+
+\begin_layout Plain Layout
+
+a(::i)  	(1,-4,7,-10)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Possibilite de sections non regulieres , adressage indirect 
+\end_layout
+
+\begin_layout Subsection*
+Operations entre tableaux 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+transpose
+\series default
+ (matrix), où matrix est un tableau de dimension 2, retourne la transposée
+ de matrix.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+dot_product
+\series default
+ (a, b) retourne le produit scalaire de deux vecteurs, c’est à dire at.b
+ si a et b sont de type entier ou réel, conjugué(a)t.b si a et b sont complexes,
+ et Somme(ai .and.
+ bi) si a et b sont de type logique.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+matmul
+\series default
+ (a, b) retourne le produit matriciel de a et b, sous réserve de compatibilité
+ des dimensions.
+ Soit a et b sont tous deux des matrices, soit a est un vecteur et b est
+ une matrice, soit a est une matrice et b est un vecteur.
+ a et b peuvent être de type quelconque.
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+norm2 
+\series default
+(a) retourne la norme euclidienne du tableau a (vecteur ou matrice).
+\end_layout
+
+\begin_layout Subsection*
+Action sur des tableaux 
+\end_layout
+
+\begin_layout Standard
+L’instruction 
+\series bold
+where
+\series default
+ permet d’effectuer des opérations sur des éléments d’un tableau sélectionnés
+ via un filtre de type logique.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+real, dimension(10) :: a
+\end_layout
+
+\begin_layout Plain Layout
+
+where (a > 0.) a = sqrt(a)
+\end_layout
+
+\begin_layout Plain Layout
+
+where (a > 0.)
+\end_layout
+
+\begin_layout Plain Layout
+
+	a = log(a)
+\end_layout
+
+\begin_layout Plain Layout
+
+elsewhere
+\end_layout
+
+\begin_layout Plain Layout
+
+	a = 1
+\end_layout
+
+\begin_layout Plain Layout
+
+end where
+\end_layout
+
+\begin_layout Plain Layout
+
+end.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Pour plus d’informations https://gcc.gnu.org/onlinedocs/gfortran/Intrinsic-Procedu
+res.html#Intrinsic-Procedures 
+\end_layout
+
+\begin_layout Section*
+Variables statique ou dynamiques 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Variable statique
+\series default
+ : mémoire reservé à la compilation 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Variable dynamique
+\series default
+ : mémoire reservé à l’exécution 
+\end_layout
+
+\begin_layout Standard
+Variables et initialisations: data et save 
+\end_layout
+
+\begin_layout Standard
+Déclarer les variables par type et centre d’intérêt suivant leur fonction
+ en haut du code 
+\end_layout
+
+\begin_layout Itemize
+déclaration dynamique 
+\end_layout
+
+\begin_layout Itemize
+déclaration et affectation statique 
+\end_layout
+
+\begin_layout Itemize
+save pour garder la valeur des variables entre chaque passage dans une subroutin
+e.
+ 
+\end_layout
+
+\begin_layout Standard
+Exemple: réalisation d’un compteur interne
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+ subroutine sub(..)
+\end_layout
+
+\begin_layout Plain Layout
+
+integer :: icom=0
+\end_layout
+
+\begin_layout Plain Layout
+
+real,save :: pi
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+if (icom .eq.
+ 0) then
+\end_layout
+
+\begin_layout Plain Layout
+
+	pi = 4.*atan(1.)
+\end_layout
+
+\begin_layout Plain Layout
+
+endif
+\end_layout
+
+\begin_layout Plain Layout
+
+...
+\end_layout
+
+\begin_layout Plain Layout
+
+icom = icom + 1
+\end_layout
+
+\begin_layout Plain Layout
+
+return
+\end_layout
+
+\begin_layout Plain Layout
+
+end
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Le save icom n'est pas nécessaire car icom étant initialisée devient statique.
+ Par contre le save pi lui est nécessaire.
+\end_layout
+
+\begin_layout Section*
+Procédure et fonction
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+Principal
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+program mm
+\end_layout
+
+\begin_layout Plain Layout
+
+implicit none
+\end_layout
+
+\begin_layout Plain Layout
+
+integer n,i
+\end_layout
+
+\begin_layout Plain Layout
+
+real y
+\end_layout
+
+\begin_layout Plain Layout
+
+double precision x 
+\end_layout
+
+\begin_layout Plain Layout
+
+....
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+Sous-programme
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+subroutine trap(n,a,b,f,s)
+\end_layout
+
+\begin_layout Plain Layout
+
+implicit none
+\end_layout
+
+\begin_layout Plain Layout
+
+integer n,i
+\end_layout
+
+\begin_layout Plain Layout
+
+real a,b
+\end_layout
+
+\begin_layout Plain Layout
+
+double precision,external f  #on retype tout même ce qu'il y a en entré
+ de la sub
+\end_layout
+
+\begin_layout Plain Layout
+
+double precision s
+\end_layout
+
+\begin_layout Plain Layout
+
+...
+\end_layout
+
+\begin_layout Plain Layout
+
+end
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+real function sinx(x)
+\end_layout
+
+\begin_layout Plain Layout
+
+implicit none
+\end_layout
+
+\begin_layout Plain Layout
+
+real x
+\end_layout
+
+\begin_layout Plain Layout
+
+sinx = sin(x)/x
+\end_layout
+
+\begin_layout Plain Layout
+
+return
+\end_layout
+
+\begin_layout Plain Layout
+
+end
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Fonctions déjà inclues dans Fortran 
+\end_layout
+
+\begin_layout Subsubsection*
+Fonctions de conversion
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+int
+\series default
+(e) partie entière de e 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+real
+\series default
+(e) convertit e en réel 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+dble
+\series default
+(e) convertit e en double précision
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+cmplx
+\series default
+(e) convertit e en complexe 
+\end_layout
+
+\begin_layout Standard
+Exemples 
+\end_layout
+
+\begin_layout Standard
+int(3.14) = 3 c
+\end_layout
+
+\begin_layout Standard
+mplx(3.14) = 3.14 + 0*i 
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+cmplx
+\series default
+(3.14,2.) = 3.14 + 2.*i 2 
+\end_layout
+
+\begin_layout Subsubsection*
+Fonctions incorporées arithmétiques
+\end_layout
+
+\begin_layout Standard
+Le ou les arguments et le résultat sont de même type (entiers, réels ou
+ double precision).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+abs
+\series default
+(e) valeur absolue 
+\end_layout
+
+\begin_layout Itemize
+arrondi 
+\series bold
+nint
+\series default
+(e) entier le plus proche de e 
+\series bold
+anint
+\series default
+(e) entier le plus proche de e, ecrit sous forme reelle.
+ 
+\end_layout
+
+\begin_layout Itemize
+troncature 
+\series bold
+aint
+\series default
+(e) : partie entiere de e 
+\end_layout
+
+\begin_layout Itemize
+reste d’une division 
+\series bold
+mod
+\series default
+(a,b) avec b non nul 
+\end_layout
+
+\begin_layout Standard
+mod(5,3)=2 
+\end_layout
+
+\begin_layout Standard
+mod(5.,3.)=2.
+\end_layout
+
+\begin_layout Itemize
+Extrema de valeurs scalaires 
+\series bold
+min
+\series default
+(e1,e2...) = minimum des ei 
+\series bold
+max
+\series default
+(e1,e2...) = maximum des ei 
+\end_layout
+
+\begin_layout Itemize
+transfert de signe 
+\series bold
+sign
+\series default
+(q,s) avec s non nul = |q| si s > 0 −|q| si s < 0
+\end_layout
+
+\begin_layout Subsubsection*
+Fonctions relatives aux complexes 
+\end_layout
+
+\begin_layout Standard
+declaration
+\end_layout
+
+\begin_layout Standard
+complex z
+\end_layout
+
+\begin_layout Itemize
+z = cmplx(x,y) 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+real
+\series default
+(z) donne x 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+aimag
+\series default
+(z) donne y 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+conjg
+\series default
+(z) donne x-i*y 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+abs
+\series default
+(z) donne 
+\begin_inset Formula $x²+y²$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsubsection*
+Fonctions mathematiques 
+\end_layout
+
+\begin_layout Standard
+Les arguments sont reels ou double précision parfois complexes mais jamais
+ entiers.
+ 
+\end_layout
+
+\begin_layout Itemize
+racine carrée 
+\series bold
+sqrt
+\series default
+(x) 
+\end_layout
+
+\begin_layout Itemize
+exponentielle 
+\series bold
+exp
+\series default
+(x) 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+log
+\series default
+(x), 
+\series bold
+log10
+\series default
+(x) (si 
+\begin_inset Formula $z=\rho e^{i\theta}$
+\end_inset
+
+ complexe 
+\begin_inset Formula $log(z)=log(ρ)+i\theta'0<\theta'<\pi)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+cos, sin,tan , cosh,sinh,tanh 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+acos
+\series default
+(x) , 
+\series bold
+asin
+\series default
+(x) pour 
+\begin_inset Formula $|x|<1,0<acos<π,|asin|<π/2$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+atan
+\series default
+(x) abs(atan) 
+\begin_inset Formula $<\frac{\pi}{2}$
+\end_inset
+
+ , 
+\series bold
+atan2
+\series default
+(y,x) = angle sur le demi-cercle trigo 
+\begin_inset Formula $z=x+i∗y$
+\end_inset
+
+ positif ou -angle sur le demi-cercle trigo négatif 
+\end_layout
+
+\begin_layout Section*
+Passage de fonction / subroutine comme argument
+\end_layout
+
+\begin_layout Standard
+Pour passer une fonction ou une procédure en paramètre d'une subroutine,
+ on déclare la fonction avec le mot clé 
+\series bold
+external.
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+program main
+\end_layout
+
+\begin_layout Plain Layout
+
+implicit none
+\end_layout
+
+\begin_layout Plain Layout
+
+double precision, external MaFonction
+\end_layout
+
+\begin_layout Plain Layout
+
+double precision a,b,tol
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+read(*,*) a,b,tol
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+call bis(a,b,MaFonction,tol)
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+end.
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+subroutine bis(a,b,f,tol)
+\end_layout
+
+\begin_layout Plain Layout
+
+implicit none
+\end_layout
+
+\begin_layout Plain Layout
+
+real a,b
+\end_layout
+
+\begin_layout Plain Layout
+
+double precision tol,f,res
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+res = f(a) - f(b)
+\end_layout
+
+\begin_layout Plain Layout
+
+write(*,*) res
+\end_layout
+
+\begin_layout Plain Layout
+
+return
+\end_layout
+
+\begin_layout Plain Layout
+
+end
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+double precision fonction MaFonction(x)
+\end_layout
+
+\begin_layout Plain Layout
+
+implicit none
+\end_layout
+
+\begin_layout Plain Layout
+
+double precision x
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+MaFonction = sin(x)
+\end_layout
+
+\begin_layout Plain Layout
+
+end
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section*
+Module
+\end_layout
+
+\begin_layout Standard
+Lorsqu'une variable est utilisé par différents sous programme, on peut faire
+ une fichier appelé module qui sera utilisable par toute les subroutine.
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+module modcch
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+double precision, save :: w
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+end module modcch
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+la variable w devient statique et peut être utiliser sans être redéclaré
+ dans d'autre fonction à condition que la compilation soit correctement
+ faite
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+Compilation
+\end_layout
+
+\begin_layout Section*
+Les options du compilateur
+\end_layout
+
+\begin_layout Standard
+Sous Unix, les compilateurs gfortran, gcc, g++ effectuent l’opération de
+ compilation et de link à la suite.
+\end_layout
+
+\begin_layout Subsection*
+syntaxe de la commande
+\end_layout
+
+\begin_layout Standard
+gfortran file.f -o file options lib.a otherfile.o 
+\end_layout
+
+\begin_layout Standard
+Le fichier qui est compilé est file, on veut le linker avec une librairie
+ (collection de fichiers objet) notée lib.a sous unix.
+ Cette librairie peut avoir ete construite par l’utilisateur (commande ’ar’)
+ ou non.
+ 
+\end_layout
+
+\begin_layout Standard
+Remarques importantes : 
+\end_layout
+
+\begin_layout Itemize
+On a adjoint un autre fichier otherfile.o qui lui est sous la forme objet,
+ ceci montre les deux effets de gfortran: compilation et link.
+ 
+\end_layout
+
+\begin_layout Itemize
+ATTENTION A l’ORDRE pour les bibliotheques.
+ Si le programme a compiler a besoin de routines dans lib.a alors il faut
+ placer lib.a 
+\series bold
+APRES
+\series default
+ file.f 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+gfortran lib.a file.f -o file donne une erreur 
+\end_layout
+
+\begin_layout Standard
+alors que
+\end_layout
+
+\begin_layout Standard
+gfortran file.f lib.a -o file compile et lie correctement.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Le compilateur gfortran est aussi un compilateur C.
+ Il est donc possible de melanger du C et du fortran.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+Exemples :
+\end_layout
+
+\begin_layout Standard
+gfortran -o exec file1.f file2.o file3.c lib.a 
+\end_layout
+
+\begin_layout Standard
+gfortran -c file1.f gfortran -c file3.c 
+\end_layout
+
+\begin_layout Standard
+gfortran -o exec file1.o file2.o file3.o file4.a 
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+Les options de gfortran 
+\end_layout
+
+\begin_layout Standard
+Il y en a une multitude que l’on pourra consulter en faisant ’man gfortran’
+ .
+ Elles sont de la forme ’-lettre’ .
+ Voici celles qui sont le plus utiles.
+ 
+\end_layout
+
+\begin_layout Itemize
+’-c’ Effectue une compilation seule, sans link.
+ La pratique Unix est d’effectuer d’abord cette operation sur tous les fichiers
+ puis de creer l’executable avec la commande ’gfortran file.o file2.o...’.
+ C’est la base du makefile (voir plus bas).
+ Cette option permet aussi de verifier la syntaxe d’un code rapidement.
+ 
+\end_layout
+
+\begin_layout Itemize
+’-g’ Etablit une table de symboles pour le ’debuggage’ du code.
+ Voir doc sur gdb le debuggeur de haut niveau sous unix.
+ Attention cette option est en general incompatible avec ’-O’ qui est l’option
+ d’optimisation.
+ 
+\end_layout
+
+\begin_layout Itemize
+’-l’ Suivie d’un nom cette option d’edition de lien cherche la bibliothèque
+ libnom.a dans le repertoire indique par l’option -L puis dans /lib et /usr/lib.
+ Cette option est utilisee en general pour les bibliotheques de l’utilisateur.
+ 
+\end_layout
+
+\begin_layout Itemize
+’-o’ Elle est indiquée ci-dessus et permet de nommer l’executable.
+ Ainsi le resultat de la compilation ci dessus sera un executable nomme
+ ’file’.
+ 
+\end_layout
+
+\begin_layout Itemize
+’-O’ Optimise le code.
+ Cette option doit etre maniée avec precaution , et en particulier il est
+ bon de comparer les resultats du code avec et sans optimisation.
+ Sur les nouvelles machines -O1 -O2 ..
+ Une des optimisations simple est le deroulement de boucles.
+ 
+\end_layout
+
+\begin_layout Itemize
+’-p’ Cette option avancée permet d’établir le pourcentage de temps passe
+ dans chaque procédure.
+ Voir amélioration du code.
+ 
+\end_layout
+
+\begin_layout Itemize
+’-u’ Exige une déclaration explicite pour chaque variable utilisée dans
+ le code.
+ Très pratique pour verifier la syntaxe avant compilation.
+ 
+\end_layout
+
+\begin_layout Standard
+Un exécutable = gros fichier multiples informations utilisables après un
+ arrêt erroné (core dump).
+ strip exe 
+\end_layout
+
+\begin_layout Standard
+Possible d’utiliser debugger gdb pour obtenir des informations sur la cause
+ de l’arret.
+ 
+\end_layout
+
+\begin_layout Section*
+Le debuggeur
+\end_layout
+
+\begin_layout Standard
+gdb (Gnu debugger) debugge gfortran, gcc, g++ (compilateurs GNU)
+\end_layout
+
+\begin_layout Subsection*
+Procedure 
+\end_layout
+
+\begin_layout Itemize
+compiler avec OPT = -g 
+\end_layout
+
+\begin_layout Itemize
+lancer gdb avec gdb exe où exe est le nom donné au fichier executable.
+ On se retrouve dans l’environnement gdb (gdb) 
+\end_layout
+
+\begin_layout Itemize
+on met un ou plusieurs points d’arret
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+(gdb) list (ou (gdb) l ) liste 10 lignes de code .
+ (gdb) l 45 liste 10 lignes de code après la ligne 45
+\end_layout
+
+\begin_layout Standard
+(gdb) break 10 (ou (gdb) b 10) place un point d'arrêt a la ligne 10
+\end_layout
+
+\begin_layout Standard
+(gdb) break sub place un point d'arrêt dans la subroutine sub
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+on lance exe (gdb) run < dexe
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+(gdb) stopped at 10 5.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+pas a pas
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+(gdb) step (entre dans fonctions, sous-programmes) 
+\end_layout
+
+\begin_layout Standard
+(gdb) next (saute fonctions, sous-programmes) 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+visualisation de variables (
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+gdb) print a
+\end_layout
+
+\end_deeper
+\begin_layout Subsection*
+Autres commandes
+\end_layout
+
+\begin_layout Itemize
+liste des points d’arret (gdb) (gdb) info break 
+\end_layout
+
+\begin_layout Itemize
+(gdb) del 2 (detruit break No 2) 
+\end_layout
+
+\begin_layout Itemize
+visualisation tableau a(10,2) 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+(gdb) print ∗(&a(1, 1)@4) affiche 4 premiers elements de a 
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+(gdb) cont saute d’un break au break suivant 
+\end_layout
+
+\begin_layout Itemize
+(gdb) where où on est dans le programme 
+\end_layout
+
+\begin_layout Section*
+Makefile
+\end_layout
+
+\begin_layout Standard
+Le makefile permet de compiler rapidemet et simplement.
+ Il se construit de la façon suivante
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+nomCompilation : fichier1.f fichier2.f #nom des dépendances
+\end_layout
+
+\begin_layout Plain Layout
+
+		gfortran -g fichier1.f fichier2.f -o exe
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dans la pratique, on compile toute les sub et fonction jusqu'à l'objet,
+ puis on compile les objets ensembles pour former l'executable.
+\end_layout
+
+\begin_layout Standard
+Exemple
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+FC = gfortran
+\end_layout
+
+\begin_layout Plain Layout
+
+OPT = -g
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+#executable
+\end_layout
+
+\begin_layout Plain Layout
+
+main : Mafonction1.o Mafonction2.o Masub.o modMedDonnées.mod
+\end_layout
+
+\begin_layout Plain Layout
+
+	$(FC) $(OPT) Mafonction1.o Mafonction2.o Masub.o 
+\backslash
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	modMedDonnées.mod -o MonExe
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+#objet
+\end_layout
+
+\begin_layout Plain Layout
+
+MaFonction1.o : Mafonction1.f modMesDonnées.mod
+\end_layout
+
+\begin_layout Plain Layout
+
+	$(FC) $(OPT) -c Mafonction1.f 
+\end_layout
+
+\begin_layout Plain Layout
+
+MaFonction2.o : Mafonction2.f modMesDonnées.mod
+\end_layout
+
+\begin_layout Plain Layout
+
+	$(FC) $(OPT) -c Mafonction2.f 
+\end_layout
+
+\begin_layout Plain Layout
+
+MaSub.o : Masub.f modMesDonnées.mod
+\end_layout
+
+\begin_layout Plain Layout
+
+	$(FC) $(OPT) -c Masub.f
+\end_layout
+
+\begin_layout Plain Layout
+
+#module
+\end_layout
+
+\begin_layout Plain Layout
+
+modMesDonnées.mod : modMesDonnées.f
+\end_layout
+
+\begin_layout Plain Layout
+
+	$(FC) $(OPT) -c modMesDonnées.f
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+Les Entrées/Sortie Linux
+\end_layout
+
+\begin_layout Subsection*
+Le Grep
+\end_layout
+
+\begin_layout Standard
+Grep est un programme de recherche d'occurence dans un fichier.
+ 
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+grep read jac.f
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+donneras toutes les lignes de codes où le mot read apparait.
+\end_layout
+
+\begin_layout Subsection*
+Fichier de données
+\end_layout
+
+\begin_layout Standard
+Lorsqu'un programme lit des données , on peut se passer de les lui donner
+ directement sur le terminal mais plutôt à partir d'un fichier.
+ Il faut faire attention à l'ordre de lecture.
+ C'est pour cela que le grep read est interessant à utiliser.
+ Pour envoyer les données dans le programme on procède de la façon suivante
+ :
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+$ monExe < mesDonnéesEntrées
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+On peut faire de même en sortie si le programme écrit des données
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+$ monExe < mesDonnéesEntrées >mesDonnéesSorties
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si le fichier n'existe pas en sortie, celui ci est crée.
+\end_layout
+
+\begin_layout Subsection*
+Le pipe
+\end_layout
+
+\begin_layout Standard
+| sert de redirection (tunnel) entre diffèrents programmes
+\end_layout
+
+\end_body
+\end_document

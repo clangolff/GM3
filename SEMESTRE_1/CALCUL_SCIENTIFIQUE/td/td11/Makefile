@@ -1,0 +1,67 @@
+FC = gfortran
+
+#OPT = -O
+#OPT = -p
+OPT = -g
+
+# executables
+#bisection cch
+bcch : mbcch.o bis.o cch.o modcch.o
+	$(FC) $(OPT) mbcch.o bis.o cch.o modcch.o  -o bcch
+
+#newton cch
+ncch : mncch.o new.o cch.o dcch.o modcch.o
+	$(FC) $(OPT) mncch.o new.o cch.o dcch.o modcch.o -o ncch
+
+#newton f5
+nf5 : mnf5.o new.o f5.o df5.o modf5.o
+	$(FC) $(OPT) mnf5.o new.o f5.o df5.o modf5.o -o nf5
+
+#newton g
+ng : mng.o new.o g.o dg.o
+	$(FC) $(OPT)  mng.o new.o g.o dg.o  -o ng
+
+#-------------------------------
+
+#objets
+
+#bisection
+bis.o : bis.f
+	$(FC) $(OPT) -c bis.f
+
+#fonction cch et derivee
+cch.o : cch.f modcch.mod
+	$(FC) $(OPT) -c cch.f
+dcch.o : dcch.f modcch.mod
+	$(FC) $(OPT) -c dcch.f
+
+#main bisection cch
+mbcch.o : mbcch.f modcch.mod
+	$(FC) $(OPT) -c mbcch.f
+
+#module : parametre d cch  -> modcch.mod et modcch.o
+modcch.mod : modcch.f
+	$(FC) $(OPT) -c modcch.f
+
+#main newton cch
+mncch.o : mncch.f modcch.mod
+	$(FC) $(OPT) -c mncch.f
+new.o : new.f
+	$(FC) $(OPT) -c new.f
+
+#fonction f5 et derivee
+f5.o : f5.f modf5.mod
+	$(FC) $(OPT) -c f5.f
+df5.o : df5.f modf5.mod
+	$(FC) $(OPT) -c df5.f
+
+#module : parametre d f5  -> modf5.mod et modf5.o
+modf5.mod : modf5.f
+	$(FC) $(OPT) -c modf5.f
+
+#main newton f5
+mnf5.o : mnf5.f modf5.mod
+	$(FC) $(OPT) -c mnf5.f
+
+clean:
+	rm *.o bcch ncch nf5 *mod

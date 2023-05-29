@@ -1,0 +1,1100 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Standard
+RAID ou «Redundant Array of Inexpensive / Independant Disks » a été inventé
+ en 1987 par trois chercheurs de l’université californienne de Berkeley,
+ dans le but de pouvoir utiliser des disques de faibles capacités, donc
+ peu coûteux (Inexpensive) de telles façons qu’ils soient vus comme un disque
+ unique.
+ De cette manière, le RAID peut être décrit comme étant l’opposé du partitionnem
+ent : dans un cas, on crée plusieurs unités logiques à partir d’un seul
+ disque, dans l’autre, on crée une seule unité logique à partir de plusieurs
+ disques physiques.
+\end_layout
+
+\begin_layout Standard
+Le RAID est un ensemble de techniques de virtualisation du stockage permettant
+ de combiner plusieurs disques durs (HDD ou SSD) afin d'améliorer les performanc
+es, la sécurités ou encore la tolérence au pannes dans un système informatique.
+\end_layout
+
+\begin_layout Standard
+Cette technique offre diffèrents avantages.
+ On peut tout d'abord noter que son prix est largement inférieur comparé
+ au prix d'un seul et même périphérique de stockage pour des capacités de
+ stockage, d'écriture et de lecture équivente.
+ En effet, le RAID permet aussi d'améliorer les vitesses de lecture et d'écritur
+e des données sur les disques.
+ Certain système de RAId permettent quand à eux de limiter très fortement
+ la perte de données.
+ Quand on dispose d'un seul périphérique de stockage sur un système, nous
+ sommes beaucoup plus sujet à la casse du disque dur que si l'on posssèdait
+ des données répartie de façon 
+\begin_inset Quotes eld
+\end_inset
+
+miroir
+\begin_inset Quotes erd
+\end_inset
+
+ comme nous le verrons.
+ 
+\end_layout
+
+\begin_layout Standard
+Il existe différents niveaux de RAID , nommé par leur numéro, possèdant
+ chacun leur avantages et inconvénients.
+\end_layout
+
+\begin_layout Standard
+Cependant, on peut les classer suivant leur objectif
+\end_layout
+
+\begin_layout Itemize
+Palier la panne en utilisant un système de redondance ( RAID 1 )
+\end_layout
+
+\begin_layout Itemize
+Améliorer les performances ( RAID 0 )
+\end_layout
+
+\begin_layout Itemize
+Les deux à la fois, mais avec une moins bonne efficacité ( RAID 5 )
+\end_layout
+
+\begin_layout Section
+Parité et redondance, les concept du RAID
+\end_layout
+
+\begin_layout Standard
+La redondance consiste à dupliquer des données afin d'augmenter la fiabilité
+ d'un système informatique.
+ Une technique principalement utilisée pour l'architecture RAID et la régénérati
+on des données manquantes à partir de données restantes si un ou plusieurs
+ disques tombe en panne.
+ 
+\end_layout
+
+\begin_layout Standard
+Le système de redondance le plus simple et le plus utilisé est le calcul
+ de
+\bar under
+ parité
+\bar default
+.
+ Ce système repose sur l'opération logique XOR.
+ Supposons que l'on possède une bande de données, ces données sont réparties
+ sur 2 blocs de disques et le troisième disque possède quand à lui le bloc
+ de parité résultant de l'opération XOR entre les bits des données des deux
+ autres disques.
+ Sur n bits, si le nombre de 1 est pair, alors le bit de parité vaut 0.
+ Si le nombre de 1 est impair alors le bit de parité est 1.
+ On possède alors 
+\begin_inset Formula $n+1$
+\end_inset
+
+ bits.
+ Si un des 
+\begin_inset Formula $n+1$
+\end_inset
+
+ bits se retrouvé perdu, il est possible de récupérer la valeur de celui-ci
+ grâce au bit de parité.
+ Pour généraliser, si on possède 
+\begin_inset Formula $N$
+\end_inset
+
+ blocs de données 
+\begin_inset Formula $A_{1},A_{2},..A_{N}$
+\end_inset
+
+ de 
+\bar under
+même
+\bar default
+ taille alors, en notant 
+\begin_inset Formula $\oplus$
+\end_inset
+
+ l'opération XOR, on calcul la parité par 
+\begin_inset Formula $A_{1}\oplus A_{2}\oplus...\oplus A_{N}=X$
+\end_inset
+
+.
+ Si un bloc de données 
+\begin_inset Formula $A_{i}$
+\end_inset
+
+s e retrouve défaillant, on peut le retrouver par 
+\begin_inset Formula $A_{i}=X\oplus A_{1}\oplus A_{2}\oplus...\oplus A_{i-1}\oplus A_{i+1}\oplus...\oplus A_{N}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Section
+Les diffèrents niveaux de RAID
+\end_layout
+
+\begin_layout Subsection
+RAID 0, volume agrégé par bande
+\end_layout
+
+\begin_layout Standard
+Le RAID 0, également nommé 
+\begin_inset Quotes eld
+\end_inset
+
+entrelacement de disque
+\begin_inset Quotes erd
+\end_inset
+
+ ( 
+\begin_inset Quotes eld
+\end_inset
+
+striping
+\begin_inset Quotes erd
+\end_inset
+
+ en anglais ), est une configuration RAID permettant d'augmenter les vitesses
+ de lecture et d'écriture des données en faisant travailler au moins 2 disques
+ durs en parallèle.
+ C'est l'architecture RAID la plus primitive car les données sont distribuées
+ par bloc sur l'ensemble des disques.
+ Notons que le RAID 0 ne possède aucun mécanisme de redondance, il ne peut
+ donc pas être considérer comme un RAID, d'où l'appelation de RAID 0.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename images/Raid0.png
+	lyxscale 50
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph*
+Capacité
+\end_layout
+
+\begin_layout Standard
+Afin de constituer un RAID 0, il faut au minimum possèdait 2 disques.
+ La capacité totale du RAID 0 ne peut pas dépasser la capacité du disque
+ possèdant le moins de stockages.
+ En effet, pour cette méthode de RAID, les données sont réparties par bande
+ d'une taille fixe appelé granulation sur chaques disques durs.
+ En d'autres termes, tous les disques possèdent les mêmes données.
+ Cela permet de parallèliser l'écriture et la lecture des données en sollicitant
+ tous les disques durs.
+ 
+\end_layout
+
+\begin_layout Paragraph*
+Fiabilité
+\end_layout
+
+\begin_layout Standard
+Le principale avantage du RAID 0 en fait aussi sont plus gros inconvénient.
+ Le système d'agrégation par bande ne fonctionne plus si un seul des disques
+ durs tombe en panne.
+ 
+\end_layout
+
+\begin_layout Paragraph*
+Coût
+\end_layout
+
+\begin_layout Standard
+Le coût pour un RAID 0 dépend du nombre de disque parallèlisé.
+ Étant donné que la vitesse d'écriture et de lecture est un facteur important
+ sur un unique disque dur, le RAID 0 n'est pas une configuration négligé
+ pour ceux qui souhaitent avoir de grandes performances.
+\end_layout
+
+\begin_layout Paragraph*
+fonctionnement
+\end_layout
+
+\begin_layout Standard
+On considère ici une parallèlisation sur 2 disques durs avec un RAID 0 ayant
+ une taille de granulation de 64 kb.
+ Si l'on veut écrire un fichier de 200 kb sur l'architecture de stockage,
+ le fichier va d'abord être découpé en fonction de la taille de granulation
+\begin_inset Formula 
+\[
+\frac{200}{64}=3\times64+8
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ainsi 4 bandes seront utilisées pour écrire le fichier.
+ Les bandes seront ensuite réparties de la façon suivante :
+\end_layout
+
+\begin_layout Standard
+Disque 1 : 1,2
+\end_layout
+
+\begin_layout Standard
+Disque 2 : 3,4
+\begin_inset Newline newline
+\end_inset
+
+L'écriture de fichier pourra alors se faire simultanement sur chacun des
+ disques en un temps équivalent à l'écriture de 128 kb, ce qui revient presque
+ à doubler le débit d'écriture.
+ Il faut comprendre que ce n'est pas l'accumulation des vitesses d'écriture
+ de chaque disque dur qui augmente les performances d'écritures et de lectures
+ mais plutôt la répartition des tâches sur chaque disque dur.
+\end_layout
+
+\begin_layout Standard
+Ainsi sur un RAID de 
+\begin_inset Formula $n$
+\end_inset
+
+ disques , chaque disque ne doit lire que 
+\begin_inset Formula $\frac{1}{n}$
+\end_inset
+
+ des données.
+\end_layout
+
+\begin_layout Paragraph*
+Utilisateur
+\end_layout
+
+\begin_layout Standard
+Ce type de RAID est parfait pour des applications demandant un traitement
+ rapide des données avec des disques durs.
+ Il est notamment utiliser pour accélerer les applications de type montage
+ vidéo, traitement d'image ou encore modélisation graphique.
+ Il peut être aussi utilisé afin d'augmenter la bande passante d'un serveur
+ nécessitant des support de stockage capables de supporter de très grande
+ quantité d'écritures.
+\end_layout
+
+\begin_layout Paragraph*
+Avantages : 
+\end_layout
+
+\begin_layout Standard
+Performances en lectures et en écritures très importante.
+\end_layout
+
+\begin_layout Paragraph*
+Inconvénients : 
+\end_layout
+
+\begin_layout Standard
+Aucune tolérance à la panne, il est donc impossible de récupérer les données
+ en cas de panne d'un disque.
+\end_layout
+
+\begin_layout Subsection
+RAID 1, disques en miroir
+\end_layout
+
+\begin_layout Standard
+Le RAID 1 est la forme du RAID la plus simple, elle consiste à l'utilisation
+ de 
+\begin_inset Formula $n$
+\end_inset
+
+ disques redondant, chaque disque contenant à tout moment exactement les
+ mêmes données d'où l'appelation miroir.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename images/Raid1.png
+	lyxscale 50
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph*
+Capacité
+\end_layout
+
+\begin_layout Standard
+Comme le RAID 0, la capacité totale ne peut pas dépasser la capacité du
+ disque possèdant le moins de stockage.
+ Il est donc conseillé d'utiliser des éléments de capacité identique pour
+ améliorer la rentabilité de l'architecture.
+\end_layout
+
+\begin_layout Paragraph*
+Fiabilité
+\end_layout
+
+\begin_layout Standard
+Cette architecture est basé sur la sécurité.
+ Elle offre un excellent niveau de protection des données et fonctionne
+ jusqu'à ce que tout les disques tombes en pannes simultanément, ce qui
+ est très rare si l'on parallèlise plusieurs disques durs.
+\end_layout
+
+\begin_layout Paragraph*
+Coût
+\end_layout
+
+\begin_layout Standard
+Le coût de stockage est directement proportionnel au nombre de miroir utilisé,
+ bien que la capacité reste inchangé.
+ 
+\end_layout
+
+\begin_layout Paragraph*
+Performances 
+\end_layout
+
+\begin_layout Standard
+Le débit de lecture des données n'est pas significativement changé.
+ En effet, l'accès au données se fait sur le disque le plus facile d'accès
+ un moment donné.
+ En revanche, la vitesse d'écriture se retrouve diminué puisque chaque disque
+ doit se mettre à jour et la vitesse d'ecriture du disque le plus lent limite
+ les performances
+\end_layout
+
+\begin_layout Paragraph*
+Avantages : 
+\end_layout
+
+\begin_layout Standard
+Grande fiabilité, la perte de données est minimisé grâce à l'architecture
+ miroir.
+\end_layout
+
+\begin_layout Paragraph*
+Inconvénients :
+\end_layout
+
+\begin_layout Standard
+Performances de lecture et d'écriture réduite et perte de capacité de stockage.
+\end_layout
+
+\begin_layout Subsection
+RAID 2,3 ET 4, des architectures peu utilisées
+\end_layout
+
+\begin_layout Paragraph*
+RAID 2
+\end_layout
+
+\begin_layout Standard
+est un RAID distribué et avec parité.
+ La distribution des données est effectuée par "1 bit".
+ Donc la taille du bloc est de 1 bit.
+ La parité est calculé par le code Hamming ( Code de correction d'erreurs).
+ Les données de la parité sont stockées sur un disque indépendant.
+ Ce type de RAID est considéré comme historique car il n'est pas utilisé
+ ni commercialisé.
+ 
+\end_layout
+
+\begin_layout Paragraph*
+RAID 3
+\end_layout
+
+\begin_layout Standard
+est un RAID distribué par bytes.
+ Les disques membres du Raid 3 sont synchronisés.
+ La parité est calculée par la fonction XOR et stockée sur un disque séparé
+ au niveau de la même position.
+ Un nombre minimal de 3 disque est nécessaire pour construire un RAID 3.
+\end_layout
+
+\begin_layout Paragraph*
+RAID 4
+\end_layout
+
+\begin_layout Standard
+Comme le RAID 3, le RAID 4 est un RAID distribué, mais par blocs, avec une
+ parité dédiée sur un disque séparé.
+ Les disques membres du RAID 4 sont synchronisés.
+ La parité est calculée par la fonction XOR et stockée sur un disque séparé
+ au niveau de la même position.
+ Un nombre minimal de 3 disque est nécessaire pour construire un RAID 4.
+\end_layout
+
+\begin_layout Subsection
+RAID 5, volume agrégé par bande à parité répartie,
+\end_layout
+
+\begin_layout Standard
+Le RAID 5 combine la méthode du volume agrégé par bandes à une parité répartie.
+ La parité se retrouve répartie circulairement sur les diffèrents disques.
+ Si on possède 
+\begin_inset Formula $n+1$
+\end_inset
+
+ disques, chaque bande est constitué de 
+\begin_inset Formula $n$
+\end_inset
+
+ blocs de données et d'un seul bloc de parité.
+ Le principale avantage de cette technique est que le bloc de parité permet
+ de récupérer (calculer) les données potentiellement perdues sur un disque.
+ Le RAID 5 ne supporte donc la perte que d'un seul disque.
+ Si 2 disques tombent en pannes simultanément, il ne sera plus possible
+ de calculer les données manquantes sur tous les blocs des disques.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename images/raid5.png
+	lyxscale 50
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph*
+Fonctionnement
+\end_layout
+
+\begin_layout Standard
+Le Raid 5 utilise les techniques de distribution des blocs de données ainsi
+ que la parité.
+ Le flux de données est divisé par bloc dont la taille est le fameux paramètre
+ taille du bloc (granulation).
+ Sur chaque ligne, il y a un seul bloc de parité.
+ Ce bloc est calculé par la fonction "XOR" des données des deux autres blocs.
+ En cas de panne d'un disque, les données manquantes peuvent être déduites
+ par la fonction "XOR" à partir des blocs de données disponibles.
+\end_layout
+
+\begin_layout Paragraph*
+Exemple
+\end_layout
+
+\begin_layout Standard
+Si on possède 4 disques de tailles identiques A,B,C et D, le système va
+ répartir les premiers blocs de la première bande sur les disques A,B et
+ C comme pour le RAID 0.
+ Sur le disque D, un bloc de parité va être mit en place calculer à partir
+ de l'opération 
+\begin_inset Formula $OU$
+\end_inset
+
+ exclusif entre les autres disques (A xor B xor C).
+ Ensuite, pour la deuxième bande, les blocs de données vont être répartis
+ sur les disques D,A et B et la parité (A xor B xor D) sera placé sur le
+ disque C.
+ Et on continue le principe en permutant circulairement les disques pour
+ chaque bande.
+\end_layout
+
+\begin_layout Paragraph*
+Avantage
+\end_layout
+
+\begin_layout Standard
+Le RAID 5 étant une dérivé du RAID 0, il possède les performances de lectures
+ élevées.
+ Mais il possède l'avantage de tolérer la perte d
+\series bold
+'un 
+\series default
+disque.
+\end_layout
+
+\begin_layout Paragraph*
+Inconvénient
+\end_layout
+
+\begin_layout Standard
+Le RAID 5 demande de calculer la parité pour écrire des données; la vitesse
+ d'écritures est donc ralentit.
+ De plus les blocs de parité prennent la place de données qui pourraient
+ être directement stocké, au total nous perdons l'équivalent de 1 disque
+ pour n disques de même capacité de stockage utilisés.
+ Notons aussi que si l'on perd un disque, le temps de reconsruction peut
+ s'avérer très long si la capacité de stockage des disques est importante,
+ les disques étant beaucoup sollicité sur cette opération, il se peut qu'une
+ deuxième panne arrive et que toutes les données soient perdues.
+\end_layout
+
+\begin_layout Subsection
+Raid 6
+\end_layout
+
+\begin_layout Standard
+Le Raid 6 est un Raid à double parité P et Q.
+ La parité P est calculée par la fonction "XOR", tout comme le RAID 5.
+ La parité Q est calculée généralement par le code Reed-Solomon ou bien
+ une de ses variantes.
+ Le code Reed-Solomon dépend de l'ordre d'arrivé de données à coder.
+ Ce qui génère quatre variétés selon la rotation de la parité (gauche ou
+ droite) et selon l'ordre de calcul des parités P et Q.
+ L'objectif de la double parité est d'aider le RAID 6 à résister à une double
+ panne de deux disques durs simultanément.
+ Par contre, cette double parité affecte les performances en écritures.
+ Une étude sur le RAID 6 a constaté une chute de performance de l'ordre
+ de 30% par rapport au RAID 5.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename images/RAID6.png
+	lyxscale 50
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Combinaison de RAID
+\end_layout
+
+\begin_layout Standard
+Chaque système RAID présente des avantages mais aussi des défauts.
+ Il est possible de palier à ces défauts en associant deux systèmes RAID
+ différents à plusieurs disques ou au contraire de profiter de leurs avantages.
+ Le système le plus utilisé dans les combinaisons est le RAID 0.
+ S’il est associé avec un système RAID de niveau 1, 3 ou 5, le système obtenu
+ possède alors un niveau de performance très élevé ainsi qu’une tolérance
+ à la panne.
+ On appelle les regroupements de plusieurs disques dans un même RAID une
+ grappe.
+\end_layout
+
+\begin_layout Subsection
+RAID 01
+\end_layout
+
+\begin_layout Standard
+Le RAID 01 est une combinaison de deux types de RAID : RAID 0 et RAID 1.
+ Ce RAID 01 est basé sur les techniques du miroir et de distribution des
+ blocs de données.
+ Quatre disques, au moins sont nécessaires.
+ D'abord, deux disques seront utilisés pour créer le RAID 0.
+ Ensuite, celui-ci sera dupliqué (ou miroité) sur une autre grappe de deux
+ disques.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename images/raid01.png
+	lyxscale 50
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph*
+Capacité
+\end_layout
+
+\begin_layout Standard
+La capacité de la grappe du RAID 01 est déterminée par la capacité du plus
+ petit disque multiplié par le nombre de disques de la grappe de base en
+ RAID 0.
+\end_layout
+
+\begin_layout Paragraph*
+Performances
+\end_layout
+
+\begin_layout Standard
+La vitesse de lecture du RAID 01 de N disques est N fois plus rapide qu'un
+ seul disque.
+ Ce RAID 01 regroupe les avantages des performances du RAID 0 et la sécurité
+ du RAID 1.
+ Ce type de RAID est considéré comme le plus coûteux car la moitié de la
+ capacité des disques est utilisée pour la redondance.
+ Dans le cas d’une panne, le temps de reconstitution des données est élevé.
+ En effet, il faut rétablir les données de chaque disque.
+ C’est pourquoi le RAID 01 n’est que peu utilisé.
+\end_layout
+
+\begin_layout Subsection
+RAID 10
+\end_layout
+
+\begin_layout Standard
+Le RAID 10 associe une architecture de RAID 1 avec celle d'un RAID 0.
+ On regroupe d'abord les disques deux par deux pour créer 
+\begin_inset Formula $\frac{n}{2}$
+\end_inset
+
+ système RAID 1, puis on configure les paires de disque en RAID 0.
+ En cas de panne d’un disque, il n’y a pas de problème.
+ En effet, il y a juste une paire de disque qui fonctionne en mode dégradé.
+ Si un deuxième disque tombe en panne, mis à part le cas où il s’agit du
+ second disque de la même paire, il n’y a toujours pas de problème.
+ La probabilité d’avoir les deux disques de la même paire défectueux est
+ très faible.
+ Dans ce cas toutes les données seraient perdues comme pour un simple RAID
+ 0.
+ Dans le cas d’une panne, il n’y a alors qu’un seul disque à reconstituer.
+ Ce système offre les bonnes performances du RAID 0 tout en offrant la tolérance
+ aux pannes du RAID 1.
+ Ce mode de RAID a toujours le même inconvénient que le RAID 1, c’est à
+ dire qu’il est coûteux en capacité de stockage à cause du mirroring.
+ Il nécessite au minimum 4 disques durs : le RAID 0 nécessite au moins 2
+ disques qui dans ce cas sont les 2 paires de disques du RAID 1.
+ Etant donné la baisse actuelle des prix des disques, cette solution est
+ de plus en plus envisagée.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename images/raid10.png
+	lyxscale 50
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+RAID 50
+\end_layout
+
+\begin_layout Standard
+Le RAID 50 est une combinaison des RAID 5 et 0.
+ Les données sont distribuées par blocs de RAID 0 sur plusieurs grappes
+ de RAID 5.
+ Le RAID 50 offre un bon compromis entre la performance, la capacité disponible
+ et la sécurité.
+ Il est réputé d'être parmi les RAID les plus solides.
+ Néanmoins, il a également ses inconvénients.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename images/Raid50.png
+	lyxscale 50
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph*
+Capacité
+\end_layout
+
+\begin_layout Standard
+Le RAID 50 a besoin d'au minimum 6 disques.
+ Si on note 
+\begin_inset Formula $G$
+\end_inset
+
+ le nombre de grappe (contenant au minimum 3 disques) et 
+\begin_inset Formula $N$
+\end_inset
+
+ le nombre totale de disque, la capacité disponible vaut alors 
+\begin_inset Formula $C_{T}=(N-G)\times C$
+\end_inset
+
+, si les disques possèdent tous la même capacité de stockage 
+\begin_inset Formula $C$
+\end_inset
+
+.
+ À comparer avec la capacité d'un RAID 10 qui perd 50% de sa capacité de
+ stockage.
+\end_layout
+
+\begin_layout Paragraph*
+Fiabilité
+\end_layout
+
+\begin_layout Standard
+avec un RAID 5, la probabilité de panne de deux disques simultanément augmente
+ avec le nombre des disques.
+ Avec un RAID 50, la sécurité augmente avec le nombre de disques, à la condition
+ que deux disques de la même grappe ne soient en panne simultanément.
+\end_layout
+
+\begin_layout Paragraph*
+Performance
+\end_layout
+
+\begin_layout Standard
+Généralement le RAID 50 fonctionne moins bien que le RAID 10, mais beaucoup
+ mieux qu'un Raid 5.
+ La vitesse maximale en lecture et écriture est donnée par 
+\begin_inset Formula $V_{M}=N\times(G-1)\times V$
+\end_inset
+
+ où 
+\begin_inset Formula $V$
+\end_inset
+
+ est la vitesse d'écriture
+\backslash
+lecture du disque le moins performant dans l'architecture.
+\end_layout
+
+\end_body
+\end_document

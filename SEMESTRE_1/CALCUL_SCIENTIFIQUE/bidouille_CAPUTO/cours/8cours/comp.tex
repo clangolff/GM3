@@ -1,0 +1,121 @@
+\documentclass[12pt]{article}
+  \textheight=24cm
+  \textwidth=16cm
+  \oddsidemargin=0.5cm
+  \headheight=0cm
+  \topmargin=0cm
+  \parskip .1cm \parsep .1cm
+  \voffset=-2cm
+
+\begin{document}
+
+
+\begin{center}{\bf \Large cours 8 } 
+\end{center}
+
+
+
+\begin{center}{\bf \Large Compilateurs gfortran gcc  } \end{center}
+
+
+
+Sous Unix, les compilateurs gfortran,gcc,g++ effectuent l'operation
+de compilation et de link a la suite. \\
+exemple: gfortran ou fc comme sur convex, \\
+xlf sur ibm risc ... \\
+syntaxe de la commande 
+
+gfortran file.f -o file options lib.a otherfile.o
+
+
+Le fichier qui est compile est file, on veut le linker avec
+une librairie (collection de fichiers objet) notee lib.a sous unix.
+Cette librairie peut avoir ete construite par l'utilisateur (commande
+'ar') ou non. 
+
+\section{Remarques importantes:}
+
+\begin{itemize}
+\item On a adjoint un autre fichier otherfile.o qui lui est
+sous la forme objet, ceci montre les deux effets de gfortran: compilation
+et link.
+
+\item ATTENTION A l'ORDRE pour les bibliotheques. Si le
+programme a compiler a besoin de routines dans lib.a alors
+il faut placer lib.a APRES file.f \\
+gfortran lib.a file.f -o file \\
+donne une erreur alors que \\
+gfortran file.f lib.a -o file \\
+compile et lie correctement.
+
+\item Le compilateur gfortran est aussi un compilateur C. Il est donc
+possible de melanger du C et du fortran.
+
+\end{itemize}
+
+Exemples \\
+
+gfortran -o exec file1.f file2.o file3.c lib.a
+
+
+gfortran -c file1.f \\
+
+gfortran -c file3.c \\
+gfortran -o exec file1.o file2.o file3.o file4.a
+
+{\bf Utilite de 'make'}
+
+\section{Les options de gfortran}
+
+Il y en a une multitude que l'on pourra consulter en faisant
+'man gfortran' . Elles sont de la forme '-lettre' . Voici celles
+qui sont le plus utiles.
+
+\begin{itemize}
+
+
+\item '-c' Effectue une compilation seule, sans link. La pratique Unix
+  est d'effectuer d'abord cette operation sur tous les fichiers puis
+  de creer l'executable avec la commande 'gfortran file.o file2.o...'.
+  C'est la base du makefile (voir plus bas).
+  Cette option permet aussi de verifier la syntaxe d'un code rapidement.
+
+\item '-g' Etablit une table de symboles pour le 'debuggage' du code. Voir
+  doc sur gdb le debuggeur de haut niveau sous unix. Attention cette
+  option est en general incompatible avec '-O' qui est l'option d'optimisation.
+
+\item '-l' Suivie d'un nom cette option d'edition de lien cherche la bibliothque
+  libnom.a dans le repertoire indique par l'option -L puis dans /lib et
+  /usr/lib. Cette option est utilisee en general pour les bibliotheques
+  de l'utilisateur.
+
+\item '-o' Elle est indiquee ci-dessus et permet de nommer l'executable.
+  Ainsi le resultat de la compilation cidessus sera un executable nomme
+  'file'.
+
+\item '-O' Optimise le code. Cette option doit etre maniee avec precaution
+   , et en particulier il est bon de comparer les resultats du code
+   avec et sans optimisation. Sur les nouvelles machines -O1 -O2 ..
+   Une des optimisations simple est le deroulement de boucles.
+
+\item '-p' Cette option avancee permet d'etablir le pourcentage de temps
+   passe dans chaque procedure. Voir amelioration du code.
+
+\item '-u'  Exige une declaration explicite pour chaque variable utilisee
+   dans le code. Tres pratique pour verifier la syntaxe avant compilation.
+
+\end{itemize}
+
+Un executable = gros fichier \\
+multiples informations utilisables apres un arret errone (core
+dump). \\
+strip exe
+
+
+
+Possible d'utiliser debugger gdb pour obtenir
+des informations sur la cause de l'arret. 
+
+
+\end{document}
+

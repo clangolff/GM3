@@ -1,0 +1,12 @@
+reset
+
+lambda1 = 1.0684741810570004 
+lambda2 = 1.929940764255137
+
+f(x,y) = lambda1 * x + lambda2 * y
+ 
+splot f(x,y) lc -1 notitle, 'data' u (log($1)):(log($2)):(log($3)) w p lc 15 pt 7 notitle 
+ 
+ 
+
+

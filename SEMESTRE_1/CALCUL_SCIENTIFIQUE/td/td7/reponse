@@ -1,0 +1,7 @@
+En augmentant la valeur de n, on remarque que la différence entre A*x et b diminue en norme, ce qui signifie que la solution x est de moins en moins bonne quand on augmente la valeur de n.
+
+Ceci s'explique par la définition de la matrice de Hilbert dont les coefficients deviennent de plus en plus proche de zero lorsque l'on va de plus en plus loin vers les lignes et les colonnes. Ainsi, la ligne pivot à l'étape i est forcément la ligne i+1 car on choisit le pivot comme étant le maximum de la colonne (i:n,i). on retranche ensuite à la ligne i + 2 , la ligne i+1 multipliant par le pivot. Or le pivot, ainsi que les élements de la ligne i+2 situé après le pivot, sont tous des valeurs comprisent entre 0 et 1 strictement. Donc en faisant leur produit, nous obtenons des valeurs encore plus proches de 0. 
+
+De plus, le fait de normaliser la ligne entraine une division par un pivot de plus plus plus proche de 0 et donc des nombres de plus en plus grands. Et la différence entre k/a et k/b lorsque a et b sont proches de zero et sont très peu différents entraine de grosses variations sur le résultat finale.   
+
+

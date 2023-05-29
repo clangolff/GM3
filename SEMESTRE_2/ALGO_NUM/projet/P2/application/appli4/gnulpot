@@ -1,0 +1,20 @@
+reset
+
+set xrange [-1:7]
+set yrange [-2:7]
+set samples 100000
+set size ratio -1
+
+alpha = -5.619047619047616
+beta  = -5.7539682539682575
+gamma = 3.777777777777786
+
+a = -0.5 * alpha
+b = -0.5 * beta
+
+r2 = a*a + b*b - gamma
+
+f(x) =        sqrt(r2 - (x - a)**2) + b
+g(x) = -1. *  sqrt(r2 - (x - a)**2) + b
+
+plot f(x) notitle lc -1,g(x) notitle lc -1, 'data' u 1:2 pt 7 lc 15 notitle 

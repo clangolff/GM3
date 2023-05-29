@@ -1,0 +1,38 @@
+a) char a[] = "un\ndeux\ntrois\n";
+	correct la taille de a sera initialiser à la taille de la chaine + 1 <--- '\o'
+	
+	*** \n correspond à un seul caractère ***  
+	le nombre d'octet reservé est 14 + 1 octet
+	
+b) char b[12] = "un deux trois";     12 octets seront reservés pour b 
+	non correct trop de caractère
+	compilera quand meme mais probleme pour s et \o car ca remplace dans une case qui n'est pas reservé
+		
+c) char c[] = 'abcdefg';
+	non correct
+	'  ' correspond à un caractère
+	
+d)char d[10] = 'x';  10 octets de reserve pour d
+	*char  <--- char va compiler mais on sait pas ce qu'il se passe
+	 char d[10] = "x"
+	
+e) char e[5] = "cinq";  
+	correct
+	5 octets reservé pour e et on a bien 5 cacactere c i n q et \o
+	
+ f) char f[] = "Cette " "phrase" "est coupée";
+ 	correct
+ 	considere que s'est qu'une seul chaine ignore les guillemets 
+ 	23 octet reservé
+ 	
+ g) char g[2] = {'a', '\0'};  2octets reservé
+ 	correct 
+ 
+ h) char h[4] = {'a', 'b', 'c'};  4 octet reservé
+ 	correct  mais ce n'est pas une chaine de caractere 
+ 	pour la transformer en chaine il faut faire char h[4] = {'a', 'b', 'c', '\o'}; 
+ 	
+i) char i[4] = "'o'";  4 octets réservé
+	correct   '   o    '   \0  on a bien 4 caractère.    et si c'est ' " " ' c'est faux
+	
+	"  \" \"  "

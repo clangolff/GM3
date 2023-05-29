@@ -1,0 +1,16 @@
+#!/bin/bash
+
+make decompoQR
+
+echo "Décomposition QR" > resultat
+echo "" >> resultat
+
+for file in ./dQR/*; 
+do 
+	./decompoQR $file >> resultat
+	echo "" >> resultat
+	echo "" >> resultat
+done
+
+make clean
+

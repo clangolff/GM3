@@ -1,0 +1,1650 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\begin_preamble
+\renewcommand{\descriptionlabel}[1]{\hspace\labelsep\upshape\bfseries #1:}
+\renewenvironment{description}{\list{}{%
+  \setlength{\itemsep}{-2pt}
+  \advance\leftmargini6\p@ \itemindent-12\p@
+  \labelwidth\z@ \let\makelabel\descriptionlabel}%
+}{
+  \endlist
+}
+\end_preamble
+\use_default_options false
+\begin_modules
+theorems-ams
+eqs-within-sections
+figs-within-sections
+\end_modules
+\maintain_unincluded_children false
+\begin_local_layout
+Style Description
+LabelIndent           MM
+LeftMargin            MMMMMxx
+End
+\end_local_layout
+\language french
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry true
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 0
+\use_package esint 1
+\use_package mathdots 0
+\use_package mathtools 0
+\use_package mhchem 1
+\use_package stackrel 0
+\use_package stmaryrd 0
+\use_package undertilde 0
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 0
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\leftmargin 2.5cm
+\topmargin 2cm
+\rightmargin 3cm
+\bottommargin 2.5cm
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style french
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part
+Algorithme de triangularisation de Gauss
+\end_layout
+
+\begin_layout Standard
+L'algorithme de Gauss est une généralisation de la méthode d'élimination
+ qui permet la résolution à la main des petit système linéaire.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Remarques
+\end_layout
+
+\begin_layout Itemize
+Une des spécifité de l'algorithme de Gauss est que les calculs successifs
+ de coefficients concernent à la fois les matrices et les second membres,
+ contrairement aux algorithme directs de type LU.
+ 
+\end_layout
+
+\begin_layout Itemize
+Les matrices successifs obtenues par l'algorithme de Gauss ont tous le même
+ determinant, égal au determinant de A.
+ la dernière matrice calculé 
+\begin_inset Formula $A^{(n-1)}$
+\end_inset
+
+ permet donc de calculé le determinant de A : 
+\begin_inset Formula $det(A)=\prod_{i=1}^{n}a_{ii}^{(n-1)}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A^{(n-1)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Algorithme de Gauss basique
+\end_layout
+
+\begin_layout Standard
+\begin_inset listings
+inline false
+status open
+
+\begin_layout Plain Layout
+
+Pour j = 1 à n-1 faire              # parcours des colonnes
+\end_layout
+
+\begin_layout Plain Layout
+
+	Pour i = j+1 à n faire		  # parcours des lignes
+\end_layout
+
+\begin_layout Plain Layout
+
+		Lij = Aij / Ajj             # pivot de Gauss
+\end_layout
+
+\begin_layout Plain Layout
+
+		bi = bi - Lij*bj
+\end_layout
+
+\begin_layout Plain Layout
+
+		Pour k = j à n faire
+\end_layout
+
+\begin_layout Plain Layout
+
+			Aik = Aik - Lij*ajk     # ligne i - ligne pivot * pivot
+\end_layout
+
+\begin_layout Plain Layout
+
+		Fin Pour
+\end_layout
+
+\begin_layout Plain Layout
+
+	Fin Pour
+\end_layout
+
+\begin_layout Plain Layout
+
+Fin Pour
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Équivalent mathématique :
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $L_{ij}^{(k+1)}=\frac{A_{ij}^{(k)}}{A_{jj}^{(k)}}$
+\end_inset
+
+ pour tout 
+\begin_inset Formula $i>k$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $b_{i}^{(k+1)}=b_{i}^{(k)}-L_{ij}b_{j}^{(k)}$
+\end_inset
+
+ pour tout 
+\begin_inset Formula $i>k$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $A_{ik}^{(k+1)}=A_{ik}^{(k)}-L_{ij}A_{jk}^{(k)}$
+\end_inset
+
+ pour tout 
+\begin_inset Formula $k>j$
+\end_inset
+
+ équivalent à 
+\begin_inset Formula $L_{i}=L_{i}-pivot*L_{pivot}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Attention, cette méthode ne marche que si tout les éléments diagonaux de
+ A sont non nulle.
+ 
+\end_layout
+
+\begin_layout Standard
+La compléxité de l'algorithme d'éliminatoin de Gauss est 
+\begin_inset Formula $O(\frac{2n³}{3})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/cholesky/Cholesky-3.svg
+	lyxscale 20
+	width 50page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Algorithme de Gauss pivot partiel
+\end_layout
+
+\begin_layout Standard
+Comme on l'a vu, si un élément diagonale de A est nul alors il y a intérêt
+ à inverser la colonne avec une colonne qui permettrait d'avoir un pivot
+ que l'on peut calculé.
+\end_layout
+
+\begin_layout Standard
+choix du pivot de Gauss : 
+\begin_inset Newline newline
+\end_inset
+
+Supposons que les nombres soient representé en virgules flottante dans un
+ ebase décimale avec 3 chiffres significatifs et que les résultats des opération
+s soient arrondies à 3 chiffres significatifs.
+\end_layout
+
+\begin_layout Standard
+Soit le système 
+\begin_inset Formula $Ax=b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A=\left[\begin{matrix}10^{-4} & 1\\
+0 & 1
+\end{matrix}\right]$
+\end_inset
+
+ et 
+\begin_inset Formula $b=\left[\begin{matrix}1\\
+2
+\end{matrix}\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Choisissons 
+\begin_inset Formula $10^{-4}$
+\end_inset
+
+ comme premier pivot.
+ Après élimination de 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+ on a
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A=\left[\begin{matrix}10^{-4} & 1\\
+0 & 1-10^{-4}
+\end{matrix}\right]$
+\end_inset
+
+ et 
+\begin_inset Formula $b=\left[\begin{matrix}1\\
+2-10^{-4}
+\end{matrix}\right]$
+\end_inset
+
+ Or 
+\begin_inset Formula $1-10^{-4}$
+\end_inset
+
+ donnera 
+\begin_inset Formula $-10^{4}$
+\end_inset
+
+ et 
+\begin_inset Formula $2-10^{-4}$
+\end_inset
+
+ donnera 
+\begin_inset Formula $-10^{4}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+Ainsi la solution du sytème serait 
+\begin_inset Formula $x_{2}=\frac{-10^{-4}}{-10^{-4}}=1$
+\end_inset
+
+ et 
+\begin_inset Formula $x_{1}=\frac{1-1}{10^{-4}}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Choisissons maintenant comme ligne pivot la deuxième ligne.
+ On obtient
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A=\left[\begin{matrix}0 & 1-10^{-4}\\
+1 & 1
+\end{matrix}\right]$
+\end_inset
+
+ et 
+\begin_inset Formula $b=\left[\begin{matrix}1-10^{-4}\\
+2
+\end{matrix}\right]$
+\end_inset
+
+ Or 
+\begin_inset Formula $1-10^{-4}$
+\end_inset
+
+ sera représenté par 1 et 
+\begin_inset Formula $1-2*10^{-4}$
+\end_inset
+
+ par 1 aussi compte tenu des erreurs d'arrondies
+\end_layout
+
+\begin_layout Standard
+On aura donc 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A=\left[\begin{matrix}0 & 1\\
+1 & 1
+\end{matrix}\right]$
+\end_inset
+
+ et 
+\begin_inset Formula $b=\left[\begin{matrix}1\\
+2
+\end{matrix}\right]$
+\end_inset
+
+ donc les solutions sont 
+\begin_inset Formula $x_{1}=1$
+\end_inset
+
+ et 
+\begin_inset Formula $x_{2}=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La première solution est complètement fausse alors que la deuxième est excellent
+e.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Le coefficient 
+\begin_inset Formula $L_{ij}=\frac{A_{ij}}{Ajj}$
+\end_inset
+
+ est inversement proportionnel au pivot.
+ Or ces coefficients interviennent en multiplicateur dans les formules de
+ transformation des lignes.
+ Les erreurs d'arrondies qui affectent déjà la matrice 
+\begin_inset Formula $A^{k}$
+\end_inset
+
+ pourront être amplifier.
+ Cette amplification est d'autant plus important que le pivot est petit.
+\end_layout
+
+\begin_layout Standard
+À la 
+\begin_inset Formula $k^{ième}$
+\end_inset
+
+ étape on choisie comme ligne pivot, une ligne d'indice p tel que 
+\begin_inset Formula $|A_{pj}|=max_{i\in1..n}|A_{ij}|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename image/Pivot-partiel.svg
+	lyxscale 40
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+Factorisation LU
+\end_layout
+
+\begin_layout Section
+factorisation LU
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/Lu/Lu-1.svg
+	lyxscale 40
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/Lu/Lu-2.svg
+	lyxscale 40
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/Lu/Lu-3.svg
+	lyxscale 40
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/Lu/Lu-4.svg
+	lyxscale 40
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/Lu/Lu-5.svg
+	lyxscale 40
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/Lu/Lu-6.svg
+	lyxscale 40
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/Lu/Lu-7.svg
+	lyxscale 40
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/Lu/Lu-9.svg
+	lyxscale 40
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/Lu/Lu-10.svg
+	lyxscale 30
+	scale 60
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Factorisation Cholesky
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/Lu/Lu-8.svg
+	lyxscale 20
+	width 90page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/cholesky/Cholesky-1.svg
+	lyxscale 20
+	width 80page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/cholesky/Cholesky-2.svg
+	lyxscale 20
+	width 80page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/cholesky/Cholesky-4.svg
+	lyxscale 20
+	width 80page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/cholesky/Cholesky-5.svg
+	lyxscale 20
+	width 80page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/cholesky/Cholesky-6.svg
+	lyxscale 20
+	width 80page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/cholesky/Cholesky-7.svg
+	lyxscale 20
+	width 80page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+factorisation QR
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/QR/QR-1.svg
+	lyxscale 20
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/QR/QR-2.svg
+	lyxscale 20
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/QR/QR-3.svg
+	lyxscale 20
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/QR/QR-4.svg
+	lyxscale 20
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/QR/QR-5.svg
+	lyxscale 20
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/QR/QR-6.svg
+	lyxscale 20
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/QR/QR-7.svg
+	lyxscale 20
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/QR/QR-8.svg
+	lyxscale 20
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/QR/QR-9.svg
+	lyxscale 20
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/QR/QR-10.svg
+	lyxscale 20
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/QR/QR-11.svg
+	lyxscale 20
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/QR/QR-12.svg
+	lyxscale 20
+	scale 65
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/QR/QR-13.svg
+	lyxscale 20
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/QR/QR-14.svg
+	lyxscale 20
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/QR/QR-15.svg
+	lyxscale 20
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/QR/QR-16.svg
+	lyxscale 20
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/QR/QR-17.svg
+	lyxscale 20
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/QR/QR-18.svg
+	lyxscale 20
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/QR/QR-19.svg
+	lyxscale 20
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/QR/QR-20.svg
+	lyxscale 20
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/QR/QR-21.svg
+	lyxscale 20
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/QR/QR-23.svg
+	lyxscale 20
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/QR/QR-22.svg
+	lyxscale 20
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/QR/QR-23.svg
+	lyxscale 20
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/QR/QR-24.svg
+	lyxscale 20
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/QR/QR-25.svg
+	lyxscale 20
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Splitting
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/Splitting/Splitting -1.svg
+	lyxscale 20
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/Splitting/Splitting -2.svg
+	lyxscale 20
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/Splitting/Splitting -3.svg
+	lyxscale 20
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/Splitting/Splitting -4.svg
+	lyxscale 20
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/Splitting/Splitting -5.svg
+	lyxscale 20
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/Splitting/Splitting -6.svg
+	lyxscale 20
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/Splitting/Splitting -7.svg
+	lyxscale 20
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/Splitting/Splitting -8.svg
+	lyxscale 20
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/Splitting/Splitting -9.svg
+	lyxscale 20
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/Splitting/Splitting -10.svg
+	lyxscale 20
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/Splitting/Splitting -11.svg
+	lyxscale 20
+	scale 65
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/Splitting/Splitting -12.svg
+	lyxscale 20
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/Splitting/Splitting -13.svg
+	lyxscale 20
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/Splitting/Splitting -14.svg
+	lyxscale 20
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/Splitting/Splitting -15.svg
+	lyxscale 20
+	scale 65
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/Splitting/Splitting -16.svg
+	lyxscale 20
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/Splitting/Splitting -17.svg
+	lyxscale 20
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/Splitting/Splitting -18.svg
+	lyxscale 20
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/Splitting/Splitting -19.svg
+	lyxscale 20
+	scale 65
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Methode des descentes
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/descente/Méthode descente -1.svg
+	lyxscale 20
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/descente/Méthode descente -2.svg
+	lyxscale 20
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/descente/Méthode descente -3.svg
+	lyxscale 20
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/descente/Méthode descente -4.svg
+	lyxscale 20
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/descente/Méthode descente -5.svg
+	lyxscale 20
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/descente/Méthode descente -6.svg
+	lyxscale 20
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/descente/Méthode descente -7.svg
+	lyxscale 20
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/descente/Méthode descente -8.svg
+	lyxscale 20
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/descente/Méthode descente -9.svg
+	lyxscale 20
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/descente/Méthode descente -10.svg
+	lyxscale 20
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/descente/Méthode descente -11.svg
+	lyxscale 20
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/descente/Méthode descente -12.svg
+	lyxscale 20
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/descente/Méthode descente -13.svg
+	lyxscale 20
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/descente/Méthode descente -14.svg
+	lyxscale 20
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/descente/Méthode descente -15.svg
+	lyxscale 20
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/descente/Méthode descente -16.svg
+	lyxscale 20
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/descente/Méthode descente -17.svg
+	lyxscale 20
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/descente/Méthode descente -18.svg
+	lyxscale 20
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/descente/Méthode descente -19.svg
+	lyxscale 20
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Krylov + gradient conj + gmres
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/Krylov/Espace krylov-1.svg
+	lyxscale 20
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/Krylov/Espace krylov-2.svg
+	lyxscale 20
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/Krylov/Espace krylov-3.svg
+	lyxscale 20
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/Krylov/Espace krylov-4.svg
+	lyxscale 20
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/Krylov/Espace krylov-5.svg
+	lyxscale 20
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/Krylov/Espace krylov-6.svg
+	lyxscale 20
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/Krylov/Espace krylov-7.svg
+	lyxscale 20
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/Krylov/Espace krylov-8.svg
+	lyxscale 20
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/Krylov/Espace krylov-9.svg
+	lyxscale 20
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/Krylov/Espace krylov-10.svg
+	lyxscale 20
+	scale 70
+
+\end_inset
+
+*
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/Krylov/Espace krylov-11.svg
+	lyxscale 20
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/Krylov/Espace krylov-12.svg
+	lyxscale 20
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/Krylov/Espace krylov-13.svg
+	lyxscale 20
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/Krylov/Espace krylov-14.svg
+	lyxscale 20
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/Krylov/Espace krylov-15.svg
+	lyxscale 20
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/Krylov/Espace krylov-16.svg
+	lyxscale 20
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/Krylov/Espace krylov-17.svg
+	lyxscale 20
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/Krylov/Espace krylov-18.svg
+	lyxscale 20
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/Krylov/Espace krylov-19.svg
+	lyxscale 20
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/Krylov/Espace krylov-20.svg
+	lyxscale 20
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/Krylov/Espace krylov-21.svg
+	lyxscale 20
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename image/Krylov/Espace krylov-22.svg
+	lyxscale 20
+	scale 70
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

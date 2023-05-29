@@ -1,0 +1,9 @@
+Ce dossier contient la version pdf du rapport, l'énoncé du TP ainsi que 3 dossiers.
+Le dossier codes contient les codes fournient et complétés.
+Le dossier jupyter contient  sous dossier
+    - un dossier pour comparer les méthodes de quadrature
+    - un dossier pour simuler une source ponctuelle
+    - un dossier pour simuler deux sources ponctuelles
+    - un dossier pour simuler une fente
+    - un dossier pour simuler deux fentes
+Chacun de ses dossiers contient des fichiers jupyter.

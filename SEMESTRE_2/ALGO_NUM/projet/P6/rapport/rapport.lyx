@@ -1,0 +1,2365 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "c"
+hor_pos "l"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "40text%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/INSA.png
+	lyxscale 20
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Box Frameless
+position "c"
+hor_pos "l"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "40text%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering{
+\end_layout
+
+\end_inset
+
+
+\series bold
+\size larger
+AlgoNum GM3
+\end_layout
+
+\begin_layout Plain Layout
+
+\series bold
+\size larger
+2022/2023
+\series default
+\size default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace 2.1cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "c"
+hor_pos "l"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "100text%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering{
+\end_layout
+
+\end_inset
+
+
+\series bold
+\shape slanted
+\size huge
+Equation Récurrente
+\size giant
+ 
+\size default
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+AlgoNum - TD6 - MMSN
+\series default
+\shape default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+ #IMAGE
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "l"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100text%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+Etudiants : 
+\series default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace{0.5cm} 
+\end_layout
+
+\end_inset
+
+
+\series bold
+DANTAS Alexandre 
+\series default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace{1.0cm} 
+\end_layout
+
+\end_inset
+
+
+\series bold
+DELL'OVA Fabio
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace{3cm} 
+\end_layout
+
+\end_inset
+
+
+\series bold
+GUINES Antoine
+\series default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace{1.75cm} 
+\end_layout
+
+\end_inset
+
+
+\series bold
+LANGOLFF Clément
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace{3cm} 
+\end_layout
+
+\end_inset
+
+
+\series bold
+KESSLER Aymeric 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Encadrant : 
+\series default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace{0.5cm} 
+\end_layout
+
+\end_inset
+
+
+\series bold
+Gleyse.
+ B
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+Calcul de valeurs d'une suite 
+\end_layout
+
+\begin_layout Standard
+On cherche à calculer la suite des 
+\end_layout
+
+\begin_layout Paragraph
+\begin_inset Formula 
+\[
+I_{n}=\intop_{-1}^{1}x^{n}e^{-x}dx,\quad n=0,..,20
+\]
+
+\end_inset
+
+
+\series bold
+Convergence de l'intégrale
+\end_layout
+
+\begin_layout Paragraph
+\begin_inset Formula 
+\begin{align*}
+\begin{vmatrix}I_{n}\end{vmatrix} & =\begin{vmatrix}\intop_{-1}^{1}x^{n}e^{-x}dx\end{vmatrix}\leq\intop_{-1}^{1}|x^{n}|e^{-x}dx\\
+ & \le e^{1}\times\intop_{-1}^{1}\begin{vmatrix}x^{n}\end{vmatrix}dx=e^{1}\times\left(\intop_{-1}^{0}(-x)^{n}dx+\intop_{0}^{1}x^{n}dx\right)\\
+ & =2e^{1}\times\intop_{0}^{1}x^{n}dx=2e^{1}\times\left[\frac{x^{n+1}}{n+1}\right]_{0}^{1}\\
+ & =2e^{1}\times\frac{1}{n+1}\xrightarrow[n\rightarrow+\infty]{}0
+\end{align*}
+
+\end_inset
+
+
+\series bold
+Relation de récurrence
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+I_{0}= & \intop_{-1}^{1}e^{-x}dx\\
+= & \left[e^{-x}\right]_{1}^{-1}=e^{1}-e^{-1}\\
+= & e^{1}-e^{-1}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+\begin_inset Formula 
+\begin{align*}
+I_{n} & =\intop_{-1}^{1}x^{n}e^{-x}dx\\
+ & =\left[-x^{n}e^{-x}\right]_{-1}^{1}+\intop_{-1}^{1}nx^{n-1}e^{-x}dx\\
+ & =-(1)^{n}e^{-1}+(-1)^{n}e^{1}+n\intop_{-1}^{1}x^{n-1}e^{-x}dx\\
+ & =nI_{n-1}-e^{-1}+(-1)^{n}e^{1}
+\end{align*}
+
+\end_inset
+
+
+\series bold
+Implémentation de la suite et anomalies
+\end_layout
+
+\begin_layout Standard
+En implémentant le code relatif à la suite des 
+\begin_inset Formula $I_{n}$
+\end_inset
+
+, on obtient les résultats suivants : 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Tabular
+<lyxtabular version="3" rows="12" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $I_{n}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Val num
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.350402
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-0.735759
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.878885
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-0.449507
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.552373
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-0.324297
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.404618
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-0.253834
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.319730
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-0.208594
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.264463
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="11" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $I_{n}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Val num
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-0.177070
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.225563
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+13
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-0.153838
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+14
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.196670
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+15
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-0.136116
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+16
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.172550
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+17
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-0.152810
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+18
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-0.400178
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+19
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-10.689550
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+20
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-211.440600
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Aux travers de ces résultats, nous pouvons remarquer qu'à partir de 
+\begin_inset Formula $I_{17}$
+\end_inset
+
+, les valeurs ne cessent d'augementer et sont aussi toutes négatives.
+ Cette erreur peut s'expliquer car dès le début, 
+\begin_inset Formula $I_{0}$
+\end_inset
+
+contient une erreur absolue non nulle.
+ En effet, mathématiquement le calcul est exact mais numériquement, les
+ valeurs de l'exponentielles possèdent une erreur de codage.
+ Le développement infini de ce nombre intègre deux erreurs immédiatement.
+ De plus, puisque chaque nouveau terme de la suite dépend du précédent,
+ cette erreur se cumule et le facteur 
+\begin_inset Formula $n$
+\end_inset
+
+ se trouvant devant la multiplie de plus en plus à chaque étape.
+ 
+\begin_inset Newline newline
+\end_inset
+
+Pour corriger cette erreur, nous pouvons définir la relation inverse c'est
+ à dire :
+\begin_inset Formula 
+\[
+I_{n-1}=\frac{I_{n}+e^{-1}-(-1)^{n}e}{n}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Il faudrait alors initialiser la suite avec une relativement bonne approximation
+ de l'integrale pour pouvoir arriver à une limite.
+\end_layout
+
+\begin_layout Standard
+Pour illustrer, nous initialisons l'intégrale 
+\begin_inset Formula $I_{20}$
+\end_inset
+
+par une approximation en utilisant la méthode des trapèzes.
+ Ensuite, nous calculons les termes suivants de la suite par la formule
+ donnée ci-dessus.
+ L'erreur est ainsi divisé de plus en plus au passage d'un calcule d'une
+ intégrale à l'autre.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Tabular
+<lyxtabular version="3" rows="12" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $I_{n}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Val num
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+20
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-0.5876015907323193
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+19
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-0.1469001989009961
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+18
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.15469795109102585 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+17
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-0.12198357978869871 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+16
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.17436339352010521
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+15
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-0.1360024371104686 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+14
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.19667725550133458 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+13
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-0.15383750941330487 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+12
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.22556336617055253 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+11
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-0.17706991842642084 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.26446285010946063 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset space ~
+\end_inset
+
+
+\begin_inset Tabular
+<lyxtabular version="3" rows="11" columns="2">
+<features tabularvalignment="middle">
+<column alignment="center" valignment="top">
+<column alignment="center" valignment="top">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $I_{n}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+Val num
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+9
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-0.20859395371781422 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+8
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.3197297017680748 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+7
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-0.253834085689941 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.4046181691343638 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-0.3242973696922065
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.5523727799876561
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-0.44950740182498666 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0.8788846226018335 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+-0.7357588823428847
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+2.3504023872876028 
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+Equation de partition
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+T(n)=aT\left(\frac{n}{b}\right)+cd(n)\;\forall n\geq b
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+
+\series bold
+Résolution de l'équation cas général
+\end_layout
+
+\begin_layout Standard
+En posant 
+\begin_inset Formula $n=b^{k}$
+\end_inset
+
+, 
+\begin_inset Formula $u_{k}=T\left(b^{k}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $D(k)=d\left(b^{k}\right)$
+\end_inset
+
+, l'équation devient 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+u_{k}-au_{k-1}=cD(k)\;\forall k\geq1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En posant le changement de variable 
+\begin_inset Formula $n=k-1$
+\end_inset
+
+, on obtient
+\begin_inset Formula 
+\[
+u_{n+1}-au_{n}=cD(n+1)\;\forall n\geq0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Cette équation est de la forme 
+\begin_inset Formula 
+\[
+u_{n+k}+a_{n-1}u_{n+k-1}+...+a_{n-k}u_{n}=f(n)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+avec 
+\begin_inset Formula $k=1$
+\end_inset
+
+.
+ C'est donc une équation linéaire d'ordre 1 à coefficients réels strictement
+ positifs.
+\end_layout
+
+\begin_layout Standard
+La solution sera de la forme : 
+\begin_inset Formula $u_{n}=\underbrace{y_{n}}_{Sol.\;homogène}+\underbrace{z_{n}}_{Sol.\;particulière}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Solution homogène : 
+\end_layout
+
+\begin_layout Standard
+On résout l'équation 
+\begin_inset Formula $u_{n+1}^{(h)}-au_{n}^{(h)}=0$
+\end_inset
+
+.
+ Il s'agit d'une suite géométrique de raison 
+\begin_inset Formula $a$
+\end_inset
+
+ définit pour 
+\begin_inset Formula $n\geq0$
+\end_inset
+
+ .
+ Ainsi 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+a
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+
+\begin_inset Formula 
+\[
+u_{n}^{(h)}=u_{0}\times a^{n}=T\left(1\right)\times a^{n}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+On note 
+\begin_inset Formula $u_{n}=C^{(1)}u_{n}^{(1)}$
+\end_inset
+
+ avec 
+\begin_inset Formula $C^{(1)}=u_{0}$
+\end_inset
+
+ et 
+\begin_inset Formula $u_{n}^{(1)}=a^{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Solution particulière :
+\end_layout
+
+\begin_layout Standard
+Pour trouver la solution particulère, on procède avec la méthode de la variation
+ de la constante.
+ Soit 
+\begin_inset Formula $v_{n}=C_{n}^{(1)}u_{n}^{(1)}=C_{n}^{(1)}a^{n}$
+\end_inset
+
+tel que 
+\begin_inset Formula $v_{n+1}=av_{n}+cD(n+1)$
+\end_inset
+
+ alors
+\begin_inset Formula 
+\begin{align*}
+C_{n+1}^{(1)}u_{n+1}^{(1)} & =aC_{n}^{(1)}u_{n}^{(1)}+cD(n+1)\\
+\iff C_{n+1}^{(1)}u_{n+1}^{(1)} & =C_{n}^{(1)}u_{n+1}^{(1)}+cD(n+1)\\
+\iff\left(C_{n+1}^{(1)}-C_{n}^{(1)}\right)u_{n+1}^{(1)} & =cD(n+1)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Posons 
+\begin_inset Formula $\varDelta C_{n}^{(1)}=C_{n+1}^{(1)}-C_{n}^{(1)}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\varDelta C_{n}^{(1)}u_{n+1}^{(1)}=cD(n+1)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Or, on a 
+\begin_inset Formula $u_{n+1}^{(1)}=a^{n+1}$
+\end_inset
+
+ et comme 
+\begin_inset Formula $a\neq0$
+\end_inset
+
+ , 
+\begin_inset Formula 
+\[
+\varDelta C_{n}^{(1)}=\frac{c}{a^{n+1}}D(n+1)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ainsi 
+\begin_inset Formula 
+\[
+C_{n}=\sum_{k=0}^{n-1}\frac{c}{a^{k+1}}D(k+1)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+finalement, la solution particulière est donnée par 
+\begin_inset Formula 
+\begin{align*}
+v_{n} & =C_{n}u_{n}^{(1)}\\
+ & =a^{n}\sum_{k=0}^{n-1}\frac{c}{a^{k+1}}D(k+1)\\
+ & =c\sum_{k=0}^{n-1}a^{n-k-1}D(k+1)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+On effectue le changement de variable 
+\begin_inset Formula $l=n-k-1$
+\end_inset
+
+ , d'où
+\begin_inset Formula 
+\begin{align*}
+v_{n} & =c\sum_{l=n-1}^{0}a^{l}D(n-l)\\
+ & =c\sum_{l=0}^{n-1}a^{l}D(n-l)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Donc 
+\begin_inset Formula 
+\[
+u_{n}=u_{0}\times a^{n}+c\sum_{l=0}^{n-1}a^{l}D(n-l)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Remarque 
+\end_layout
+
+\begin_layout Standard
+On n'aurait pu retrouver directement cette solution en remarquant que 
+\begin_inset Formula 
+\begin{align*}
+u_{k} & =au_{k-1}+cD(k)\\
+ & =a(au_{k-2}+cD(k-1))+cD(k)\\
+ & =a(a...(au_{0}+cD(1))+..cD(k-1))+cD(k)\\
+ & =u_{0}a^{k}+c\sum_{l=0}^{n-1}a^{l}D(n-l)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+Retour à l'équation de partition
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+T(b^{k}) & =T(1)a^{k}+c\sum_{l=0}^{k-1}a^{l}d(b^{k-l})\\
+ & =T(1)a^{k}+c\sum_{l=0}^{k-1}a^{l}d(b)^{k-l}\\
+ & =T(1)a^{k}+cd(b)^{k}\sum_{l=0}^{k-1}a^{l}d(b)^{-l}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+avec 
+\begin_inset Formula $d(b)\neq0$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+T(b^{k})=T(1)a^{k}+cd(b)^{k}\sum_{l=0}^{k-1}\left(\frac{a}{d(b)}\right)^{l}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+T(b^{k})=\begin{cases}
+T(1)a^{k}+kcd(b)^{k} & si\;\frac{a}{d(b)}=1\\
+T(1)a^{k}+cd(b)^{k}\frac{1-\left(\frac{a}{d(b)}\right)^{k}}{1-\frac{a}{d(b)}} & sinon
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Pour le cas où 
+\begin_inset Formula $\frac{a}{d(b)}\neq1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+On a 
+\begin_inset Formula 
+\[
+T(b^{k})=T(1)a^{k}+cd(b)^{k}\frac{1-\left(\frac{a}{d(b)}\right)^{k}}{1-\frac{a}{d(b)}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Or 
+\begin_inset Formula $n=b^{k}$
+\end_inset
+
+, ainsi 
+\begin_inset Formula $k=log_{b}(n)$
+\end_inset
+
+.
+ On utilise aussi 
+\begin_inset Formula $log_{a}(n)=\frac{log_{b}(n)}{log_{b}(a)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Donc
+\begin_inset Formula 
+\begin{align*}
+T(n) & =T(1)\times a^{log_{b}(n)}+cd(b)^{log_{b}(n)}\frac{1-\left(\frac{a}{d(b)}\right)^{log_{b}(n)}}{1-\frac{a}{d(b)}}\\
+ & =T(1)\times a^{log_{a}(n)\times log_{b}(a)}+cd(b)^{log_{b}(n)}\frac{1-\frac{a^{log_{a}(n)\times log_{b}(a)}}{d(b)^{log_{b}(n)}}}{1-\frac{a}{d(b)}}\\
+ & =T(1)\times n^{log_{b}(a)}+c\frac{d(b)^{log_{b}(n)}-n^{log_{b}(a)}}{1-\frac{a}{d(b)}}\\
+ & =T(1)\times n^{log_{b}(a)}+c\frac{d(b)^{log_{b}(n)}-n^{log_{b}(a)}}{1-\frac{a}{d(b)}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+On a aussi par la formule de changement de base des logarithme 
+\begin_inset Formula $log_{d(b)}(n)=\frac{log_{b}(n)}{log_{b}(d(b))}$
+\end_inset
+
+.
+ Donc
+\begin_inset Formula 
+\begin{align*}
+T(n) & =T(1)\times n^{log_{b}(a)}+c\frac{d(b)^{log_{d(b)}(n)\times log_{b}(d(b))}-n^{log_{b}(a)}}{1-\frac{a}{d(b)}}\\
+ & =T(1)\times n^{log_{b}(a)}+c\frac{n^{log_{b}(d(b))}-n^{log_{b}(a)}}{1-\frac{a}{d(b)}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Pour le cas où 
+\begin_inset Formula $\frac{d(b)}{a}=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+T(b^{k}) & =T\left(1\right)\times a^{k}+kcd(b)^{k}\\
+ & =T(1)\times n^{log_{b}(a)}+log_{b}(n)\times c\times d(b)^{log_{b}(n)}\\
+ & =T(1)\times n^{log_{b}(a)}+log_{b}(n)\times c\times n^{log_{b}(d(b))}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+
+\series bold
+Résolution dans le cas 
+\begin_inset Formula $d(b^{k})=n^{\alpha}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+T(n) & =aT(\frac{n}{b})+n^{\alpha}\\
+ & =\begin{cases}
+T(1)\times n^{log_{b}(a)}+log_{b}(n)\times c\times n^{log_{b}(d(b))} & si\;\frac{d(b)}{a}=1\\
+T(1)\times n^{log_{b}(a)}+c\frac{n^{log_{b}(d(b))}-n^{log_{b}(a)}}{1-\frac{a}{d(b)}} & sinon
+\end{cases}\\
+ & =\begin{cases}
+T(1)\times n^{log_{b}(d(b))}+log_{b}(n)\times c\times n^{log_{b}(d(b))} & si\;\frac{d(b)}{a}=1\\
+T(1)\times n^{log_{b}(a)}+c\frac{n^{log_{b}(d(b))}-n^{log_{b}(a)}}{1-\frac{a}{d(b)}} & sinon
+\end{cases}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+
+\series bold
+Résolution dans le cas 
+\begin_inset Formula $a=4,\,\,\,b=2,\,\,\,\alpha=2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+Equation récurrente et méthode des séries génératrices
+\end_layout
+
+\begin_layout Paragraph
+Soit l'équation récurrente suivante :
+\begin_inset Formula 
+\[
+\begin{cases}
+(n+1)u_{n+1}+(n-1)u_{n}=u_{n-1} & (1)\\
+u_{0}=u_{1}=1
+\end{cases}
+\]
+
+\end_inset
+
+
+\series bold
+Résolution par la méthode des séries génératrices
+\end_layout
+
+\begin_layout Standard
+Réécrivons l'équation de la manière suivante : 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+nu_{n}= & -(n-2)u_{n-1}+u_{n-2}\\
+\Leftrightarrow nu_{n}z^{n}= & -(n-2)u_{n-1}z^{n}+u_{n-2}z^{n}\\
+\Leftrightarrow\sum_{n\ge2}nu_{n}z^{n}= & \sum_{n\ge2}-(n-2)u_{n-1}z^{n}+\sum_{n\ge2}u_{n-2}z^{n}\\
+\sum_{n\ge2}nu_{n}z^{n}= & -\sum_{n\ge2}(n-1)u_{n-1}z^{n}+\sum_{n\ge2}u_{n-1}z^{n}+\sum_{n\ge2}u_{n-2}z^{n}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Or, si on pose 
+\begin_inset Formula $G(z)=\sum_{n\ge0}u_{n}z^{n}$
+\end_inset
+
+, alors 
+\begin_inset Formula $G'(z)=\sum_{n\ge1}nu_{n}z^{n-1}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\sum_{n\ge2}nu_{n}z^{n} & =z\sum_{n\ge2}nu_{n}z^{n-1}\\
+ & =z(G'(z)-u_{1})
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+et 
+\begin_inset Formula 
+\begin{align*}
+\sum_{n\ge2}-(n-2)u_{n-1}z^{n} & =-\sum_{n\ge2}(n-2)u_{n-1}z^{n}\\
+ & =-\sum_{n\ge2}(n-1)u_{n-1}z^{n}+\sum_{n\ge2}u_{n-1}z^{n}\\
+ & =-\sum_{n\ge1}nu_{n}z^{n+1}+\sum_{n\ge1}u_{n}z^{n+1}\\
+ & =-z^{2}\sum_{n\ge1}nu_{n}z^{n-1}+z\sum_{n\ge1}u_{n}z^{n}\\
+ & =-z^{2}G'(z)+z(G(z)-u_{0})
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+et
+\begin_inset Formula 
+\begin{align*}
+\sum_{n\ge2}u_{n-2}z^{n} & =\sum_{n\ge0}u_{n}z^{n+2}\\
+ & =z^{2}\sum_{n\ge0}u_{n}z^{n}\\
+ & =z^{2}G(z)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Donc 
+\begin_inset Formula $(1)$
+\end_inset
+
+ devient
+\begin_inset Formula 
+\begin{align*}
+z(G'(z)-u_{1}) & =-z^{2}G'(z)+z(G(z)-u_{0})+z^{2}G(z)\\
+\iff G'(z)(z²+z)-zu_{1} & =G(z)(z²+z)-u_{0}z
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+z\left(G'(x)-u_{1}-0\right) & =-z²G'(z)+z\left(G(z)-u_{0}\right)+z²G(z)\\
+G'(z)(z²+z) & =G(z)(z²+z)-u_{0}z+zu_{1}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Or 
+\begin_inset Formula $u_{0}=u_{1}=1$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\Leftrightarrow G'(z)(z²+z)= & G(z)(z²+z)\\
+\Leftrightarrow G'(z)= & G(z)\\
+\Leftrightarrow G(z)= & \lambda e^{z}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Or 
+\begin_inset Formula 
+\begin{align*}
+G(0) & =\sum_{n\ge0}u_{n}0^{n}=u_{0}=1\\
+ & =\lambda e^{0}=\lambda
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Donc 
+\begin_inset Formula $\lambda=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Finalement 
+\begin_inset Formula 
+\[
+G(z)=e^{z}=\sum_{n\ge0}\underbrace{\frac{1}{n!}}_{U_{n}}z^{n}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+La suite des 
+\begin_inset Formula $u_{n}$
+\end_inset
+
+correspond donc à la suite 
+\begin_inset Formula $\frac{1}{n!}$
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

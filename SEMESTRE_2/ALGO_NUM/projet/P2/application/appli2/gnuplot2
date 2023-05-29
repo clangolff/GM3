@@ -1,0 +1,17 @@
+reset
+
+lambda1 = 1.0684741810570004 
+lambda2 = 1.929940764255137
+
+f(x,y) = x**lambda1 * y**lambda2
+
+set pm3d 
+set xlabel 'x1'
+set ylabel 'x2'
+set zlabel 'g(x1,x2)
+set  ztics 30
+splot f(x,y) lc -1 notitle, 'data'  w p lc 15 pt 7 notitle 
+ 
+ 
+
+

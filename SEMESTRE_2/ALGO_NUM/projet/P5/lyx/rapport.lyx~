@@ -1,0 +1,1115 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Section*
+Introduction
+\end_layout
+
+\begin_layout Standard
+On considère la transformation linéaire d'un vecteur 
+\begin_inset Formula $g$
+\end_inset
+
+ de 
+\begin_inset Formula $\mathbb{C}^{N}=\mathbb{C}^{2^{M}-1}$
+\end_inset
+
+ de la forme 
+\begin_inset Formula 
+\[
+g=\left(\begin{matrix}g_{0}\\
+\vdots\\
+g_{k}
+\end{matrix}\right)\;k\in[[0,2^{M-1}]]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+par un vecteur 
+\begin_inset Formula $G\in\mathbb{C}^{N}$
+\end_inset
+
+ de la forme 
+\begin_inset Formula 
+\[
+G=\left(\begin{matrix}G_{0}\\
+\vdots\\
+G_{k}
+\end{matrix}\right)\;j\in[[0,2^{M-1}]]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+tel que 
+\begin_inset Formula 
+\[
+G_{j}=\sum_{k=0}^{2^{M}-1}g_{k}W_{N}^{jk}
+\]
+
+\end_inset
+
+avec 
+\begin_inset Formula $W_{N}^{jk}=e^{\frac{2I\pi}{2^{M}}}\;I\mathbb{C}$
+\end_inset
+
+ tel que 
+\begin_inset Formula $I^{2}=-1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $G$
+\end_inset
+
+ est lié à 
+\begin_inset Formula $g$
+\end_inset
+
+ par la matrice 
+\begin_inset Formula $S$
+\end_inset
+
+ de taille 
+\begin_inset Formula $N\times N$
+\end_inset
+
+ tel que 
+\begin_inset Formula $G=Sg$
+\end_inset
+
+ avec 
+\begin_inset Formula 
+\[
+S=\left(\begin{matrix}1 & 1 & 1 & \dots & 1\\
+1 & W_{N}^{1} & W_{N}^{2} & \dots & W_{N}^{N-1}\\
+1 & W_{N}^{2} & \ddots & \ddots & W_{N}^{2(N-1)}\\
+\vdots & \vdots & \ddots & \ddots & \vdots\\
+1 & W_{N}^{N-1} & W_{N}^{2(N-1)} & \dots & W_{N}^{(N-1)^{2}}
+\end{matrix}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+On reconnaît ici une matrice de Vandermond 
+\begin_inset Formula $V(1,W_{N},...,W_{N}^{N-1})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Remarquons que 
+\begin_inset Formula $S$
+\end_inset
+
+ est symétrique.
+\end_layout
+
+\begin_layout Section
+La transformation est inversible
+\end_layout
+
+\begin_layout Standard
+Montrons que cette transformation est inversible, c'est à dire que le determinan
+t de 
+\begin_inset Formula $S$
+\end_inset
+
+ est diffèrent de 0.
+\end_layout
+
+\begin_layout Standard
+Remarquons d'abord que si deux lignes de cette matrice sont identiques,
+ alors le déterminant est nul.
+\end_layout
+
+\begin_layout Standard
+Soit 
+\begin_inset Formula 
+\[
+V(1,W_{N}^{1},...,W_{N}^{(N-1)})=det\left(\begin{matrix}1 & 1 & 1 & \dots & 1\\
+1 & W_{N}^{1} & W_{N}^{2} & \dots & W_{N}^{N-1}\\
+1 & W_{N}^{2} & \ddots & \ddots & W_{N}^{2(N-1)}\\
+\vdots & \vdots & \ddots & \ddots & \vdots\\
+1 & W_{N}^{N-1} & W_{N}^{2(N-1)} & \dots & W_{N}^{(N-1)^{2}}
+\end{matrix}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Montrons la relation suivante :
+\begin_inset Formula 
+\[
+V(1,W_{N}^{1},...,W_{N}^{(N-1)})=V(1,W_{N}^{1},...,W_{N}^{(N-2)})\prod_{k=0}^{N-2}(W_{N}^{(N-1)}-W_{N}^{k})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Posons 
+\begin_inset Formula 
+\begin{align*}
+Q(x) & =V(1,W_{N}^{1},...,W_{N}^{(N-2)},x)\\
+ & =det\left(\begin{matrix}1 & 1 & 1 & \dots & 1\\
+1 & W_{N}^{1} & W_{N}^{2} & \dots & W_{N}^{N-1}\\
+1 & W_{N}^{2} & \ddots & \ddots & W_{N}^{2(N-1)}\\
+\vdots & \vdots & \ddots & \ddots & \vdots\\
+1 & W_{N}^{N-2} & W_{N}^{2(N-2)} & \dots & W_{N}^{(N-1)(N-2)}\\
+1 & x^{1} & x^{2} & \dots & x^{(N-1)}
+\end{matrix}\right)\\
+ & =x^{(N-1)}\underbrace{det\left(\begin{matrix}1 & 1 & 1 & \dots & 1\\
+1 & W_{N}^{1} & W_{N}^{2} & \dots & W_{N}^{N-2}\\
+1 & W_{N}^{2} & \ddots & \ddots & W_{N}^{2(N-2)}\\
+\vdots & \vdots & \ddots & \ddots & \vdots\\
+1 & W_{N}^{N-2} & W_{N}^{2(N-2)} & \dots & W_{N}^{(N-2)^{2}}
+\end{matrix}\right)}_{|S_{N-2}|}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Donc 
+\begin_inset Formula $Q\in P[X^{N-1}]$
+\end_inset
+
+.
+ Par construction de 
+\begin_inset Formula $Q$
+\end_inset
+
+, on a 
+\begin_inset Formula $Q(1)=Q(W_{N}^{1})=...Q(W_{N}^{(N-2)})=0$
+\end_inset
+
+ car cela correspond à 2 lignes égales et donc un déterminant nul.
+\end_layout
+
+\begin_layout Standard
+Donc 
+\begin_inset Formula 
+\begin{align*}
+Q(x) & =C\times\prod_{k=0}^{N-2}(x-W_{N}^{k})\\
+ & =Cx^{N-1}+...
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Par identification, on a 
+\begin_inset Formula 
+\[
+C=|S_{N-2}|
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Finalement, 
+\begin_inset Formula 
+\begin{align*}
+Q(W_{N}^{(N-1)}) & =V(1,W_{N}^{1},...,W_{N}^{(N-1)})\\
+ & =V(1,W_{N}^{1},...,W_{N}^{(N-2)})\prod_{k=0}^{N-2}(W_{N}^{(N-1)}-W_{N}^{k})\\
+ & =V(1,W_{N}^{1},...,W_{N}^{(N-3)})\prod_{k=0}^{N-3}(W_{N}^{(N-2)}-W_{N}^{k})\prod_{k=0}^{N-2}(W_{N}^{(N-1)}-W_{N}^{k})\\
+ & =V(1,W_{N}^{1})\prod_{k=0}^{2}(W_{N}^{3}-W_{N}^{k})\times...\times\prod_{k=0}^{N-2}(W_{N}^{(N-1)}-W_{N}^{k})\\
+ & =1\times(W_{N}^{1}-1)\times...\times\prod_{k=0}^{N-2}(W_{N}^{(N-1)}-W_{N}^{k})
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Comme 
+\begin_inset Formula $W_{N}^{i}\neq W_{N}^{j}$
+\end_inset
+
+ 
+\begin_inset Formula $\forall i\neq j$
+\end_inset
+
+ tel que 
+\begin_inset Formula $i,j\in\{0,...,N-1\}$
+\end_inset
+
+ , alors on a 
+\begin_inset Formula $Q(W_{N}^{(N-1)})=V(1,W_{N}^{1},...,W_{N}^{(N-1)})\neq0$
+\end_inset
+
+.
+ Donc cette transformation est inversible.
+\end_layout
+
+\begin_layout Section
+Inverse de la transformation S
+\end_layout
+
+\begin_layout Standard
+Montrons que la matrice 
+\begin_inset Formula $\frac{1}{N}V(1,W_{N}^{-1},...,W_{N}^{1-N})$
+\end_inset
+
+ est la matrice inverse de 
+\begin_inset Formula $S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Pour cela, calculons leur produit
+\begin_inset Formula 
+\begin{align*}
+\left(\begin{matrix}1 & 1 & 1 & \dots & 1\\
+1 & W_{N}^{1} & W_{N}^{2} & \dots & W_{N}^{N-1}\\
+1 & W_{N}^{2} & \ddots & \ddots & W_{N}^{2(N-1)}\\
+\vdots & \vdots & \ddots & \ddots & \vdots\\
+1 & W_{N}^{N-1} & W_{N}^{2(N-1)} & \dots & W_{N}^{(N-1)^{2}}
+\end{matrix}\right) & \times\frac{1}{N}\left(\begin{matrix}1 & 1 & 1 & \dots & 1\\
+1 & W_{N}^{-1} & W_{N}^{-2} & \dots & W_{N}^{1-N}\\
+1 & W_{N}^{-2} & \ddots &  & W_{N}^{2(1-N)}\\
+\vdots & \vdots &  & \ddots & \vdots\\
+1 & W_{N}^{1-N} & W_{N}^{2(1-N)} & \dots & W_{N}^{(1-N)^{2}}
+\end{matrix}\right)\\
+= & \frac{1}{N}\left(\begin{matrix}\sum_{i=0}^{N-1}1 & \sum_{i=0}^{N}W_{N}^{-i} & \dots & \sum_{i=0}^{N-1}W_{N}^{-(N-1)i}\\
+\sum_{i=0}^{N-1}W_{N}^{i} & \ddots &  & \vdots\\
+\vdots &  & \ddots & \vdots\\
+\sum_{i=0}^{N-1}W_{N}^{(N-1)i} & \dots & \dots & \sum_{i=0}^{N-1}W_{N}^{i^{2}}
+\end{matrix}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Or 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $W_{N}^{i^{2}}=e^{\frac{4I\pi i}{2^{M}}}=\left(e^{2I\pi i}\right)^{2^{1-M}}=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\sum_{i=0}^{N}W_{N}^{-i}=\frac{1-e^{\frac{2I\pi i}{2^{M}}\times2^{M}}}{1-e^{\frac{2I\pi i}{2^{M}}}}=0$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+=\frac{1}{N}\left(\begin{matrix}N & 0 & \dots & 0\\
+0 & \ddots &  & \vdots\\
+\vdots &  & \ddots & \vdots\\
+0 & \dots & \dots & N
+\end{matrix}\right)=I_{N}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Cas où 
+\begin_inset Formula $M=3$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+On se place dans le cas 
+\begin_inset Formula $M=3$
+\end_inset
+
+, alors 
+\begin_inset Formula $N=2^{3}=8$
+\end_inset
+
+.
+ 
+\begin_inset Formula $S_{jk}=W_{8}^{jk}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+S=\left(\begin{matrix}1 & 1 & 1 & 1 & 1 & 1 & 1 & 1\\
+1 & W_{8}^{1} & W_{8}^{2} & W_{8}^{3} & W_{8}^{4} & W_{8}^{5} & W_{8}^{6} & W_{8}^{7}\\
+1 & W_{8}^{2} & W_{8}^{4} & W_{8}^{6} & W_{8}^{8} & W_{8}^{10} & W_{8}^{12} & W_{8}^{14}\\
+1 & W_{8}^{3} & W_{8}^{6} & W_{8}^{9} & W_{8}^{12} & W_{8}^{15} & W_{8}^{18} & W_{8}^{21}\\
+1 & W_{8}^{4} & W_{8}^{8} & W_{8}^{12} & W_{8}^{16} & W_{8}^{20} & W_{8}^{24} & W_{8}^{28}\\
+1 & W_{8}^{5} & W_{8}^{10} & W_{8}^{15} & W_{8}^{20} & W_{8}^{25} & W_{8}^{30} & W_{8}^{35}\\
+1 & W_{8}^{6} & W_{8}^{12} & W_{8}^{18} & W_{8}^{24} & W_{8}^{30} & W_{8}^{36} & W_{8}^{42}\\
+1 & W_{8}^{7} & W_{8}^{14} & W_{8}^{21} & W_{8}^{28} & W_{8}^{35} & W_{8}^{42} & W_{8}^{49}
+\end{matrix}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Remarquons que nous pouvons réecrire cette matrice grâce au cercle trigonométriq
+ue puisque, par exemple, 
+\begin_inset Formula $W_{8}^{p}=\left(e^{\frac{2\pi I}{8}}\right)^{p}=e^{\frac{2p\pi I}{8}}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+S=\left(\begin{matrix}1 & 1 & 1 & 1 & 1 & 1 & 1 & 1\\
+1 & W_{8}^{1} & W_{8}^{2} & W_{8}^{3} & W_{8}^{4} & W_{8}^{5} & W_{8}^{6} & W_{8}^{7}\\
+1 & W_{8}^{2} & W_{8}^{4} & W_{8}^{6} & W_{8}^{0} & W_{8}^{2} & W_{8}^{4} & W_{8}^{6}\\
+1 & W_{8}^{3} & W_{8}^{6} & W_{8}^{1} & W_{8}^{4} & W_{8}^{7} & W_{8}^{2} & W_{8}^{5}\\
+1 & W_{8}^{4} & W_{8}^{0} & W_{8}^{4} & W_{8}^{0} & W_{8}^{4} & W_{8}^{0} & W_{8}^{4}\\
+1 & W_{8}^{5} & W_{8}^{2} & W_{8}^{7} & W_{8}^{4} & W_{8}^{1} & W_{8}^{6} & W_{8}^{3}\\
+1 & W_{8}^{6} & W_{8}^{4} & W_{8}^{2} & W_{8}^{0} & W_{8}^{6} & W_{8}^{4} & W_{8}^{2}\\
+1 & W_{8}^{7} & W_{8}^{6} & W_{8}^{5} & W_{8}^{4} & W_{8}^{3} & W_{8}^{2} & W_{8}^{1}
+\end{matrix}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+On a
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $W_{8}^{4}=\left(e^{\frac{2I\pi}{8}}\right)^{4}=e^{I\pi}=-1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $W_{8}^{2}=\left(e^{\frac{2I\pi}{8}}\right)^{2}=e^{I\frac{\pi}{2}}=i$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $W_{8}^{6}=\left(e^{\frac{2I\pi}{8}}\right)^{6}=e^{I\frac{3\pi}{2}}=-i$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+S=\left(\begin{matrix}1 & 1 & 1 & 1 & 1 & 1 & 1 & 1\\
+1 & W_{8}^{1} & i & W_{8}^{3} & -1 & W_{8}^{5} & -i & W_{8}^{7}\\
+1 & i & -1 & -i & 1 & i & -1 & -i\\
+1 & W_{8}^{3} & -i & W_{8}^{1} & -1 & W_{8}^{7} & i & W_{8}^{5}\\
+1 & -1 & 1 & -1 & 1 & -1 & 1 & -1\\
+1 & W_{8}^{5} & i & W_{8}^{7} & -1 & W_{8}^{1} & -i & W_{8}^{3}\\
+1 & -i & -1 & i & 1 & i & -1 & i\\
+1 & W_{8}^{7} & -i & W_{8}^{5} & -1 & W_{8}^{3} & i & W_{8}^{1}
+\end{matrix}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Calcul de 
+\begin_inset Formula $T^{(M)}$
+\end_inset
+
+dans le cas 
+\begin_inset Formula $M=3$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+On intoduit la transformation qui à un nombre binaire de la forme 
+\begin_inset Formula $(\lambda_{0},\lambda_{1},...,\lambda_{N})$
+\end_inset
+
+ associe la transformation 
+\begin_inset Formula $r$
+\end_inset
+
+ : 
+\begin_inset Formula $(\lambda_{N},\lambda_{N-1},...,\lambda_{0})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Notons en binaire l'indice des lignes de la matrice 
+\begin_inset Formula $S$
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+\left(\begin{matrix}1 & 1 & 1 & 1 & 1 & 1 & 1 & 1\\
+1 & W_{8}^{1} & i & W_{8}^{3} & -1 & W_{8}^{5} & -i & W_{8}^{7}\\
+1 & i & -1 & -i & 1 & i & -1 & -i\\
+1 & W_{8}^{3} & -i & W_{8}^{1} & -1 & W_{8}^{7} & i & W_{8}^{7}\\
+1 & -1 & 1 & -1 & 1 & -1 & 1 & -1\\
+1 & W_{8}^{5} & i & W_{8}^{7} & -1 & W_{8}^{1} & -i & W_{8}^{3}\\
+1 & -i & -1 & i & 1 & -i & -1 & i\\
+1 & W_{8}^{7} & -i & W_{8}^{7} & -1 & W_{8}^{3} & i & W_{8}^{1}
+\end{matrix}\right)\begin{matrix}000\;(0)\\
+001\;(1)\\
+010\;(2)\\
+011\;(3)\\
+100\;(4)\\
+101\;(5)\\
+110\;(6)\\
+111\;(7)
+\end{matrix}→\begin{matrix}000\;(0)\\
+100\;(4)\\
+010\;(2)\\
+110\;(6)\\
+001\;(1)\\
+101\;(5)\\
+011\;(3)\\
+111\;(7)
+\end{matrix}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+On associe alors la matrice de permutation P qui permet d'effectuer la permutati
+on des lignes précédentes 
+\begin_inset Formula 
+\[
+P=\left(\begin{matrix}1 & 0 & 0 & 0 & 0 & 0 & 0 & 0\\
+0 & 0 & 0 & 0 & 1 & 0 & 0 & 0\\
+0 & 0 & 1 & 0 & 0 & 0 & 0 & 0\\
+0 & 0 & 0 & 0 & 0 & 0 & 1 & 0\\
+0 & 1 & 0 & 0 & 0 & 0 & 0 & 0\\
+0 & 0 & 0 & 0 & 0 & 1 & 0 & 0\\
+0 & 0 & 0 & 1 & 0 & 0 & 0 & 0\\
+0 & 0 & 0 & 0 & 0 & 0 & 0 & 1
+\end{matrix}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Alors 
+\begin_inset Formula 
+\[
+P\times S=\left(\begin{matrix}1 & 1 & 1 & 1 & 1 & 1 & 1 & 1\\
+1 & -1 & 1 & -1 & 1 & -1 & 1 & -1\\
+1 & i & -1 & -i & 1 & i & -1 & -i\\
+1 & -i & -1 & i & 1 & -i & -1 & i\\
+1 & W_{8}^{1} & i & W_{8}^{3} & -1 & W_{8}^{7} & -i & W_{8}^{5}\\
+1 & W_{8}^{5} & i & W_{8}^{7} & -1 & W_{8}^{3} & -i & W_{8}^{1}\\
+1 & W_{8}^{3} & -i & W_{8}^{1} & -1 & W_{8}^{5} & i & W_{8}^{7}\\
+1 & W_{8}^{7} & -i & W_{8}^{5} & -1 & W_{8}^{1} & i & W_{8}^{3}
+\end{matrix}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Remarquons que 
+\begin_inset Formula $W_{8}^{7}=-W_{8}^{3}$
+\end_inset
+
+ et 
+\begin_inset Formula $W_{8}^{5}=-W_{8}$
+\end_inset
+
+ (cercle trigonomètrique)
+\end_layout
+
+\begin_layout Standard
+Donc
+\begin_inset Formula 
+\begin{align*}
+T^{(3)} & =P\times S=\left(\begin{matrix}1 & 1 & 1 & 1 & \vdots & 1 & 1 & 1 & 1\\
+1 & -1 & 1 & -1 & \vdots & 1 & -1 & 1 & -1\\
+1 & i & -1 & -i & \vdots & 1 & i & -1 & -i\\
+1 & -i & -1 & i & \vdots & 1 & -i & -1 & i\\
+\dots & \dots & \dots & \dots & \vdots & \dots & \dots & \dots & \dots\\
+1 & W_{8} & i & W_{8}^{3} & \vdots & -1 & -W_{8} & -i & -W_{8}^{3}\\
+1 & -W_{8} & i & -W_{8}^{3} & \vdots & -1 & W_{8} & -i & W_{8}^{3}\\
+1 & W_{8}^{3} & -i & W_{8} & \vdots & -1 & -W_{8}^{3} & i & -W_{8}\\
+1 & -W_{8}^{3} & -i & -W_{8} & \vdots & -1 & W_{8}^{3} & i & W_{8}
+\end{matrix}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+On pose alors 
+\begin_inset Formula 
+\[
+T^{(2)}=\left(\begin{matrix}1 & 1 & 1 & 1\\
+1 & -1 & 1 & -1\\
+1 & i & -1 & -i\\
+1 & -i & -1 & i
+\end{matrix}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+et 
+\begin_inset Formula 
+\[
+L^{(2)}=\left(\begin{matrix}1 & 0 & 0 & 0\\
+0 & W_{8} & 0 & 0\\
+0 & 0 & i & 0\\
+0 & 0 & 0 & W_{8}^{3}
+\end{matrix}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $L^{(2)}$
+\end_inset
+
+est une matrice diagonale de taille 4.
+ 
+\end_layout
+
+\begin_layout Standard
+Montrons en effet que 
+\begin_inset Formula $T^{(2)}$
+\end_inset
+
+ est bien égale à la matrice donné ci-dessus.
+ Dans une premier temps, déterminons 
+\begin_inset Formula $P$
+\end_inset
+
+ la matrice qui effectue la permutation miroir de 
+\begin_inset Formula $S$
+\end_inset
+
+.
+ On a :
+\begin_inset Formula 
+\[
+\underbrace{\left(\begin{matrix}1 & 1 & 1 & 1\\
+1 & i & -1 & -i\\
+1 & -1 & 1 & -1\\
+1 & -i & -1 & i
+\end{matrix}\right)}_{S}\begin{matrix}00\;(0)\\
+01\;(1)\\
+10\;(2)\\
+11\;(3)
+\end{matrix}\rightarrow\begin{matrix}00\;(0)\\
+10\;(2)\\
+01\;(1)\\
+11\;(3)
+\end{matrix}
+\]
+
+\end_inset
+
+D'où la matrice de permutation suivante :
+\begin_inset Formula 
+\[
+P=\left(\begin{matrix}1 & 0 & 0 & 0\\
+0 & 0 & 1 & 0\\
+0 & 1 & 0 & 0\\
+0 & 0 & 0 & 1
+\end{matrix}\right)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+T^{(2)}=\left(\begin{matrix}1 & 1 & 1 & 1\\
+1 & -1 & 1 & -1\\
+1 & i & -1 & -i\\
+1 & -i & -1 & i
+\end{matrix}\right)\times\left(\begin{matrix}1 & 1 & 1 & 1\\
+1 & -1 & 1 & -1\\
+1 & i & -1 & -i\\
+1 & -i & -1 & i
+\end{matrix}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+On a 
+\begin_inset Formula 
+\begin{align*}
+T^{(2)}\times L^{(2)} & =\left(\begin{matrix}1 & 1 & 1 & 1\\
+1 & -1 & 1 & -1\\
+1 & i & -1 & -i\\
+1 & -i & -1 & i
+\end{matrix}\right)\times\left(\begin{matrix}1 & 0 & 0 & 0\\
+0 & W_{8} & 0 & 0\\
+0 & 0 & i & 0\\
+0 & 0 & 0 & W_{8}^{3}
+\end{matrix}\right)\\
+= & \left(\begin{matrix}1 & W_{8} & i & W_{8}^{3}\\
+1 & -W_{8} & i & -W_{8}^{3}\\
+1 & iW_{8} & -i & -iW_{8}^{3}\\
+1 & -iW_{8} & -i & iW_{8}^{3}
+\end{matrix}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Or 
+\begin_inset Formula $iW_{8}=e^{i\frac{\pi}{2}}e^{i\frac{\pi}{4}}=e^{\frac{3i\pi}{4}}=W_{8}^{3}$
+\end_inset
+
+ et 
+\begin_inset Formula $iW_{8}^{3}=e^{i\frac{\pi}{2}}e^{i\frac{3\pi}{4}}=e^{\frac{5i\pi}{4}}=-e^{\frac{i\pi}{4}}=-W_{8}$
+\end_inset
+
+ ainsi on retrouve bien
+\begin_inset Formula 
+\[
+T^{(2)}\times L^{(2)}=\left(\begin{matrix}1 & W_{8} & i & W_{8}^{3}\\
+1 & -W_{8} & i & -W_{8}^{3}\\
+1 & W_{8}^{3} & -i & W_{8}\\
+1 & -W_{8}^{3} & -i & -W_{8}
+\end{matrix}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+On peut réecrire 
+\begin_inset Formula $T^{(3)}$
+\end_inset
+
+ sous la forme 
+\begin_inset Formula 
+\[
+T^{(3)}=\left(\begin{matrix}T^{(2)} & T^{(2)}\\
+T^{(2)}L^{(2)} & -T^{(2)}L^{(2)}
+\end{matrix}\right)=\left(\begin{matrix}T^{(2)} & 0\\
+0 & T^{(2)}
+\end{matrix}\right)\times\left(\begin{matrix}I_{d}^{(2)} & I_{d}^{(2)}\\
+L^{(2)} & -L^{(2)}
+\end{matrix}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Suite 
+\end_layout
+
+\begin_layout Standard
+Soit 
+\begin_inset Formula $u_{0}\in\mathbb{C}^{N}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+T^{(3)}u_{0} & =\left(\begin{matrix}T^{(2)} & 0\\
+0 & T^{(2)}
+\end{matrix}\right)\times\left(\begin{matrix}I_{d}^{(2)} & I_{d}^{(2)}\\
+L^{(2)} & -L^{(2)}
+\end{matrix}\right)u_{0}\\
+ & =\left(\begin{matrix}\left(\begin{matrix}T^{(1)} & 0\\
+0 & T^{(1)}
+\end{matrix}\right)\times\left(\begin{matrix}I_{d}^{(1)} & I_{d}^{(1)}\\
+L^{(1)} & -L^{(1)}
+\end{matrix}\right)u_{0} & 0\\
+0 & \left(\begin{matrix}T^{(1)} & 0\\
+0 & T^{(1)}
+\end{matrix}\right)\times\left(\begin{matrix}I_{d}^{(1)} & I_{d}^{(1)}\\
+L^{(1)} & -L^{(1)}
+\end{matrix}\right)u_{0}
+\end{matrix}\right)\\
+ & \times\left(\begin{matrix}I_{d}^{(2)} & I_{d}^{(2)}\\
+L^{(2)} & -L^{(2)}
+\end{matrix}\right)u_{0}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Cherchons 
+\begin_inset Formula $T^{(1)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+T^{(2)}=\left(\begin{matrix}1 & 1 & 1 & 1\\
+1 & -1 & 1 & -1\\
+1 & i & -1 & -i\\
+1 & -i & -1 & i
+\end{matrix}\right)=\left(\begin{matrix}T^{(1)} & T^{(1)}\\
+T^{(1)}L^{(1)} & -T^{(1)}L^{(1)}
+\end{matrix}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Où 
+\begin_inset Formula $T^{(1)}$
+\end_inset
+
+est de taille 4 et 
+\begin_inset Formula $L^{(1)}$
+\end_inset
+
+est une matrice diagonale de taille 4.
+\end_layout
+
+\begin_layout Standard
+Par identification, on trouve
+\begin_inset Formula 
+\[
+T^{(1)}=\left(\begin{matrix}1 & 1\\
+1 & -1
+\end{matrix}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+et
+\begin_inset Formula 
+\[
+L^{(1)}=\left(\begin{matrix}1 & 0\\
+0 & i
+\end{matrix}\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Calculons 
+\begin_inset Formula $u_{1}=\left(\begin{matrix}I_{d}^{(2)} & I_{d}^{(2)}\\
+L^{(2)} & -L^{(2)}
+\end{matrix}\right)u_{0}$
+\end_inset
+
+ 
+\begin_inset Formula 
+\begin{align*}
+u_{1} & =\left(\begin{matrix}1 & 0 & 0 & 0 & 1 & 0 & 0 & 0\\
+0 & 1 & 0 & 0 & 0 & 1 & 0 & 0\\
+0 & 0 & 1 & 0 & 0 & 0 & 1 & 0\\
+0 & 0 & 0 & 1 & 0 & 0 & 0 & 1\\
+1 & 0 & 0 & 0 & 1 & 0 & 0 & 0\\
+0 & W_{8} & 0 & 0 & 0 & W_{8} & 0 & 0\\
+0 & 0 & i & 0 & 0 & 0 & i & 0\\
+0 & 0 & 0 & W_{8}^{3} & 0 & 0 & 0 & W_{8}^{3}
+\end{matrix}\right)\left(\begin{matrix}u_{0,0}\\
+u_{0,1}\\
+u_{0,2}\\
+u_{0,3}\\
+u_{0,4}\\
+u_{0,5}\\
+u_{0,6}\\
+u_{0,7}
+\end{matrix}\right)\\
+ & =\left(\begin{matrix}u_{0,0}+u_{0,4}\\
+u_{0,1}+u_{0,5}\\
+u_{0,2}+u_{0,6}\\
+u_{0,3}+u_{0,7}\\
+u_{0,0}+u_{0,4}\\
+W_{8}(u_{0,1}+u_{0,5})\\
+i(u_{0,2}+u_{0,6}\\
+W_{8}^{3}(u_{0,3}+u_{0,7}
+\end{matrix}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Coût d'opération : 4 expo + 4 additions/soustractions + 6 multiplications
+\end_layout
+
+\begin_layout Standard
+Calculons 
+\begin_inset Formula $u_{2}=\left(\begin{matrix}I_{d}^{(1)} & I_{d}^{(1)}\\
+L^{(1)} & -L^{(1)}
+\end{matrix}\right)u_{0}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+u_{2}= & \left(\begin{matrix}1 & 0 & 1 & 0 &  & \dots &  & 0\\
+0 & 1 & 0 & 1\\
+1 & 0 & -1 & 0 &  &  &  & \vdots\\
+0 & i & 0 & -i\\
+ &  &  &  & 1 & 0 & 1 & 0\\
+\vdots &  &  &  & 0 & 1 & 0 & 1\\
+ &  &  &  & 1 & 0 & -1 & 0\\
+0 &  & \dots &  & 0 & i & 0 & -i
+\end{matrix}\right)\left(\begin{matrix}u_{1,0}\\
+u_{1,1}\\
+u_{1,2}\\
+u_{1,3}\\
+u_{1,4}\\
+u_{1,5}\\
+u_{1,6}\\
+u_{1,7}
+\end{matrix}\right)\\
+ & =\left(\begin{matrix}u_{1,0}+u_{1,2}\\
+u_{1,1}+u_{1,3}\\
+u_{1,0}-u_{1,2}\\
+i(u_{1,1}-u_{1,3})\\
+u_{1,4}+u_{1,6}\\
+u_{1,5}+u_{1,7}\\
+u_{1,4}-u_{1,6}\\
+i(u_{1,5}-u_{1,7})
+\end{matrix}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Coût d'opération : 8 additions/soustractions + 2 multiplications
+\end_layout
+
+\begin_layout Standard
+Calcul de 
+\begin_inset Formula $T^{(3)}u_{0}$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+T^{(3)}u_{0} & =\left(\begin{matrix}T^{(1)} & 0 &  & 0\\
+0 & T^{(1)}\\
+ &  & T^{(1)} & 0\\
+0 &  & 0 & T^{(1)}
+\end{matrix}\right)\left(\begin{matrix}U_{2,0}\\
+u_{2,1}\\
+u_{2,2}\\
+u_{2,3}\\
+u_{2,4}\\
+u_{2,5}\\
+u_{2,6}\\
+u_{2,7}
+\end{matrix}\right)\\
+ & =\left(\begin{matrix}1 & 1 & 0 &  &  &  &  & 0\\
+1 & -1\\
+0 &  & 1 & 1\\
+ &  & 1 & -1\\
+ &  &  &  & 1 & 1\\
+ &  &  &  & 1 & -1 &  & 0\\
+ &  &  &  &  &  & 1 & 1\\
+0 &  &  &  &  & 0 & 1 & -1
+\end{matrix}\right)\left(\begin{matrix}U_{2,0}\\
+u_{2,1}\\
+u_{2,2}\\
+u_{2,3}\\
+u_{2,4}\\
+u_{2,5}\\
+u_{2,6}\\
+u_{2,7}
+\end{matrix}\right)\\
+ & =\left(\begin{matrix}u_{2,0}+u_{2,1}\\
+u_{2,0}-u_{2,1}\\
+u_{2,2}+u_{2,3}\\
+u_{2,2}-u_{2,3}\\
+u_{2,4}+u_{2,5}\\
+u_{2,4}-u_{2,5}\\
+u_{2,6}+u_{2,7}\\
+u_{2,6}-u_{2,7}
+\end{matrix}\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Coût d'opération : 8 additions/soustractions
+\end_layout
+
+\begin_layout Standard
+On voit ici très clairement l'interêt de cette méthode puisque les coûts
+ de calculs ont été très nettement diminués, il y n'y a notamment plus de
+ calcul exponentielle à effectuer et donc moins d'erreur d'approximation.
+ 
+\end_layout
+
+\end_body
+\end_document

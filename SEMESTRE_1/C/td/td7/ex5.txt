@@ -1,0 +1,22 @@
+inverse l'ordre du tableau 
+
+*p++ = *q 
+
+on affecte d'abord et on incremente apres
+
+a[1] = *(a+1)
+
+p = &a[1] = a+1
+
+
+p == a[0] marche mais de grande chance que ce soit faux
+
+p == &a[0] vrai 
+
+*p == a[0] vrai 
+
+p[0] == a[0]     syntaxiqument c'est correct et c'est vrai
+
+p[2] == a[0]  syntaxiquement correct et ca depend des valeurs car on compare *(p+2) et *(a + 0)
+
+p[10] == a[0] marche mais on sait pas sur quoi ce que pointe p

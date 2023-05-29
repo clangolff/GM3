@@ -1,0 +1,21 @@
+THEORIE
+=======
+
+OK
+	
+
+APPLICATION
+===========
+
+Petite deception sur la résolution pour trouver les lambda en C
+
+PROGRAMME 
+=========
+
+$ regarder algo matrice et changé si besoin
+$ faire un algo pour faire la transposé
+$ calculé AtA et Aty
+$ faire factorisation QR et récupérer R1 dans R et c dans Q
+$ résoudre R1X = c avec algo de descente de matrice 
+
+

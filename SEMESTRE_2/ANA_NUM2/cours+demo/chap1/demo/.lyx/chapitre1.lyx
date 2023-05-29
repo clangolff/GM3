@@ -1,0 +1,3395 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize 11
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part
+Interpolation polynomiale
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Introduction
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename image/objectif.png
+	lyxscale 50
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename image/lagrange/definition1.png
+	lyxscale 50
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename image/lagrange/definition1suite.png
+	lyxscale 50
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename image/lagrange/prop1.png
+	lyxscale 50
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename image/lagrange/theoreme1.png
+	lyxscale 50
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1.5cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Preuve
+\end_layout
+
+\begin_layout Standard
+Prouvons que 
+\begin_inset Formula $Ker(G)=\{0\}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Soit 
+\begin_inset Formula $\alpha\in Ker(G)$
+\end_inset
+
+ alors
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+G\alpha & =0\iff\left[\begin{matrix}\varphi_{0}(x_{0}) & \dots & \varphi_{n}(x_{0})\\
+\vdots & \ddots & \vdots\\
+\varphi_{0}(x_{n}) & \dots & \varphi_{n}(x_{n})
+\end{matrix}\right]\left[\begin{matrix}\alpha_{0}\\
+\vdots\\
+\alpha_{n}
+\end{matrix}\right]=\left[\begin{matrix}0\\
+\vdots\\
+0
+\end{matrix}\right]\\
+ & \iff\forall i\in\{0...n\}\;\sum_{j=0}^{n}\varphi_{j}(x_{i})\alpha_{j}=0\\
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Posons 
+\begin_inset Formula $Q(x)=\sum_{j=0}^{n}\varphi_{j}(x)\alpha_{j}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+On a 
+\begin_inset Formula $Q(x_{i})=0\;\forall i\in\{0...n\}$
+\end_inset
+
+ Ce qui implique que 
+\begin_inset Formula $Q$
+\end_inset
+
+ possède 
+\begin_inset Formula $n+1$
+\end_inset
+
+ racines.
+ Or 
+\begin_inset Formula $Q\in P[X^{n}]$
+\end_inset
+
+, on déduit que 
+\begin_inset Formula $Q=\widetilde{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+D'où 
+\begin_inset Formula $\sum_{j=0}^{n}\varphi_{j}(x)\alpha_{j}=0\;\forall x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Comme les 
+\begin_inset Formula $\varphi_{j}$
+\end_inset
+
+ forment une famille libre, on déduit que 
+\begin_inset Formula $\alpha_{j}=0\;\forall j\in\{0...n\}\iff Ker(G)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Remarque 
+\series default
+autant d'équation que d'inconnues n'implique pas forcément que G soit inversible.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename image/lagrange/idée.png
+	lyxscale 50
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename image/lagrange/prop2.png
+	lyxscale 50
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1.5cm
+\end_inset
+
+
+\series bold
+Preuve
+\end_layout
+
+\begin_layout Standard
+On a 
+\begin_inset Formula $L_{i}^{n}(x_{k})=\frac{\prod_{j\neq i}(x_{k}-x_{j})}{\prod_{j\neq i}(x_{i}-x_{j})}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Si 
+\begin_inset Formula $k=i$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+L_{i}^{n}(x_{i})=\frac{\prod_{j\neq i}(x_{i}-x_{j})}{\prod_{j\neq i}(x_{i}-x_{j})}=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Si 
+\begin_inset Formula $k\neq i$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+L_{i}^{n}(x_{k})=\frac{\prod_{j\neq i}\overbrace{(x_{k}-x_{j})}^{0\;quand\;j=k}}{\prod_{j\neq i}(x_{i}-x_{j})}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Montrons que 
+\begin_inset Formula $(L_{i}^{n})_{i=0..n}$
+\end_inset
+
+ est une famille libre.
+\end_layout
+
+\begin_layout Standard
+Posons 
+\begin_inset Formula $Q(x)=\sum_{j=0}^{n}\alpha_{j}L_{j}^{n}(x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Alors en 
+\begin_inset Formula $x=x_{i}$
+\end_inset
+
+, 
+\begin_inset Formula $\sum_{j=0}^{n}\alpha_{j}L_{j}^{n}(x_{i})=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Donc 
+\begin_inset Formula $\alpha_{j}=0\;\forall j\in\{0..n\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $(L_{i}^{n})_{i}$
+\end_inset
+
+ est dont une famille libre, c'est une base de 
+\begin_inset Formula $P[X^{n}]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Remarque 
+\series default
+Dans la base de Lagrange, l'expression du polynôme d'interpolation est direct
+\begin_inset Formula 
+\[
+P(x)=\sum_{j=0}^{n}L_{j}^{n}(x)y_{j}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename image/lagrange/exemple.png
+	lyxscale 50
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Évaluation du polynome d'interpolation
+\end_layout
+
+\begin_layout Subsection
+Schema de Neville-Aiken
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename image/Neville/Idée.png
+	lyxscale 50
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename image/Neville/prop1.png
+	lyxscale 50
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1.5cm
+\end_inset
+
+
+\series bold
+Preuve
+\end_layout
+
+\begin_layout Standard
+Par définition, on a 
+\begin_inset Formula $T_{k+1}^{i}\in P[X^{k+1}]$
+\end_inset
+
+ qui vérifie 
+\begin_inset Formula $T_{k+1}^{i}(x_{j})=y_{j}\;\forall j\in\{i,...,i+k+1\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Posons 
+\begin_inset Formula $Q(x)=\frac{\overbrace{T_{k}^{i}(x)}^{deg\;k}\overbrace{(x_{i+k+1}-x)}^{deg\;1}-\overbrace{T_{k}^{i+1}(x)}^{deg\;k}\overbrace{(x_{i}-x)}^{deg\;1}}{(x_{i+k+1}-x_{i})}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Donc 
+\begin_inset Formula $deg\;Q=k+1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Prouvons que 
+\begin_inset Formula $\forall j\in\{i,...,i+k+1\}$
+\end_inset
+
+ On a 
+\begin_inset Formula $Q(x_{j})=y_{j}$
+\end_inset
+
+ et on aura ainsi 
+\begin_inset Formula $Q(x)=T_{k+1}^{i}(x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Pour 
+\begin_inset Formula $x=x_{i}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+Q(x_{i})=\frac{\overbrace{T_{k}^{i}(x_{i})}^{y_{i}}(x_{i+k+1}-x_{i})-T_{k}^{i+1}(x_{i})\overbrace{(x_{i}-x_{i})}^{0}}{(x_{i+k+1}-x_{i})}=y_{i}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Pour 
+\begin_inset Formula $x=x_{i+k+1}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+Q(x_{i+k+1})=\frac{T_{k}^{i}(x_{i+k+1})\overbrace{(x_{i+k+1}-x_{i+k+1})}^{0}-\overbrace{T_{k}^{i+1}(x_{i+k+1})}^{y_{i+k+1}}(x_{i}-x_{i+k+1})}{(x_{i+k+1}-x_{i})}=y_{i+k+1}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Pour 
+\begin_inset Formula $x=x_{j}$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+Q(x_{j})=\frac{\overbrace{T_{k}^{i}(x_{j})}(x_{i+k+1}-x_{j})-\overbrace{T_{k}^{i+1}(x_{j})}^{y_{j}}(x_{i}-x_{j})}{(x_{i+k+1}-x_{i})}=y_{j}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Remarque 
+\series default
+La relation indique que pour évalué 
+\begin_inset Formula $T_{k+1}^{i}$
+\end_inset
+
+ en x , on a besoin de 
+\begin_inset Formula $T_{k}^{i}$
+\end_inset
+
+ et 
+\begin_inset Formula $T_{k}^{i+1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+De plus, on notera que 
+\begin_inset Formula $T_{n}^{0}(x)=P(x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename image/Neville/schema.png
+	lyxscale 50
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename image/Neville/algo.png
+	lyxscale 50
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Différence divisé et Horner
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename image/DD_horner/idée.png
+	lyxscale 50
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename image/DD_horner/prop1.png
+	lyxscale 50
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1.5cm
+\end_inset
+
+
+\series bold
+Preuve
+\end_layout
+
+\begin_layout Standard
+Montrons que 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $N_{i}(x_{k})=0\;\forall k\le i-1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+La famille des 
+\begin_inset Formula $(N_{i})_{i}$
+\end_inset
+
+ forme une base de 
+\begin_inset Formula $P[X^{n}]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+On a 
+\begin_inset Formula $\forall k\le i-1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+N_{i}(x_{k})=\prod_{j=0}^{i-1}\underbrace{(x_{k}-x_{j})}_{0\;quand\;j=k}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+De plus la famille de fonction 
+\begin_inset Formula $(N_{i})_{i}$
+\end_inset
+
+ possède n+1 élements et dim 
+\begin_inset Formula $P[X^{n}]=n+1$
+\end_inset
+
+ .
+ Montrons que c'est une famille libre.
+\end_layout
+
+\begin_layout Standard
+Posons 
+\begin_inset Formula $Q(x)=\sum_{i=0}^{n}N_{i}(x)\alpha_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Montrons que 
+\begin_inset Formula $Q(x)=0\;\forall x\iff\alpha_{i}=0\;\forall i$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Le sens indirecte est évident, prouvons le sens direct.
+\end_layout
+
+\begin_layout Standard
+Si on a 
+\begin_inset Formula $\sum_{i=0}^{n}N_{i}(x)\alpha_{i}=0\;\forall x$
+\end_inset
+
+ alors en 
+\begin_inset Formula $x=x_{0}$
+\end_inset
+
+ , 
+\begin_inset Formula $\sum_{i=0}^{n}N_{i}(x_{0})\alpha_{i}=0\iff\alpha_{0}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ensuite en 
+\begin_inset Formula $x=x_{1}$
+\end_inset
+
+ , 
+\begin_inset Formula $\sum_{i=0}^{n}N_{i}(x_{1})\alpha_{i}=\alpha_{1}\underbrace{N_{1}(x_{1})}_{\neq0}=0\iff\alpha_{1}=0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Et on continue ainsi pour déduire que 
+\begin_inset Formula $\alpha_{i}=0\;\forall i$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename image/DD_horner/idée2.png
+	lyxscale 50
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename image/DD_horner/prop2.png
+	lyxscale 50
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1.5cm
+\end_inset
+
+
+\series bold
+Preuve
+\end_layout
+
+\begin_layout Standard
+Posons l'hypothese de récurrence :
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $(H_{k}):T_{k}^{i}=f[x_{i}]N_{0}^{i}(x)+f[x_{i},x_{i+1}]N_{1}^{i}(x)+...+f[x_{i},..,x_{i+k}]N_{k}^{i}(x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+où 
+\begin_inset Formula $N_{0}^{i}(x)=1$
+\end_inset
+
+ et 
+\begin_inset Formula $N_{j}^{i}(x)=\prod_{l=0}^{j-1}(x-x_{l+i})\;\forall i\in\{0..n-k\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Pour 
+\begin_inset Formula $k=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+On doit vérifier que 
+\begin_inset Formula $\forall i\in\{0..n\}$
+\end_inset
+
+ 
+\begin_inset Formula $T_{0}^{i}(x)=f[x_{i}]N_{0}^{i}(x)=f[x_{i}]=y_{i}$
+\end_inset
+
+ vrai au rang 0
+\end_layout
+
+\begin_layout Standard
+Supposons 
+\begin_inset Formula $(H_{k})$
+\end_inset
+
+ vrai , montrons le rang 
+\begin_inset Formula $k+1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Soit 
+\begin_inset Formula $i\in\{0,..,n-k-1\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+On veut prouver que
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $T_{k}^{i}=f[x_{i}]N_{0}^{i}(x)+f[x_{i},x_{i+1}]N_{1}^{i}(x)+...+f[x_{i},..x_{i+k+1}]N_{k+1}^{i}(x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Posons 
+\begin_inset Formula $T_{k+1}^{i}(x)=\sum_{j=0}^{k+1}\alpha_{j}N_{j}^{i}(x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $T_{k}^{i}(x)=\sum_{j=0}^{k}f[x_{i},..,x_{i+j}]N_{j}^{i}(x)$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+en évaluant en 
+\begin_inset Formula $x=x_{i}$
+\end_inset
+
+ on obtient
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $T_{k}^{i}(x_{i})=f[x_{i}]N_{0}^{i}(x_{i})=y_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+De plus 
+\begin_inset Formula $T_{k+1}^{i}(x_{i})=\alpha_{0}N_{0}^{i}(x_{i})=y_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+On déduit que 
+\begin_inset Formula $\alpha_{0}=f[x_{i}]$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+De même en 
+\begin_inset Formula $x=x_{i+1}$
+\end_inset
+
+ on a 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $T_{k}^{i}(x_{i+1})=f[x_{i}]N_{0}^{i}(x_{i+1})+f[x_{i},x_{i+1}]N_{1}^{i}(x_{i+1})=y_{i+1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+De plus 
+\begin_inset Formula $T_{k+1}^{i}(x_{i+1})=f[x_{i}]N_{0}^{i}(x_{i})+\alpha_{1}N_{1}^{i}(x_{i+1})=y_{i+1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Donc 
+\begin_inset Formula $\alpha_{1}=f[x_{i},x_{i+1}]$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Et on continue ainsi pour les autres 
+\begin_inset Formula $\alpha_{j}$
+\end_inset
+
+ jusqu'à 
+\begin_inset Formula $j=i+k$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Il reste à prouver que 
+\begin_inset Formula $\alpha_{k+1}=f[x_{i},..,x_{i+k+1}]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Or
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+T_{k+1}^{i}(x)=\frac{T_{k}^{i}(x)(x_{i+k+1}-x)-T_{k}^{i+1}(x)(x_{i}-x)}{(x_{i+k+1}-x_{i})}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+ & \iff\alpha_{k+1}N_{k+1}^{i}(x)+T_{k}^{i}(x)\\
+ & =\frac{\sum_{j=0}^{k}f[x_{i},..,x_{i+j}]N_{j}^{i}(x)(x_{i+k+1}-x)-\sum_{j=0}^{k}f[x_{i},..,x_{i+j+1}]N_{j}^{i+1}(x)(x_{i}-x)}{(x_{i+k+1}-x_{i})}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En identifiant les termes de degrès k+1 on a
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\alpha_{k+1} & =\frac{f[x_{i},..,x_{i+k}]\times(-1)-f[x_{i},..,x_{i+k+1}]\times(-1)}{x_{i+k+1}-x_{i}}\\
+ & =f[x_{i},..,x_{i+k+1}]
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename image/DD_horner/algoDD.png
+	lyxscale 50
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename image/DD_horner/algo2DD.png
+	lyxscale 50
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename image/DD_horner/propHorner.png
+	lyxscale 50
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename image/DD_horner/algoHorner.png
+	lyxscale 50
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1.5cm
+\end_inset
+
+
+\series bold
+Remarque sur Horner
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+Pn(x) & =\sum_{i=0}^{n}f[x_{0},..,x_{i}]N_{i}(x)\\
+ & =f[x_{0}]+f[x_{0},x_{1}](x-x_{0})+..+f[x_{0},..,x_{n}](x-x_{0})...(x-x_{n-1})\\
+ & =f[x_{0}]+(x-x_{0})\left[f[x_{0},x_{1}]+f[x_{0},x_{1},x_{2}](x-x_{1})+...+f[x_{0},..,x_{n}](x-x_{1})...(x-x_{n-1})\right]\\
+ & =f[x_{0}]+(x-x_{0})\left[f[x_{0},x_{1}]+(x-x_{1})\left[f[x_{0},x_{1},x_{2}]+...+f[x_{0},..,x_{n}](x-x_{2})...(x-x_{n-1})\right]\right]
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+On commencera donc l'évaluation par
+\begin_inset Formula 
+\[
+f[x_{0},..,x_{n-1}]+f[x_{0},..,x_{n}](x-x_{n-1})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename image/DD_horner/comparaison.png
+	lyxscale 50
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Interpolation d'une fonction
+\end_layout
+
+\begin_layout Subsection
+Erreur d'interpolation
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename image/interpolation/theoreme1.png
+	lyxscale 50
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename image/interpolation/theorme2.png
+	lyxscale 50
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1.5cm
+\end_inset
+
+
+\series bold
+Preuve
+\end_layout
+
+\begin_layout Standard
+Posons 
+\begin_inset Formula $Q(t)$
+\end_inset
+
+le polynôme d'interpolation associé aux point 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ et 
+\begin_inset Formula $x$
+\end_inset
+
+ , cad 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+Q(x_{i}) & =f(x_{i})\;\forall i\in\{0...n\}\\
+Q(x) & =f(x)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+remarque : 
+\begin_inset Formula $Q$
+\end_inset
+
+ est de degrès 
+\begin_inset Formula $n+1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+On a vu en TD que 
+\begin_inset Formula 
+\[
+Q(t)=\overbrace{\sum_{i=0}^{n}f[x_{0},..,x_{i}]N_{i}(t)}^{P(t)}+f[x_{0},..,x_{n},x]v_{n}(t)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(décomposition de 
+\begin_inset Formula $Q$
+\end_inset
+
+ dans la base de Newton)
+\end_layout
+
+\begin_layout Standard
+en 
+\begin_inset Formula $t=x$
+\end_inset
+
+, on a
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Q(x)=f(x)=P(x)+f[x_{0},..,x_{n},x]v_{n}(x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Posons 
+\begin_inset Formula $E(t)=f(t)-Q(t)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+On a 
+\begin_inset Formula $E(x_{i})=E(x)=0\;\forall i\in\{0,..,n\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Donc 
+\begin_inset Formula $E$
+\end_inset
+
+ s'annule n+2 fois
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename image/interpolation/grapheRolle.png
+	lyxscale 50
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+D'après le théorème de Rolle, 
+\begin_inset Formula $E'$
+\end_inset
+
+ s'annule don en au moins n+1 points diffèrents.
+\end_layout
+
+\begin_layout Standard
+Ainsi, 
+\begin_inset Formula $E^{(2)}$
+\end_inset
+
+ s'annule en au moins n points
+\end_layout
+
+\begin_layout Standard
+et 
+\begin_inset Formula $E^{(n+1)}$
+\end_inset
+
+ s'annulera en au moins 1 point qu'on noteras 
+\begin_inset Formula $\xi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Alors 
+\begin_inset Formula $E^{(n+1)}(\xi)=0\iff f^{(n+1)}(\xi)-Q^{(n+1)}(\xi)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Or 
+\begin_inset Formula $Q^{(n+1)}(t)=f[x_{0},..,x_{n},x](n+1)!$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+On obtient finalement
+\begin_inset Formula 
+\begin{align*}
+f^{(n+1)}(\xi)-f[x_{0},..,x_{n},x](n+1)! & =0\\
+\iff f[x_{0},..,x_{n},x] & =\frac{f^{(n+1)}(\xi)}{(n+1)!}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+D'où 
+\begin_inset Formula 
+\[
+f(x)-P_{n}(x)=\frac{f^{(n+1)}(\xi)}{(n+1)!}v_{n}(x)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename image/interpolation/corollaire.png
+	lyxscale 50
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1.5cm
+\end_inset
+
+
+\series bold
+Preuve
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Vert f-P_{n}(f)\Vert_{\infty}=\frac{1}{(n+1)!}\Vert f^{(n+1)}(\xi)v_{n}\Vert_{\infty}\leq\frac{\Vert f^{(n+1)}\Vert\Vert v_{n}\Vert_{\infty}}{(n+1)!}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename image/interpolation/exemple1.png
+	lyxscale 50
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename image/interpolation/exemple2.png
+	lyxscale 50
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Meilleurs points d'interpolations
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename image/interpolation/idee1.png
+	lyxscale 50
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename image/interpolation/theroeme3.png
+	lyxscale 50
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1.5cm
+\end_inset
+
+
+\series bold
+Preuve
+\end_layout
+
+\begin_layout Standard
+Rappel 
+\begin_inset Formula $cos(a+b)=cos(a)cos(b)-sin(a)sin(b)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+T_{k+1} & =cos((k+1)arcos(x))\\
+ & =cos(karcos(x)+arcos(x))\\
+ & =cos(k.arcos(x))cos(arcos(x)-sin(k.arcos(x))sin(arcos(x))\\
+ & =2xT_{k}(x)-cos(k.arcos(x)))cos(arcos(x))-sin(k.arcos(x))sin(arcos(x))\\
+ & =2xT_{k}(x)-\left[-cos(k.arcos(x)))cos(arcos(x))+sin(k.arcos(x))sin(arcos(x))\right]\\
+ & =2xT_{k}(x)-T_{k+1}(x)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename image/interpolation/theoreme4.png
+	lyxscale 50
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename image/interpolation/illustration.png
+	lyxscale 50
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename image/interpolation/problème.png
+	lyxscale 50
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1.5cm
+\end_inset
+
+
+\begin_inset Formula $\frac{T_{k+1}}{2^{k}}\in\varGamma_{k+1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En effet, on a bien n+1 racines réelles et de plus 
+\begin_inset Formula $T_{k+1}=2^{k}x^{k+1}+...$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Prouvons le par récurrence
+\end_layout
+
+\begin_layout Standard
+Si 
+\begin_inset Formula $T_{k}=2^{k-1}x^{k}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Alors
+\begin_inset Formula 
+\begin{align*}
+T_{k+1} & =2xT_{k}-T_{k+1}\\
+ & =2^{k}x^{k+1}+...
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ce qui prouve l'hérédité
+\end_layout
+
+\begin_layout Standard
+Et pour 
+\begin_inset Formula $k=0$
+\end_inset
+
+ , on a 
+\begin_inset Formula $T_{k}=cos(arcos(x))=x=2^{0}x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Intéressons nous maintenant au racines 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\frac{T_{k+1}}{2^{k}} & =0\iff cos((k+1)arcos(x))=0\\
+ & \iff(k+1)arcos(x)=\frac{\pi}{2}+n\pi\\
+ & \iff\underbrace{arcos(x)}_{\in[0,\pi]}=\frac{(2n+1)\pi}{2(k+1)}\;n\in[0,..,k]\\
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+On a alors k+1 racines
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x_{n}=cos\left[\frac{(2n+1)\pi}{2(k+1)}\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename image/interpolation/theorme5.png
+	lyxscale 50
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1.5cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Preuve
+\end_layout
+
+\begin_layout Standard
+On cherche un candidat qui minimise 
+\begin_inset Formula $\Vert P\Vert_{\infty}$
+\end_inset
+
+ avec 
+\begin_inset Formula $P\in\Gamma_{n+1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Plus précisèment, on va prouver que 
+\begin_inset Formula $\frac{T_{n+1}}{2^{n}}\in\Gamma_{n+1}$
+\end_inset
+
+ minimise 
+\begin_inset Formula $\Vert P\Vert_{\infty}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Supposons qu'il existe 
+\begin_inset Formula $P\in\Gamma_{n+1}\;tq\;\Vert P\Vert_{\infty}\leq\Vert\frac{T_{n+1}}{2^{n}}\Vert_{\infty}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $\frac{T_{n+1}}{2^{n}}=\frac{cos((n+1)arcos(x))}{2^{n}}\in[\frac{-1}{2^{n}},\frac{1}{2^{n}}]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Posons 
+\begin_inset Formula $v=\frac{T_{n+1}}{2^{n}}-P$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{T_{n+1}}{2^{n}}$
+\end_inset
+
+ atteint son maximum lorsque 
+\begin_inset Formula $(n+1)arcos(x)=2k\pi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\iff\underbrace{arcos(x)}_{\in[0,\pi]}=\frac{2k\pi}{n+1}\;k\in[0,..,\overbrace{\left[\frac{n+1}{2}\right]}^{partie\;entière}]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Notons 
+\begin_inset Formula $x_{k}^{M}=cos(\frac{2k\pi}{n+1})$
+\end_inset
+
+ les points où 
+\begin_inset Formula $\frac{T_{n+1}}{2^{n}}$
+\end_inset
+
+ est maximal
+\end_layout
+
+\begin_layout Standard
+De même, 
+\begin_inset Formula $\frac{T_{n+1}}{2^{n}}$
+\end_inset
+
+ sera minimal en 
+\begin_inset Formula $x_{k}^{m}=cos(\frac{(2k+1)\pi}{n+1})\;k\in[0,\left[\frac{n}{2}\right]]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+On déduit que 
+\begin_inset Formula 
+\[
+x_{0}^{M}>x_{0}^{m}>x_{1}^{M}>x_{1}^{m}>...
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+De plus pour 
+\begin_inset Formula $v(x_{k}^{M})>0$
+\end_inset
+
+ et 
+\begin_inset Formula $v(x_{k}^{m})<0$
+\end_inset
+
+ car 
+\begin_inset Formula $\Vert P\Vert_{\infty}\leq\Vert\frac{T_{n+1}}{2^{n}}\Vert_{\infty}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Par le TVI, on obtient que 
+\begin_inset Formula $v$
+\end_inset
+
+ doit s'annuler au moins n+1 fois ( dans chaque intervalle 
+\begin_inset Formula $[x_{k}^{M},x_{k}^{m}]$
+\end_inset
+
+ et 
+\begin_inset Formula $[x_{k}^{m},x_{k+1}^{m}]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Or 
+\begin_inset Formula $v=\frac{T_{n+1}}{2^{n}}-P$
+\end_inset
+
+ donc, comme 
+\begin_inset Formula $\frac{T_{n+1}}{2^{n}}\in\Gamma_{n+1}$
+\end_inset
+
+ et 
+\begin_inset Formula $P\in\Gamma_{n+1}$
+\end_inset
+
+ , on doit avoir 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+v=c_{n}x^{n}+..
+\]
+
+\end_inset
+
+donc 
+\begin_inset Formula $deg(v)=n$
+\end_inset
+
+, ce qui implique 
+\begin_inset Formula $v=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ce qui contredit que 
+\begin_inset Formula $\Vert P\Vert_{\infty}\leq\Vert\frac{T_{n+1}}{2^{0}}\Vert_{\infty}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Remarque
+\end_layout
+
+\begin_layout Standard
+Sur 
+\begin_inset Formula $[-1,1]$
+\end_inset
+
+, les poibnts de Tchebychev sont les 
+\begin_inset Formula $\hat{x_{k}}=cos(\frac{(2k+1)\pi}{n+1})\;k\in[0..n]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sur un intervalle [a,b], on aura 
+\begin_inset Formula 
+\[
+x_{k}=\frac{(\hat{x_{k}}+1)}{2}(b-a)+a\in[a,b]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename image/interpolation/conclu.png
+	lyxscale 50
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename image/interpolation/theorme6.png
+	lyxscale 50
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Quelques extensions
+\end_layout
+
+\begin_layout Subsection
+Interpolation d'Hermitte
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename image/interpolation/ideehermitte.png
+	lyxscale 50
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename image/extension/theorem1.png
+	lyxscale 50
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Preuve
+\end_layout
+
+\begin_layout Standard
+Problème d'Hermite, trouver 
+\begin_inset Formula $P\in P[X^{N}]$
+\end_inset
+
+ tel que 
+\begin_inset Formula $P^{(j)}(x_{i})=f^{(j)}(x_{i})\;\forall j\in\{0,...,n\}\;\forall j\in\{0,...,M\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+On a ici 
+\begin_inset Formula $N=(n+1)(M+1)-1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Prouvons que s'il existe une solution, alors celle-ci est unique.
+ 
+\end_layout
+
+\begin_layout Standard
+Supposons que 
+\begin_inset Formula $P_{1}$
+\end_inset
+
+ et 
+\begin_inset Formula $P_{2}$
+\end_inset
+
+ soient deux solutions dans 
+\begin_inset Formula $P[X^{N}]$
+\end_inset
+
+ alors 
+\begin_inset Formula $v=P_{2}-P_{1}$
+\end_inset
+
+ vérifie 
+\begin_inset Formula $v\in P[X^{N}]$
+\end_inset
+
+ et 
+\begin_inset Formula $v^{(j)}(x_{i})=0$
+\end_inset
+
+.
+ Ainsi 
+\begin_inset Formula $\underbrace{v(x)}_{deg=N=(n+1)(M+1)-1}=\underbrace{\prod_{i=0}^{n}(x-x_{i})^{M+1}}_{deg=(n+1)(M+1)}Q(x)$
+\end_inset
+
+.
+ C e qui implique 
+\begin_inset Formula $Q(x)=0$
+\end_inset
+
+.
+ Donc s'il existe une solution ,celle-ci est unique.
+\end_layout
+
+\begin_layout Standard
+Pour prouver qu'il existe une solution, on va montrer que le problème est
+ linéaire et revient à résoudre un système linéaire de dimension 
+\begin_inset Formula $N+1$
+\end_inset
+
+ avec 
+\begin_inset Formula $N+1$
+\end_inset
+
+ inconnues.
+\end_layout
+
+\begin_layout Standard
+Comme la matrice associé est injective (par unicité de la solution) on déduira
+ par le théorème du rang qu'il existe une unique solution.
+\end_layout
+
+\begin_layout Standard
+On cherche 
+\begin_inset Formula $P\in P[X^{N}]$
+\end_inset
+
+ , donc cela revient à chercher les coefficients 
+\begin_inset Formula $\alpha_{i}$
+\end_inset
+
+ tel que 
+\begin_inset Formula 
+\begin{align*}
+(\sum_{k=0}^{N}\alpha_{k}x^{k})^{(j)}(x_{i}) & =f^{(j)}(x_{i})\\
+\iff & \alpha_{k}\underbrace{\sum_{k=0}^{N}(x^{k})^{(j)}(x_{i})}_{M_{lk}}=f^{(j)}(x_{i})\;avec\;l=i+(n+1)j\\
+\iff & M\begin{matrix}\alpha_{0}\\
+\vdots\\
+\alpha_{N}
+\end{matrix}=F
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Il s'agit bien d'un système linéaire.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename image/extension/theorme2png.png
+	lyxscale 30
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename image/extension/dedoublement.png
+	lyxscale 30
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename image/extension/theorme3.png
+	lyxscale 30
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Remarque : De cette relation, on peut déduire que les Diffèrences divisés
+ s'appliquent comme dans l'interpolation de Lagrange sauf si 
+\begin_inset Formula $y_{i}=y_{i+1}$
+\end_inset
+
+ , dans ce cas, aon aura 
+\begin_inset Formula $f[y_{i},y_{i+1}]=f'[y_{i}]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Preuve 
+\end_layout
+
+\begin_layout Standard
+Pour 
+\begin_inset Formula $M=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+prouvons le résultat par récurrence.
+\end_layout
+
+\begin_layout Standard
+Initialisation : 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y_{0}=y_{1}=x_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P(x)=\underbrace{f(y_{0})}_{f[y_{0}]N_{0}(x)}+\underbrace{f'(y_{0})(x-y_{0})}_{f[y_{0},y_{1}]N_{1}(x)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Pour 
+\begin_inset Formula $k=0$
+\end_inset
+
+, on a
+\begin_inset Formula 
+\[
+T_{1}^{i}(x)=\begin{cases}
+T_{0}^{i}(x)+f'(y_{i})(x-y_{i}) & si\;y_{i}=y_{i+1}\\
+\frac{T_{0}^{i}(x)(y_{i+1}-x)-T_{0}^{i+1}(x)(y_{i}-x)}{y_{i+1}-y_{i}} & sinon
+\end{cases}
+\]
+
+\end_inset
+
+ où 
+\begin_inset Formula $T_{0}^{i}(x)=f(y_{i})$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Si 
+\begin_inset Formula $y_{i}=y_{i+1}$
+\end_inset
+
+on a par définition 
+\begin_inset Formula $T_{1}^{i}$
+\end_inset
+
+ le polynôme de degrès 1 qui vérifie 
+\begin_inset Formula $T_{1}^{i}(y_{i})=f(y_{i})$
+\end_inset
+
+ et 
+\begin_inset Formula $(T_{1}^{i})'(y_{i})=f'(y_{i})\iff T_{1}^{i}(x)=f(y_{i})+f'(y_{i})(x-y_{i})$
+\end_inset
+
+ (dl d'ordre 1)
+\end_layout
+
+\begin_layout Standard
+Si 
+\begin_inset Formula $y_{i}\neq y_{i+1}$
+\end_inset
+
+, on a par définition 
+\begin_inset Formula 
+\begin{align*}
+T_{1}^{i}(x) & =f(y_{i})+\frac{f(y_{i+1})-f(y_{i})}{y_{i+1}-y_{i}}(x-y_{i})\\
+= & T_{0}^{i}(x)+\frac{T_{0}^{i+1}(x)-T_{0}^{i}(x)}{y_{i+1}-y_{i}}(x-y_{i})\\
+= & \frac{T_{0}^{i}(x)(y_{i+1}-y_{i})-T_{0}^{i+1}(x)(y_{i}-x)-T_{0}^{i}(x)(x-y_{i})}{y_{i+1}-y_{i}}\\
+= & \frac{T_{0}^{i}(x)(y_{i+1}-x)-T_{0}^{i+1}(x)(y_{i}-x)}{y_{i+1}-y_{i}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+hérédité
+\end_layout
+
+\begin_layout Standard
+Maintenant , prouvons que pour tout 
+\begin_inset Formula $k\geq$
+\end_inset
+
+1 on a 
+\begin_inset Formula 
+\[
+T_{k+1}^{i}(x)=\frac{T_{k}^{i}(x)(y_{i+k+1}-x)-T_{k}^{i+1}(x)(y_{i}-x)}{y_{i+k+1}-y_{i}}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Posons 
+\begin_inset Formula $\tilde{T_{k+1}^{i}(x)}=\frac{T_{k}^{i}(x)(y_{i+k+1}-x)-T_{k}^{i+1}(x)(y_{i}-x)}{y_{i+k+1}-y_{i}}$
+\end_inset
+
+ et prouvons que 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\tilde{T_{k+1}^{i}(y_{j})}=f(y_{j})\;\forall j\in\{i,...,i+k+1\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\tilde{(T_{k+1}^{i}})'(y_{j})=f'(y_{j})\;\forall j\in\{i,..,i+k\}\;tel\;que\;y_{j}=y_{j+1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+On a 
+\begin_inset Formula $\forall j\in\{i+1,..,i+k$
+\end_inset
+
+}
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\tilde{T_{k+1}^{i}(y_{j})} & =\frac{T_{k+1}^{i}(y_{j})(y_{i+k+1}-y_{j})-T_{k+1}^{i}(y_{j})(y_{i}-y_{j})}{y_{i+k+1}-y_{i}}\\
+= & f(y_{j})\frac{y_{i+k+1-y_{j}+y_{j}-y_{i}}}{y_{i+k+1}-y_{i}}=f(y_{j})
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Pour 
+\begin_inset Formula $j=i$
+\end_inset
+
+ et 
+\begin_inset Formula $j=i+k+1$
+\end_inset
+
+ la démonstration est la même que dans le cas de Lagrange.
+\end_layout
+
+\begin_layout Standard
+Deuxièment, on a 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\tilde{(T_{k+1}^{i})'(}x) & =\frac{1}{y_{i+k+1}-y_{i}}\left[(T_{k}^{i})'(x)(y_{i+k+1}-x)-(T_{k}^{i+1})'(x)(y_{i}-x)\right]\\
+ & +\frac{1}{y_{i+k+1}-y_{i}}\left[-T_{k}^{i}(x)-T_{k}^{i+1}(x)\right]
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Pour 
+\begin_inset Formula $y_{j}=y_{j+1},$
+\end_inset
+
+on aura 
+\begin_inset Formula 
+\[
+-T_{k}^{i}(y_{j})+T_{k}^{i+1}(y_{j})=-f(y_{j})+f(y_{j})=0\,\forall j\in\{i,..,i+k\}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+De plus on aura ainsi 
+\begin_inset Formula 
+\[
+\tilde{(T_{k+1}^{i}})'(y_{j})=\frac{(T_{k}^{i})'(y_{j})(y_{i+k+1}-x)-(T_{k}^{i})'(y_{j})(y_{i}-x)}{y_{i+k+1}-y_{i}}=f'(y_{j})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+par les mêmes arguments que dans le cas précédent sans la dérivé.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename image/extension/algoNevHerlite.png
+	lyxscale 30
+	scale 45
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Remarque : A l'aide de cette relation, on peut aussi généraliser l'algorithme
+ des diffèrences divisés
+\end_layout
+
+\begin_layout Subsection
+Interpolation multivarié
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename image/extension/multivar1.png
+	lyxscale 30
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename image/extension/multivar2.png
+	lyxscale 30
+	scale 45
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename image/extension/multivar3.png
+	lyxscale 30
+	scale 45
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

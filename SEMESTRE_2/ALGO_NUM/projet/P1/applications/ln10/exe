@@ -1,0 +1,10 @@
+make ln10
+
+echo "Rappel : la vrai valeur de ln(10) est 2,302585093..." > resultat
+echo "" >> resultat
+echo "Calcul de ln(10) avec une précision de 10e-4" >> resultat
+echo "" >> resultat
+
+./ln10 >> resultat
+
+make clean

@@ -1,0 +1,85 @@
+int i = 2;
+int *p,*q;
+
+variable|i     | p    |   q  |   *p |  *q  |
+adresse |0x4400|0x4010|0x4020|0xA010|0xA020|  non modifiable
+valeur  |    2 |0xA010|0xA020|  12  |  22  |
+
+
+
+
+
+
+
+a) p = i         
+
+variable|i     | p    |   q  |   *p |  *q  |
+adresse |0x4000|0x4010|0x4020|0xA010|0xA020|  non modifiable
+valeur  |    2 |(  2  ) |0xA020|  12  |  22  |
+
+remarque int * <--- int plantage si on fait *p car point sur une adresse inconnue. (erreur de segmentation)
+
+b)*p = &i
+
+
+variable|i     | p    |   q  |   *p |  *q  |
+adresse |0x4000|0x4010|0x4020|0xA010|0xA020|  non modifiable
+valeur  |    2 |0xA010|0xA020|(0x4000)|  22  |
+
+remarque   int <--- int *  warning  le programme compile et interpretation en tant qu'entier d'une adresse quelconque. 
+
+c) &p = q
+
+
+variable|i     | p    |   q  |   *p |  *q  |
+adresse |0x4000|0x4010|0x4020|0xA010|0xA020|  non modifiable
+valeur  |    2 |0xA010|0xA020|0x4000|  22  |
+
+erreur car adresse jamais modifiable, interdit par le compilateur
+
+d) p = &q (on veut modifier 0xa010 par 0x4020)
+
+
+variable|i     | p    |   q  |   *p |  *q  |
+adresse |0x4000|0x4010|0x4020|0xA010|0xA020|  non modifiable
+valeur  |    2 |(0x4020)|0xA020|0xA020|  22  |
+
+int * <--- int **
+on affecte à un pointeur un pointeur de pointeur, interpretation en tant qu'entier d'une adresse quelconque
+
+e) p = *&q
+
+variable|i     | p    |   q  |   *p |  *q  |
+adresse |0x4400|0x4010|0x4020|0xA010|0xA020|  non modifiable
+valeur  |    2 |(0xA020)|0xA020|  (22)  |  22  |
+
+revient a faire p = q
+
+f) *p = q 
+
+
+variable|i     | p    |   q  |   *p |  *q  |
+adresse |0x4400|0x4010|0x4020|0xA010|0xA020|  non modifiable
+valeur  |    2 |0xA010|0xA020|(0xA020)|  22  |
+
+int <--- int *
+  interpretation en tant qu'entier d'une adresse quelconque
+
+g) p = *q
+
+int * <--- int
+
+variable|i     | p    |   q  |   *p |  *q  |
+adresse |0x4400|0x4010|0x4020|0xA010|0xA020|  non modifiable
+valeur  |    2 |  (22)  |0xA020|  12  |  22  |
+
+interpretation en tant qu'entier d'une adresse quelconque
+
+h) *p = *q
+
+int <--- int
+
+variable|i     | p    |   q  |   *p |  *q  |
+adresse |0x4400|0x4010|0x4020|0xA010|0xA020|  non modifiable
+valeur  |    2 |0xA010|0xA020|  (22)  |  22  |
+

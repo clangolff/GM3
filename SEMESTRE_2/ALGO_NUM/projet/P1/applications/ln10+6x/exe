@@ -1,0 +1,14 @@
+make ln10+6x
+
+echo "Calcul de ln(10 + 6x) avec une précision de 10e-4" > resultat
+echo "" >> resultat
+
+for file in PntEvaluation/*
+do
+	echo "$file" >> resultat
+	echo "evalué en " >> resultat
+	cat "$file" >> resultat
+	./ln10+6x < "$file" >> resultat
+done
+
+make clean

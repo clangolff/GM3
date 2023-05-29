@@ -1,0 +1,4384 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass scrbook
+\use_default_options true
+\maintain_unincluded_children false
+\language french
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "tgbonum" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style french
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "c"
+hor_pos "l"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "40text%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/INSA.png
+	lyxscale 20
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Box Frameless
+position "c"
+hor_pos "l"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "40text%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+raggedleft{
+\end_layout
+
+\end_inset
+
+
+\size large
+GM3
+\end_layout
+
+\begin_layout Plain Layout
+
+\size large
+2022/2023
+\size default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace vfill
+\end_inset
+
+
+\begin_inset Box Frameless
+position "c"
+hor_pos "l"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "100text%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering{
+\end_layout
+
+\end_inset
+
+
+\series bold
+\shape slanted
+\size huge
+TP2 : Quadrature et Équation de Helmholtz
+\size giant
+ 
+\size default
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Analyse Numérique 2 - MMSN - GM3
+\series default
+\shape default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace vfill
+\end_inset
+
+
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename images/interfEau.jpg
+	lyxscale 30
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "l"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100text%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+large
+\backslash
+centering{
+\end_layout
+
+\end_inset
+
+
+\series bold
+Etudiants : Guines Antoine, Langolff Clément
+\series default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+Intégrale d'une fonction 
+\begin_inset Formula $f$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Théorie
+\end_layout
+
+\begin_layout Standard
+Dans cette première partie on cherche à évaluer, grâce à différentes méthodes
+ de quadrature, l'intégrale suivante :
+\begin_inset Formula 
+\[
+I=\int_{a}^{b}f(x)dx
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Méthode d'Hermite
+\end_layout
+
+\begin_layout Standard
+Dans un premier temps nous allons nous intéresser à la méthode de quadrature
+ d'Hermite.
+ On veut ici évaluer l'intégrale sur l'intervalle 
+\begin_inset Formula $[-1;1]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Exactitude de la formule d'Hermite
+\end_layout
+
+\begin_layout Standard
+Nous disposons de trois points, donc nous sommes au moins exacte sur 
+\begin_inset Formula $\mathbb{P}_{2}$
+\end_inset
+
+.
+ Cela se traduit par : 
+\begin_inset Newline newline
+\end_inset
+
+La formule est exacte sur 
+\begin_inset Formula $\mathbb{P}_{2}\iff\forall f\in\mathbb{P}_{2}\,\,R(f)=0$
+\end_inset
+
+, avec : 
+\begin_inset Formula 
+\[
+R(f)=\left(A_{0}f(0)+B_{-1}f'(-1)+B_{1}f'(1)\right)-\left(\int_{-1}^{1}f(\hat{x})d\hat{x}\right)
+\]
+
+\end_inset
+
+Déterminons alors les coefficients 
+\begin_inset Formula $A_{0}$
+\end_inset
+
+, 
+\begin_inset Formula $B_{-1}$
+\end_inset
+
+, et 
+\begin_inset Formula $B_{1}$
+\end_inset
+
+ tels que cette formule soit effectivement exacte sur 
+\begin_inset Formula $\mathbb{P}_{2}$
+\end_inset
+
+.
+ On a : 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\iff & \begin{cases}
+R(1) & =0\\
+R(x) & =0\\
+R(x^{2}) & =0
+\end{cases}\\
+\iff & \begin{cases}
+\int_{-1}^{1}1dx-A_{0} & =0\\
+\int_{-1}^{1}xdx-(B_{-1}+B_{1}) & =0\\
+\int_{-1}^{1}x^{2}dx-2(-B_{-1}+B_{1}) & =0
+\end{cases}\\
+\iff & \begin{cases}
+A_{0} & =2\\
+B_{-1}+B_{1} & =0\\
+2(-B_{-1}+B_{1}) & =\frac{2}{3}
+\end{cases}\\
+\iff & \begin{cases}
+A_{0} & =2\\
+B_{-1} & =-B_{1}\\
+-B_{-1}+B_{1} & =\frac{1}{3}
+\end{cases}\\
+\iff & \begin{cases}
+A_{0} & =2\\
+B_{-1} & =-\frac{1}{6}\\
+B_{1} & =\frac{1}{6}
+\end{cases}
+\end{align*}
+
+\end_inset
+
+La formule de quadrature s'écrit alors :
+\begin_inset Formula 
+\[
+\int_{-1}^{1}f(x)dx=2f(0)-\frac{1}{6}f'(-1)+\frac{1}{6}f'(1)+R(f)
+\]
+
+\end_inset
+
+Regardons maintenant si nous pouvons être exacte sur 
+\begin_inset Formula $\mathbb{P}_{k}$
+\end_inset
+
+ avec 
+\begin_inset Formula $k>2$
+\end_inset
+
+.
+ Pour cela on utilise la propriété du cours nous disant que si 
+\begin_inset Formula $R(x^{i})=0\,\,\forall i\in\{0,..,k\}$
+\end_inset
+
+, alors la formule de quadrature est exacte sur 
+\begin_inset Formula $\mathbb{P}_{k}$
+\end_inset
+
+.
+ Dans notre cas on a donc :
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+R(f) & =\left(A_{0}f(0)+B_{-1}f'(-1)+B_{1}f'(1)\right)-\left(\int_{-1}^{1}f(\hat{x})d\hat{x}\right)\\
+R(x^{3}) & =2\times0-\frac{1}{6}\times3\times(-1)^{2}+\frac{1}{6}\times3\times1{}^{2}-\underbrace{\int_{-1}^{1}x^{3}dx}_{0}\\
+ & =0
+\end{align*}
+
+\end_inset
+
+Ainsi, la formule est exacte sur 
+\begin_inset Formula $\mathbb{P}_{3}$
+\end_inset
+
+.
+ Essayons de montrer l'exactitude de la formule pour un 
+\begin_inset Formula $k$
+\end_inset
+
+ plus grand, on prend donc 
+\begin_inset Formula $k=4$
+\end_inset
+
+ :
+\begin_inset Formula 
+\begin{align*}
+R(x^{4}) & =2\times0-\frac{1}{6}\times4\times(-1)^{3}+\frac{1}{6}\times4\times1{}^{3}-\int_{-1}^{1}x^{4}dx\\
+ & =\frac{4}{3}-\frac{2}{5}\neq0
+\end{align*}
+
+\end_inset
+
+La formule n'est pas exacte sur 
+\begin_inset Formula $\mathbb{P}_{4}$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+Ainsi, le 
+\begin_inset Formula $k$
+\end_inset
+
+ maximum tel que la formule soit exacte sur 
+\begin_inset Formula $\mathbb{P}_{k}$
+\end_inset
+
+ est 
+\begin_inset Formula $k=3$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+Ordre de la méthode d'Hermite
+\end_layout
+
+\begin_layout Standard
+Soit 
+\begin_inset Formula $p$
+\end_inset
+
+ le polynome appartenant à 
+\begin_inset Formula $\mathbb{P}_{3}$
+\end_inset
+
+ tel que : 
+\begin_inset Formula 
+\[
+\begin{cases}
+p(0) & =f(0)\\
+p'(1) & =f'(1)\\
+p'(-1) & =f'(-1)\\
+p'(0) & =f'(0)
+\end{cases}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Nous rajontons un point pour exploter l'exactitude sur 
+\begin_inset Formula $\mathbb{P}_{3}$
+\end_inset
+
+.
+ Pour majorer l'erreur, cherchons d'abord 
+\begin_inset Formula $v_{n}\in\mathbb{P}_{3}$
+\end_inset
+
+ tel que : 
+\begin_inset Formula 
+\[
+v(0)=v'(0)=v'(1)=v'(-1)=0
+\]
+
+\end_inset
+
+On a :
+\begin_inset Formula 
+\[
+\underbrace{v'(t)}_{deg=3}=\underbrace{t(t+1)(t-1)}_{deg=3}Q(t)
+\]
+
+\end_inset
+
+On déduit alors que 
+\begin_inset Formula $deg(Q)=0$
+\end_inset
+
+ et donc 
+\begin_inset Formula $Q(t)=a$
+\end_inset
+
+.
+ On obtient donc : 
+\begin_inset Formula 
+\begin{align*}
+v'(t) & =t(t^{2}-1)a\\
+ & =at^{3}-at
+\end{align*}
+
+\end_inset
+
+Après intégration, il vient que :
+\begin_inset Formula 
+\[
+v(t)=\frac{a}{4}t^{4}-\frac{a}{2}t^{2}
+\]
+
+\end_inset
+
+Pour simplifier la majoration, nous allons prendre 
+\begin_inset Formula $v$
+\end_inset
+
+ comme étant un polynôme unitaire, ainsi nous prenons 
+\begin_inset Formula $a=4$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+v(t) & =t^{4}-2t^{2}\\
+ & =t^{2}(t^{2}-2)
+\end{align*}
+
+\end_inset
+
+Soit 
+\begin_inset Formula $x\in]-1;1[$
+\end_inset
+
+ et 
+\begin_inset Formula $x\neq0$
+\end_inset
+
+.
+ Alors pour tout 
+\begin_inset Formula $x$
+\end_inset
+
+ fixé on ajoute la condition que 
+\begin_inset Formula $f(x)=p(x)$
+\end_inset
+
+.
+ Posons maintenant : 
+\begin_inset Formula $E(t)=f(t)-p(t)-\frac{f(x)-p(x)}{v(x)}v(t)$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+Par construction, 
+\begin_inset Formula $E$
+\end_inset
+
+ s'annule en 
+\begin_inset Formula $t=0$
+\end_inset
+
+ et en 
+\begin_inset Formula $t=x$
+\end_inset
+
+.
+ 
+\begin_inset Formula $E$
+\end_inset
+
+ s'annule en 2 points distincts donc par le théorème de Rolle, on sait que
+ 
+\begin_inset Formula $E'$
+\end_inset
+
+ s'annulera au moins une fois en un point de l'intervalle 
+\begin_inset Formula $]0;x[$
+\end_inset
+
+.
+ Ce point sera donc différent de 
+\begin_inset Formula $0,1$
+\end_inset
+
+ et 
+\begin_inset Formula $-1$
+\end_inset
+
+.
+ De plus également par construction de 
+\begin_inset Formula $E$
+\end_inset
+
+, on sait que 
+\begin_inset Formula $E'$
+\end_inset
+
+ va s'annuler en 
+\begin_inset Formula $0,1$
+\end_inset
+
+ et 
+\begin_inset Formula $-1$
+\end_inset
+
+.
+ Par conséquent on déduit que 
+\begin_inset Formula $E'$
+\end_inset
+
+ s'annule au moins en 
+\begin_inset Formula $4$
+\end_inset
+
+ points distincts de 
+\begin_inset Formula $[-1;1]$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+Ainsi en vertu du théorème de Rolle, on déduit que 
+\begin_inset Formula $E^{(4)}$
+\end_inset
+
+ s'annule au moins une fois, en un point 
+\begin_inset Formula $\xi\in[-1,1]$
+\end_inset
+
+.
+ Ainsi :
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+E^{(4)}(\xi)=f^{(4)}(\xi)-\frac{f(x)-p(x)}{v(x)}4!=0
+\]
+
+\end_inset
+
+Donc :
+\begin_inset Formula 
+\[
+f(x)-p(x)=\frac{f^{(4)}(\xi)}{4!}v(x)
+\]
+
+\end_inset
+
+Cependant cette égalité n'est valable seulement sur 
+\begin_inset Formula $[-1,1]$
+\end_inset
+
+.
+ Si on veut pouvoir majorer l'erreur de notre intégrale sur un intervalle
+ 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ quelconque il nous faut trouver un nouveau 
+\begin_inset Formula $v.$
+\end_inset
+
+ On découpe alors 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ en 
+\begin_inset Formula $p$
+\end_inset
+
+ sous intervalle, et le pas vaut 
+\begin_inset Formula $h=\frac{b-a}{p}$
+\end_inset
+
+.
+ On note 
+\begin_inset Formula $[x_{i},x_{i+1}]\,\,\forall i\in\{0,...,p-1\}$
+\end_inset
+
+ les 
+\begin_inset Formula $p$
+\end_inset
+
+ sous-intervalles de 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+Pour cela, nous allons posé 
+\begin_inset Formula $p\in\mathbb{P}_{3}$
+\end_inset
+
+ défini sur l'intervalle 
+\begin_inset Formula $[x_{i},x_{i+1}]$
+\end_inset
+
+ tel que 
+\begin_inset Formula 
+\[
+\begin{cases}
+p(x_{i}+\frac{h}{2}) & =f(x_{i}+\frac{h}{2})\\
+p'(x_{i}) & =f'(x_{i})\\
+p'(x_{i+1}) & =f'(x_{i+1})\\
+p'(x_{i}+\frac{h}{2}) & =f'(x_{i}+\frac{h}{2})
+\end{cases}
+\]
+
+\end_inset
+
+On définit alors 
+\begin_inset Formula $v(t)\in\mathbb{P}_{3}$
+\end_inset
+
+ tel que 
+\begin_inset Formula $v(x_{i}+\frac{h}{2})=v'(x_{i}+\frac{h}{2})=v'(x_{i+1})=v'(x_{i})=0$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+Avec un raisonnement analogue à celui réalisé pour l'intervalle 
+\begin_inset Formula $[-1,1]$
+\end_inset
+
+, nous exprimons l'équivalent de 
+\begin_inset Formula $v$
+\end_inset
+
+ sur l'intervalle 
+\begin_inset Formula $[x_{i},x_{i+1}]$
+\end_inset
+
+ avec la formule 
+\begin_inset Formula $t=\frac{\hat{t}+1}{2}h+x_{i}$
+\end_inset
+
+ pour 
+\begin_inset Formula $\hat{t}\in[-1,1]$
+\end_inset
+
+.
+ On obtient alors le 
+\begin_inset Formula $v(t)$
+\end_inset
+
+ associé à l'intervalle 
+\begin_inset Formula $[x_{i},x_{i+1}]$
+\end_inset
+
+ :
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+v(t)=\left(t-(x_{i}+\frac{h}{2})\right){}^{2}\left(t-(\frac{\sqrt{2}+1}{2}h+x_{i})\right)\left(t-(\frac{-\sqrt{2}+1}{2}h+x_{i})\right)
+\]
+
+\end_inset
+
+On prend cette fois 
+\begin_inset Formula $x\in]x_{i},x_{i+1}[$
+\end_inset
+
+, puis on pose comme précédemment : 
+\begin_inset Formula $E(t)=f(t)-p(t)-\frac{f(x)-p(x)}{v(x)}v(t)$
+\end_inset
+
+ avec cette fois 
+\begin_inset Formula $t\in[x_{i},x_{i+1}]$
+\end_inset
+
+.
+ Comme précédemment par le théorème de Rolle on a 
+\begin_inset Formula $E^{(4)}(t)$
+\end_inset
+
+ qui s'annule au moins une fois en un 
+\begin_inset Formula $\xi\in[x_{i},x_{i+1}]$
+\end_inset
+
+ .
+ Ainsi : 
+\begin_inset Formula 
+\begin{align*}
+|R(f)| & =|\sum_{i=0}^{p-1}\int_{x_{i}}^{x_{i+1}}f(x)-p(x)dx|\\
+ & \leq\sum_{i=0}^{p-1}\int_{x_{i}}^{x_{i+1}}|f(x)-p(x)|dx\\
+ & \leq\sum_{i=0}^{p-1}\frac{\bigparallel f^{(4)}\bigparallel_{\infty}}{4!}\int_{x_{i}}^{x_{i+1}}v(x)dx\\
+ & =\sum_{i=0}^{p-1}\frac{\bigparallel f^{(4)}\bigparallel_{\infty}}{4!}\int_{x_{i}}^{x_{i+1}}\underbrace{\left(x-(x_{i}+\frac{h}{2})\right){}^{2}}_{\leq h²}\underbrace{\left(x-(\frac{\sqrt{2}+1}{2}h+x_{i})\right)}_{\leq h}\underbrace{\left(x-(\frac{-\sqrt{2}+1}{2}h+x_{i})\right)}_{\leq h}dx\\
+ & \leq\sum_{i=0}^{p-1}\frac{\bigparallel f^{(4)}\bigparallel_{\infty}}{4!}h^{4}\int_{x_{i}}^{x_{i+1}}dx\\
+ & =\sum_{i=0}^{p-1}\frac{\bigparallel f^{(4)}\bigparallel_{\infty}}{4!}h^{5}\\
+ & =p\frac{\bigparallel f^{(4)}\bigparallel_{\infty}}{4!}h^{5}\\
+ & =(b-a)\frac{\bigparallel f^{(4)}\bigparallel_{\infty}}{4!}h^{4}
+\end{align*}
+
+\end_inset
+
+On obtient finalement que 
+\begin_inset Formula $|R(f)|\leq(b-a)\frac{\bigparallel f^{(4)}\bigparallel_{\infty}}{4!}h^{4}$
+\end_inset
+
+, ce qui montre que la méthode d'Hermite est d'ordre 4.
+\end_layout
+
+\begin_layout Section
+Formules composites
+\end_layout
+
+\begin_layout Subsection
+Rappel des formules composites
+\end_layout
+
+\begin_layout Subsubsection
+Formule des Trapèzes
+\end_layout
+
+\begin_layout Standard
+Pour la méthode des trapèzes la formule de quadrature sur l'intervalle de
+ référence 
+\begin_inset Formula $[-1;1]$
+\end_inset
+
+ est donnée par :
+\begin_inset Formula 
+\[
+\int_{-1}^{1}f(\hat{x})d\hat{x}\approx f(1)+f(-1)
+\]
+
+\end_inset
+
+Cette formule est exacte sur 
+\begin_inset Formula $\mathbb{P}_{1}$
+\end_inset
+
+.
+ Pour construire la méthode composite pour les trapèzes sur un intervalle
+ 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+, nous divisons celui-ci en 
+\begin_inset Formula $p$
+\end_inset
+
+ intervalles d'un pas 
+\begin_inset Formula $h=\frac{b-a}{p}$
+\end_inset
+
+.
+ Grâce à la formulation de Riemann, on a :
+\begin_inset Formula 
+\[
+\int_{a}^{b}f(x)dx=lim_{p→+\infty}\sum_{j=0}^{p-1}\int_{x_{j}}^{x_{j+1}}f(x)dx
+\]
+
+\end_inset
+
+On pose alors 
+\begin_inset Formula $x=\frac{\hat{x}+1}{2}h+x_{j}$
+\end_inset
+
+ où 
+\begin_inset Formula $h=x_{j+1}-x_{j}$
+\end_inset
+
+ et 
+\begin_inset Formula $\hat{x}\in[-1,1]$
+\end_inset
+
+.
+ On a donc 
+\begin_inset Formula $dx=\frac{h}{2}d\hat{x}$
+\end_inset
+
+, ainsi :
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int_{x_{j}}^{x_{j+1}}f(x)dx=\int_{-1}^{1}f(\frac{\hat{x}+1}{2}h+x_{j})\frac{h}{2}d\hat{x}
+\]
+
+\end_inset
+
+En reprenant la formule de quadrature des trapèzes et en évaluant en 
+\begin_inset Formula $\hat{x}=-1$
+\end_inset
+
+ et 
+\begin_inset Formula $\hat{x}=1$
+\end_inset
+
+, on a : 
+\begin_inset Formula 
+\begin{align*}
+\int_{x_{j}}^{x_{j+1}}f(x)dx & \approx\left(f(\frac{1+1}{2}h+x_{j})+f(\frac{-1+1}{2}h+x_{j})\right)\frac{h}{2}\\
+ & =\frac{h}{2}\left(f(x_{j+1})+f(x_{j})\right)
+\end{align*}
+
+\end_inset
+
+D'où :
+\begin_inset Formula 
+\begin{align*}
+\int_{a}^{b}f(x)dx & \approx\frac{h}{2}\sum_{j=0}^{p-1}\left(f(x_{j+1})+f(x_{j})\right)\\
+ & =\frac{h}{2}\left(f(x_{0})+2f(x_{1})+...+2f(x_{p-1})+f(x_{p})\right)\\
+ & =\frac{h}{2}\left(f(x_{0})+f(x_{p})+2\sum_{j=1}^{p-1}f(x_{j})\right)\\
+ & =h\left(\frac{f(x_{0})+f(x_{p})}{2}+\sum_{j=1}^{p-1}f(x_{j})\right)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Méthode de Gauss à 2 points
+\end_layout
+
+\begin_layout Standard
+Pour la méthode de Gauss à 2 points, nous avons pu montrer que la formule
+ de quadrature sur l'intervalle de référence 
+\begin_inset Formula $[-1;1]$
+\end_inset
+
+ est donnée par : 
+\begin_inset Formula 
+\[
+\int_{-1}^{1}f(\hat{x})d\hat{x}\approx f\left(\frac{-1}{\sqrt{3}}\right)+f\left(\frac{1}{\sqrt{3}}\right)
+\]
+
+\end_inset
+
+Notons que cette formule de quadrature est exacte sur 
+\begin_inset Formula $\mathbb{P}_{3}$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+Pour déterminer la formule composite associée à cette méthode, on reprend
+ le même raisonnement que précédemment.
+ On a toujours :
+\begin_inset Formula 
+\[
+\int_{a}^{b}f(x)dx=lim_{p→+\infty}\sum_{j=0}^{p-1}\int_{x_{j}}^{x_{j+1}}f(x)dx
+\]
+
+\end_inset
+
+Par un changement de variable on va traiter 
+\begin_inset Formula $x\in[x_{j},x_{j+1}]$
+\end_inset
+
+ en considérant 
+\begin_inset Formula $\hat{x}$
+\end_inset
+
+ qui est un point de l'intervalle de référence 
+\begin_inset Formula $[-1,1]$
+\end_inset
+
+, en posant : 
+\begin_inset Formula $x=\frac{\hat{x}+1}{2}h+x_{j}$
+\end_inset
+
+.
+ On a donc :
+\begin_inset Formula 
+\begin{align*}
+\int_{x_{j}}^{x_{j+1}}f(x)dx & =\int_{-1}^{1}f(\frac{\hat{x}+1}{2}h+x_{j})\frac{h}{2}d\hat{x}
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+ & \approx\frac{h}{2}\left(f\left(\frac{\frac{-1}{\sqrt{3}}+1}{2}h+x_{j}\right)+f\left(\frac{\frac{1}{\sqrt{3}}+1}{2}h+x_{j}\right)\right)\\
+ & =\frac{h}{2}\left(f\left(\frac{-1+\sqrt{3}}{\sqrt{12}}h+x_{j}\right)+f\left(\frac{1+\sqrt{3}}{\sqrt{12}}h+x_{j}\right)\right)
+\end{align*}
+
+\end_inset
+
+D'où :
+\begin_inset Formula 
+\[
+\int_{a}^{b}f(x)dx=\frac{h}{2}\sum_{j=0}^{p-1}\left(f\left(\frac{-1+\sqrt{3}}{\sqrt{12}}h+x_{j}\right)+f\left(\frac{1+\sqrt{3}}{\sqrt{12}}h+x_{j}\right)\right)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Méthode d'Hermite
+\end_layout
+
+\begin_layout Standard
+Finalement pour la méthode d'Hermite nous avons pu montrer que la formule
+ de quadrature sur 
+\begin_inset Formula $[-1,1]$
+\end_inset
+
+ était donnée par :
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int_{-1}^{1}f(\hat{x})d\hat{x}\approx2f(0)-\frac{1}{6}f'(-1)+\frac{1}{6}f'(1)
+\]
+
+\end_inset
+
+Alors, en procédant exactement comme précédemment, il vient que :
+\begin_inset Formula 
+\begin{align*}
+\int_{x_{j}}^{x_{j+1}}f(x)dx & =\int_{-1}^{1}f(\frac{\hat{x}+1}{2}h+x_{j})\frac{h}{2}d\hat{x}\\
+ & \approx hf(\frac{0+1}{2}h+x_{j})-\frac{h²}{24}f(\frac{-1+1}{2}h+x_{j})+\frac{h²}{24}f(\frac{1+1}{2}h+x_{j})\\
+ & \approx hf(\frac{1}{2}h+x_{j})-\frac{h²}{24}f'(x_{j})+\frac{h²}{24}f'(h+x_{j})\\
+ & =h\left(f(\frac{x_{j+1}+x_{j}}{2})-\frac{h}{24}f'(x_{j})+\frac{h}{24}f'(x_{j+1})\right)
+\end{align*}
+
+\end_inset
+
+D'où :
+\begin_inset Formula 
+\begin{align*}
+\int_{a}^{b}f(x)dx & =h\sum_{j=0}^{p-1}\left(f(\frac{x_{j+1}+x_{j}}{2})-\frac{h}{24}f'(x_{j})+\frac{h}{24}f'(x_{j+1})\right)\\
+ & =\frac{h²\times(f'(b)-f'(a))}{24}+h\times\sum_{j=0}^{p-1}f(\frac{x_{j+1}+x_{j}}{2})
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Implémentation efficace
+\end_layout
+
+\begin_layout Subsubsection
+Formule composite des Trapèzes
+\end_layout
+
+\begin_layout Standard
+Pour cette première méthode, la formule composite est donnée par :
+\begin_inset Formula 
+\[
+\int_{a}^{b}f(x)dx=\frac{h}{2}\left(f(x_{0})+f(x_{p})+2\sum_{j=1}^{p-1}f(x_{j})\right)
+\]
+
+\end_inset
+
+Dans ce cas, nous ferons attention à ne calculer qu'une seule fois les 
+\begin_inset Formula $f(x_{j})$
+\end_inset
+
+.
+ On va tout d'abord initialiser une variable 
+\begin_inset Formula $res$
+\end_inset
+
+ qui contiendra la somme de tous les 
+\begin_inset Formula $f(x_{j})$
+\end_inset
+
+, avec le premier terme 
+\begin_inset Formula $f(x_{0})$
+\end_inset
+
+.
+ Ensuite on va faire une boucle dans laquelle on calculera le terme 
+\begin_inset Formula $f(x_{j}+h)$
+\end_inset
+
+, puis on ajoutera 
+\begin_inset Formula $f(x_{j})$
+\end_inset
+
+ et 
+\begin_inset Formula $f(x_{j}+h)$
+\end_inset
+
+ à la variable 
+\begin_inset Formula $res$
+\end_inset
+
+.
+ On stockera ensuite 
+\begin_inset Formula $f(x_{j}+h)$
+\end_inset
+
+ dans une variable pour l'utiliser dans la somme au prochain tour sans la
+ recalculer.
+ On incrémente également 
+\begin_inset Formula $x$
+\end_inset
+
+ de 
+\begin_inset Formula $h$
+\end_inset
+
+ à chaque tour.
+ On s'arrète lorsque 
+\begin_inset Formula $x$
+\end_inset
+
+ dépasse 
+\begin_inset Formula $b$
+\end_inset
+
+.
+ Finalement, on multiplie le résultat, donc la variable res, par 
+\begin_inset Formula $h*0.5$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Formule composite de Gauss à 2 points
+\end_layout
+
+\begin_layout Standard
+Pour cette méthode la formule composite est donnée par :
+\begin_inset Formula 
+\[
+\int_{a}^{b}f(x)dx=\frac{h}{2}\sum_{j=0}^{p-1}\left(f\left(\frac{-1+\sqrt{3}}{\sqrt{12}}h+x_{j}\right)+f\left(\frac{1+\sqrt{3}}{\sqrt{12}}h+x_{j}\right)\right)
+\]
+
+\end_inset
+
+Pour implémenter cette formule de manière efficace, il est impératif de
+ calculer une unique fois les 2 produits 
+\begin_inset Formula $c1=\frac{-1+\sqrt{3}}{\sqrt{12}}h$
+\end_inset
+
+ et 
+\begin_inset Formula $c2=\frac{1+\sqrt{3}}{\sqrt{12}}h$
+\end_inset
+
+ qui sont des constantes.
+ Ensuite on réalise une boucle dans laquelle on calcule 
+\begin_inset Formula $f\left(c1+x\right)$
+\end_inset
+
+ et 
+\begin_inset Formula $f\left(c2+x\right)$
+\end_inset
+
+.
+ On somme ces 2 valeurs dans une variable contenant la somme, notée 
+\begin_inset Formula $res$
+\end_inset
+
+, puis on incrémente 
+\begin_inset Formula $x$
+\end_inset
+
+ de 
+\begin_inset Formula $h$
+\end_inset
+
+.
+ On s'arrète lorsque 
+\begin_inset Formula $x$
+\end_inset
+
+ dépasse 
+\begin_inset Formula $b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+Formule composite d'Hermite
+\end_layout
+
+\begin_layout Standard
+Pour cette dernière méthode, la formule composite est donnée par :
+\begin_inset Formula 
+\[
+\int_{a}^{b}f(x)dx=\frac{h²\times(f'(b)-f'(a))}{24}+h\times\sum_{j=0}^{p-1}f(\frac{x_{j+1}+x_{j}}{2})
+\]
+
+\end_inset
+
+Dans ce cas, il est important de remarquer qu'il n'est nécessaire de calculer
+ la dérivé de 
+\begin_inset Formula $f$
+\end_inset
+
+ qu'aux points 
+\begin_inset Formula $a$
+\end_inset
+
+ et 
+\begin_inset Formula $b$
+\end_inset
+
+.
+ Ensuite, il sufit de faire une boucle dans laquelle on évalue 
+\begin_inset Formula $f$
+\end_inset
+
+ au milieu de chaque intervalle 
+\begin_inset Formula $[x_{j},x_{j+1}]$
+\end_inset
+
+ et on l'ajoute à une variable 
+\begin_inset Formula $res$
+\end_inset
+
+ contenant la somme.
+ Pour cela on initialise 
+\begin_inset Formula $x$
+\end_inset
+
+ en 
+\begin_inset Formula $a$
+\end_inset
+
+, et on créé la variable 
+\begin_inset Formula $h_{div2}=\frac{h}{2}$
+\end_inset
+
+.
+ Ensuite il nous suffit d'évaluer 
+\begin_inset Formula $f$
+\end_inset
+
+ en 
+\begin_inset Formula $x+h_{div2}$
+\end_inset
+
+, puis on incrémente 
+\begin_inset Formula $x$
+\end_inset
+
+ de 
+\begin_inset Formula $h$
+\end_inset
+
+, et ainsi de suite.
+ On s'arrète quand 
+\begin_inset Formula $x$
+\end_inset
+
+ dépasse 
+\begin_inset Formula $b$
+\end_inset
+
+.
+ Finalement, on ajoute à 
+\begin_inset Formula $res$
+\end_inset
+
+ le terme 
+\begin_inset Formula $h\times\frac{f'(b)-f'(a)}{24}$
+\end_inset
+
+, puis on multiplie le tout par 
+\begin_inset Formula $h$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Chapter
+Code
+\end_layout
+
+\begin_layout Section
+Observation de l'action des paramètres 
+\begin_inset Formula $p$
+\end_inset
+
+ et 
+\begin_inset Formula $k$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dans cette section, nous allons observer l'influence des paramètres 
+\begin_inset Formula $p$
+\end_inset
+
+ et 
+\begin_inset Formula $k$
+\end_inset
+
+ sur le résultat donné par les 3 méthodes.
+ Dans un premier temps, on fixe 
+\begin_inset Formula $k=1$
+\end_inset
+
+, afin d'observer graphiquement l'impact de 
+\begin_inset Formula $p$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename images/convergence/P3_K1.png
+	lyxscale 20
+	scale 40
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename images/convergence/P6_K1.png
+	lyxscale 20
+	scale 40
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Formula $p$
+\end_inset
+
+ correspond au nombre d'intervalle 
+\begin_inset Formula $[x_{i},x_{i+1}]$
+\end_inset
+
+ qui viennent subdiviser l'intervalle 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ dans les méthodes composites.
+ Plus 
+\begin_inset Formula $p$
+\end_inset
+
+ est grand, plus il y a d'intervalle, et plus ceux-ci sont petits.
+ Sur chacun de ces intervalle de taille 
+\begin_inset Formula $h=\frac{b-a}{p}$
+\end_inset
+
+ nous appliquerons la méthode de quadrature de notre choix.
+ Ici nous avons appliqué celle des trapèzes.
+ Sur l'image de gauche, on a pris 
+\begin_inset Formula $p=3$
+\end_inset
+
+, alors qu'à droite 
+\begin_inset Formula $p=6$
+\end_inset
+
+.
+ Augmenter 
+\begin_inset Formula $p$
+\end_inset
+
+ doit permettre dans le cadre des méthodes composites d'augmenter la précision
+ de l'estimation (ou de diminuer l'erreur commise).
+ C'est d'ailleurs ce que nous montre le tableau que nous avons réalisé ci-dessou
+s, pour 
+\begin_inset Formula $k$
+\end_inset
+
+ fixé à 1 :
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename images/convergence/errk1.png
+	lyxscale 50
+	scale 45
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Ce tableau nous montre bien que pour les 3 méthodes composites utilisées,
+ l'augmentation de 
+\begin_inset Formula $p$
+\end_inset
+
+ est associé à une diminution de l'erreur.
+\begin_inset Newline newline
+\end_inset
+
+En ce qui concerne 
+\begin_inset Formula $k$
+\end_inset
+
+, comme on a 
+\begin_inset Formula $f(x)=cos(2k\pi x)$
+\end_inset
+
+ son augmentation va accroître la pulsation, c'est à dire qu'en augmentant
+ 
+\begin_inset Formula $k$
+\end_inset
+
+ on aura une augmentation du nombre d'oscillation du cosinus sur un même
+ intervalle.
+ La fréquence des oscillations sera donc plus élevée, et le période plus
+ faible.
+ Intuitivement on pourrait s'attendre à ce qu'une augmentation de la valeur
+ de 
+\begin_inset Formula $k$
+\end_inset
+
+ conduise à une moins bonne approximation de l'intégrale de la fonction,
+ puisque le sens de variation de la fonction changera beaucoup, et si 
+\begin_inset Formula $p$
+\end_inset
+
+ est relativement faible, alors l'erreur commise par les différentes méthodes
+ risque d'augmenter.
+ Graphiquement, voici ce que l'on obtient pour 
+\begin_inset Formula $k=5$
+\end_inset
+
+ et 
+\begin_inset Formula $p=6$
+\end_inset
+
+ :
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename images/convergence/p6_k5_errMéthodes.png
+	lyxscale 50
+	scale 45
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Quant aux erreurs de chacunes des méthodes, toujours pour 
+\begin_inset Formula $k=5$
+\end_inset
+
+, voici ce que l'on obtient :
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename images/convergence/err_k5.png
+	lyxscale 50
+	scale 45
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Grâce à ce tableau on peut se rendre compte à quel point l'augmentation
+ de la valeur de 
+\begin_inset Formula $k$
+\end_inset
+
+ à fait augmenter l'erreur d'approximation intégrale.
+ En effet si l'on compare au tableau précédent, lorsque 
+\begin_inset Formula $k$
+\end_inset
+
+ était égal à 
+\begin_inset Formula $1$
+\end_inset
+
+ les erreurs commises étaient bien inférieures, notamment lorsque 
+\begin_inset Formula $p$
+\end_inset
+
+ est faible.
+ En effet, pour la méthode des Trapèzes avec 
+\begin_inset Formula $p=4,$
+\end_inset
+
+ il y un facteur 
+\begin_inset Formula $10$
+\end_inset
+
+ entre les 2 erreurs, et pour les méthodes de Gauss et d'Hermite un facteur
+ 
+\begin_inset Formula $10⁴$
+\end_inset
+
+ entre les erreurs commises pour 
+\begin_inset Formula $k=1$
+\end_inset
+
+ et 
+\begin_inset Formula $k=5$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Analyse de convergence
+\end_layout
+
+\begin_layout Standard
+Dans cette partie, nous allons détailler nos résultats portant sur l'analyse
+ de convergence des différentes méthodes.
+ Nous avons effectuer ce test en prenant la fonction donnée initialment
+ 
+\begin_inset Formula $f(x)=cos(2k\pi x)$
+\end_inset
+
+, avec 
+\begin_inset Formula $k=1$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+Pour compléter le code, nous devions calculer la valeur exacte de l'intégrale
+ de 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ sur l'intervalle 
+\begin_inset Formula $[a,b]=[0,0.75]$
+\end_inset
+
+.
+ Cela est possible dans notre cas car la fonction est simple, donc on peut
+ calculer analytiquement la valeur de l'intégrale.
+ Cependant, notons que tout l'intérêt de l'analyse de convergence est de
+ pouvoir majorer l'erreur commise par les méthodes dans le calcul d'intégrale
+ dont on ne peut pas avoir de valeur exacte.
+ Si l'on revient à notre cas, nous avons : 
+\begin_inset Formula 
+\begin{align*}
+ValEx & =\int_{a}^{b}f(x)dx\\
+ & =\int_{0}^{0.75}cos(2k\pi x)dx\\
+ & =\left[\frac{sin(2k\pi x)}{2k\pi}\right]_{0}^{0.75}=\frac{1}{2\pi}\times sin(\frac{3\pi}{2})\approx-0,159154943
+\end{align*}
+
+\end_inset
+
+À partir de cela il nous est possible de calculer l'erreur commise par chacune
+ des méthodes, et donc de comparer l'évolution de l'erreur suivant la valeur
+ de 
+\begin_inset Formula $p$
+\end_inset
+
+ (le nombre d'intervalle) et donc de la taille du pas 
+\begin_inset Formula $h$
+\end_inset
+
+.
+ Plus précisément, nous comparons ici les logarithmes en base 10, et pour
+ ce faire on trace 
+\begin_inset Formula $log(err)$
+\end_inset
+
+ en fonction de 
+\begin_inset Formula $log(p)$
+\end_inset
+
+.
+ La pente de la droite correspond alors à l'ordre de la méthode.
+ Voici les graphes obtenus.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename images/convergence/analyse_conv.png
+	lyxscale 50
+	scale 45
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+D'après ces graphiques, la méthode des trapèzes est d'ordre 2, et celle
+ de Gauss et d'Hermite d'ordre 4, car ce sont les valeurs des coefficients
+ directeurs des différentes droites.
+ Pour Hermite, l'ordre trouvé numériquement correspond donc bien à celui
+ obtenu par le calcul dans la partie précédente.
+ 
+\begin_inset Newline newline
+\end_inset
+
+Pour la méthode des Trapèzes et celle de Gauss, on pouvait également s'attendre
+ à obtenir ce résultat.
+ En effet, d'après une proposition vue en cours, si une méthode de quadrature
+ simple est exacte sur 
+\begin_inset Formula $\mathbb{P}_{k}$
+\end_inset
+
+, 
+\begin_inset Formula $k\geq n$
+\end_inset
+
+, et n'est pas exacte sur 
+\begin_inset Formula $\mathbb{P}_{k+1}$
+\end_inset
+
+, alors la formule composite sera exactement d'ordre 
+\begin_inset Formula $k+1$
+\end_inset
+
+.
+ Or dans notre cas la méthode des trapèzes pour 
+\begin_inset Formula $n=1$
+\end_inset
+
+ (2 points) est exacte sur 
+\begin_inset Formula $\mathbb{P}_{1}$
+\end_inset
+
+, et ne l'est plus sur 
+\begin_inset Formula $\mathbb{P}_{2}$
+\end_inset
+
+, ainsi la formule composite associée à cette méthode est d'ordre 2.
+ Il en est de même pour la méthode simple de Gauss à 2 points (
+\begin_inset Formula $n=1$
+\end_inset
+
+), qui est exacte sur 
+\begin_inset Formula $\mathbb{P}_{3}$
+\end_inset
+
+ mais pas sur 
+\begin_inset Formula $\mathbb{P}_{4}$
+\end_inset
+
+, et donc on déduit que cette méthode est d'ordre 4.
+\begin_inset Newline newline
+\end_inset
+
+Les résultats obtenus numériquement semblent donc cohérents au regard de
+ la théorie.
+ Finalement, rappelons que dire que la méthode est d'ordre 
+\begin_inset Formula $n$
+\end_inset
+
+, signifie que l'écart entre la valeur exacte de l'intégrale, et la valeur
+ donné par la méthode de quadrature décroit en 
+\begin_inset Formula $h^{n}$
+\end_inset
+
+.
+ Cela permet alors, sans même pouvoir calculer analytiquement l'intégrale,
+ d'avoir une idée de l'erreur commise par la méthode.
+\end_layout
+
+\begin_layout Section
+Test des méthodes sur la fonction 
+\begin_inset Formula $f(x)=x²$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Nous avons également testé les méthodes sur la fonction 
+\begin_inset Formula $f(x)=x²$
+\end_inset
+
+, qui est baucoup plus régulière que la fonction cos(x).
+ Les résultat devraient donc être meilleurs.
+ Voici ce que l'on obtient graphiquement :
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename images/convergence/3méthode_x².png
+	lyxscale 50
+	scale 45
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Et voici le tableau d'erreur associé :
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename images/convergence/err_x².png
+	lyxscale 50
+	scale 45
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Ces 2 figures nous montrent bien que pour une fonction très régulière comme
+ 
+\begin_inset Formula $x²$
+\end_inset
+
+, les approximations données par les méthodes de quadrature sont excellentes.
+ Les erreurs commises par Gauss et Hermite sont d'ailleurs tellement petites
+ qu'elles sont codées par 0 en machine.
+ Notons que sur cet exemple la méthode d'Hermite semble (très) légèrement
+ meilleure que celle de Gauss, alors que pour la fonction 
+\begin_inset Formula $cos(x)$
+\end_inset
+
+ c'était l'inverse.
+\end_layout
+
+\begin_layout Section
+Conclusion sur les méthodes
+\end_layout
+
+\begin_layout Standard
+Dans cette première partie nous avons pu étudier 3 méthodes composites que
+ sont les méthodes des Trapèzes, de Gauss, et d'Hermite.
+ Nous avons pu montrer puis confirmer expérimentalement, que la méthode
+ composite des trapèzes est d'ordre 2, alors que celle de Gauss et d'Hermite
+ d'ordre 4.
+ Conformément à cela, nous avons pu remarquer à travers différents tests
+ que les erreurs commises par Hermite et Gauss étaient moindre que celles
+ faites par la méthodes des trapèzes.
+ Cependant cette dernière méthode est probablement la moins couteuse numériqueme
+nt.
+ Entre Hermite et Gauss, les résultats sont très proches, car l'ordre est
+ le même, cependant la méthode la moins coûteuse numériquement est sûrement
+ celle de Gauss, bien que la différence n'est pas si grande que ça avec
+ Hermite.
+\end_layout
+
+\begin_layout Part
+Ondes et équation d'Helmotz
+\end_layout
+
+\begin_layout Chapter
+Théorie
+\end_layout
+
+\begin_layout Standard
+Dans cette partie, nous nous intéressons à modéliser la célèbre expérience
+ des fentes de Young.
+ Pour cela, nous allons calculer la solution de l'équation d'Helmotz, qui
+ résulte de l'équation d'onde à laquelle la dépendance au temps a été retiré.
+\end_layout
+
+\begin_layout Standard
+
+\bar under
+Équation d'Helmotz :
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+-\varDelta u-(\omega^{2}+i\epsilon)u=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+où 
+\begin_inset Formula $\varDelta$
+\end_inset
+
+ est l'opérateur Laplacien, 
+\begin_inset Formula $\omega$
+\end_inset
+
+ la pulsation et 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+ l'atténuation du milieu.
+\end_layout
+
+\begin_layout Section
+Tronquature de l'intégrale et estimation d'erreur
+\end_layout
+
+\begin_layout Subsection
+Pourquoi tronquer l'intégrale ?
+\end_layout
+
+\begin_layout Standard
+Dans cette partie, nous allons justifier pourquoi l'on choisit de tronquer
+ l'expression intégrale de 
+\begin_inset Formula $u(x,y)$
+\end_inset
+
+ à une valeur 
+\begin_inset Formula $\xi=T>\omega$
+\end_inset
+
+.
+ Tout d'abord, rappelons que 
+\begin_inset Formula $u(x,y)$
+\end_inset
+
+ est défini par :
+\begin_inset Formula 
+\[
+u(x,y)=\frac{1}{2\pi}\int_{\mathbb{-\infty}}^{+\infty}e^{i\xi(y-y_{0})}e^{ix\sqrt{\omega^{2}+i\epsilon-\xi^{2}}}d\xi\,\,\forall x>0,\,y\in\mathbb{R}
+\]
+
+\end_inset
+
+Le problème vient du fait que les bornes soient infinies, car nous ne pouvons
+ pas calculer numériquement cette intégrale sur un intervalle de longueur
+ infini.
+ On souhaite donc restreindre l'intervalle d'intégration en un intervalle
+ fini, noté 
+\begin_inset Formula $[-T,T]$
+\end_inset
+
+.
+ La question est de savoir comment choisir 
+\begin_inset Formula $T$
+\end_inset
+
+ pour que l'intégrale tronquée se rapproche au mieux de l'intégrale initiale,
+ tout en gardant un intervalle 
+\begin_inset Formula $[-T,T]$
+\end_inset
+
+ de taille raisonnable.
+\begin_inset Newline newline
+\end_inset
+
+Considérons 
+\begin_inset Formula $x>0$
+\end_inset
+
+ fixé et 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+Montrons que la fonction 
+\begin_inset Formula $\xi→e^{ix\sqrt{\omega^{2}+i\epsilon-\xi^{2}}}$
+\end_inset
+
+ est exponentiellement décroissante à partir d'un certain 
+\begin_inset Formula $\xi_{N}$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+Pour cela posons 
+\begin_inset Formula $z=\omega^{2}-\xi^{2}+i\epsilon$
+\end_inset
+
+ .
+ On peut alors réécrire ce complexe sous forme polaire pour évaluer plus
+ facilement sa racine.
+ Comme 
+\begin_inset Formula $\sqrt{z}=\sqrt{r}e^{i\frac{\theta}{2}}$
+\end_inset
+
+, on a donc :
+\begin_inset Formula 
+\[
+e^{ix\sqrt{\omega^{2}+i\epsilon-\xi^{2}}}=e^{ix\sqrt{r}e^{i\frac{\theta}{2}}}=e^{ix\sqrt{r}(cos(\frac{\theta}{2})+isin(\frac{\theta}{2}))}=e^{-x\sqrt{r}sin(\frac{\theta}{2})}\times\underbrace{e^{ix\sqrt{r}cos(\frac{\theta}{2})}}_{|\,\,|\le1}
+\]
+
+\end_inset
+
+Comme le module de la partie imaginaire est borné, on va s'intéresser à
+ l'évolution de la partie réelle, et donc à celle de 
+\begin_inset Formula $\sqrt{r}sin(\frac{\theta}{2})$
+\end_inset
+
+.
+ On différencie alors 2 cas :
+\end_layout
+
+\begin_layout Itemize
+Si 
+\begin_inset Formula $\Re e(z)=\omega^{2}-\xi^{2}>0$
+\end_inset
+
+ c'est à dire 
+\begin_inset Formula $\omega>|\xi|\Longleftrightarrow\xi\in]-\omega,+\omega[$
+\end_inset
+
+ alors
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $r=\sqrt{(\omega²-\xi²)^{2}+\epsilon^{2}}=\sqrt{\omega^{4}+\xi^{4}-2\omega²\xi²+\epsilon^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\theta=arctan\left(\frac{\epsilon}{\omega^{2}-\xi^{2}}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Comme 
+\begin_inset Formula $\xi\rightarrow\frac{\epsilon}{\omega^{2}-\xi^{2}}>0$
+\end_inset
+
+, croît quand 
+\begin_inset Formula $\xi^{2}$
+\end_inset
+
+ croît, avec 
+\begin_inset Formula $\xi\in]-\omega,+\omega[$
+\end_inset
+
+, et que la fonction 
+\begin_inset Formula $arctan$
+\end_inset
+
+ est positive et croissante sur 
+\begin_inset Formula $\mathbb{R}^{+}$
+\end_inset
+
+, alors 
+\begin_inset Formula $\theta\in[arctan\left(\frac{\epsilon}{\omega^{2}}\right),\frac{\pi}{2}[$
+\end_inset
+
+.
+ Ainsi 
+\begin_inset Formula $\frac{\theta}{2}\in[\frac{1}{2}arctan\left(\frac{\epsilon}{\omega^{2}}\right),\frac{\pi}{4}[$
+\end_inset
+
+ et donc :
+\begin_inset Formula 
+\begin{align*}
+sin(\frac{\theta}{2}) & \in\left]\,sin(\frac{1}{2}arctan\left(\frac{\epsilon}{\omega^{2}}\right))\,,\,\frac{\sqrt{2}}{2}\right[
+\end{align*}
+
+\end_inset
+
+car la fonction 
+\begin_inset Formula $sin$
+\end_inset
+
+ est croissante sur l'intervalle 
+\begin_inset Formula $[0,\frac{\pi}{2}]$
+\end_inset
+
+.
+ De plus, on peut noter que le minimum est atteint lorsque 
+\begin_inset Formula $\xi=0$
+\end_inset
+
+, et les 2 maximums sur cet intervalle sont atteint lorsque 
+\begin_inset Formula $\xi\rightarrow\omega$
+\end_inset
+
+ et 
+\begin_inset Formula $\xi\rightarrow-\omega$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+Par ailleurs remarquons que
+\series bold
+ 
+\begin_inset Formula $|e^{-x\sqrt{r}sin(\frac{\theta}{2})+ix\sqrt{r}cos(\frac{\theta}{2}))}|\leq|e^{-x\sqrt{r}sin(\frac{\theta}{2})}\times1|\leq e^{-x\times\epsilon\times M}$
+\end_inset
+
+
+\series default
+ avec 
+\series bold
+
+\begin_inset Formula $M=sin(\frac{1}{2}arctan\left(\frac{\epsilon}{\omega^{2}}\right))$
+\end_inset
+
+
+\series default
+.
+\begin_inset Newline newline
+\end_inset
+
+Cela nous amène donc à la conclusion que, lorsque 
+\begin_inset Formula $\omega^{2}-\xi^{2}>0$
+\end_inset
+
+, la fonction 
+\begin_inset Formula $\xi\rightarrow e^{ix\sqrt{\omega^{2}+i\epsilon-\xi^{2}}}$
+\end_inset
+
+ reste borné sur l'intervalle 
+\begin_inset Formula $]-\omega,\omega[$
+\end_inset
+
+.
+ Cependant cela ne nous permet pas encore de justifier la troncature pour
+ 
+\begin_inset Formula $\xi>\omega$
+\end_inset
+
+.
+ Pour cela intéressons nous au cas où 
+\begin_inset Formula $\xi\in]-\infty,-\omega[\cup]\omega,+\infty[$
+\end_inset
+
+.
+ Ce que l'on voudrait, c'est pouvoir montrer que dans ce cas l'intégrande
+ décroit exponentiellement, et donc que cette partie compte très peu dans
+ le calcul intégrale.
+\end_layout
+
+\begin_layout Itemize
+Si 
+\begin_inset Formula $\Re e(z)=\omega^{2}-\xi^{2}<0\text{ c'est à dire }|\omega|<\xi\Longleftrightarrow\xi\in]-\infty,-\omega[\cup]\omega,+\infty[\text{ alors}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $r=\sqrt{(\omega²-\xi²)^{2}+\epsilon^{2}}=\sqrt{\omega^{4}+\xi^{4}-2\omega²\xi²+\epsilon^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\theta=arctan\left(\frac{\epsilon}{\omega^{2}-\xi^{2}}\right)+\pi$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Comme 
+\begin_inset Formula $\frac{\epsilon}{\omega^{2}-\xi^{2}}<0$
+\end_inset
+
+ , croît lorsque 
+\begin_inset Formula $\xi²$
+\end_inset
+
+ croît avec 
+\begin_inset Formula $\xi\in]-\infty,-\omega[\cup]\omega,+\infty[$
+\end_inset
+
+, et que la fonction 
+\begin_inset Formula $arctan$
+\end_inset
+
+ est croissante et négative sur 
+\begin_inset Formula $\mathbb{R}^{-}$
+\end_inset
+
+, alors :
+\begin_inset Formula 
+\[
+arctan(\underbrace{\frac{\epsilon}{\omega^{2}-\xi^{2}}}_{<0})\in]-\frac{\pi}{2},0[\,\Longrightarrow\theta\in]\frac{\pi}{2},\pi[
+\]
+
+\end_inset
+
+Ainsi 
+\begin_inset Formula $\frac{\theta}{2}\in]\frac{\pi}{4},\frac{\pi}{2}[$
+\end_inset
+
+ donc 
+\begin_inset Formula $sin(\frac{\theta}{2})\in]\frac{\sqrt{2}}{2},1[$
+\end_inset
+
+.
+ De plus lorsque 
+\begin_inset Formula $\xi²\rightarrow+\infty$
+\end_inset
+
+ alors 
+\begin_inset Formula $\frac{\epsilon}{\omega^{2}-\xi^{2}}\rightarrow0⁻\Longrightarrow arctan(\frac{\epsilon}{\omega^{2}-\xi^{2}})\rightarrow0$
+\end_inset
+
+, et donc 
+\begin_inset Formula $\theta\rightarrow\pi$
+\end_inset
+
+.
+ Cela implique que 
+\begin_inset Formula $sin(\frac{\theta}{2})\rightarrow1$
+\end_inset
+
+, et 
+\begin_inset Formula $cos(\frac{\theta}{2})\rightarrow0$
+\end_inset
+
+.
+ Remarquons que dans ce cas, quand 
+\begin_inset Formula $\xi\rightarrow+\infty$
+\end_inset
+
+, alors 
+\begin_inset Formula $r\rightarrow+\infty$
+\end_inset
+
+.
+ Cela nous permet alors de déduire que :
+\begin_inset Formula 
+\[
+|e^{-x\sqrt{r}sin(\frac{\theta}{2})}\times e^{ix\sqrt{r}cos(\frac{\theta}{2})}|\leq e^{-x\sqrt{r}\frac{\sqrt{2}}{2}}→_{\xi→+\infty}0
+\]
+
+\end_inset
+
+Donc l'intégrande est maximale quand 
+\begin_inset Formula $\xi\rightarrow\omega⁺$
+\end_inset
+
+ ou 
+\begin_inset Formula $\xi\rightarrow-\omega⁻$
+\end_inset
+
+ puis elle décroit exponentiellement et tend vers 
+\begin_inset Formula $0$
+\end_inset
+
+ lorsque 
+\begin_inset Formula $\xi²\rightarrow+\infty$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+Finalement, cela nous amène à la conclusion que la fonction 
+\begin_inset Formula $\xi\rightarrow e^{ix\sqrt{\omega^{2}+i\epsilon-\xi^{2}}}$
+\end_inset
+
+ décroit exponentiellement lorsque 
+\begin_inset Formula $\xi\in]-\infty,-\omega[\cup]\omega,+\infty[$
+\end_inset
+
+, et donc par conséquent cela justifie le fait de tronquer l'intégrale pour
+ 
+\begin_inset Formula $\xi>\omega$
+\end_inset
+
+, car la partie de l'intégrale où 
+\begin_inset Formula $|\xi|>|\omega|$
+\end_inset
+
+ deviendra vite négligeable.
+ 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/test.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Partie réelle de la fonction 
+\begin_inset Formula $\xi\rightarrow e^{ix\sqrt{\omega^{2}+i\epsilon-\xi^{2}}}$
+\end_inset
+
+ pour 
+\begin_inset Formula $\omega=1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Majoration de l'erreur
+\end_layout
+
+\begin_layout Standard
+Essayons maintenant de majorer l'erreur provoquer par cette tronquature.
+ 
+\begin_inset Newline newline
+\end_inset
+
+Notons 
+\begin_inset Formula $F(x,\xi)=e^{ix\sqrt{\omega^{2}+i\epsilon-\xi^{2}}}$
+\end_inset
+
+ 
+\begin_inset Formula $I=\frac{1}{2\pi}\int_{-\infty}^{+\infty}F(x,\xi)e^{i\xi(y-y_{0})}d\xi$
+\end_inset
+
+ et 
+\begin_inset Formula $I_{T}=\frac{1}{2\pi}\int_{-T}^{+T}F(x,\xi)e^{i\xi(y-y_{0})}d\xi$
+\end_inset
+
+ alors 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+|I-I_{T}| & =\frac{1}{2\pi}|\int_{-\infty}^{-T}F(x,\xi)e^{i\xi(y-y_{0})}d\xi+\int_{T}^{+\infty}F(x,\xi)e^{i\xi(y-y_{0})}d\xi|
+\end{align*}
+
+\end_inset
+
+Dans la première, intégrale, on pose le changement de variable 
+\begin_inset Formula $\gamma=-\xi$
+\end_inset
+
+, ainsi 
+\begin_inset Formula $d\gamma=-d\xi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+|I-I_{T}| & =\frac{1}{2\pi}|\int_{T}^{+\infty}F(x,\gamma)e^{-i\gamma(y-y_{0})}d\gamma+\int_{T}^{+\infty}F(x,\xi)e^{i\xi(y-y_{0})}d\xi|\\
+ & =\frac{1}{2\pi}|\int_{T}^{+\infty}F(x,\xi)\left(e^{-i\xi(y-y_{0})}+e^{-i\xi(y-y_{0})}\right)d\xi|\\
+ & =\frac{1}{\pi}|\int_{T}^{+\infty}F(x,\xi)cos(\xi(y-y_{0})d\xi|\\
+ & \leq\frac{1}{\pi}|\int_{T}^{+\infty}F(x,\xi)d\xi|
+\end{align*}
+
+\end_inset
+
+Or :
+\begin_inset Formula 
+\begin{align*}
+F(x,\xi) & =e^{ix\sqrt{\omega^{2}+i\epsilon-\xi^{2}}}\\
+ & =e^{ix\sqrt{-\xi^{2}\left(1-(\frac{\omega}{\xi})^{2}-i\frac{\epsilon}{\xi^{2}}\right)}}\\
+ & =e^{-\xi x\sqrt{1-(\frac{\omega}{\xi})^{2}-i\frac{\epsilon}{\xi^{2}}}}
+\end{align*}
+
+\end_inset
+
+Donc :
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+|I-I_{T}| & \leq\frac{1}{\pi}\int_{T}^{+\infty}e^{-\xi x\sqrt{1-(\frac{\omega}{\xi})^{2}-i\frac{\epsilon}{\xi^{2}}}}d\xi\\
+ & \leq\frac{1}{\pi}\int_{T}^{+\infty}e^{-\xi x\sqrt{1-(\frac{\omega}{T})^{2}-i\frac{\epsilon}{T^{2}}}}d\xi\\
+ & =\frac{1}{\pi x\sqrt{1-(\frac{\omega}{T})^{2}-i\frac{\epsilon}{T^{2}}}}\left[e^{-\xi x\sqrt{1-(\frac{\omega}{T})^{2}-i\frac{\epsilon}{T^{2}}}}\right]_{+\infty}^{T}\\
+ & =\frac{e^{-Tx\sqrt{1-(\frac{\omega}{T})^{2}-i\frac{\epsilon}{T^{2}}}}}{\pi x\sqrt{1-(\frac{\omega}{T})^{2}-i\frac{\epsilon}{T^{2}}}}
+\end{align*}
+
+\end_inset
+
+On pose afin d'alléger l'écriture 
+\begin_inset Formula $M=\sqrt{1-(\frac{\omega}{T})^{2}-i\frac{\epsilon}{T^{2}}}$
+\end_inset
+
+.
+ Cela donne :
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+|I-I_{T}|\leq\frac{e^{-TxM}}{\pi xM}
+\]
+
+\end_inset
+
+Cette majoration d'erreur diminue lorsque 
+\begin_inset Formula $T→+\infty$
+\end_inset
+
+, ce qui est cohérent.
+\end_layout
+
+\begin_layout Section
+Démonstration que 
+\begin_inset Formula $u$
+\end_inset
+
+ est une fonction 
+\begin_inset Formula $C^{\infty}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Montrons que la fonction 
+\begin_inset Formula $u(x,y)$
+\end_inset
+
+ est 
+\begin_inset Formula $C^{\infty}$
+\end_inset
+
+ par rapport à 
+\begin_inset Formula $x$
+\end_inset
+
+, et par rapport à 
+\begin_inset Formula $y$
+\end_inset
+
+.
+ Soit 
+\begin_inset Formula $f$
+\end_inset
+
+: 
+\begin_inset Formula $(x,y,\xi)→\frac{1}{2\pi}e^{i\xi(y-y_{0})}e^{ix\sqrt{\omega^{2}+i\epsilon-\xi^{2}}}$
+\end_inset
+
+ l'intégrande telle que 
+\begin_inset Formula $u(x,y)=\int_{-\infty}^{+\infty}f(x,y,\xi)d\xi$
+\end_inset
+
+.
+ Pour montrer cela, il nous suffit de montrer que 
+\begin_inset Formula $u(x,y)$
+\end_inset
+
+ est dérivable une infinité de fois par rapport à chacune de ses variables,
+ puisque la dérivabilité d'une fonction implique sa continuité.
+ On cherche donc à montrer que les dérivées partielles à l'ordre 
+\begin_inset Formula $k$
+\end_inset
+
+ de 
+\begin_inset Formula $u(x,y)$
+\end_inset
+
+ existent 
+\begin_inset Formula $\forall k\in\mathbb{N}$
+\end_inset
+
+.
+ Rappelons tout d'abord que l'on peut écrire que, pour 
+\begin_inset Formula $y$
+\end_inset
+
+ fixé, 
+\begin_inset Formula $\frac{\partial u(x,y)}{\partial x}=\int_{-\infty}^{+\infty}\frac{\partial f(x,\xi)}{\partial x}d\xi$
+\end_inset
+
+ si et seulement si les conditions suivantes sont vérifiées :
+\end_layout
+
+\begin_layout Itemize
+Pour presque tout 
+\begin_inset Formula $\xi\in\mathbb{R}$
+\end_inset
+
+, 
+\begin_inset Formula $\frac{\partial f}{\partial x}(x,\xi)$
+\end_inset
+
+ existe 
+\begin_inset Formula $\forall x>0$
+\end_inset
+
+ (dans notre cas 
+\begin_inset Formula $x>0$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\forall x>0$
+\end_inset
+
+ il existe une application 
+\begin_inset Formula $g:\mathbb{R}\rightarrow\mathbb{C}$
+\end_inset
+
+ intégrable, et un voisinage 
+\begin_inset Formula $V$
+\end_inset
+
+ de 
+\begin_inset Formula $x$
+\end_inset
+
+ tel que :
+\begin_inset Formula 
+\[
+\forall z\in V,\,\,|\frac{\partial f}{\partial x}(z,\xi)|\leq|g(\xi)|
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Alors si ces 2 conditions sont vérifiées, 
+\begin_inset Formula $\frac{\partial u(x,y)}{\partial x}$
+\end_inset
+
+ existe et,
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\strikeout off
+\xout off
+\uuline off
+\uwave off
+\noun off
+\color none
+ pour y fixé,
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\strikeout default
+\xout default
+\uuline default
+\uwave default
+\noun default
+\color inherit
+ 
+\begin_inset Formula $\frac{\partial u(x,y)}{\partial x}=\int_{-\infty}^{+\infty}\frac{\partial f(x,\xi)}{\partial x}d\xi$
+\end_inset
+
+.
+ On procède de la même manière en fixant 
+\begin_inset Formula $x$
+\end_inset
+
+ et en considérant les dérivées partielles de 
+\begin_inset Formula $u(x,y)$
+\end_inset
+
+ par rapport à 
+\begin_inset Formula $y$
+\end_inset
+
+.
+ Appliquons ce théorème afin d'obtenir les dérivées partielles de 
+\begin_inset Formula $u(x,y)$
+\end_inset
+
+.
+ On a en reprenant les même notations en coordonnées polaires que précédemment
+ :
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\frac{\partial f}{\partial x}(x,\xi)=\frac{e^{i\xi(y-y_{0})}}{2\pi}\times i\sqrt{\omega^{2}+i\epsilon-\xi^{2}}\times e^{ix\sqrt{\omega^{2}+i\epsilon-\xi^{2}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Cette dérivée existe pour tout 
+\begin_inset Formula $x>0$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\forall x>0$
+\end_inset
+
+, on considère 
+\begin_inset Formula $V$
+\end_inset
+
+ un voisinage de 
+\begin_inset Formula $x$
+\end_inset
+
+ tel que 
+\begin_inset Formula $V=B(x,a),$
+\end_inset
+
+et soit 
+\begin_inset Formula $z\in V$
+\end_inset
+
+, avec 
+\begin_inset Formula $a<x$
+\end_inset
+
+, donc 
+\begin_inset Formula $z>0$
+\end_inset
+
+.
+ On a :
+\begin_inset Formula 
+\begin{align*}
+|\frac{\partial f}{\partial x}(z,\xi)| & \leq|i\sqrt{\omega^{2}+i\epsilon-\xi^{2}}\times e^{iz\sqrt{\omega^{2}+i\epsilon-\xi^{2}}}|\\
+ & \leq|i\sqrt{r}e^{i\frac{\theta}{2}}\times e^{iz\sqrt{r}e^{i\frac{\theta}{2}}}|\\
+ & \leq|i\sqrt{r}e^{i\frac{\theta}{2}}\times e^{-z\sqrt{r}sin(\frac{\theta}{2})}\times e^{iz\sqrt{r}cos(\frac{\theta}{2})}|\\
+ & \leq|\sqrt{r}\times e^{-z\sqrt{r}sin(\frac{\theta}{2})}|\\
+ & \le|\sqrt{r}\times e^{-(x-a)\sqrt{r}sin(\frac{\theta}{2})}|
+\end{align*}
+
+\end_inset
+
+Car 
+\begin_inset Formula $z\in B(x,a)$
+\end_inset
+
+, donc 
+\begin_inset Formula $x-a\leq z\Longrightarrow e^{-z\sqrt{r}sin(\frac{\theta}{2})}\leq e^{-(x-a)\sqrt{r}sin(\frac{\theta}{2})}$
+\end_inset
+
+.
+ Précisons que nous pouvons écrire la dernière inégalité car nous avons
+ montré dans la partie précédente que 
+\begin_inset Formula $\forall\xi\in\mathbb{R}$
+\end_inset
+
+, 
+\begin_inset Formula $sin(\frac{\theta}{2})>0$
+\end_inset
+
+.
+ Donc comme on considère 
+\begin_inset Formula $z$
+\end_inset
+
+ dans le voisinage d'un 
+\begin_inset Formula $x$
+\end_inset
+
+ fixé, on peut poser 
+\begin_inset Formula $g(\xi)=\sqrt{r}\times e^{-(x-a)\sqrt{r}sin(\frac{\theta}{2})}$
+\end_inset
+
+, avec :
+\begin_inset Formula 
+\begin{align*}
+r & =\sqrt{(\omega²-\xi²)^{2}+\epsilon^{2}}\\
+\theta & =\begin{cases}
+arctan\left(\frac{\epsilon}{\omega^{2}-\xi^{2}}\right) & si\,\,\xi\in[-\omega,\omega]\\
+arctan\left(\frac{\epsilon}{\omega^{2}-\xi^{2}}\right)+\pi & sinon
+\end{cases}
+\end{align*}
+
+\end_inset
+
+Ainsi on a bien :
+\begin_inset Formula 
+\[
+|\frac{\partial f}{\partial x}(z,\xi)|\le g(\xi)
+\]
+
+\end_inset
+
+Avec 
+\begin_inset Formula $g(\xi)$
+\end_inset
+
+ qui est une exponentielle décroissante car 
+\begin_inset Formula $-(x-a)\sqrt{r}sin(\frac{\theta}{2})>0$
+\end_inset
+
+ 
+\begin_inset Formula $\forall\xi\in\mathbb{R},$
+\end_inset
+
+ donc une fonction intégrable.
+ 
+\begin_inset Newline newline
+\end_inset
+
+Finalement, cela nous permet d'écrire que : 
+\begin_inset Formula 
+\begin{align*}
+\frac{\partial u}{\partial x}(x,y) & =\int_{-\infty}^{+\infty}\frac{\partial}{\partial x}\left(\frac{1}{2\pi}e^{i\xi(y-y_{0})}e^{ix\sqrt{\omega^{2}+i\epsilon-\xi^{2}}}\right)d\xi\\
+ & =\int_{-\infty}^{+\infty}\frac{e^{i\xi(y-y_{0})}}{2\pi}\times i\sqrt{\omega^{2}+i\epsilon-\xi^{2}}\times e^{ix\sqrt{\omega^{2}+i\epsilon-\xi^{2}}}d\xi
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Cette dérivé existe 
+\begin_inset Formula $\forall x>0$
+\end_inset
+
+, et on peut dériver autant de fois qu'on le souhaite car on pourra à chaque
+ fois trouver une fonction 
+\begin_inset Formula $g(\xi)$
+\end_inset
+
+ en majorant exactement comme fait précédemment.
+ De plus en utilisant les propriétés de la dérivée de l'exponentielle, on
+ sait qu'à chaque fois cela fera descendre une racine et on aura donc :
+\begin_inset Formula 
+\[
+\frac{\partial^{k}u}{\partial x^{k}}(x,y)=\int_{-\infty}^{+\infty}\frac{e^{i\xi(y-y_{0})}}{2\pi}\times\left(i\sqrt{\omega^{2}+i\epsilon-\xi^{2}}\right)^{k}\times e^{ix\sqrt{\omega^{2}+i\epsilon-\xi^{2}}}d\xi
+\]
+
+\end_inset
+
+On peut donc dériver une infinité de fois 
+\begin_inset Formula $u(x,y)$
+\end_inset
+
+ par rapport à 
+\begin_inset Formula $x$
+\end_inset
+
+, ainsi on en déduit que 
+\begin_inset Formula $u(x,y)$
+\end_inset
+
+ est une fonction de classe 
+\begin_inset Formula $C^{\infty}$
+\end_inset
+
+ par rapport à 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+On fait de même par rapport à 
+\begin_inset Formula $y$
+\end_inset
+
+.
+ Cela nous donne cette fois :
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\frac{\partial f}{\partial y}(x,y)=\frac{i\xi}{2\pi}e^{i\xi(y-y_{0})}e^{ix\sqrt{\omega^{2}+i\epsilon-\xi^{2}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Cette dérivée existe pour tout 
+\begin_inset Formula $y\in\mathbb{R}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\forall y\in\mathbb{R}$
+\end_inset
+
+, on considère 
+\begin_inset Formula $V$
+\end_inset
+
+ un voisinage de y tel que 
+\begin_inset Formula $\forall z\in V$
+\end_inset
+
+ :
+\begin_inset Formula 
+\begin{align*}
+|\frac{\partial f}{\partial y}(x,z)| & \leq|i\xi e^{ix\sqrt{\omega^{2}+i\epsilon-\xi^{2}}}|\\
+ & \leq|e^{-x\sqrt{r}sin(\frac{\theta}{2})}\times e^{ix\sqrt{r}cos(\frac{\theta}{2})}|\\
+ & \leq|e^{-x\sqrt{r}sin(\frac{\theta}{2})}|=g(\xi)
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Pour les mêmes raison que précédemment, on déduit que 
+\begin_inset Formula $g(\xi)$
+\end_inset
+
+ est intégrable.
+ Finalement, cela nous permet d'écrire que : 
+\begin_inset Formula 
+\begin{align*}
+\frac{\partial u}{\partial y}(x,y) & =\int_{-\infty}^{+\infty}\frac{\partial}{\partial y}\left(\frac{1}{2\pi}e^{i\xi(y-y_{0})}e^{ix\sqrt{\omega^{2}+i\epsilon-\xi^{2}}}\right)d\xi\\
+ & =\int_{-\infty}^{+\infty}\frac{i\xi}{2\pi}e^{i\xi(y-y_{0})}e^{ix\sqrt{\omega^{2}+i\epsilon-\xi^{2}}}d\xi
+\end{align*}
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+En procédant de la même manière on pourrait majorer cette nouvelle intégrande,
+ et donc dériver une deuxième fois, et ainsi de suite.
+ Donc en utilisant les propriétés de la dérivée de l'exponentielle, on réitère
+ le principe plusieurs fois et on se rend alors compte que 
+\begin_inset Formula $u$
+\end_inset
+
+ est 
+\begin_inset Formula $C^{\infty}$
+\end_inset
+
+, car on peut dériver 
+\begin_inset Formula $u(x,y)$
+\end_inset
+
+ une infinité de fois.
+ De plus la dérivée à l'ordre 
+\begin_inset Formula $k$
+\end_inset
+
+ est donnée par :
+\begin_inset Formula 
+\[
+\frac{\partial^{k}u}{\partial y^{k}}(x,y)=\int_{-\infty}^{+\infty}\frac{(i\xi)^{k}}{2\pi}e^{i\xi(y-y_{0})}e^{ix\sqrt{\omega^{2}+i\epsilon-\xi^{2}}}d\xi
+\]
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+Cela nous permet donc de conclure que 
+\begin_inset Formula $u(x,y)$
+\end_inset
+
+ est bien une fonction de classe 
+\begin_inset Formula $C^{\infty}$
+\end_inset
+
+ par rapport à chacune de ses variables.
+\end_layout
+
+\begin_layout Section
+Démonstration de la formule intégrale (Bonus) 
+\end_layout
+
+\begin_layout Subsection
+Démonstration pour une source ponctuelle
+\end_layout
+
+\begin_layout Standard
+Dans un premier temps, nous allons considérer une source ponctuelle dont
+ émane une onde, représenté par une Dirac.
+ Nous noterons cette condition au bord par 
+\begin_inset Formula $u(0,y-y_{0})=\delta(x,y-y_{0})=1$
+\end_inset
+
+ si 
+\begin_inset Formula $\begin{cases}
+x & =0\\
+y & =y_{0}
+\end{cases}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+Cette source ponctuelle est alors située en 
+\begin_inset Formula $x=0$
+\end_inset
+
+ et 
+\begin_inset Formula $y=y_{0}$
+\end_inset
+
+.
+ Pour résoudre l'équation, nous passons par la transformée de Fourier par
+ rapport à la variable 
+\begin_inset Formula $y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\varDelta u(x,y)=\frac{\partial^{2}u}{\partial x^{2}}+\frac{\partial^{2}u}{\partial y^{2}}
+\]
+
+\end_inset
+
+Grâce aux propriétés de la dérivée pour la transformé de Fourier, on obtient
+ :
+\begin_inset Formula 
+\[
+\varDelta\hat{u}(x,\xi)=\frac{\partial^{2}\hat{u}}{\partial x^{2}}-\xi^{2}\hat{u}
+\]
+
+\end_inset
+
+Ainsi l'équation de Helmotz devient : 
+\begin_inset Formula 
+\begin{align*}
+\frac{-\partial^{2}\hat{u}}{\partial x^{2}}+\xi^{2}\hat{u}-(\omega^{2}+i\epsilon)\hat{u} & =0\\
+\frac{\partial^{2}\hat{u}}{\partial x^{2}}+\hat{u}(\omega^{2}+i\epsilon-\xi^{2}) & =0
+\end{align*}
+
+\end_inset
+
+La solution est donc donnée par : 
+\begin_inset Formula 
+\[
+\hat{u}(x,\xi)=A(\xi)e^{ix\sqrt{\omega^{2}+i\epsilon-\xi^{2}}}+B(\xi)e^{-ix\sqrt{\omega^{2}+i\epsilon-\xi^{2}}}
+\]
+
+\end_inset
+
+Nous devons déterminer 
+\begin_inset Formula $A$
+\end_inset
+
+ et 
+\begin_inset Formula $B$
+\end_inset
+
+ grâce aux conditions au bord.
+ La condition initiale est donnée par un pic en 
+\begin_inset Formula $x=0$
+\end_inset
+
+ et 
+\begin_inset Formula $y=y_{0}$
+\end_inset
+
+.
+ On souhaite de plus que l'équation reste bornée lorsque 
+\begin_inset Formula $x→+\infty$
+\end_inset
+
+.
+ Or, on a vu que l'on pouvait écrire 
+\begin_inset Formula $\sqrt{\omega^{2}+i\epsilon-\xi^{2}}=\sqrt{r}e^{i\frac{\theta}{2}}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\hat{u}(x,\xi) & =A(\xi)e^{ix\sqrt{r}(cos\frac{\theta}{2}+isin\frac{\theta}{2})}+B(\xi)e^{-ix\sqrt{r}(cos\frac{\theta}{2}+isin\frac{\theta}{2})}\\
+ & =A(\xi)e^{-x\sqrt{r}sin\frac{\theta}{2}+ix\sqrt{r}cos\frac{\theta}{2}}+B(\xi)e^{x\sqrt{r}sin\frac{\theta}{2}-ix\sqrt{r}cos\frac{\theta}{2}}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dans le cas où 
+\begin_inset Formula $\xi\leq\omega$
+\end_inset
+
+, on a vu que 
+\begin_inset Formula $sin\frac{\theta}{2}\geq0$
+\end_inset
+
+ .
+ Pour 
+\begin_inset Formula $\xi$
+\end_inset
+
+ fixé, on remarque alors que lorsque 
+\begin_inset Formula $x→+\infty$
+\end_inset
+
+, on a 
+\begin_inset Formula $e^{x\sqrt{r}sin\frac{\theta}{2}-ix\sqrt{r}cos\frac{\theta}{2}}→+\infty$
+\end_inset
+
+.
+ La solution devant rester bornée impose que 
+\begin_inset Formula $B$
+\end_inset
+
+ soit nulle.
+ La condition initiale permet alors de trouver 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+Il faut tout d'abord faire la transformé de Fourier de cette condition.
+ Comme 
+\begin_inset Formula $\int_{\mathbb{R}}\delta(x)f(x)dx=f(0)$
+\end_inset
+
+ alors on a : 
+\begin_inset Formula 
+\[
+\hat{u}(0,\xi)=\widehat{\delta(x,y-y_{0})}=\int_{\mathbb{R}}\delta(x,y-y_{0})e^{-i\xi y}dy=e^{-i\xi y_{0}}
+\]
+
+\end_inset
+
+Ainsi, on obtient :
+\begin_inset Formula 
+\begin{align*}
+\hat{u}(0,\xi) & =A=e^{-i\xi y_{0}}
+\end{align*}
+
+\end_inset
+
+Finalement 
+\begin_inset Formula 
+\[
+\hat{u}(x,\xi)=e^{-i\xi y_{0}}e^{ix\sqrt{\omega^{2}+i\epsilon-\xi^{2}}}
+\]
+
+\end_inset
+
+Pour retourner dans le domaine spatiale, on applique la transformée inverse.
+ 
+\begin_inset Formula 
+\begin{align*}
+u(x,y) & =\frac{1}{2\pi}\int_{\mathbb{R}}\hat{u}(x,\xi)e^{i\xi y}d\xi\\
+ & =\frac{1}{2\pi}\int_{\mathbb{R}}e^{-i\xi y_{0}}e^{ix\sqrt{\omega^{2}+i\epsilon-\xi^{2}}}e^{i\xi y}d\xi\\
+ & =\frac{1}{2\pi}\int_{\mathbb{R}}e^{i\xi(y-y_{0})}e^{ix\sqrt{\omega^{2}+i\epsilon-\xi^{2}}}d\xi
+\end{align*}
+
+\end_inset
+
+Ce qui prouve la formule intégrale.
+\end_layout
+
+\begin_layout Subsection
+Généralisation
+\end_layout
+
+\begin_layout Standard
+On peut généraliser cette formule en prenant différentes conditions au bord.
+ En prenant 
+\begin_inset Formula $u=f$
+\end_inset
+
+ sur 
+\begin_inset Formula $\{0\}\times\mathbb{R}$
+\end_inset
+
+ , on note 
+\begin_inset Formula $\hat{F}(x,\xi)$
+\end_inset
+
+ sa transformé de Fourier.
+ On aura alors : 
+\begin_inset Formula 
+\[
+\hat{u}(0,\xi)=A=\hat{F}(x,\xi)
+\]
+
+\end_inset
+
+Ainsi :
+\begin_inset Formula 
+\begin{align*}
+u(x,y) & =\frac{1}{2\pi}\int_{\mathbb{R}}\hat{u}(x,\xi)e^{i\xi y}d\xi\\
+ & =\frac{1}{2\pi}\int_{\mathbb{R}}\hat{F}(x,\xi)e^{ix\sqrt{\omega^{2}+i\epsilon-\xi^{2}}}e^{i\xi y}d\xi
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Code
+\end_layout
+
+\begin_layout Section
+Complétion du code
+\end_layout
+
+\begin_layout Standard
+Dans le code nous devions donner à myf la valeur de l'intégrande :
+\begin_inset Formula 
+\[
+f(x,y,\xi)=\frac{1}{2\pi}e^{i\xi(y-y_{0})}e^{ix\sqrt{\omega^{2}+i\epsilon-\xi^{2}}}
+\]
+
+\end_inset
+
+avec un signe 
+\begin_inset Formula $+$
+\end_inset
+
+ pour la première exponentielle d'après la démonstration précédente, et
+ non un 
+\begin_inset Formula $-$
+\end_inset
+
+.
+ Et pour mettre en place la méthode d'Hermite, nous devions dériver l'intégrande
+ pour compléter mydf, on a :
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\frac{d}{d\xi}\left(\frac{1}{2\pi}e^{i\xi(y-y_{0})}e^{ix\sqrt{\omega^{2}+i\epsilon-\xi^{2}}}\right) & =\frac{1}{2\pi}\frac{d}{d\xi}\left(e^{i(\xi(y-y_{0})+x\sqrt{\omega^{2}+i\epsilon-\xi^{2}})}\right)\\
+ & =\frac{i}{2\pi}(y-y_{0}-\frac{x\xi}{\sqrt{\omega^{2}+i\epsilon-\xi^{2}}})e^{i(\xi(y-y_{0})+x\sqrt{\omega^{2}+i\epsilon-\xi^{2}})}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Test du code
+\end_layout
+
+\begin_layout Standard
+Nous pouvons modéliser la propagation de l'onde à partir d'une source ponctuelle
+ suivant les 3 méthodes vu dans la partie 1 (Dans l'ordre Trapèzes, Gauss,
+ Hermite).
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/comparaison_1S_w=15_eps=01.png
+	lyxscale 50
+	scale 50
+	BoundingBox 4cm 0bp 1080bp 288bp
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename images/comparaison_1S_w=15_eps=10.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/comparaison_1S_w=1_eps=01.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+On peut voir ici que la pulsation de l'onde à un impact sur la forme de
+ l'onde.
+ En effet, la pulsation d'une onde est reliée à l'énergie qu'elle propage.
+ Ces phénomènes s'expriment par des ondelettes plus au moins hautes suivant
+ l'énergie transportée, les résultats observés sont cohérents.
+ Quant à l'impact de l'atténuation du milieu on se rend bien compte que
+ plus les vagues progresse plus elle diminue lorsque l'attenuation est élevée.
+ C'est ce qu'on observe entre les 2 premier graphe.
+ En ce qui concerne l'analyse numérique, la méthode qui est le plus fidèle
+ à la réalité est la méthode de Gauss.
+ On peut voir pour les méthodes des Trapèzes et d'Hermite, des régions avec
+ des vaguelettes, surtout vers la fin qui correspond à l'accumulation des
+ erreurs d'intégration.
+ Par la suite, dans les prochaine partie pour limiter les calculs extrêmement
+ gourmands, nous limiterons cette étude en utilisant seulement la méthode
+ de Gauss.
+ Par ailleurs on a ici réalisé les simulations pour 
+\begin_inset Formula $p=50$
+\end_inset
+
+.
+ Mais prenons 
+\begin_inset Formula $p=5$
+\end_inset
+
+ et voyons ce que cela produit :
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/comparaison_1S_w=15_eps=01_P=5.png
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+On se rend compte que lorsque 
+\begin_inset Formula $p$
+\end_inset
+
+ est trop faible, les figures ne sont pas constituées entièrement, et on
+ n'observe pas d'ondes complètes, seulement des motifs.
+ Il faut donc prendre 
+\begin_inset Formula $p$
+\end_inset
+
+ suffisament grand pour avoir une bonne représentation des ondes.
+\end_layout
+
+\begin_layout Section
+Cas plus complexes
+\end_layout
+
+\begin_layout Subsection
+Cas de deux sources ponctuelles
+\end_layout
+
+\begin_layout Standard
+Dans le cas de deux sources ponctuelles, la solution s'exprime simplement
+ par la somme des solutions de deux sources ponctuelles calculées séparements.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename images/2S/2Points_omega = 15.0 epsilon = 0.1a=-20.0b=20.0.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/2S/omega = 12.0 epsilon = 0.3 zoomX = 6.0 zoomY = 4.0.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/2S/omega = 17.0 epsilon = 0.7 zoomX = 7.0 zoomY = 4.0.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Pour deux sources relativement proches, ici positionnées en 
+\begin_inset Formula $y_{0}=1$
+\end_inset
+
+ et 
+\begin_inset Formula $y_{1}=0$
+\end_inset
+
+, on observe déjà un phénomène d'interférence.
+ En effet, on peut observer des régions où les energies des deux ondes se
+ compensent parfaitement pour obtenir un région lisse et des zones où les
+ énergies s'additionnent pour atteindre un maximum ou un minimum.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename images/tranche_énergie.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Projection de l'énergie pour un 
+\begin_inset Formula $x$
+\end_inset
+
+ fixé
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1.5cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Cas d'une fente (Bonus)
+\end_layout
+
+\begin_layout Standard
+Pour modéliser une fente, on peut utiliser la fonction rectangulaire comme
+ condition au bord.
+ Cela nous donne :
+\begin_inset Formula 
+\[
+u=f(x,y)=rect_{T}(x,y-y_{0})\;sur\;\{0\}\times\mathbb{R}
+\]
+
+\end_inset
+
+avec 
+\begin_inset Formula $rect_{T}(x,y-y_{0})=\begin{cases}
+1 & si\;x=0\;et\;y\in[-T+y_{0},T+y_{0}]\\
+0 & sinon
+\end{cases}$
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Sa transformé de Fourier est donnée par :
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\hat{F}(x,\xi)=\int_{\mathbb{R}}rect(x,y-y_{0})e^{-i\xi y}dy
+\]
+
+\end_inset
+
+Faisons le changement de variable 
+\begin_inset Formula $v=y-y_{0}$
+\end_inset
+
+ :
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\hat{F}(x,\xi) & =\int_{\mathbb{R}}rect(x,v)e^{-i\xi(v+y_{0})}dv\\
+ & =e^{-i\xi y_{0}}\int_{-T}^{T}e^{-i\xi v}dv\\
+ & =\frac{e^{-\xi iy_{0}}}{i\xi}\left[e^{-i\xi v}\right]_{T}^{-T}\\
+ & =e^{-i\xi y_{0}}\frac{e^{i\xi T}-e^{-i\xi T}}{i\xi}\\
+ & =\frac{2e^{-i\xi y_{0}}}{\xi}\frac{(e^{i\xi T}-e^{-i\xi T})}{2i}\\
+ & =\frac{2e^{-i\xi y_{0}}}{\xi}sin(\xi T)\\
+ & =2e^{-i\xi y_{0}}Tsinc(\xi T)
+\end{align*}
+
+\end_inset
+
+Ainsi : 
+\begin_inset Formula 
+\[
+u(x,y)=\frac{1}{\pi}\int_{\mathbb{R}}Tsinc(\xi T)e^{ix\sqrt{\omega^{2}+i\epsilon-\xi^{2}}}e^{i\xi(y-y_{0})}d\xi
+\]
+
+\end_inset
+
+Nous dérivons ensuite l'intégrande pour utiliser la méthode d'Hermite :
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\frac{d}{d\xi}\left(\frac{1}{\pi}Tsinc(\xi T)e^{ix\sqrt{\omega^{2}+i\epsilon-\xi^{2}}}e^{i\xi(y-y_{0})}\right) & =\frac{1}{\pi}\frac{d}{d\xi}\left(\frac{sin(\xi T)}{\xi}e^{i(x\sqrt{\omega^{2}+i\epsilon-\xi^{2}}+\xi(y-y_{0}))}\right)\\
+ & =\frac{1}{\pi}\frac{Tcos(\xi T)\xi-sin(\xi T)}{\xi^{2}}e^{i(x\sqrt{\omega^{2}+i\epsilon-\xi^{2}}+\xi(y-y_{0}))}\\
+ & +\frac{sin(\xi T)}{\xi}i(y-y_{0}-\frac{x\xi}{\sqrt{\omega^{2}+i\epsilon-\xi^{2}}})e^{i(\xi(y-y_{0})+x\sqrt{\omega^{2}+i\epsilon-\xi^{2}})}]\\
+ & =\frac{1}{\pi}e^{i(\xi(y-y_{0})+x\sqrt{\omega^{2}+i\epsilon-\xi^{2}})}\\
+ & \times\left(\frac{Tcos(\xi T)\xi-sin(\xi T)}{\xi^{2}}+\frac{sin(\xi T)}{\xi}i(y-y_{0}-\frac{x\xi}{\sqrt{\omega^{2}+i\epsilon-\xi^{2}}})\right)
+\end{align*}
+
+\end_inset
+
+Voici différentes simulations faites dans le cas d'une fente.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename images/1F/omega = 1.0 epsilon = 0.0 zoomX = 6.0 zoomY = 3.0.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/1F/1Fentes_omega = 7.0 epsilon = 0.1a=-20.0b=20.0.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/1F/omega = 10.0 epsilon = 0.2 zoomX = 5.0 zoomY = 2.0.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename images/1F/omega = 12.0 epsilon = 0.1 zoomX = 5.0 zoomY = 2.0.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/1F/omega = 15.0 epsilon = 0.0 zoomX = 6.0 zoomY = 3.0.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Lorsque l'ouverture de la fente augmente, l'énergie est focalisée dans le
+ même couloir que la fente.
+ Elle ne se propage pas circulairement autour comme dans le cas des sources
+ ponctuelles.
+ Il y a donc plus d'énergie au centre où est positionnée la fente que sur
+ les cotés.
+\end_layout
+
+\begin_layout Subsection
+Cas de deux fentes
+\end_layout
+
+\begin_layout Standard
+Nous avons aussi fait différentes simulations dans le cas de 2 fentes, situation
+ qui se rapproche de la célèbre expérience des fentes de Young.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename images/2F/omega = 7.0 epsilon = 0.0 zoomX = 4.0 zoomY = 2.0.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/2F/omega = 9.0 epsilon = 0.1 zoomX = 5.0 zoomY = 2.0.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/2F/omega = 10.0 epsilon = 0.2 zoomX = 5.0 zoomY = 2.0.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/2F/2Fentes_omega = 10.0 epsilon = 0.05a=-30.0b=30.0.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename images/2F/omega = 10.0 epsilon = 0.1 zoomX = 6.0 zoomY = 4.0.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Voici différents cas pour les 2 fentes en faisant varier la valeur de la
+ pulsation.
+ On observe bien moins d'interférences que sur les deux sources ponctuelles,
+ elles sont en revanche beaucoup plus marquées.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename images/tranche_énergie_2F.png
+	lyxscale 50
+	scale 50
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Projection de l'énergie pour un 
+\begin_inset Formula $x$
+\end_inset
+
+ fixé avec les conditions du dernier graphe
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1.5cm
+\end_inset
+
+Même si cette simulation n'est pas réaliste face à l'expérience des fentes
+ de Young, elle reste plus fidèle que celle des 2 sources ponctuelles puisque
+ l'on peut observer ici une atténuation de l'énergie sur les bords.
+ 
+\end_layout
+
+\begin_layout Chapter*
+Conclusion
+\end_layout
+
+\begin_layout Standard
+Pour conclure ce TP a été très instructif, car il nous a permis de comparer
+ par la pratique les différentes méthodes de quadrature que nous avons pu
+ voir en cours.
+ Ces algorithmes sont relativement coûteux en calculs et doivent être optimisés
+ au maximum pour effectuer des intégrations de fonctions complexe (sans
+ faire de jeux de mots).
+ Tout leur intérêt réside justement dans le fait qu'ils nous permettent
+ de calculer des solutions approchées d'intégrales qu'on ne sait résoudre
+ analytiquement, et la connaissance de l'ordre de la méthode, nous permet
+ d'avoir une idée de l'erreur commise par cette approximation, alors même
+ que nous ne connaissons pas la solution exacte.
+\begin_inset Newline newline
+\end_inset
+
+Par ailleurs, nous avons pu voir dans la seconde partie de ce TP l'importance
+ de la transformé de Fourier, notamment pour la résolution d'équations différent
+ielles.
+ C'est ici que nous avons pu voir les limites de certaines méthodes d'intégratio
+n comme la méthode des Trapèzes et la méthode d'Hermite.
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_body
+\end_document

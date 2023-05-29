@@ -1,0 +1,9 @@
+aareadme fichier latex
+modele de rapport
+
+
+Le rapport est contenu dans le fichier rap.tex
+- Ouvrez le avec gedit 
+- Pour fabriquer le pdf , tapez 
+make rap 
+dans un terminal 

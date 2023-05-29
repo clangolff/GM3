@@ -1,0 +1,11 @@
+a) *(p+3) 
+p recoit l'adresse d'un element d'un tableau. ( *(tab+n) = tab[n])
+donc si p recoit l'adresse de l'élement indicé 1 du tableau alors *(p+3) a pour valeur le 5 eme element du tableau c'est a dire 14.
+
+b) *(q-3) = 34
+
+c) q- p nombre d'element entre q et p : 4
+
+d) fausse
+
+e vrai

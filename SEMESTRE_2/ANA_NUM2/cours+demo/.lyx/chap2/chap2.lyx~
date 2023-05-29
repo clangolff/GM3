@@ -1,0 +1,3374 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass article
+\use_default_options true
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 0
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style english
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Part
+Quadrature polynomiale
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename image/objectif/objectif1.png
+	lyxscale 30
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename image/objectif/objectif2.png
+	lyxscale 30
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename image/objectif/objectif3.png
+	lyxscale 30
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Quadrature de Newton-Côtes
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename image/partie1/def1.png
+	lyxscale 30
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename image/partie1/prop13.png
+	lyxscale 30
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Preuve
+\end_layout
+
+\begin_layout Standard
+(sens direct) Supposons que la formule soit exacte sur 
+\begin_inset Formula $P[X^{k}]$
+\end_inset
+
+ alors 
+\begin_inset Formula $\forall i\in\{0,...,k\}$
+\end_inset
+
+ on a 
+\begin_inset Formula $f(x)=x^{i}\in P[X^{k}]$
+\end_inset
+
+ et donc 
+\begin_inset Formula $R_{n}(f)=I-\sum_{j=0}^{n}w_{j}x_{j}^{i}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(sens indirect) Supposons maintenant que 
+\begin_inset Formula $R_{n}(x^{i})=0\;\forall i\in\{0,...,k\}$
+\end_inset
+
+ où 
+\begin_inset Formula $R_{n}(x^{i})=\int_{a}^{b}x^{i}dx-\sum_{j=0}^{n}w_{j}x_{j}^{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Soit 
+\begin_inset Formula $f\in P[X^{k}]\iff f(x)=\sum_{l=0}^{k}a_{l}x^{l}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+R_{n}(f) & =\int_{a}^{b}\sum_{l=0}^{k}a_{l}x^{l}dx-\sum_{j=0}^{n}w_{j}\sum_{l=0}^{k}a_{l}x_{j}^{l}\\
+ & =\sum_{l=0}^{k}a_{l}\underbrace{\left[\int_{a}^{b}x^{l}dx-\sum_{j=0}^{n}w_{j}x_{j}^{l}\right]}_{R_{n}(x^{l})=0}=0
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename image/partie1/newtonCotes.png
+	lyxscale 30
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename image/partie1/exemeple1.png
+	lyxscale 30
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Formule des Trapèze : 
+\end_layout
+
+\begin_layout Standard
+On cherche 
+\begin_inset Formula $w_{0}$
+\end_inset
+
+ et 
+\begin_inset Formula $w_{1}$
+\end_inset
+
+ tel que 
+\begin_inset Formula $I=w_{0}f(a)+w_{1}f(b)+R_{1}(f)$
+\end_inset
+
+ avec 
+\begin_inset Formula $R_{1}(f)$
+\end_inset
+
+ si 
+\begin_inset Formula $f\in P[X^{1}]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Or 
+\begin_inset Formula 
+\begin{align*}
+R_{1}(f) & =0\;f\in P[X^{1}]\iff\begin{cases}
+R_{1}(1) & =0\\
+R_{1}(x) & =0
+\end{cases}\\
+ & \iff\begin{cases}
+\int_{a}^{b}1dx-(w_{0}a+w_{1}b) & =0\\
+\int_{a}^{b}xdx-(w_{0}a+w_{1}b) & =0
+\end{cases}\\
+ & \iff\begin{cases}
+b-a & =w_{0}+w_{1}\\
+\frac{b^{2}-a^{2}}{2} & =aw_{0}+bw_{1}
+\end{cases}\\
+ & \iff\begin{cases}
+b-a & =w_{0}+w_{1}\\
+(b-a)w_{1} & =\frac{b^{2}-a^{2}}{2}-a(b-a)
+\end{cases}\\
+ & \iff\begin{cases}
+b-a & =w_{0}+w_{1}\\
+w_{1} & =\frac{(a-b)^{2}}{2(b-a)}=\frac{b-a}{2}
+\end{cases}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Formule de Simpson :
+\end_layout
+
+\begin_layout Standard
+Pour les formules de Newton Cotes, on a 
+\begin_inset Formula $w_{i}=\int_{a}^{b}L_{i}^{n}(x)dx$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Rappel ( vue en TD) 
+\begin_inset Formula $w_{i}=w_{n-i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Une autre façon de calculer les 
+\begin_inset Formula $w_{i}$
+\end_inset
+
+ est d'utiliser le fait que 
+\begin_inset Formula $R_{2}(x^{i})=0\;\forall i\in\{0,1,2\}$
+\end_inset
+
+ (exacte sur 
+\begin_inset Formula $P[X^{2}]$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\iff & \begin{cases}
+\int_{a}^{b}1dx-(w_{0}+w_{1}+w_{2}) & =0\\
+\int_{a}^{b}xdx-(aw_{0}+\frac{a+b}{2}w_{1}+bw_{2}) & =0\\
+\int_{a}^{b}x^{2}dx-(a^{2}w_{0}+\left(\frac{a+b}{2}\right)^{2}w_{1}+b^{2}w_{2}) & =0
+\end{cases}\\
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename image/partie1/formegeneNC.png
+	lyxscale 30
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename image/partie1/prop14.png
+	lyxscale 30
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Preuve
+\end_layout
+
+\begin_layout Standard
+On a 
+\begin_inset Formula $x_{n-i}=a+(n-i)h$
+\end_inset
+
+ avec 
+\begin_inset Formula $h=\frac{b-a}{n}$
+\end_inset
+
+ 
+\begin_inset Formula $\iff a+nh-ih\iff a+b-a-ih=b-ih$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+et 
+\begin_inset Formula $\frac{a+b}{2}-(x_{i}-\frac{a+b}{2})=a+b-x_{i}=a+b-ih-a=b-ih$
+\end_inset
+
+ donc 
+\begin_inset Formula $x_{n-i}=a+b-x_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Montrons que 
+\begin_inset Formula $L_{i}^{n}(a+b-x)-L_{n-i}^{n}(x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+en effet, si on pose 
+\begin_inset Formula $v(x)=L_{n-i}^{n}(x)-L_{i}^{n}(a+b-x)\;\forall P[X^{n}]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+On a 
+\begin_inset Formula $v(x_{j})=L_{n-i}^{n}(x_{j})-L_{i}^{n}\text{\ensuremath{\underbrace{(a+b-x_{j})}_{x_{n-j}}}}=\delta_{j,n-i}-\delta_{i,n-j}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $v$
+\end_inset
+
+ a 
+\begin_inset Formula $n+1$
+\end_inset
+
+ racines et 
+\begin_inset Formula $v\in P[X^{n}]$
+\end_inset
+
+ donc 
+\begin_inset Formula $v=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Par conséquent, 
+\begin_inset Formula $L_{i}^{n}(a+b-x)=L_{n-i}^{n}(x)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+et donc 
+\begin_inset Formula 
+\begin{align*}
+w_{n-i} & =\int_{a}^{b}L_{n-i}^{n}(x)dx\\
+ & =\int_{a}^{b}L_{i}^{n}(a+b-x)dx\\
+ & =\int_{b}^{a}L_{i}^{n}(x)-dx\\
+ & =\int_{a}^{b}L_{i}^{n}(x)dx=w_{i}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename image/partie1/prop15.png
+	lyxscale 30
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Preuve
+\end_layout
+
+\begin_layout Standard
+Idée : Si 
+\begin_inset Formula $n$
+\end_inset
+
+ est paire, la formule de Newton Cotes est exacte sur 
+\begin_inset Formula $P[X^{n+1}]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+On sait déjà que par construction, elle est exacte sur 
+\begin_inset Formula $P[X^{n}]$
+\end_inset
+
+ , a-t-on en plus 
+\begin_inset Formula $R(x^{n+1})=0$
+\end_inset
+
+ ?
+\end_layout
+
+\begin_layout Standard
+Montrons plutôt que (équivalent) 
+\begin_inset Formula $R((x-\frac{a+b}{2})^{n+1})=0$
+\end_inset
+
+ , pour avoir un interval centré sur 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+R((x-\frac{a+b}{2})^{n+1}) & =\int_{a}^{b}(x-\frac{a+b}{2})^{n+1}dx-\underbrace{\sum_{i=0}^{n}w_{i}(x_{i}-\frac{a+b}{2})^{n+1}}_{S=0}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En effet , 
+\begin_inset Formula $2S=\sum_{i=0}^{n}w_{i}(x_{i}-\frac{a+b}{2})^{n+1}+\sum_{i=0}^{n}\underbrace{w_{n-i}}_{w_{i}}\underbrace{(x_{n-i}-\frac{a+b}{2})^{n+1}}_{-(x_{i}-\frac{a+b}{2})^{n+1}}=0$
+\end_inset
+
+ donc 
+\begin_inset Formula $S=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename image/partie1/prop16.png
+	lyxscale 30
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename image/partie1/Runge.png
+	lyxscale 30
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Quadrature de Gauss
+\end_layout
+
+\begin_layout Subsection
+Choix optimal des points
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename image/partie2/theoreme21png.png
+	lyxscale 30
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Preuve
+\end_layout
+
+\begin_layout Standard
+(sens direct) Supposons la formule exacte sur 
+\begin_inset Formula $P[X^{2n+1}]$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\int_{a}^{b}L_{k}^{n}(x)dx & =\sum_{i=0}^{n}w_{i}\underbrace{L_{k}^{n}(x_{i})}_{\delta_{ki}}\\
+\iff w_{k} & =\int_{a}^{b}L_{k}^{n}(x)dx
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Notons 
+\begin_inset Formula $v_{n}(x)=\sum_{i=0}^{n}(x-x_{i})\in P[X^{n+1}]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+On a 
+\begin_inset Formula $x^{j}v_{n}(x)\in P[X^{n+i+j}]\subset P[X^{2n+1}]\;\forall j\in\{0,..,n\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Par conséquent 
+\begin_inset Formula $\int_{a}^{b}x^{j}v_{n}(x)dx=\sum_{i=0}^{n}w_{i}x_{i}^{j}\underbrace{v_{n}(x_{i})}_{0}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+(sens indirect)
+\end_layout
+
+\begin_layout Standard
+Supposons que 
+\begin_inset Formula $w_{i}=\int_{a}^{b}L_{i}^{n}(x)dx$
+\end_inset
+
+ et 
+\begin_inset Formula $\int_{a}^{b}x^{j}v_{n}(x)dx=0\;\forall j\in\{0,...,n\}$
+\end_inset
+
+ alors on est exacte sur 
+\begin_inset Formula $P[X^{n}]$
+\end_inset
+
+ au moins.
+ 
+\end_layout
+
+\begin_layout Standard
+En effet, 
+\begin_inset Formula $\int_{a}^{b}p_{n}dx=\int_{a}^{b}\sum_{i=0}^{n}f(x_{i})L_{i}^{n}(x)dx=\sum_{i=0}^{n}f(x_{i})\underbrace{\int_{a}^{b}L_{i}^{n}(x)dx}_{w_{i}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Soit 
+\begin_inset Formula $p\in P[X^{2n+1}]$
+\end_inset
+
+ on a 
+\begin_inset Formula $p(x)=\underbrace{v_{n}(x)}_{deg=n+1}\underbrace{d(x)}_{deg=n}+\underbrace{r(x)}_{deg=n}$
+\end_inset
+
+ de plus 
+\begin_inset Formula $\forall q\in P[X^{n}],$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+\int_{a}^{b}q(x)v_{n}(x)dx & =\int_{a}^{b}\sum_{j=0}^{n}q_{j}x^{j}v_{n}(x)dx\\
+ & \sum_{j=0}^{n}q_{j}\int_{a}^{b}x^{j}v_{n}(x)dx=0
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ainsi, 
+\begin_inset Formula 
+\begin{align*}
+\int_{a}^{b}p(x)dx & =\underbrace{\int_{a}^{b}d(x)v_{n}(x)dx}_{0}+\int_{a}^{b}\underbrace{r(x)}_{deg=n}dx\\
+ & =\sum_{i=0}^{n}w_{i}r(x_{i})
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Or 
+\begin_inset Formula $p(x_{i})=v_{n}(x_{i})d(x_{i})+r(x_{i})$
+\end_inset
+
+ donc 
+\begin_inset Formula $\int_{a}^{b}p(x)dx=\sum_{i=0}^{n}w_{i}p(x_{i})\;\forall p\in P[X^{2n+1}]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename image/partie2/remarque1.png
+	lyxscale 30
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename image/partie2/remarque2.png
+	lyxscale 30
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename image/partie2/exemple1.png
+	lyxscale 30
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename image/partie2/racineRdistin.png
+	lyxscale 30
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename image/partie2/prop22.png
+	lyxscale 30
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Preuve
+\end_layout
+
+\begin_layout Standard
+Montrons l'unicité :
+\end_layout
+
+\begin_layout Standard
+Supposons 
+\begin_inset Formula $v_{1}$
+\end_inset
+
+ et 
+\begin_inset Formula $v_{2}$
+\end_inset
+
+ 2 solutions, alors 
+\begin_inset Formula $q=v_{1}-v_{2}$
+\end_inset
+
+ vérifie : 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $q\in P[X^{n}]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\int_{a}^{b}q(x)x^{j}dx=0\;\forall j\in\{0,...,n\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Remarque : 
+\begin_inset Formula $\int_{a}^{b}v_{n}(x)x^{j}dx=0\;\forall j\in\{0,...,n\}\iff\int_{a}^{b}v_{n}(x)p(x)dx=0\;p\in P[X^{n}]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ainsi 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+\int_{a}^{b}q(x)x^{j}dx & =0\;\forall j\in\{0,...,n\}\\
+\iff & \int_{a}^{b}q(x)p(x)dx=0\;\forall p\in P[X^{n}]
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En particulier, pour 
+\begin_inset Formula $p=q\in P[X^{n}]$
+\end_inset
+
+ on a 
+\begin_inset Formula $\int_{a}^{b}q^{2}(x)dx=0\iff q=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Existence :
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $v_{n}(x)=x^{n+1}+a_{n}x^{n}+...+a_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+les conditions 
+\begin_inset Formula $\forall j\in\{0,..,n\}$
+\end_inset
+
+ 
+\begin_inset Formula 
+\begin{align*}
+\int_{a}^{b}v_{n}(x)x^{j}dx & =0\iff\int_{a}^{b}x^{n+1}x^{j}dx+\sum_{i=0}^{n}a_{_{i}}\int_{a}^{b}x^{j}x^{i}dx=0\\
+\iff\sum_{i=0}^{n}a_{i}\underbrace{\int_{a}^{b}x^{j}x^{i}dx}_{M_{ij}} & =-\underbrace{\int_{a}^{b}x^{n+1+j}dx}_{b_{j}}\\
+\iff & Ma=b
+\end{align*}
+
+\end_inset
+
+ où 
+\begin_inset Formula $M$
+\end_inset
+
+ est une matrice carré de dimension 
+\begin_inset Formula $(n+1)\times(n+1)$
+\end_inset
+
+ et elle est injective car on a l'unicité.
+ Donc par le théorème du rang, elle est bijective donc il existe une solution.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename image/partie2/prop23.png
+	lyxscale 30
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Preuve
+\end_layout
+
+\begin_layout Standard
+Montrons que les racines sont réelles : 
+\end_layout
+
+\begin_layout Standard
+Comme les coefficients de 
+\begin_inset Formula $v_{n}$
+\end_inset
+
+ sont réelles, si 
+\begin_inset Formula $c$
+\end_inset
+
+ est une racine, alors 
+\begin_inset Formula $\overline{c}$
+\end_inset
+
+ est aussi une racine.
+\end_layout
+
+\begin_layout Standard
+On a de plus 
+\begin_inset Formula $\int_{a}^{b}v_{n}(x)x^{j}dx$
+\end_inset
+
+ 
+\begin_inset Formula $\forall j\in\{0,..,n\}$
+\end_inset
+
+ et 
+\begin_inset Formula $\int_{a}^{b}v_{n}(x)p(x)dx\;\forall p\in P[X^{n}]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+On a 
+\begin_inset Formula $v_{n}(x)=\underbrace{(x-c)(x-\overline{c})}_{>0\;car\,racine\,complexe+fonction\,x^{2}}\prod_{i=2}^{n}(x-x_{i})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Pour 
+\begin_inset Formula $p(x)=\prod_{i=2}^{n}(x-x_{i})\in P[X^{n}]$
+\end_inset
+
+, on a 
+\begin_inset Formula 
+\begin{align*}
+\int_{a}^{b}\underbrace{v_{n}(x)}_{=0}p(x)dx & =\int_{a}^{b}(x-c)(x-\overline{c})p^{2}(x)dx
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+On a donc une contradiction , donc toutes les racines sont réelles.
+\end_layout
+
+\begin_layout Standard
+Montrons que les racines sont distinctes :
+\end_layout
+
+\begin_layout Standard
+Supposons 
+\begin_inset Formula $x_{0}=x_{1}$
+\end_inset
+
+, alors 
+\begin_inset Formula $v_{n}=(x-x_{0})^{2}\prod_{i=2}^{n}(x-x_{i})$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Comme avant, on prend 
+\begin_inset Formula $p(x)=\prod_{i=2}^{n}(x-x_{i})$
+\end_inset
+
+ et on arrive a une contradiction.
+\end_layout
+
+\begin_layout Standard
+Montrons que les racines sont dans 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ :
+\end_layout
+
+\begin_layout Standard
+Notons les racines ordonnées 
+\begin_inset Formula $x_{0}<x_{1}<...<x_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Supposons que 
+\begin_inset Formula $x_{i}<a$
+\end_inset
+
+ 
+\begin_inset Formula $\;\forall i\leq k$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+alors 
+\begin_inset Formula $v_{n}(x)=\underbrace{\prod_{i=0}^{k}(x-x_{i})}_{signe\,constant\,>0\,car\,x-x_{i}>0\,\forall i\in\{0,..,k\}}\prod_{i=k+1}^{n}(x-x_{i})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En prenant 
+\begin_inset Formula $p(x)=\prod_{i=k+1}^{n}(x-x_{i})$
+\end_inset
+
+ on aura à nouveau une contradiction
+\end_layout
+
+\begin_layout Standard
+De plus on a la symétrie des racines :
+\end_layout
+
+\begin_layout Standard
+On montre que 
+\begin_inset Formula $v_{n}(x)=v_{n}(a+b-x)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename image/partie2/prop24.png
+	lyxscale 30
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Preuve
+\end_layout
+
+\begin_layout Standard
+Le résultat est direct en notant que 
+\begin_inset Formula $v_{j}\in P[X^{n}]\;\forall j\in\{0,...,n-1\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Remarque 
+\series default
+La famille de polynôme 
+\begin_inset Formula $\left(v_{i}\right)_{i\in\{-1..n\}}$
+\end_inset
+
+forme une base de 
+\begin_inset Formula $P[X^{n+1}]$
+\end_inset
+
+ (car tous de degrès 
+\begin_inset Formula $\ne$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename image/partie2/prop25.png
+	lyxscale 30
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Preuve
+\end_layout
+
+\begin_layout Standard
+On a 
+\begin_inset Formula 
+\[
+\underbrace{xv_{n}}_{deg\;n+1}\in P[X^{n+2}]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Les 
+\begin_inset Formula $(v_{j})_{j\in\{-1,...,n+1\}}$
+\end_inset
+
+formant une base de 
+\begin_inset Formula $P[X^{n+2}]$
+\end_inset
+
+, on a (
+\begin_inset Formula $v_{-1}=1)$
+\end_inset
+
+
+\begin_inset Formula 
+\begin{align*}
+xv_{n}(x) & =\sum_{j=-1}^{n+1}\alpha_{j}v_{j}(x)\;n+3\;termes\\
+x(x^{n+1}+...) & =\alpha_{n+1}(x^{n+2}+...)+..
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Donc nécessairement, 
+\begin_inset Formula $\alpha_{n+1}=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Ainsi, 
+\begin_inset Formula 
+\[
+xv_{n}(x)=v_{n+1}+\sum_{j=-1}^{n}\alpha_{j}v_{j}(x)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+On en déduit que 
+\begin_inset Formula 
+\begin{align*}
+\int_{a}^{b}xv_{n}(x)v_{k}(x)dx & =\int_{a}^{b}v_{n+1}(x)v_{k}(x)dx+\sum_{j=-1}^{n}\alpha_{j}\underbrace{\int_{a}^{b}v_{j}(x)v_{k}(x)}_{\delta_{jk}\int_{a}^{b}v_{k}^{2}(x)dx}dx
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Donc pour 
+\begin_inset Formula $k\leq n-2$
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\underbrace{\int_{a}^{b}v_{n}(x)\underbrace{xv_{k}(x)}_{deg\;k+2\leq n}dx}_{0}=\alpha_{k}\underbrace{\int_{a}^{b}v_{k}^{2}(x)dx}_{>0}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+D'où 
+\begin_inset Formula $\alpha_{k}=0\;\forall k\leq n-2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+On obtient ainsi 
+\begin_inset Formula 
+\[
+xv_{n}(x)=v_{n+1}+\alpha_{n}v_{n}(x)+\alpha_{n-1}v_{n-1}(x)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+D'où la relation de récurrence.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename image/partie2/prop26.png
+	lyxscale 30
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename image/partie2/polyLegendre.png
+	lyxscale 30
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Analyse de convergence
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename image/partie2/prop27.png
+	lyxscale 30
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Preuve
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Rappel 
+\series default
+Une formule de quadrature 
+\begin_inset Formula $I=\sum_{i=0}^{n}w_{i}f(x_{i})+R_{n}(f)$
+\end_inset
+
+ est convergente sur 
+\begin_inset Formula $C^{\infty}([a,b])$
+\end_inset
+
+ ssi
+\end_layout
+
+\begin_layout Itemize
+Elle est convergente sur 
+\begin_inset Formula $W$
+\end_inset
+
+ dense dans 
+\begin_inset Formula $C^{\infty}([a,b])$
+\end_inset
+
+ (on peut approcher n'importe quelle fonction de 
+\begin_inset Formula $C^{\infty}$
+\end_inset
+
+ par une suite d'élement de 
+\begin_inset Formula $W)$
+\end_inset
+
+ (l'ensemple des polynome est dense dans 
+\begin_inset Formula $C^{\infty}$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Itemize
+et elle est stable : 
+\begin_inset Formula $\exists M$
+\end_inset
+
+ tq 
+\begin_inset Formula $\sum_{i=0}^{n}|w_{i}|\leq M$
+\end_inset
+
+ où 
+\begin_inset Formula $M$
+\end_inset
+
+ est indépendant de n
+\end_layout
+
+\begin_layout Standard
+Dans notre cas, la formule est exacte sur 
+\begin_inset Formula $P[X^{2n+1}]$
+\end_inset
+
+ donc converge dans 
+\begin_inset Formula $W=P$
+\end_inset
+
+ (l'ensemble des polynomes dense dans 
+\begin_inset Formula $C^{\infty}$
+\end_inset
+
+).
+\end_layout
+
+\begin_layout Standard
+Il reste à montrer 
+\begin_inset Formula $\exists M$
+\end_inset
+
+ tq 
+\begin_inset Formula $\sum_{i=0}^{n}|w_{i}|\leq M$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+On a 
+\begin_inset Formula $w_{i}=\int_{a}^{b}\underbrace{L_{i}^{n}(x)}_{deg\;n}dx$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+D'une part, on a 
+\begin_inset Formula $\int_{a}^{b}\underbrace{(L_{i}^{n}(x))^{2}}_{\in P[X^{2n+1}]}dx=\sum_{i=0}^{n}(L_{k}^{n})^{2}(x_{i})w_{i}+0$
+\end_inset
+
+ ( la formule est exacte )
+\end_layout
+
+\begin_layout Standard
+Or 
+\begin_inset Formula $L_{k}^{n}(x_{i})=\delta_{ik}$
+\end_inset
+
+ donc 
+\begin_inset Formula $(L_{k}^{n})^{2}(x_{i})=\delta_{ik}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ainsi 
+\begin_inset Formula 
+\[
+w_{k}=\int_{a}^{b}(L_{k}^{n})^{2}(x)dx
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+D'autre part, pour 
+\begin_inset Formula $f=1\in P[X^{2n+1}]$
+\end_inset
+
+ , on a 
+\begin_inset Formula 
+\[
+\int_{a}^{b}1dx=\sum_{i=0}^{n}w_{i}=b-a
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Comme 
+\begin_inset Formula $w_{i}\geq0$
+\end_inset
+
+, on a 
+\begin_inset Formula $\sum_{i=0}^{n}|w_{i}|=\sum_{i=0}^{n}w_{i}\leq b-a$
+\end_inset
+
+ ( ici c'est même égale ).
+ Donc la formule est stable.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename image/partie2/prop28.png
+	lyxscale 30
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\series bold
+Preuve
+\end_layout
+
+\begin_layout Standard
+Posons 
+\begin_inset Formula $P_{n}$
+\end_inset
+
+ le polynome d'Hermite associé à 
+\begin_inset Formula $f$
+\end_inset
+
+ tel que 
+\begin_inset Formula $P_{n}^{j}(x_{i})=f^{(j)}(x_{i})\;\forall j\in\{0,1\}\;\forall i\in\{0,...,n\}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+R_{n}(f)=\int_{a}^{b}f(x)-P_{n}(x)dx+\underbrace{\int_{a}^{b}P_{n}(x)dx}_{\in P[X^{2n+1}]}-\sum_{i=0}^{n}w_{i}f(x_{i})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+On a 
+\begin_inset Formula $\int_{a}^{b}P_{n}(x)dx=\sum_{i=0}^{n}w_{i}P_{n}(x_{i})$
+\end_inset
+
+ (car exacte sur 
+\begin_inset Formula $P[X^{2n+1}]$
+\end_inset
+
+) donc 
+\begin_inset Formula $R_{n}(f)=\int_{a}^{b}f(x)-P_{n}(x)dx$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En rappelant que 
+\begin_inset Formula 
+\[
+f(x)-P_{n}(x)=\frac{f^{(2n+2)}(\eta)}{(2n+2)!}v_{n}^{2}(x)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+On obtient grâce au théorème de la moyenne :
+\begin_inset Formula 
+\[
+R_{n}(f)=\int_{a}^{b}\frac{f^{(2n+2)}(\eta)}{(2n+2)!}\underbrace{v_{n}^{2}(x)}_{\geq0}dx=\frac{f^{(2n+2)}(\eta)}{(2n+2)!}\int_{a}^{b}v_{n}^{2}(x)dx
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename image/partie2/finpartie2.png
+	lyxscale 30
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Méthodes composites
+\end_layout
+
+\begin_layout Subsection
+Construction des formules
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename image/partie3/idee.png
+	lyxscale 30
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename image/partie3/idee2.png
+	lyxscale 30
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename image/partie3/idee3.png
+	lyxscale 30
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename image/partie3/exemple1.png
+	lyxscale 30
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\series bold
+Exemple détaillé 
+\series default
+Formule du point milieu
+\end_layout
+
+\begin_layout Standard
+Rappel : 
+\begin_inset Formula 
+\[
+\int_{-1}^{1}f(\hat{x})d\hat{x}\simeq f(0)\times2
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Cette formule est exacte sur 
+\begin_inset Formula $P[X]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Pour déduire la formule composite, on a 
+\begin_inset Formula 
+\[
+\int_{a}^{b}f(x)dx=\sum_{j=0}^{p-1}\int_{x_{j}}^{x_{j+1}}f(x)dx
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+où 
+\begin_inset Formula $x_{j}=a+jh$
+\end_inset
+
+ et 
+\begin_inset Formula $h=\frac{b-a}{p}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+On pose 
+\begin_inset Formula $x=\frac{\hat{x}+1}{2}(x_{j+1}-x_{j})+x_{j}$
+\end_inset
+
+ avec 
+\begin_inset Formula $\hat{x}\in[-1,1]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ainsi 
+\begin_inset Formula $dx=\frac{x_{j+1}-x_{j}}{2}d\hat{x}$
+\end_inset
+
+ d'où
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+\int_{x_{j}}^{x_{j+1}}f(x)dx=\int_{-1}^{1}f(\frac{\hat{x}+1}{2}(x_{j+1}-x_{j})+x_{j})\frac{x_{j+1}-x_{j}}{2}d\hat{x}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En appliquant la formule du point milieu, on a 
+\begin_inset Formula 
+\begin{align*}
+\int_{x_{j}}^{x_{j+1}}f(x)dx & \simeq f(\frac{x_{j+1}-x_{j}}{2}+x_{j})\frac{x_{j+1}-x_{j}}{2})\times2\\
+ & \simeq(x_{j+1}-x_{j})f(\frac{x_{j+1}+x_{j}}{2})
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Finalement 
+\begin_inset Formula 
+\[
+\int_{a}^{b}f(x)dx\simeq\sum_{j=0}^{p-1}(x_{j+1}-x_{j})f(\frac{x_{j+1}+x_{j}}{2})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Analyse de convergence
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename image/partie3/prop3.2.png
+	lyxscale 30
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\series bold
+Preuve 
+\end_layout
+
+\begin_layout Standard
+On a (Remarque, on a pris 
+\begin_inset Formula $x_{j+1}-x_{j}=h$
+\end_inset
+
+ )
+\begin_inset Formula 
+\begin{align*}
+|I-I_{h}| & =|\sum_{j=0}^{p-1}\int_{x_{j}}^{x_{j+1}}f(x)dx-\sum_{j=0}^{p-1}\sum_{i=0}^{n}\omega_{i}\frac{h}{2}f(x_{ij})|\\
+ & =|\sum_{j=0}^{p-1}\left[\underbrace{\int_{x_{j}}^{x_{j+1}}f(x)dx-\sum_{i=0}^{n}\omega_{i}\frac{h}{2}f(x_{ij})}_{E_{j}}\right]|
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Puisque la formule simple est exacte sur 
+\begin_inset Formula $P[X^{k}]$
+\end_inset
+
+, on a 
+\begin_inset Formula $\forall p\in P[X^{k}]$
+\end_inset
+
+ 
+\begin_inset Formula 
+\[
+\int_{x_{j}}^{x_{j+1}}p(x)dx=\sum_{i=0}^{n}\omega_{i}\frac{h}{2}p(x_{ij})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Posons alors 
+\begin_inset Formula $p_{k}$
+\end_inset
+
+ le polynome de 
+\begin_inset Formula $P[X^{k}]$
+\end_inset
+
+ vérifiant 
+\begin_inset Formula 
+\begin{align*}
+p_{k}(x_{ij}) & =f(x_{ij})\;\forall i\in\{0,...,n\}\;(n+1\;conditions)\\
+p_{k}(x_{lj}) & =f(x_{lj})\;\forall l\in\{n+1,...,k\}\;(k-n\;conditions)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Avec 
+\begin_inset Formula $x_{lj}$
+\end_inset
+
+ des points d'interpolation dans 
+\begin_inset Formula $[x_{j},x_{j+1}]$
+\end_inset
+
+ diffèrents des 
+\begin_inset Formula $x_{j}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+( On rajoute des points jusqu'au degrès d'éxactitude de la formule )
+\end_layout
+
+\begin_layout Standard
+Alors on a 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+E_{j}=\int_{x_{j}}^{x_{j+1}}f(x)-p_{k}(x)dx+\int_{x_{j}}^{x_{j+1}}p_{k}(x)dx-\sum_{i=0}^{n}\omega_{i}\frac{h}{2}f(x_{ij})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Et comme la formule est exacte sur 
+\begin_inset Formula $P[X^{k}]$
+\end_inset
+
+ , on a 
+\begin_inset Formula 
+\[
+\int_{x_{j}}^{x_{j+1}}p_{k}(x)dx=\sum_{i=0}^{n}\omega_{i}\frac{h}{2}\underbrace{p(x_{ij})}_{f(x_{ij})}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Donc 
+\begin_inset Formula 
+\[
+E_{j}=\int_{x_{j}}^{x_{j+1}}\frac{f^{(k+1)}(\xi)}{(k+1)!}\prod_{i=0}^{n}(x-x_{ij})\prod_{l=n+1}^{k}(x-x_{lj})dx
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+|E_{j}| & \leq\int_{x_{j}}^{x_{j+1}}\frac{|f^{(k+1)}(\xi)|}{(k+1)!}\prod_{i=0}^{n}\underbrace{|(x-x_{ij})|}_{\leq h}\prod_{l=n+1}^{k}\underbrace{|(x-x_{lj})|}_{\leq h}dx\\
+ & \leq\frac{\Vert f^{(k+1)}\Vert_{\infty}}{(k+1)!}h^{k+1}\underbrace{\int_{x_{j}}^{x_{j+1}}1dx}_{h}\\
+ & \leq\frac{\Vert f^{(k+1)}\Vert_{\infty}}{(k+1)!}h^{k+2}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Finalement 
+\begin_inset Formula 
+\begin{align*}
+|I-I_{h}| & =|\sum_{j=0}^{p-1}E_{j}|\\
+ & \leq\sum_{j=0}^{p-1}\frac{\Vert f^{(k+1)}\Vert_{\infty}}{(k+1)!}h^{k+2}\\
+ & =\frac{\Vert f^{(k+1)}\Vert_{\infty}}{(k+1)!}h^{k+2}\times\underbrace{p}_{\frac{b-a}{h}}\\
+ & =\frac{\Vert f^{(k+1)}\Vert_{\infty}}{(k+1)!}h^{k+1}(b-a)
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename image/partie3/exempleconv.png
+	lyxscale 30
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename image/partie3/resum1.png
+	lyxscale 30
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename image/partie3/resum2.png
+	lyxscale 30
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Quelques extensions
+\end_layout
+
+\begin_layout Subsection
+Quadrature d'Hermite
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename image/partie4/hermit1.png
+	lyxscale 30
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename image/partie4/prop4.2.png
+	lyxscale 30
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

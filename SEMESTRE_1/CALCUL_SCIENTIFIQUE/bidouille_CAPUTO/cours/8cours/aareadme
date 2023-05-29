@@ -1,0 +1,14 @@
+8  mardi 10 novembre 2020, 
+
+
+Cours 8   : correction td7
+            /home/jgc/november2020/ens/gm3/cc_book/corr_calcul/jacobi_matlab
+           faire le travail avec les tableaux
+           compilateurs gcc gfortran
+           debuggage Matlab / Python
+           debuggage langage compile (C, Fortran, C++)
+           syntaxe gdb
+
+td8  :  debuggage ex.f , code Choleski (matrice Hilbert 15)
+        ou Gauss pivot matrice singuliere
+

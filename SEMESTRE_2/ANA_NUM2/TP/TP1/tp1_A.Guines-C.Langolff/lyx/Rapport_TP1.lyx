@@ -1,0 +1,3082 @@
+#LyX 2.3 created this file. For more info see http://www.lyx.org/
+\lyxformat 544
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass scrbook
+\begin_preamble
+
+\end_preamble
+\use_default_options true
+\maintain_unincluded_children false
+\language french
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\use_microtype false
+\use_dash_ligatures true
+\graphics default
+\default_output_format default
+\output_sync 1
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification true
+\use_refstyle 1
+\use_minted 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 4
+\paragraph_separation indent
+\paragraph_indentation default
+\is_math_indent 0
+\math_numbering_side default
+\quotes_style french
+\dynamic_quotes 0
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "c"
+hor_pos "l"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "40text%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename INSA.png
+	lyxscale 20
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Box Frameless
+position "c"
+hor_pos "l"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "40text%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+raggedleft{
+\end_layout
+
+\end_inset
+
+
+\size large
+GM3
+\end_layout
+
+\begin_layout Plain Layout
+
+\size large
+2022/2023
+\size default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "c"
+hor_pos "l"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "100text%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering{
+\end_layout
+
+\end_inset
+
+
+\series bold
+\shape slanted
+\size huge
+TP1 : Interpolation polynomiale et dessin
+\size giant
+ 
+\size default
+
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newline newline
+\end_inset
+
+Analyse Numérique 2 - MMSN - GM3
+\series default
+\shape default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace vfill
+\end_inset
+
+
+\begin_inset Box Boxed
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename GMpageDeGarde.png
+	lyxscale 40
+	scale 20
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "l"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100text%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+large
+\backslash
+centering{
+\end_layout
+
+\end_inset
+
+
+\series bold
+Etudiants : Guines Antoine, Langolff Clément
+\series default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+Interpolation d'une fonction 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Chapter
+Théorie
+\end_layout
+
+\begin_layout Section
+Évaluation du polynôme d'interpolation en 
+\begin_inset Formula $x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+L'évaluation du polynôme d'interpolation en un point 
+\begin_inset Formula $x\ne x_{i}$
+\end_inset
+
+ s'effectue en 2 étapes :
+\end_layout
+
+\begin_layout Itemize
+Le calcul des coefficients de la décomposition du polynôme d'interpolation
+ dans la base de Newton grâce à l'algorithme des différences divisées.
+\end_layout
+
+\begin_layout Itemize
+L'application de l'algorithme d'Hörner au polynôme d'interpolation, nous
+ permettant d'obtenir sa valeur en 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Plus précisément on commence tout d'abord par définir la base de Newton,
+ qui est la famille de fonction 
+\begin_inset Formula $(N_{i})_{i=\{0,...,n\}}$
+\end_inset
+
+ telle que :
+\begin_inset Formula 
+\[
+\begin{cases}
+N_{0}(x)=1\\
+N_{i}(x)=\prod_{j=0}^{i-1}(x-x_{j})
+\end{cases}
+\]
+
+\end_inset
+
+Cette famille de fonctions forme une base de 
+\begin_inset Formula $\mathbb{P}_{n}$
+\end_inset
+
+ et vérifie de plus 
+\begin_inset Formula $N_{i}(x_{j})=0\,\,\forall j<i$
+\end_inset
+
+.
+ Ainsi le polynôme d'interpolation 
+\begin_inset Formula $P(x)$
+\end_inset
+
+ passant par les 
+\begin_inset Formula $n+1$
+\end_inset
+
+ points peut s'écrire sous la forme :
+\begin_inset Formula 
+\[
+P(x)=\sum_{j=0}^{n}\beta_{j}N_{j}(x)
+\]
+
+\end_inset
+
+Pour pouvoir évaluer ce polynôme en 
+\begin_inset Formula $x$
+\end_inset
+
+, il nous faut naturellement trouver l'expression des 
+\begin_inset Formula $\beta_{j}$
+\end_inset
+
+.
+ C'est dans ce but qu'intervient la formule des différences divisées.
+ On pose alors :
+\begin_inset Formula 
+\begin{equation}
+f[x_{i},...,x_{i+j+1}]=\frac{f[x_{i+1},...,x_{i+j+1}]-f[x_{i},...,x_{i+j}]}{x_{i+j+1}-x_{i}}
+\end{equation}
+
+\end_inset
+
+ et 
+\begin_inset Formula 
+\[
+f[x_{i}]=f(x_{i})=y_{i}
+\]
+
+\end_inset
+
+On démontre 
+\shape italic
+(cf proposition 2.2)
+\shape default
+ alors que le polynôme d'interpolation de degré 
+\begin_inset Formula $n$
+\end_inset
+
+ passant par les 
+\begin_inset Formula $n+1$
+\end_inset
+
+ points 
+\begin_inset Formula $(x_{i},y_{i})_{i=\{0,...,n\}},$
+\end_inset
+
+ est donné par :
+\begin_inset Formula 
+\[
+P(x)=f[x_{0}]N_{0}(x)+f[x_{0},x_{1}]N_{1}(x)+...+f[x_{0},x_{1},...,x_{n}]N_{n}(x)
+\]
+
+\end_inset
+
+On remarque donc que l'on a : 
+\begin_inset Formula 
+\[
+\beta_{j}=f[x_{0},x_{1},...,x_{j}]\,\,\,\forall j\in\{0,...,n\}
+\]
+
+\end_inset
+
+Ainsi on calcul par l'algorithme des différences divisées les coefficients
+ du polynôme d'interpolation en utilisant la formule 
+\begin_inset Formula $1.1$
+\end_inset
+
+.
+ Cette étape n'est à faire qu'une fois car les 
+\begin_inset Formula $\beta_{j}$
+\end_inset
+
+ ne dépendent pas du point d'évaluation de 
+\begin_inset Formula $P$
+\end_inset
+
+.
+ Donc peu importe le point d'évaluation choisi, la décomposition restera
+ identique.
+ Ce qui va changer en revanche, c'est l'algorithme d'Hörner que l'on va
+ maintenant expliquer.
+ 
+\begin_inset Newline newline
+\end_inset
+
+Évaluer 
+\begin_inset Formula $P$
+\end_inset
+
+ en 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ revient à écrire :
+\begin_inset Formula 
+\[
+P(\alpha)=\sum_{i=0}^{n}\beta_{i}N_{i}(\alpha)
+\]
+
+\end_inset
+
+De plus on a par définition :
+\begin_inset Formula 
+\[
+N_{i+1}(\alpha)=\prod_{j=0}^{i}(\alpha-x_{j})=(\alpha-x_{i})N_{i}(\alpha)
+\]
+
+\end_inset
+
+Ainsi cela nous permet d'écrire 
+\begin_inset Formula $P(\alpha)$
+\end_inset
+
+ sous la forme :
+\begin_inset Formula 
+\[
+P(\alpha)=\underbrace{\beta_{0}+(\alpha-x_{0})(\beta_{1}+(\alpha-x_{1})(...\underbrace{(\beta_{n-1}+(\alpha-x_{n-1})\underbrace{\beta_{n}}_{b_{n}})}_{b_{n-1}}))}_{b_{0}}
+\]
+
+\end_inset
+
+On va donc commencer par évaluer le terme le plus à l'intérieur du produit
+ puis on élargit progressivement, on pose donc : 
+\begin_inset Formula 
+\[
+\begin{cases}
+b_{n}=\beta_{n}\\
+b_{k}=\beta_{k}+(\alpha-x_{k})b_{k+1}\,\,\,\forall k\in\{0,...,n-1\}
+\end{cases}
+\]
+
+\end_inset
+
+Ainsi, il vient que 
+\begin_inset Formula $P(\alpha)=b_{0}$
+\end_inset
+
+ obtenu en partant de 
+\begin_inset Formula $b_{n}$
+\end_inset
+
+ et en appliquant successivement la relation de récurrence donnée ci-dessus.
+ C'est exactement ce que fait l'
+\shape italic
+Algorithme 1
+\shape default
+ donné en fin de TP.
+ Celui-ci initialise 
+\begin_inset Formula $n$
+\end_inset
+
+ avec le nombre de coefficient dans le tableau 
+\shape italic
+coeff 
+\shape default
+qui correspond au nombre de 
+\begin_inset Formula $\beta_{j}$
+\end_inset
+
+, puis applique la relation de récurrence ci-dessus pour trouver 
+\begin_inset Formula $b_{0}$
+\end_inset
+
+.
+ 
+\begin_inset Float algorithm
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula $b$
+\end_inset
+
+ ← 
+\begin_inset Formula $\beta[n]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Pour 
+\begin_inset Formula $k$
+\end_inset
+
+ de 
+\begin_inset Formula $n-1$
+\end_inset
+
+ à 0
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+hspace{0.5cm}
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $b$
+\end_inset
+
+ ← 
+\begin_inset Formula $\beta[k]+(A-x_{k})b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Retourner 
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Horner
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Remarque : Dans l'algorithme, 
+\begin_inset Formula $A$
+\end_inset
+
+ désigne un point d'évaluation différent des 
+\begin_inset Formula $x_{k}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Interpolation d'Hermite
+\end_layout
+
+\begin_layout Subsection
+Degré du polynôme d'interpolation
+\end_layout
+
+\begin_layout Standard
+On cherche ici un polynôme d'interpolation pour approcher une fonction 
+\begin_inset Formula $f$
+\end_inset
+
+.
+ On utilise l'interpolation d'Hermite et dans note cas on demande seulement
+ que :
+\begin_inset Formula 
+\[
+\forall i\in\{0,...,n\},\,\,P^{(k)}(x_{i})=f^{(k)}(x_{i})\,\,\,pour\,\,k=0,1
+\]
+
+\end_inset
+
+
+\begin_inset Formula $P$
+\end_inset
+
+ se voit donc imposer 
+\begin_inset Formula $(n+1)$
+\end_inset
+
+ conditions pour 
+\begin_inset Formula $k=0$
+\end_inset
+
+ et pareil pour 
+\begin_inset Formula $k=1$
+\end_inset
+
+, soit 
+\begin_inset Formula $2\times(n+1)$
+\end_inset
+
+ conditions.
+ On en déduit que :
+\begin_inset Formula 
+\begin{align*}
+deg(P) & =2n+2-1\\
+deg(P) & =2n+1
+\end{align*}
+
+\end_inset
+
+Plus précisément on peut montrer que qu'il existe un unique polynôme 
+\begin_inset Formula $P\in P[X^{N}]$
+\end_inset
+
+, avec dans notre cas 
+\begin_inset Formula $N=(n+1)\times2-1$
+\end_inset
+
+, qui soit solution du problème d'interpolation d'Hermite.
+\begin_inset Newline newline
+\end_inset
+
+
+\shape italic
+Preuve :
+\shape default
+
+\begin_inset Newline newline
+\end_inset
+
+Montrons que si le polynôme 
+\begin_inset Formula $P$
+\end_inset
+
+ de degrès 
+\begin_inset Formula $N=(n+1)\times2-1$
+\end_inset
+
+ existe et est solution du problème d'interpolation d'Hermite, alors cette
+ solution est unique.
+\end_layout
+
+\begin_layout Standard
+Soit 
+\begin_inset Formula $P$
+\end_inset
+
+ et 
+\begin_inset Formula $Q$
+\end_inset
+
+ 
+\begin_inset Formula $\in P[X^{N}]$
+\end_inset
+
+, deux solutions au problème d'interpolation d'Hermite.
+ Posons 
+\begin_inset Formula $R=P-Q$
+\end_inset
+
+, alors 
+\begin_inset Formula $R\in P[X^{N}]$
+\end_inset
+
+ donc le degré de 
+\begin_inset Formula $R$
+\end_inset
+
+ est au plus 
+\begin_inset Formula $N$
+\end_inset
+
+, et tous les 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ sont racines doubles de 
+\begin_inset Formula $R$
+\end_inset
+
+.
+ On a donc :
+\begin_inset Formula 
+\[
+\underbrace{R(x)}_{deg=N=2\times(n+1)-1}=C(x)\times\underbrace{\prod_{i=0}^{n}(x-x_{i})^{2}}_{deg=2\times(n+1)}
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $R$
+\end_inset
+
+ possède alors plus de racines que son degré, donc 
+\begin_inset Formula $R(x)=0\,\,\forall x\in\mathbb{R}$
+\end_inset
+
+ et ainsi 
+\begin_inset Formula $P=Q$
+\end_inset
+
+.
+ S'il existe une solution au problème alors celle-ci est unique.
+ 
+\begin_inset Newline newline
+\end_inset
+
+Montrons maintenant que cette solution existe.
+ On cherche donc 
+\begin_inset Formula $P\in P[X^{N}]$
+\end_inset
+
+ vérifiant les 
+\begin_inset Formula $N+1$
+\end_inset
+
+ équations, c'est à dire :
+\begin_inset Formula 
+\[
+(\sum_{j=0}^{N}\alpha_{j}x_{i}^{j}\,)^{(k)}(x_{i})=f^{(k)}(x_{i})\,\,\,\forall i\in\{0,...,n\},\,\,k=0,1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+\underbrace{\sum_{j=0}^{N}(x^{j}\,)^{(k)}(x_{i})}_{M_{lj}}\times\alpha_{j}=f^{(k)}(x_{i})\,\,\,\forall i\in\{0,...,n\},\,\,k=0,1
+\]
+
+\end_inset
+
+avec 
+\begin_inset Formula $l=i+(n+1)\times k$
+\end_inset
+
+.
+ Donc ce problème revient à résoudre un système linéaire de la forme :
+\begin_inset Formula 
+\[
+M\times\underline{\alpha}=F
+\]
+
+\end_inset
+
+Avec 
+\begin_inset Formula $M$
+\end_inset
+
+ une matrice carré.
+ Par unicité de la solution, 
+\begin_inset Formula $M$
+\end_inset
+
+ est injective, donc par le théorème du rang on a bien existence de la solution.
+\end_layout
+
+\begin_layout Subsection
+Base de Newton
+\end_layout
+
+\begin_layout Standard
+Pour adapter le problème d'interpolation à des degrès supérieur, on procède
+ à des ''copie'' de points.
+ Pour le problème d'interpolation d'Hermite de degré 1, on dédouble les
+ points.
+ Cela signifie que l'on a maintenant :
+\begin_inset Formula 
+\[
+x_{0}=y_{0}=y_{1}<x_{1}=y_{2}=y_{3}<...<x_{n}=y_{2n}=y_{2n+1}
+\]
+
+\end_inset
+
+On a donc bien 
+\begin_inset Formula $2n+2$
+\end_inset
+
+ points 
+\begin_inset Formula $y_{j}$
+\end_inset
+
+ ce qui est cohérent avec le degré du polynôme d'interpolation qui vaut
+ 
+\begin_inset Formula $(2n+2)-1$
+\end_inset
+
+.
+ Ainsi la base de Newton obtenue à partir de ces points est définie telle
+ que :
+\begin_inset Formula 
+\[
+\begin{cases}
+N_{0}(x)=1\\
+N_{i}(x)=\prod_{j=0}^{i-1}(x-y_{j}) & \forall i\in\{0,...,2n+1\}
+\end{cases}
+\]
+
+\end_inset
+
+Cette famille forme une base de 
+\begin_inset Formula $P[X^{2n+1}]$
+\end_inset
+
+.
+ Remarquons d'abord que 
+\begin_inset Formula $N_{i}(x)=0\;j>i$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+En effet soit 
+\begin_inset Formula $j>i$
+\end_inset
+
+, on a : 
+\begin_inset Formula 
+\[
+N_{i}(x_{j})=\prod_{k=0}^{i-1}\underbrace{(x_{j}-y_{k})}_{0\;quand\;k=j}=0
+\]
+
+\end_inset
+
+Montrons que cette famille est libre.
+ On pose :
+\begin_inset Formula 
+\[
+Q(x)=\sum_{i=0}^{n}N_{i}(x)\alpha_{i}
+\]
+
+\end_inset
+
+Montrons que 
+\begin_inset Formula $Q(x)=0\;\forall x\iff\alpha_{i}=0\;\forall i\in\{0,...,2n+1\}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Si on a 
+\begin_inset Formula $\sum_{i=0}^{n}N_{i}(x)\alpha_{i}=0\;\forall x$
+\end_inset
+
+ alors en 
+\begin_inset Formula $x=y_{0}$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+\sum_{i=0}^{n}N_{i}(y_{0})\alpha_{i}=0\iff\alpha_{0}=0
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+De même en 
+\begin_inset Formula $x=y_{1}$
+\end_inset
+
+ : 
+\begin_inset Formula 
+\[
+\sum_{i=0}^{n}N_{i}(y_{1})\alpha_{i}=\alpha_{1}\underbrace{N_{1}(y_{1})}_{\neq0}=0\iff\alpha_{1}=0
+\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+Et on continue ainsi pour déduire que 
+\begin_inset Formula $\alpha_{i}=0\;\forall i$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+Enfin, la famille des 
+\begin_inset Formula $(N_{i}(x))_{i\in0,..,2n+1}$
+\end_inset
+
+ possède 
+\begin_inset Formula $2n+2$
+\end_inset
+
+ élèments et 
+\begin_inset Formula $dim(P[X^{2n+1}])=2n+2$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+On déduit que la famille des 
+\begin_inset Formula $(N_{i}(x))_{i\in0,..,2n+1}$
+\end_inset
+
+ forme bien une base de 
+\begin_inset Formula $P[X^{2n+1}]$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subsection
+Algorithme des différences divisées pour l'interpolation d'Hermite
+\end_layout
+
+\begin_layout Standard
+Dans le cours nous avons pu généraliser l'algorithme de Neville-Aitkens
+ pour l'interpolation d'Hermite grâce au 
+\shape italic
+Théorème 4.4 
+\shape default
+qui nous donne la relation suivante entre les 
+\begin_inset Formula $T_{k}^{i}$
+\end_inset
+
+ :
+\begin_inset Formula 
+\begin{equation}
+T_{k+1}^{i}(x)=\begin{cases}
+\frac{(y_{i+k+1}-x)T_{k}^{i}(x)-(y_{i}-x)T_{k}^{i+1}(x)}{(y_{i+k+1}-y_{i})} & si\,\,y_{i+k+1}\ne y_{i}\\
+T_{k}^{i}(x)+f^{'}(y_{i})(x-y_{i}) & sinon
+\end{cases}
+\end{equation}
+
+\end_inset
+
+Les 
+\begin_inset Formula $T_{k}^{i}$
+\end_inset
+
+ sont les polynômes d'interpolation d'Hermite de degré 
+\begin_inset Formula $k$
+\end_inset
+
+ vérifiant la relation suivante :
+\begin_inset Formula 
+\[
+(T_{k}^{i}(y_{j}))^{(l)}=f^{(l)}(y_{j})\,\,\,\,\forall j\in\{i,...,i+k\},\,\,\,\forall l\in\{0,1\}
+\]
+
+\end_inset
+
+Nous allons maintenant utiliser ces relations pour généraliser l'algorithme
+ des différences divisées à un polynôme d'interpolation d'Hermite.
+\begin_inset Newline newline
+\end_inset
+
+On va procéder de la même manière que pour démontrer l'algorithme classique
+ des différences divisées.
+ 
+\begin_inset Newline newline
+\end_inset
+
+On pose cette fois :
+\begin_inset Formula 
+\[
+f[y_{i},...,y{}_{i+j}]=\begin{cases}
+\frac{f[y_{i+1},...,y_{i+j}]-f[y_{i},...,y_{i+j-1}]}{y_{i+j}-y_{i}} & si\,\,y_{i+j}\ne y_{i}\\
+\frac{f^{(j)}(y_{i})}{j!} & si\,\,y_{i+j}=y_{i}
+\end{cases}
+\]
+
+\end_inset
+
+Ceci est la formule générale pour des ordres de dérivations supérieurs à
+ 1.
+ Mais dans notre cas comme nous n'avons fait que dédoubler les points, on
+ a 
+\begin_inset Formula $y_{i+j}=y_{i}$
+\end_inset
+
+ seulement si 
+\begin_inset Formula $j=1$
+\end_inset
+
+.
+ On peut donc réécrire que dans le cas 
+\begin_inset Formula $y_{i+j}=y_{i}$
+\end_inset
+
+ (i.e.
+ 
+\begin_inset Formula $j=1$
+\end_inset
+
+), on a 
+\begin_inset Formula $f[y_{i},...,y{}_{i+j}]=f^{'}(y_{i})$
+\end_inset
+
+.
+ De plus, on sait d'après la question précédente que notre polynôme d'interpolat
+ion admet une décomposition dans la base de Newton telle que :
+\begin_inset Formula 
+\[
+P(x)=\sum_{j=0}^{2n+1}\beta_{j}N_{j}(x)=T_{2n+1}^{0}(x)
+\]
+
+\end_inset
+
+On veut montrer que cette décomposition s'écrit en fait comme suit :
+\begin_inset Formula 
+\[
+P(x)=f[y_{0}]N_{0}(x)+f[y_{0},y_{1}]N_{1}(x)+...+f[y_{0},y_{1},...,y_{2n+1}]N_{2n+1}(x)
+\]
+
+\end_inset
+
+
+\series bold
+\shape italic
+Preuve : 
+\end_layout
+
+\begin_layout Standard
+Soit 
+\begin_inset Formula $T_{k}^{i}$
+\end_inset
+
+ le polynôme d'interpolation d'Hermite définit précédemment 
+\begin_inset Formula $(1.2)$
+\end_inset
+
+.
+ Prouvons par récurrence sur 
+\begin_inset Formula $k$
+\end_inset
+
+ que 
+\begin_inset Formula $\forall i\in\{0,...,2n+1\}$
+\end_inset
+
+ on ait :
+\begin_inset Formula 
+\begin{equation}
+T_{k}^{i}(x)=f[y_{i}]+f[y_{i},y_{i+1}](x-y_{i})+...+f[y_{i},y_{i+1},...,y_{i+k}]\prod_{j=i}^{i+k-1}(x-y_{j})
+\end{equation}
+
+\end_inset
+
+
+\shape italic
+Initialisation :
+\shape default
+ Pour 
+\begin_inset Formula $k=0$
+\end_inset
+
+, la proposition est vraie car 
+\begin_inset Formula $f[y_{i}]=f(y_{i})=T_{0}^{i}(x)$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\shape italic
+Hérédité : 
+\shape default
+Supposons la propriété vraie au rang 
+\begin_inset Formula $k$
+\end_inset
+
+, et montrons son hérédité.
+ On peut donc écrire 
+\begin_inset Formula $T_{k+1}^{i}$
+\end_inset
+
+ dans la base de Newton comme suit :
+\begin_inset Formula 
+\[
+T_{k+1}^{i}(x)=\beta_{0}+\beta_{1}(x-y_{i})+...+\beta_{k+1}\prod_{j=i}^{i+k}(x-y_{j})
+\]
+
+\end_inset
+
+On évalue alors 
+\begin_inset Formula $T_{k}^{i}(x)$
+\end_inset
+
+ et 
+\begin_inset Formula $T_{k+1}^{i}(x)$
+\end_inset
+
+ en 
+\begin_inset Formula $x=y_{i}$
+\end_inset
+
+, ce qui nous donne : 
+\begin_inset Formula $\begin{cases}
+T_{k}^{i}(y_{i})=f[y_{i}]\\
+T_{k+1}^{i}(y_{i})=\beta_{0}
+\end{cases}$
+\end_inset
+
+.
+ Or 
+\begin_inset Formula $\forall j\in\{i,...,i+k\}$
+\end_inset
+
+ , on a 
+\begin_inset Formula $T_{k}^{i}(y_{j})=T_{k+1}^{i}(y_{j})$
+\end_inset
+
+.
+ On déduit alors que 
+\begin_inset Formula $\beta_{0}=f[y_{i}]$
+\end_inset
+
+.
+ De la même façon on obtient 
+\begin_inset Formula $T_{k}^{i}(y_{i+1})=f[y_{i}]+f[y_{i},y_{i+1}](y_{i+1}-y_{i})$
+\end_inset
+
+ et 
+\begin_inset Formula $T_{k+1}^{i}(y_{i+1})=f[y_{i}]+\beta_{1}(y_{i+1}-y_{i})$
+\end_inset
+
+, on déduit donc que 
+\begin_inset Formula $\beta_{1}=f[y_{i},y_{i+1}]$
+\end_inset
+
+.
+ On répète le même processus 
+\begin_inset Formula $\forall y_{j},j\in\{i,...,i+k\}$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+Il nous reste maintenant à montrer que : 
+\begin_inset Formula $\beta_{k+1}=f[y_{i},y_{i+1},...,y_{i+k+1}]$
+\end_inset
+
+.
+ Pour cela on utilise la relation 
+\begin_inset Formula $(1.2)$
+\end_inset
+
+.
+ De plus on peut écrire que 
+\begin_inset Formula 
+\[
+T_{k+1}^{i}(x)=T_{k}^{i}(x)+\beta_{k+1}\prod_{j=i}^{i+k}(x-y_{j})
+\]
+
+\end_inset
+
+Donc 
+\begin_inset Formula $\beta_{k+1}$
+\end_inset
+
+ est facteur du terme de plus haut degré.
+ On distingue alors 2 cas suivant si 
+\begin_inset Formula $y_{i}\neq y_{i+k+1}$
+\end_inset
+
+ ou si 
+\begin_inset Formula $y_{i}=y_{i+k+1}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Itemize
+Si 
+\begin_inset Formula $y_{i}\neq y_{i+k+1}$
+\end_inset
+
+ alors on utilise la formule associée de la relation 
+\begin_inset Formula $(1.2)$
+\end_inset
+
+, on remplace 
+\begin_inset Formula $T_{k}^{i}$
+\end_inset
+
+ et 
+\begin_inset Formula $T_{k}^{i+1}$
+\end_inset
+
+ par l'hypothèse de récurrence 
+\begin_inset Formula $(1.3)$
+\end_inset
+
+, et on regarde uniquement le coefficient de plus haut degré, on a alors
+ :
+\begin_inset Formula 
+\[
+\beta_{k+1}=\frac{f[y_{i+1},...,y_{i+k+1}]-f[y_{i},y_{i+1},...,y_{i+k}]}{y_{i+k+1}-y_{i}}=f[y_{i},y_{i+1},...,y_{i+k+1}]
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Si 
+\begin_inset Formula $y_{i}=y_{i+k+1}$
+\end_inset
+
+, alors comme on a juste dédoublé les points 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ cela n'arrive que si 
+\begin_inset Formula $k=0$
+\end_inset
+
+ (i.e pour calculer la deuxième colonne du tableau).
+ Si on imposait une égalité de 
+\begin_inset Formula $P$
+\end_inset
+
+ avec 
+\begin_inset Formula $f$
+\end_inset
+
+ à des ordres de dérivations supérieures, cela vaudrait également pour d'autres
+ 
+\begin_inset Formula $k$
+\end_inset
+
+ (i.e pour d'autre colonnes).
+ Dans notre cas on obtient directement que si 
+\begin_inset Formula $y_{i}=y_{i+1}$
+\end_inset
+
+ on a par la relation 
+\begin_inset Formula $(1.2)$
+\end_inset
+
+ :
+\begin_inset Formula 
+\[
+\beta_{k+1}=\beta_{1}=f^{'}(y_{i})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ce qui prouve que l'on peut bien écrire :
+\begin_inset Formula 
+\[
+T_{k}^{i}(x)=f[y_{i}]+f[y_{i},y_{i+1}](x-y_{i})+...+f[y_{i},y_{i+1},...,y_{i+k}]\prod_{j=i}^{i+k-1}(x-y_{j})\,\,\,\forall k\in\{0,...,i\},\,\,\forall i\in\{0,...,2n+1\}
+\]
+
+\end_inset
+
+Par unicité du polynôme d'interpolation, 
+\begin_inset Formula $T_{2n+1}^{0}(x)=P(x)$
+\end_inset
+
+, on déduit que l'on peut écrire 
+\begin_inset Formula $P$
+\end_inset
+
+ tel que :
+\begin_inset Formula 
+\[
+P(x)=f[y_{0}]N_{0}(x)+f[y_{0},y_{1}]N_{1}(x)+...+f[y_{0},y_{1},...,y_{2n+1}]N_{2n+1}(x)
+\]
+
+\end_inset
+
+Et cela justifie alors la formule posée pour déterminer les 
+\begin_inset Formula $f[y_{i},...,y_{i+j}]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Chapter
+Code
+\end_layout
+
+\begin_layout Section
+Doit-on adapter Hörner ?
+\end_layout
+
+\begin_layout Standard
+Non, il n'est pas nécessaire de changer l'algorithme de Hörner pour évaluer
+ le polynôme d'interpolation en un point 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ En effet, comme expliquer dans la section 
+\begin_inset Formula $1.1$
+\end_inset
+
+, l'algorithme de Hörner se construit à partir de la décomposition du polynôme
+ d'interpolation dans la base de Newton.
+ Or pour l'interpolation d'Hermite on dédouble les 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ en 
+\begin_inset Formula $y_{j}$
+\end_inset
+
+ de la sorte : 
+\begin_inset Formula $x_{0}=y_{0}=y_{1}<x_{1}=y_{2}=y_{3}<...<x_{n}=y_{2n}=y_{2n+1}$
+\end_inset
+
+.
+ Les points que l'on va maintenant considérer sont donc les 
+\begin_inset Formula $(y_{i})_{i=0,..,2n+1}$
+\end_inset
+
+.
+ Et le fait qu'il soit 2 à 2 égaux ne changent en rien Hörner.
+ En effet le polynôme d'interpolation d'Hermite associé à ces 
+\begin_inset Formula $y_{i}$
+\end_inset
+
+ admet lui aussi une décomposition dans la base de Newton tel que :
+\begin_inset Formula 
+\begin{align*}
+P(x) & =f[y_{0}]N_{0}(x)+f[y_{0},y_{1}]N_{1}(x)+...+f[y_{0},y_{1},...,y_{2n+1}]N_{2n+1}(x)\\
+ & =\sum_{j=0}^{2n+1}f[y_{0},...,y_{j}]N_{j}(x)
+\end{align*}
+
+\end_inset
+
+avec cette fois : 
+\begin_inset Formula $N_{i}(x)=\prod_{j=0}^{i-1}(x-y_{j})$
+\end_inset
+
+.
+ Donc on peut refaire exactement comme dans la partie théorique, simplement
+ dans notre cas les 
+\begin_inset Formula $\beta_{j}$
+\end_inset
+
+ sont les 
+\begin_inset Formula $f[y_{0},...,y_{j}]$
+\end_inset
+
+, il y a donc 2 fois plus de coefficients que dans le cas classique mais
+ la manière de procéder est strictement la même.
+ C'est à dire qu'on aura évalué en 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ :
+\begin_inset Formula 
+\[
+\begin{cases}
+b_{2n+1}=\beta_{2n+1}=f[y_{0},y_{1},...,y_{2n+1}]\\
+b_{k}=\beta_{k}+(\alpha-x_{k})b_{k+1}\,\,\,\forall k\in\{0,...,2n\}
+\end{cases}
+\]
+
+\end_inset
+
+Et on descendra jusqu'à obtenir 
+\begin_inset Formula $P(\alpha)=b_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+Comparaison des méthodes implémentées
+\end_layout
+
+\begin_layout Subsection
+Étude de l'influence de la répartition des points d'interpolation
+\end_layout
+
+\begin_layout Standard
+Dans cette partie, nous allons procéder à la comparaison de 2 méthodes différent
+es pour le choix du positionnement de nos points d'interpolation.
+ La première méthode consiste à choisir des points équi-répartis, la seconde
+ à prendre les points de Tchebychev, qui sont plus exactement les racines
+ du polynôme de Tchebychev 
+\begin_inset Formula $T_{n+1}(x)$
+\end_inset
+
+, polynôme de degré 
+\begin_inset Formula $n+1$
+\end_inset
+
+.
+ Observons l'allure des polynômes d'interpolation suivant le choix des points.
+ Prenons dans un premier temps 
+\begin_inset Formula $N=4$
+\end_inset
+
+, c'est à dire 5 points d'interpolation.
+ On a les graphes suivants :
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename image/resultat/RepartitionPtsInter/N4.png
+	lyxscale 30
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+On remarque immédiatement que pour les 2 algorithmes utilisés les points
+ de Tchebychev donnent une bien meilleure approximation de la fonction interpolé
+e, qui est ici 
+\begin_inset Formula $f(x)=cos(2\pi x)$
+\end_inset
+
+.
+ En effet le polynôme d'interpolation obtenu avec les points équi-répartis
+ est relativement éloigné de 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ puisqu'il possède un minimum inférieur à 
+\begin_inset Formula $-1.5$
+\end_inset
+
+, alors que 
+\begin_inset Formula $f(x)\in[-1;1]$
+\end_inset
+
+.
+ De plus ces minima devraient être situé en 
+\begin_inset Formula $-\frac{1}{2}$
+\end_inset
+
+ et 
+\begin_inset Formula $\frac{1}{2}$
+\end_inset
+
+, et sont ici plutôt aux alentours de 
+\begin_inset Formula $0,75$
+\end_inset
+
+.
+ Le polynôme obtenu grâce aux points d'interpolation de Tchebychev, lui
+ est bien plus proche de 
+\begin_inset Formula $f(x)$
+\end_inset
+
+, bien que ses minima soient également atteint en 
+\begin_inset Formula $\pm0,7$
+\end_inset
+
+ au lieu de 
+\begin_inset Formula $\pm0,5$
+\end_inset
+
+.
+ 
+\begin_inset Newline newline
+\end_inset
+
+De même pour 
+\begin_inset Formula $N=6$
+\end_inset
+
+ on obtient les graphes suivant :
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename image/resultat/RepartitionPtsInter/N6.png
+	lyxscale 30
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Comme précédemment le polynôme d'interpolation obtenu avec les points équi-répar
+tis est moins bon que celui obtenu à partir des points de Tchebychev.
+ On peut conclure que lorsque le nombre de points est relativement faible,
+ les points de Tchebychev donnent une bien meilleure apporximation de 
+\begin_inset Formula $f(x)$
+\end_inset
+
+ que les points équi-répartis.
+ Lorsque 
+\begin_inset Formula $N$
+\end_inset
+
+ grandi cependant la différence semble s'atténuer quelque peu, du moins
+ pour cette fonction.
+ Prenons 
+\begin_inset Formula $N=14$
+\end_inset
+
+ par exemple :
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename image/resultat/RepartitionPtsInter/N14.png
+	lyxscale 30
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Cette fois les 2 polynômes d'interpolation se ressemble beaucoup, et ont
+ une allure très proche de celle de 
+\begin_inset Formula $f(x)$
+\end_inset
+
+.
+ L'impact du choix des points, au moins sur cette fonction, semble moindre
+ lorsque le nombre de points augmente.
+ 
+\end_layout
+
+\begin_layout Subsection
+Étude de l'influence du nombre de points d'interpolation
+\end_layout
+
+\begin_layout Standard
+Dans cette partie nous allons nous intérresser à l'impact du nombre de points
+ sur le polynôme d'interpolation.
+ Intuitivement, on pense que plus le nombre de points d'interpolation va
+ être élevé, meilleure sera l'approximation de la fonction par le polynôme
+ d'interpolation.
+ C'est d'ailleurs ce quise produisait dans l'exemple donné juste au dessus.
+ Malheureusement, ce n'est qu'en partie vrai, car dans certains cas, en
+ fonction de la méthode d'interpolation utilisée et de la fonction approximée,
+ l'augmentation du nombre 
+\begin_inset Formula $N$
+\end_inset
+
+ de points ne permet pas une meilleure approximation de la fonction.
+ On a notamment un célèbre exemple qui est dû à Runge que nous verrons dans
+ la suite.
+ Voyons donc ce qu'il en est dans notre cas.
+ Pour 
+\begin_inset Formula $N=4$
+\end_inset
+
+, on a :
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename image/cos/comparaisonCOS4.pdf
+	lyxscale 30
+	scale 30
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename image/comparaisonABS/comparaisonABs4.pdf
+	lyxscale 30
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Interpolation des fonctions cosinus et valeur absolue pour 
+\begin_inset Formula $N=4$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Comme expliquer dans la partie précédente l'interpolation n'est pas de très
+ bonne qualité, bien que cela dépend aussi des méthodes choisies.
+ On obtient cependant un resultat qui se rapproche déjà assez bien des fonctions
+ pour les méthodes d'interpolation d'Hermite pour les deux types de points.
+ Augmentons le nombre de points, pour 
+\begin_inset Formula $N=15$
+\end_inset
+
+ on a :
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename image/cos/comparaisonCOS15.pdf
+	lyxscale 30
+	scale 30
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename image/comparaisonABS/comparaisonABS15.pdf
+	lyxscale 30
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Interpolation des fonctions cosinus et valeur absolue pour 
+\begin_inset Formula $N=15$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+On constate dans ce cas une très nette amélioration en terme de précision
+ d'approximation de 
+\begin_inset Formula $f$
+\end_inset
+
+, et ce pour toutes les méthodes pour la fonction cosinus.
+ En revanche, pour la fonction valeur absolue, le résultats est totalement
+ éroné pour les points équi-répartis.
+ On serait tenté de dire que l'augmentation du nombre de points, au moins
+ pour les points de Tchebychev, va être bénéfique.
+ Doublons alors le nombre de points, on obtient ainsi :
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename image/cos/comparaisonCOS30.pdf
+	lyxscale 30
+	scale 30
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename image/comparaisonABS/comparaisonABS30.pdf
+	lyxscale 30
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Interpolation des fonctions cosinus et valeur absolue pour 
+\begin_inset Formula $N=30$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Dans ce cas avec 
+\begin_inset Formula $N=30$
+\end_inset
+
+, trois de nos 8 graphiques donnent un résultat complétement abberant pour
+ la fonction cosinus.
+ Précisément ce sont les 2 algorithmes utilisant Hermite qui, ici ne fonctionnen
+t plus.
+ Ici la cause n'est pas le phénomène de Runge, car la fonction approché
+ est un cosinus.
+ La cause de ce dysfonctionnement semble donc provenir de l'augmentation
+ du nombre de points.
+ En effet, l'une des causes probables est que l'on interpole la fonction
+ sur l'intervalle 
+\begin_inset Formula $[-1;1]$
+\end_inset
+
+.
+ Ici on prend 
+\begin_inset Formula $N=30$
+\end_inset
+
+, soit 
+\begin_inset Formula $31$
+\end_inset
+
+ points, mais globalement plus 
+\begin_inset Formula $N$
+\end_inset
+
+ augmente, plus les points d'interpolation vont être proches, et leurs différenc
+es faibles.
+ De plus on sait qu'en machine étant codé sur un nombre fini de bits, la
+ plupart des nombres réels ne peuvent pas être représentés de manière exact.
+ Sur 64 bits on dispose d'une précision machine d'environ 
+\begin_inset Formula $10^{-16}$
+\end_inset
+
+.
+ Ainsi en augmentant 
+\begin_inset Formula $N$
+\end_inset
+
+, on augmente d'une part le nombre de calculs qui doit réalisé par les algorithm
+es et d'une autre part on rapproche les points les uns des autres.
+ Or que ce soit l'algorithme de Neville-Aitkens, ou celui des différences
+ divisées+Hörner, on fait à un moment donné une division d'un terme par
+ la différence de 2 points d'interpolations qui sont proches car 
+\begin_inset Formula $N$
+\end_inset
+
+ est grand.
+ Donc le dénominateur devient petit, et il y a possiblement des propagations
+ d'erreurs, et le résultat peut rapidement exploser si le dénominateur se
+ rapproche de 0.
+ En fait quand 
+\begin_inset Formula $N$
+\end_inset
+
+ devient grand cela fait ressortir l'instabilité des algorithmes, car demande
+ plus de calculs ce qui propage davantages d'erreurs.
+ D'ailleurs les algorithmes ayant échoué sont ceux utilisant l'interpolation
+ d'Hermite, ce qui n'est pas étonnant car ils demandent de dédoubler les
+ points, on a donc 2 fois plus de calculs, donc plus de possiblités de propagati
+ons d'erreurs.
+ C'est en cela que, dans notre cas, l'augmentation trop importante du nombre
+ de points peut-être néfaste.
+ 
+\end_layout
+
+\begin_layout Standard
+Pour ce qui est de la fonction valeur absolue seul les points de Tchebychev
+ fonctionnent, ce qui confirme encore qu'ils sont bien meilleure que les
+ points équi-répartis.
+ Cependant ici l'augmentation du nombre de points n'est pas non plus bénéfique
+ car la méthode des différences divisées appliquées à l'interpolation d'Hermite
+ ne fonctionne plus même avec les points de Tchebychev.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Observons maintenant le résultat pour 
+\begin_inset Formula $N=80$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename image/cos/comparaisonCOS80.pdf
+	lyxscale 30
+	scale 30
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename image/comparaisonABS/comparaisonABS80.pdf
+	lyxscale 30
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Interpolation des fonctions cosinus et valeur absolue pour 
+\begin_inset Formula $N=80$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Sans surprise le résultat est une nouvelle fois abberant, ce qui confirme
+ bien qu'augmenter le nombre de points au-delà d'un certain rang n'apportera
+ pas plus de précision pout les points équi-répartis.
+ En revanche, on peut noter que l'algorithme de Neville-Aitken s'en sort
+ très bien avec les points de Tchebychev.
+ De plus, la fonction valeur absolue n'étant pas différentiable en 
+\begin_inset Formula $0$
+\end_inset
+
+, il est difficile d'estimer une majoration de l'erreur.
+ L'erreur reste cependant très faible entre la fonction et le polynôme d'interpo
+lation de Lagrange, du moins visuellement parlant.
+\end_layout
+
+\begin_layout Subsection
+Étude de l'influence de la méthode d'évaluation utilisée
+\end_layout
+
+\begin_layout Standard
+Intérressons nous maintenant aux différentes méthodes.
+ On va considérer ici 4 méthodes, qui sont Neville-Aitkens et Différences
+ Divisées+Hörner, puis ces 2 méthodes adaptées à l'interpolation d'Hermite
+ au premier ordre.
+ 
+\end_layout
+
+\begin_layout Standard
+D'après les graphiques des sections précédentes, on voit clairement que
+ lorsque 
+\begin_inset Formula $N$
+\end_inset
+
+ est petit, par exemple pour 
+\begin_inset Formula $N=4$
+\end_inset
+
+, l'interpolation d'Hermite est bien plus précise que les méthode appliquées
+ de manière classique.
+ Ce qui est normal car on impose plus de conditions.
+ Ensuite on a vu précédemment que lorsque l'on augmente 
+\begin_inset Formula $N$
+\end_inset
+
+, ce sont d'abord les méthodes utilisant l'interpolation d'Hermite qui donnent
+ des résultats érronés.
+ Cela est sûrement du au fait qu'elles demandent plus de calculs, donc il
+ y a probablement davantage de propagation d'erreurs ce qui conduit à de
+ tels résultats.
+ 
+\end_layout
+
+\begin_layout Standard
+Ensuite si on compare Neville-Aitkens et les Différences Divisées, il semblerait
+ que l'algorithme effectuant les Différences Divisées et Hörner soit moins
+ stable que Neville-Aitkens.
+ En effet, si l'on regarde le graphique précédent par exemple, pour 
+\begin_inset Formula $N=80$
+\end_inset
+
+, les 2 seuls algorithmes ayant fonctionné sont ceux basés sur Neville-Aitkens.
+ De même pour 
+\begin_inset Formula $N=30$
+\end_inset
+
+, l'interpolation d'Hermite basé sur Neville-Aitkens fonctionnait un peu
+ mieux que celle basé sur les Différences Divisées et Hörner.
+ Cependant ce dernier algorithme à l'avantage d'avoir un coût de calcul
+ moindre.
+ 
+\end_layout
+
+\begin_layout Standard
+Finalement, notons que lorsque 
+\begin_inset Formula $N$
+\end_inset
+
+ est petit les algorithmes de Neville-Aitkens et des Différences Divisées+Hörner
+ donnent quasiment les mêmes résultats.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+Etude du phénomène Runge
+\end_layout
+
+\begin_layout Standard
+On a vu que l'erreur du polynôme d'interpolation par rapport à la fonction
+ était majorée par 
+\begin_inset Formula $\frac{\Vert f^{(n+1)}\Vert_{\infty}}{(n+1)!}\Vert v_{n}\Vert_{\infty}$
+\end_inset
+
+ avec 
+\begin_inset Formula $v_{n}=\prod_{i=0}^{n}(x-x_{i})$
+\end_inset
+
+.
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename image/focntionBizarre/comparaisonFCTBIZARRE5.pdf
+	lyxscale 30
+	scale 30
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename image/focntionBizarre/comparaisonFCTBIZARRE10.pdf
+	lyxscale 30
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+Comparaison des méthode pour la fonction 
+\begin_inset Formula $f(x)=\frac{1}{1+25x^{2}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace 1cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Pour des points équi-répartis, lorsqu'on augmente le nombre de points, on
+ constate que le polynôme se met à osciller fortement entre les points 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ avec une amplitude de plus en plus grande, comme l'illustre la figure.
+ On appelle cela le phénomène de Runge, la norme infini de 
+\begin_inset Formula $v_{n}$
+\end_inset
+
+ tend vers l'infini lorsque 
+\begin_inset Formula $n$
+\end_inset
+
+ augmente plus vit que le dénominateur 
+\begin_inset Formula $(n+1)!$
+\end_inset
+
+.
+ Les points d'interpolation de Tchebychev permettent de minimiser la 
+\begin_inset Formula $\Vert v_{n}\Vert_{\infty}$
+\end_inset
+
+ lorsque le nombre de points augmente, et c'est bien ce que l'on observe
+ sur la figure.
+\end_layout
+
+\begin_layout Subsection
+Bonus 1
+\end_layout
+
+\begin_layout Standard
+Nous avons implémenté l'algorithme de Neville-Aitkens pour l'interpolation
+ d'Hermite.
+ Il est accessible à partir du menu s'affichant lors de l'exécution du main.
+\end_layout
+
+\begin_layout Subsection
+Bonus 2
+\end_layout
+
+\begin_layout Standard
+Nous avons implémenté les algorithmes de Neville-Aitkens et des différences
+ divisées pour l'interpolation d'Hermite à l'ordre 2.
+ Ils sont accessible à partir du menu s'affichant lors de l'exécution du
+ main.
+\end_layout
+
+\begin_layout Part
+Interpolation de la trajectoire de Moustik
+\end_layout
+
+\begin_layout Chapter
+Aspect théorique
+\end_layout
+
+\begin_layout Standard
+Pour approcher la dérivée 
+\begin_inset Formula $x_{0}(t_{i})$
+\end_inset
+
+ (de même pour 
+\begin_inset Formula $y_{0}(t_{i})$
+\end_inset
+
+), on se propose de considérer le polynôme d’interpolation associé aux points
+ 
+\begin_inset Formula $(t_{i-1},x_{i-1}),\;(t_{i},x_{i})\;et\;(t_{i+1},x_{i+1})$
+\end_inset
+
+ (resp.
+ 
+\begin_inset Formula $(t_{i-1},y_{i-1}),(t_{i},y_{i})$
+\end_inset
+
+ et 
+\begin_inset Formula $(t_{i+1},y_{i+1})$
+\end_inset
+
+), qu’on notera 
+\begin_inset Formula $S_{i}(t)$
+\end_inset
+
+ (resp.
+ 
+\begin_inset Formula $P_{i}(t)$
+\end_inset
+
+).
+ 
+\end_layout
+
+\begin_layout Standard
+Commençons d'abord par traiter les conditions limites, c'est à dire lorsque
+ 
+\begin_inset Formula $i=0$
+\end_inset
+
+, ou 
+\begin_inset Formula $i=n$
+\end_inset
+
+.
+ Dans ce cas le polynôme d'interpolation passera seulement par 2 points
+ et sera donc une droite.
+ On a donc pour 
+\begin_inset Formula $i=0$
+\end_inset
+
+ : 
+\begin_inset Formula 
+\[
+S_{0}(t)=\frac{(x_{1}-x_{0})(t-t_{0})}{(t_{1}-t_{0})}+x_{0}
+\]
+
+\end_inset
+
+Et donc en dérivant, on obtient 
+\begin_inset Formula $S_{0}^{'}$
+\end_inset
+
+ constante et qui vaut :
+\begin_inset Formula 
+\[
+S_{0}^{'}(t)=S_{0}^{'}(t_{0})=\frac{(x_{1}-x_{0})}{(t_{1}-t_{0})}=x^{'}(t_{0})
+\]
+
+\end_inset
+
+On fait de même lorsque 
+\begin_inset Formula $i=n$
+\end_inset
+
+, pour obtenir :
+\begin_inset Formula 
+\[
+S_{n}^{'}(t)=S_{n}^{'}(t_{n})=\frac{(x_{n}-x_{n-1})}{(t_{n}-t_{n-1})}=x^{'}(t_{n})
+\]
+
+\end_inset
+
+On procède exactement pareil pour le calcul de 
+\begin_inset Formula $P_{0}^{'}$
+\end_inset
+
+ et 
+\begin_inset Formula $P_{n}^{'}$
+\end_inset
+
+, ce qui nous donne :
+\begin_inset Formula 
+\[
+\begin{cases}
+P_{0}^{'}(t_{0})=\frac{(y_{1}-y_{0})}{(t_{1}-t_{0})} & si\,\,i=0\\
+P_{n}^{'}(t_{n})=\frac{(y_{n}-y_{n-1})}{(t_{n}-t_{n-1})} & si\,\,i=n
+\end{cases}
+\]
+
+\end_inset
+
+Exprimons maintenant le polynôme d'interpolation 
+\begin_inset Formula $S_{i}(t)$
+\end_inset
+
+ dans le cas général, c'est à dire lorsque 
+\begin_inset Formula $i\in\{1,...,n-1\}$
+\end_inset
+
+.
+ On procède par la méthode de Neville-Aitken.
+ Posons : 
+\begin_inset Formula 
+\begin{align*}
+t_{i-1}=X_{0},\,\, & x_{i-1}=Y_{0}\\
+t_{i}=X_{1},\,\, & x_{i}=Y_{1}\\
+t_{i+1}=X_{2},\,\, & x_{i+1}=Y_{2}
+\end{align*}
+
+\end_inset
+
+Remarquons que cette fois nous disposons de trois points, donc le polynôme
+ d'interpolation sera de degré deux.
+\series bold
+
+\begin_inset Newline newline
+\end_inset
+
+Étape 0 :
+\series default
+ On pose : 
+\begin_inset Formula 
+\begin{align*}
+T_{0}^{0} & =Y_{0}\\
+T_{0}^{1} & =Y_{1}\\
+T_{0}^{2} & =Y_{2}
+\end{align*}
+
+\end_inset
+
+
+\series bold
+Étape 1 :
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+T_{1}^{0}(X) & =\frac{T_{0}^{0}(X)(X_{1}-X)-T_{0}^{1}(X_{0}-X)}{(X_{1}-X_{0})}\\
+ & =\frac{Y_{0}(X_{1}-X)-Y_{1}(X_{0}-X)}{(X_{1}-X_{0})}
+\end{align*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+et 
+\begin_inset Formula 
+\begin{align*}
+T_{1}^{1}(X) & =\frac{T_{0}^{1}(X)(X_{2}-X)-T_{0}^{2}(X_{1}-X)}{(X_{2}-X_{1})}\\
+ & =\frac{Y_{1}(X_{2}-X)-Y_{2}(X_{1}-X)}{(X_{2}-X_{1})}
+\end{align*}
+
+\end_inset
+
+
+\series bold
+Étape 2 :
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\begin{align*}
+T_{2}^{0}(X) & =\frac{T_{1}^{0}(X)(X_{2}-X)-T_{1}^{1}(X_{0}-X)}{(X_{2}-X_{0})}
+\end{align*}
+
+\end_inset
+
+Après développement des calculs et dérivation de 
+\begin_inset Formula $S_{i}(t)=T_{2}^{0}(t)$
+\end_inset
+
+ ,on obtient : 
+\begin_inset Formula 
+\begin{align*}
+\left(S_{i}(t)\right)' & =Y_{0}\frac{(2XX_{2}-X_{2}^{2}+X_{1}^{2}-2XX_{1})}{(X_{2}-X_{0})(X_{2}-X_{1})(X_{1}-X_{0})}\\
+ & +Y_{1}\frac{X_{2}^{2}-2XX_{2}+2XX_{0}-X_{0}^{2}}{(X_{2}-X_{0})(X_{2}-X_{1})(X_{1}-X_{0})}\\
+ & +Y_{2}\frac{X_{1}^{2}-2X_{1}X_{0}+X_{0}^{2}}{(X_{2}-X_{0})(X_{2}-X_{1})(X_{1}-X_{0})}
+\end{align*}
+
+\end_inset
+
+En évaluant en 
+\begin_inset Formula $X_{1}$
+\end_inset
+
+, on a alors
+\begin_inset Formula 
+\begin{align*}
+\left(S_{i}(X_{1})\right)' & =Y_{0}\frac{(X_{1}-X_{2})}{(X_{2}-X_{0})(X_{1}-X_{0})}\\
+ & +Y_{1}\frac{X_{2}-2X_{1}+X_{0}}{(X_{2}-X_{1})(X_{1}-X_{0})}\\
+ & +Y_{2}\frac{X_{1}-X_{0}}{(X_{2}-X_{0})(X_{2}-X_{1})}
+\end{align*}
+
+\end_inset
+
+Finalement,
+\begin_inset Formula 
+\[
+S'(t_{i})=\frac{x_{i-1}(t_{i}-t_{i+1})+x_{i}(t_{i+1}-2t_{i}+t_{i-1})+x_{i+1}(t_{i}-t_{i-1})}{(t_{i+1}-t_{i-1})(t_{i}-t_{i-1})(t_{i+1}-t_{i})}=x^{'}(t_{i})
+\]
+
+\end_inset
+
+On procède exactement de la même manière pour obtenir 
+\begin_inset Formula $P_{i}'(t_{i}),$
+\end_inset
+
+ donc on l'obtient ici en remplaçant les 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ par 
+\begin_inset Formula $y_{i}$
+\end_inset
+
+.
+\begin_inset Formula 
+\[
+P'(t_{i})=\frac{y_{i-1}(t_{i}-t_{i+1})+y_{i}(t_{i+1}-2t_{i}+t_{i-1})+y_{i+1}(t_{i}-t_{i-1})}{(t_{i+1}-t_{i-1})(t_{i}-t_{i-1})(t_{i+1}-t_{i})}=y^{'}(t_{i})
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Code
+\end_layout
+
+\begin_layout Section
+Test des différentes méthodes sur les jeux de données
+\end_layout
+
+\begin_layout Standard
+Nous allons ici tester les 3 méthodes que sont Neville-Aitkens, les Différences
+ divisées + Hörner, et les Différences divisées adaptées à l'interpolation
+ d'Hermite su différents jeux de données.
+ Commençons par tester ces méthodes sur le jeu de donées dessin3.data, qui
+ est une trajectoire simple.
+ Sur ce jeu de données on obtient :
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename image/dessin/SImple.pdf
+	lyxscale 30
+	scale 27
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Les 2 premières méthodes donnent la même chose, cependant on observe une
+ différence importante entre les points équi-répartis à gauche et ceux de
+ tchebychev à droite, qui nous donnent un bien meilleur résultat.
+ La troisième méthode, celle utilisant les différences divisées ne fonctionnent
+ pas.
+ Au vu de l'allure relativement simple de la trajectoire cela est étonnant,
+ mais si il y a une erreur dans notre code ou dans la formule de calcul,
+ nous n'avons pas réussi à la trouver ! 
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename image/dessin/cercle.pdf
+	lyxscale 30
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En ce qui concerne le cercle, on peut remarquer que les algorithmes de Neville-A
+itken et des différences divisées ont l'air de bien fonctionner que ce soit
+ pour les points équi-répartis ou bien les points de Tchebychev.
+ En revanche, lorsque l'on passe au problème d'Hermite, les algorithmes
+ nous donnent tous les deux des résultats érronés, encore une fois.
+ On peut quand même noté l'apparence d'un cercle pour les points de Tchebychev.
+ 
+\end_layout
+
+\begin_layout Standard
+Pour l'interpolation de la trajectoire de Moustik seul l'algorithme de Neville-A
+itkens appliqué aux points de Tchebychev semble fonctionner.
+ Le résultat obtenu est alors le suivant :
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename image/dessin/bravo.pdf
+	lyxscale 30
+	scale 30
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Pour toutes les autres méthodes le résultat obtenu est complétement faux.
+\begin_inset Newline newline
+\end_inset
+
+De plus dans l'algorihtme des différences divisées + Hörner, c'est l'algorithme
+ des différences divisées qui semble être en cause dans le mauvais résultat
+ de l'interpolation et non celui d'Hörner.
+ En effet si à la sortie de l'algorithme des différences divisées on affiche
+ la matrice DD contenant les coefficients de la décomposition dans la base
+ de Newton du polynôme d'interpolation, on s'aperçoit que ceux-ci on des
+ valeurs très grande ce qui laisse penser à des divisions par des valeurs
+ proches de 0 au sein de l'algorithme, donnant lieu à des coefficents abberants.
+ Par ailleurs, l'algorithme d'Hörner ne fait que des additions, soustractions
+ et multiplications, mais pas de divisions.
+ Ces opérations sont donc moins à même de propager d'énormes erreurs, comme
+ peuvent le faire les divisions.
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Section
+Nouveau jeu de données (Bonus)
+\end_layout
+
+\begin_layout Standard
+Sous le même format que les jeux de données déjà existant, nous en avons
+ créé un nouveau, dessin4.data, qui donne le dessin suivant :
+\begin_inset Newline newline
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "c"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "100col%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+center
+\end_layout
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename image/dessin/GM.pdf
+	lyxscale 30
+	scale 35
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Addchap
+Conclusion
+\end_layout
+
+\begin_layout Standard
+Pour conclure ce TP nous a permis de mieux comprendre l'interpolation polynômial
+e, aussi bien sur le plan théorique que sur le plan pratique.
+ Il nous a permis d'observer l'influence du choix des points d'interpolation,
+ de leurs nombre, ainsi que l'influence des différentes méthodes sur le
+ polynôme d'interpolation.
+ Nous avons aussi pu remarquer que ces algorithmes n'étaient pas tous aussi
+ stables numériquement, d'où l'importance de choisir le bon algorithme en
+ fonction du problème traité.
+ Globalement on retiendra que :
+\end_layout
+
+\begin_layout Itemize
+L'algorithme de Neville-Aitkens semble plus satble numériquement que celui
+ des différences divisées associé à Hörner.
+\end_layout
+
+\begin_layout Itemize
+Les points de Tchebychev sont largement meilleurs que les points équi-répartis,
+ et donnent aux algorithmes une meilleure stabilité numérique.
+\end_layout
+
+\begin_layout Itemize
+L'interpolation d'Hermite est meilleure lorsque 
+\begin_inset Formula $N$
+\end_inset
+
+ est faible, mais les algorithmes l'utilisant semblent un peu plus instables
+ numériquement.
+\end_layout
+
+\begin_layout Itemize
+L'augmentation du nombre de points d'interpolation n'est plus bénéfique
+ à partir d'un certain rang, car cela va induire trop de calculs, et causera
+ des divisons par des nombre très petits ce qui propagera les erreurs et
+ donnera parfois des résultats abberants.
+\end_layout
+
+\end_body
+\end_document

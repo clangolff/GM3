@@ -5,6 +5,53 @@
 \save_transient_properties true
 \origin unavailable
 \textclass article
+\begin_preamble
+\renewcommand{\descriptionlabel}[1]{\hspace\labelsep\upshape\bfseries #1:}
+\renewenvironment{description}{\list{}{%
+  \setlength{\itemsep}{-2pt}
+  \advance\leftmargini6\p@ \itemindent-12\p@
+  \labelwidth\z@ \let\makelabel\descriptionlabel}%
+}{
+  \endlist
+}
+
+\usepackage{xcolor}
+\usepackage{fancyhdr}
+
+\definecolor{INSA_GM}{cmyk}{0.6,0,0,0}
+\definecolor{INSA_GRIS}{cmyk}{0.7,0.6,0.5,0.3}
+\definecolor{INSA_BLEU}{cmyk}{1,0.9,0.1,0}
+
+\newcommand{\insertrefproj}[1]{}
+\newcommand{\refproj}[1]{\renewcommand{\insertrefproj}{\textbf{\color{INSA_GRIS}#1}}}
+
+\fancypagestyle{courant}{
+\fancyhf{}
+    \setlength{\headheight}{27pt}
+    \fancyhead[L]{\raisebox{-2mm}{\includegraphics[width=30mm]{images/logoINSA.jpg}}}
+\fancyhead[C]{}
+\fancyhead[R]{\color{INSA_GRIS}\thepage}
+\fancyfoot[L]{\insertrefproj}
+\fancyfoot[R]{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0.2pt}
+}
+
+\fancypagestyle{special}{
+  \pagestyle{courant}
+  \fancyfoot{}
+\renewcommand{\footrulewidth}{0pt}
+}
+
+\fancypagestyle{plain}{
+  \fancyhf{}
+  \pagestyle{courant}
+}
+\title{Projet GM3}
+\refproj{GM3/MIPP/2022 - 23}
+
+\pagestyle{plain}
+\end_preamble
 \use_default_options true
 \maintain_unincluded_children false
 \language english
@@ -29,6 +76,7 @@
 \bibtex_command default
 \index_command default
 \paperfontsize default
+\spacing single
 \use_hyperref false
 \papersize default
 \use_geometry false
@@ -44,6 +92,7 @@
 \use_package undertilde 1
 \cite_engine basic
 \cite_engine_type default
+\biblio_style plain
 \use_bibtopic false
 \use_indices false
 \paperorientation portrait
@@ -75,16 +124,360 @@
 
 \begin_body
 
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+thispagestyle{empty}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "c"
+hor_pos "l"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "40text%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/clement/Documents/github/GM3/SEMESTRE_2/PROJET/MSRO/Clement/lyx/Images/logoINSA.jpg
+	lyxscale 20
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Box Frameless
+position "c"
+hor_pos "l"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "40text%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering 
+\backslash
+textcolor{INSA_GM}{
+\end_layout
+
+\end_inset
+
+
+\series bold
+\size larger
+Projet MIPP 
+\begin_inset Newline newline
+\end_inset
+
+GM3 2022 - 2023
+\series default
+\size default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace 7cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "c"
+hor_pos "l"
+has_inner_box 1
+inner_pos "c"
+use_parbox 0
+use_makebox 0
+width "100text%"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+centering
+\backslash
+textcolor{INSA_BLEU}{
+\end_layout
+
+\end_inset
+
+
+\series bold
+\size giant
+Systèmes RAID 
+\series default
+\size default
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace vfill
+\end_inset
+
+
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Box Frameless
+position "t"
+hor_pos "l"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "6cm"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+large 
+\backslash
+textcolor{INSA_GRIS}{
+\end_layout
+
+\end_inset
+
+ 
+\series bold
+Étudiants :
+\series default
+ 
+\begin_inset Newline newline
+\end_inset
+
+LANGOLFF Clément
+\begin_inset Newline newline
+\end_inset
+
+KESSLER Aymeric
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset space \hfill{}
+\end_inset
+
+
+\begin_inset Box Frameless
+position "t"
+hor_pos "l"
+has_inner_box 1
+inner_pos "t"
+use_parbox 0
+use_makebox 0
+width "9cm"
+special "none"
+height "1in"
+height_special "totalheight"
+thickness "0.4pt"
+separation "3pt"
+shadowsize "4pt"
+framecolor "black"
+backgroundcolor "none"
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+large 
+\backslash
+textcolor{INSA_GRIS}{
+\end_layout
+
+\end_inset
+
+
+\series bold
+Enseignant-responsable du projet :
+\series default
+
+\begin_inset Newline newline
+\end_inset
+
+ 
+\noun on
+Jaumat Omar
+\noun default
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\begin_inset VSpace 2cm
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Introduction
 \end_layout
 
 \begin_layout Standard
-RAID ou «Redundant Array of Inexpensive / Independant Disks » a été inventé
- en 1987 par trois chercheurs de l’université californienne de Berkeley,
- dans le but de pouvoir utiliser des disques de faibles capacités, donc
- peu coûteux (Inexpensive) de telles façons qu’ils soient vus comme un disque
- unique.
+Le système RAID ou «Redundant Array of Inexpensive / Independant Disks »
+ a été inventé en 1987 par trois chercheurs de l’université californienne
+ de Berkeley, dans le but de pouvoir utiliser des disques de faibles capacités,
+ donc peu coûteux (Inexpensive) de telles façons qu’ils soient vus comme
+ un disque unique.
  De cette manière, le RAID peut être décrit comme étant l’opposé du partitionnem
 ent : dans un cas, on crée plusieurs unités logiques à partir d’un seul
  disque, dans l’autre, on crée une seule unité logique à partir de plusieurs
@@ -104,11 +497,11 @@ Cette technique offre diffèrents avantages.
  stockage, d'écriture et de lecture équivente.
  En effet, le RAID permet aussi d'améliorer les vitesses de lecture et d'écritur
 e des données sur les disques.
- Certain système de RAId permettent quand à eux de limiter très fortement
+ Certain système de RAID permettent quand à eux de limiter très fortement
  la perte de données.
  Quand on dispose d'un seul périphérique de stockage sur un système, nous
  sommes beaucoup plus sujet à la casse du disque dur que si l'on posssèdait
- des données répartie de façon 
+ des données réparties de façon 
 \begin_inset Quotes eld
 \end_inset
 
@@ -122,11 +515,11 @@ miroir
 
 \begin_layout Standard
 Il existe différents niveaux de RAID , nommé par leur numéro, possèdant
- chacun leur avantages et inconvénients.
+ chacun leurs avantages et inconvénients.
 \end_layout
 
 \begin_layout Standard
-Cependant, on peut les classer suivant leur objectif
+Cependant, on peut les classer suivant leur objectif :
 \end_layout
 
 \begin_layout Itemize
@@ -141,8 +534,15 @@ Améliorer les performances ( RAID 0 )
 Les deux à la fois, mais avec une moins bonne efficacité ( RAID 5 )
 \end_layout
 
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
-Parité et redondance, les concept du RAID
+Parité et redondance, les concepts du RAID
 \end_layout
 
 \begin_layout Standard
@@ -156,14 +556,14 @@ on des données manquantes à partir de données restantes si un ou plusieurs
 
 \begin_layout Standard
 Le système de redondance le plus simple et le plus utilisé est le calcul
- de
+ de 
 \bar under
- parité
+parité
 \bar default
 .
  Ce système repose sur l'opération logique XOR.
  Supposons que l'on possède une bande de données, ces données sont réparties
- sur 2 blocs de disques et le troisième disque possède quand à lui le bloc
+ sur 2 blocs de disque et le troisième disque possède quand à lui le bloc
  de parité résultant de l'opération XOR entre les bits des données des deux
  autres disques.
  Sur n bits, si le nombre de 1 est pair, alors le bit de parité vaut 0.
@@ -210,6 +610,13 @@ s e retrouve défaillant, on peut le retrouver par
 
 .
  
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -307,7 +714,7 @@ Afin de constituer un RAID 0, il faut au minimum possèdait 2 disques.
  La capacité totale du RAID 0 ne peut pas dépasser la capacité du disque
  possèdant le moins de stockages.
  En effet, pour cette méthode de RAID, les données sont réparties par bande
- d'une taille fixe appelé granulation sur chaques disques durs.
+ d'une taille fixe appelée granulation sur chaque disque dur.
  En d'autres termes, tous les disques possèdent les mêmes données.
  Cela permet de parallèliser l'écriture et la lecture des données en sollicitant
  tous les disques durs.
@@ -332,7 +739,7 @@ Coût
 \begin_layout Standard
 Le coût pour un RAID 0 dépend du nombre de disque parallèlisé.
  Étant donné que la vitesse d'écriture et de lecture est un facteur important
- sur un unique disque dur, le RAID 0 n'est pas une configuration négligé
+ sur un unique disque dur, le RAID 0 n'est pas une configuration à négliger
  pour ceux qui souhaitent avoir de grandes performances.
 \end_layout
 
@@ -360,29 +767,29 @@ Ainsi 4 bandes seront utilisées pour écrire le fichier.
  Les bandes seront ensuite réparties de la façon suivante :
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 Disque 1 : 1,2
 \end_layout
 
-\begin_layout Standard
+\begin_layout Itemize
 Disque 2 : 3,4
-\begin_inset Newline newline
-\end_inset
+\end_layout
 
+\begin_layout Standard
 L'écriture de fichier pourra alors se faire simultanement sur chacun des
- disques en un temps équivalent à l'écriture de 128 kb, ce qui revient presque
- à doubler le débit d'écriture.
+ disques en un temps équivalent à l'écriture de 128 kb, ce qui revient à
+ doubler le débit d'écriture.
  Il faut comprendre que ce n'est pas l'accumulation des vitesses d'écriture
  de chaque disque dur qui augmente les performances d'écritures et de lectures
  mais plutôt la répartition des tâches sur chaque disque dur.
 \end_layout
 
 \begin_layout Standard
-Ainsi sur un RAID de 
+Ainsi, sur un RAID de 
 \begin_inset Formula $n$
 \end_inset
 
- disques , chaque disque ne doit lire que 
+ disques, chaque disque ne doit lire que 
 \begin_inset Formula $\frac{1}{n}$
 \end_inset
 
@@ -396,11 +803,11 @@ Utilisateur
 \begin_layout Standard
 Ce type de RAID est parfait pour des applications demandant un traitement
  rapide des données avec des disques durs.
- Il est notamment utiliser pour accélerer les applications de type montage
+ Il est notamment utilisé pour accélerer les applications de type montage
  vidéo, traitement d'image ou encore modélisation graphique.
  Il peut être aussi utilisé afin d'augmenter la bande passante d'un serveur
- nécessitant des support de stockage capables de supporter de très grande
- quantité d'écritures.
+ nécessitant des support de stockage capables de supporter de très grandes
+ quantités d'écritures.
 \end_layout
 
 \begin_layout Paragraph*
@@ -430,7 +837,7 @@ Le RAID 1 est la forme du RAID la plus simple, elle consiste à l'utilisation
 \begin_inset Formula $n$
 \end_inset
 
- disques redondant, chaque disque contenant à tout moment exactement les
+ disques redondants, chaque disque contenant à tout moment exactement les
  mêmes données d'où l'appelation miroir.
 \end_layout
 
@@ -498,9 +905,9 @@ Fiabilité
 \end_layout
 
 \begin_layout Standard
-Cette architecture est basé sur la sécurité.
+Cette architecture est basée sur la sécurité.
  Elle offre un excellent niveau de protection des données et fonctionne
- jusqu'à ce que tout les disques tombes en pannes simultanément, ce qui
+ jusqu'à ce que tout les disques tombent en panne simultanément, ce qui
  est très rare si l'on parallèlise plusieurs disques durs.
 \end_layout
 
@@ -510,7 +917,7 @@ Coût
 
 \begin_layout Standard
 Le coût de stockage est directement proportionnel au nombre de miroir utilisé,
- bien que la capacité reste inchangé.
+ bien que la capacité reste inchangée.
  
 \end_layout
 
@@ -522,9 +929,9 @@ Performances
 Le débit de lecture des données n'est pas significativement changé.
  En effet, l'accès au données se fait sur le disque le plus facile d'accès
  un moment donné.
- En revanche, la vitesse d'écriture se retrouve diminué puisque chaque disque
- doit se mettre à jour et la vitesse d'ecriture du disque le plus lent limite
- les performances
+ En revanche, la vitesse d'écriture se retrouve diminuée puisque chaque
+ disque doit se mettre à jour et la vitesse d'ecriture du disque le plus
+ lent ce qui limite les performances.
 \end_layout
 
 \begin_layout Paragraph*
@@ -532,7 +939,7 @@ Avantages :
 \end_layout
 
 \begin_layout Standard
-Grande fiabilité, la perte de données est minimisé grâce à l'architecture
+Grande fiabilité, la perte de données est minimisée grâce à l'architecture
  miroir.
 \end_layout
 
@@ -556,7 +963,7 @@ RAID 2
 est un RAID distribué et avec parité.
  La distribution des données est effectuée par "1 bit".
  Donc la taille du bloc est de 1 bit.
- La parité est calculé par le code Hamming ( Code de correction d'erreurs).
+ La parité est calculée par le code Hamming ( Code de correction d'erreurs).
  Les données de la parité sont stockées sur un disque indépendant.
  Ce type de RAID est considéré comme historique car il n'est pas utilisé
  ni commercialisé.
@@ -572,7 +979,7 @@ est un RAID distribué par bytes.
  Les disques membres du Raid 3 sont synchronisés.
  La parité est calculée par la fonction XOR et stockée sur un disque séparé
  au niveau de la même position.
- Un nombre minimal de 3 disque est nécessaire pour construire un RAID 3.
+ Un nombre minimal de 3 disques est nécessaire pour construire un RAID 3.
 \end_layout
 
 \begin_layout Paragraph*
@@ -585,7 +992,7 @@ Comme le RAID 3, le RAID 4 est un RAID distribué, mais par blocs, avec une
  Les disques membres du RAID 4 sont synchronisés.
  La parité est calculée par la fonction XOR et stockée sur un disque séparé
  au niveau de la même position.
- Un nombre minimal de 3 disque est nécessaire pour construire un RAID 4.
+ Un nombre minimal de 3 disques est nécessaire pour construire un RAID 4.
 \end_layout
 
 \begin_layout Subsection
@@ -599,7 +1006,7 @@ Le RAID 5 combine la méthode du volume agrégé par bandes à une parité répa
 \begin_inset Formula $n+1$
 \end_inset
 
- disques, chaque bande est constitué de 
+ disques, chaque bande est constituée de 
 \begin_inset Formula $n$
 \end_inset
 
@@ -669,7 +1076,8 @@ Le Raid 5 utilise les techniques de distribution des blocs de données ainsi
  Le flux de données est divisé par bloc dont la taille est le fameux paramètre
  taille du bloc (granulation).
  Sur chaque ligne, il y a un seul bloc de parité.
- Ce bloc est calculé par la fonction "XOR" des données des deux autres blocs.
+ Ce bloc est calculé par la fonction "XOR" grâce aux données des deux autres
+ blocs.
  En cas de panne d'un disque, les données manquantes peuvent être déduites
  par la fonction "XOR" à partir des blocs de données disponibles.
 \end_layout
@@ -682,7 +1090,7 @@ Exemple
 Si on possède 4 disques de tailles identiques A,B,C et D, le système va
  répartir les premiers blocs de la première bande sur les disques A,B et
  C comme pour le RAID 0.
- Sur le disque D, un bloc de parité va être mit en place calculer à partir
+ Sur le disque D, un bloc de parité va être mit en place et calculer à partir
  de l'opération 
 \begin_inset Formula $OU$
 \end_inset
@@ -704,7 +1112,7 @@ Le RAID 5 étant une dérivé du RAID 0, il possède les performances de lecture
  élevées.
  Mais il possède l'avantage de tolérer la perte d
 \series bold
-'un 
+'un seul 
 \series default
 disque.
 \end_layout
@@ -717,9 +1125,9 @@ Inconvénient
 Le RAID 5 demande de calculer la parité pour écrire des données; la vitesse
  d'écritures est donc ralentit.
  De plus les blocs de parité prennent la place de données qui pourraient
- être directement stocké, au total nous perdons l'équivalent de 1 disque
+ être directement stockées, au total nous perdons l'équivalent de 1 disque
  pour n disques de même capacité de stockage utilisés.
- Notons aussi que si l'on perd un disque, le temps de reconsruction peut
+ Notons aussi que si l'on perd un disque, le temps de reconstruction peut
  s'avérer très long si la capacité de stockage des disques est importante,
  les disques étant beaucoup sollicité sur cette opération, il se peut qu'une
  deuxième panne arrive et que toutes les données soient perdues.
@@ -788,6 +1196,13 @@ center
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
 \end_inset
 
 
@@ -1073,7 +1488,7 @@ Fiabilité
 avec un RAID 5, la probabilité de panne de deux disques simultanément augmente
  avec le nombre des disques.
  Avec un RAID 50, la sécurité augmente avec le nombre de disques, à la condition
- que deux disques de la même grappe ne soient en panne simultanément.
+ que deux disques de la même grappe ne soient pas en panne simultanément.
 \end_layout
 
 \begin_layout Paragraph*
@@ -1094,6 +1509,32 @@ Généralement le RAID 50 fonctionne moins bien que le RAID 10, mais beaucoup
  est la vitesse d'écriture
 \backslash
 lecture du disque le moins performant dans l'architecture.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage newpage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Conclusion
+\end_layout
+
+\begin_layout Standard
+Du fait de leur performance à coût peu élevé, les système RAID sont des
+ solutions envisageables pour les utilisateurs souhaitants améliorer leur
+ quotidien avec leur ordinateur.
+ Chacun peut trouver l'agencement qui lui convient et l'installer avec facilité
+ sur les diffèrents systèmes d'exploitation ou serveur.
+ Cependant, il est à noter que ces systèmes de RAID pourrraient être complètemen
+t remplacés par les disques dur SSD qui voient leur prix baisser et leur
+ capacité augmenter au fil des années, permettant un stockage plus rapide
+ et plus ergonomique pour ceux qui recherchent les performances en écriture
+ et en lecture des données.
+ Il est bien sûr évident que les configurations RAID visant à améliorer
+ la sécurité contre la perte de données ne pourront pas être remplacés.
 \end_layout
 
 \end_body
